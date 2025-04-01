@@ -1245,39 +1245,53 @@ def convert_function_str_to_json(
         pattern = r"<function=(.*?)>\n(.*?)\n</function>"
         matches = re.findall(pattern, stringified_calls, re.DOTALL)
         for func_name, args_str in matches:
-            args: Dict = json.loads(args_str)
-            function_calls_json.append({"name": func_name, "arguments": args})
+            try:
+                args: Dict = json.loads(args_str)
+                if isinstance(func_name, str):
+                    function_calls_json.append({"name": func_name, "arguments": args})
+            except:
+                pass
     elif tool_call_format == "json":
         # tool calling in format `{"name": func_name, "parameters": parameters(JSON dict)}`
-        starts = [-1]
+        starts = set()
+        last_start = -1
         while True:
-            index = stringified_calls.find('{"name":', starts[-1] + 1)
+            index = stringified_calls.find('{"name":', last_start + 1)
             if index == -1:
                 break
             else:
-                starts.append(index)
-        starts.append(len(stringified_calls))
-        for i in range(1, len(starts) - 1):
-            cnt = 1
-            quote = False
-            for j in range(starts[i] + 1, starts[i + 1]):
-                if stringified_calls[j] == '"':
-                    quote = not quote
-                elif not quote:
-                    if stringified_calls[j] == "{":
-                        cnt += 1
-                    elif stringified_calls[j] == "}":
-                        cnt -= 1
-                    if cnt == 0:
-                        func_call: Dict = json.loads(stringified_calls[starts[i] : j + 1])
-                        if "name" not in func_call or "parameters" not in func_call:
-                            raise ValueError("Invalid function call output.")
-                        if not isinstance(func_call["name"], str) or not isinstance(func_call["parameters"], dict):
-                            raise ValueError("Invalid function call output type.")
-                        function_calls_json.append(
-                            {"name": func_call["name"], "arguments": func_call["parameters"]}
-                        )
-                        break
+                starts.add(index)
+                last_start = index
+        match_stack = []
+        quote = False
+        for i in range(len(stringified_calls)):
+            if stringified_calls[i] == '"':
+                quote = not quote
+            elif not quote:
+                if stringified_calls[i] == "{":
+                    match_stack.append(i)
+                elif stringified_calls[i] == "}":
+                    if len(match_stack) > 0:
+                        if match_stack[-1] in starts:
+                            try:
+                                func_call: Dict = json.loads(
+                                    stringified_calls[match_stack[-1] : i + 1]
+                                )
+                                if (
+                                    "name" in func_call
+                                    and "parameters" in func_call
+                                    and isinstance(func_call["name"], str)
+                                    and isinstance(func_call["parameters"], dict)
+                                ):
+                                    function_calls_json.append(
+                                        {
+                                            "name": func_call["name"],
+                                            "arguments": func_call["parameters"],
+                                        }
+                                    )
+                            except json.JSONDecodeError:
+                                pass
+                        match_stack.pop()
     elif tool_call_format == "python":
         # tool calling in python grammar
         def parse_function_call(call_str: str):

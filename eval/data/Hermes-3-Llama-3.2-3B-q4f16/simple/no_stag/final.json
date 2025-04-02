@@ -1,0 +1,496 @@
+{
+    "fail_format": [
+        153,
+        335,
+        388
+    ],
+    "fail_call": [
+        13,
+        35,
+        36,
+        42,
+        50,
+        55,
+        56,
+        58,
+        63,
+        64,
+        65,
+        71,
+        77,
+        86,
+        89,
+        91,
+        98,
+        99,
+        102,
+        103,
+        117,
+        127,
+        128,
+        129,
+        130,
+        132,
+        145,
+        153,
+        158,
+        159,
+        166,
+        169,
+        175,
+        177,
+        178,
+        183,
+        190,
+        196,
+        201,
+        202,
+        203,
+        208,
+        211,
+        214,
+        215,
+        223,
+        225,
+        234,
+        235,
+        243,
+        244,
+        245,
+        247,
+        249,
+        263,
+        264,
+        266,
+        267,
+        277,
+        284,
+        285,
+        288,
+        293,
+        307,
+        311,
+        312,
+        314,
+        315,
+        317,
+        318,
+        319,
+        325,
+        327,
+        328,
+        335,
+        337,
+        342,
+        354,
+        355,
+        359,
+        361,
+        362,
+        363,
+        366,
+        370,
+        372,
+        373,
+        375,
+        380,
+        381,
+        382,
+        386,
+        388,
+        391,
+        394,
+        395,
+        399
+    ],
+    "fail_reason": {
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match:  Simpsons Rule , ideal-opt: ['', 'trapezoidal']"
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 11, ideal-opt: [23]"
+        },
+        "36": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: mi, ideal-opt: ['km', '']"
+        },
+        "42": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5e-05, ideal-opt: [0.05]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1000, ideal-opt: [1]"
+        },
+        "55": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: cell_type"
+        },
+        "56": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "58": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: specific_function"
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Homo sapiens, ideal-opt: ['Human', 'human']"
+        },
+        "64": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: allele_frequency"
+        },
+        "65": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 85500000, ideal-opt: [8500000]"
+        },
+        "71": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['A', 'T', 'C', 'G'].[ideal 1] wrong length of ['A', 'T', 'C', 'G']."
+        },
+        "77": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "86": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "89": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: student_data, ideal-opt: ['students']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: sunday, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "98": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 18, ideal-opt: [6]"
+        },
+        "99": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2.0, ideal-opt: [6.2832]"
+        },
+        "102": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: km, ideal-opt: ['mi', 'miles', 'mile']"
+        },
+        "103": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [3, 2]."
+        },
+        "117": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [13]"
+        },
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [0.1]"
+        },
+        "128": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 500000000, ideal-opt: [50000000]"
+        },
+        "129": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: [0.04]"
+        },
+        "130": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2000000, ideal-opt: [200000]"
+        },
+        "145": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "153": "wrong format",
+        "158": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "159": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Criminal Law Amendment Act of 2013, ideal-opt: ['Criminal Law Amendment Act', 'Criminal Law Amendment']"
+        },
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "169": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type false: not bool"
+        },
+        "175": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: name"
+        },
+        "177": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: patent, ideal-opt: ['all', '']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['plaintiffs', 'defendants', 'charges', 'court_updates'].[ideal 1] wrong length of ['plaintiffs', 'defendants', 'charges', 'court_updates']."
+        },
+        "183": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Apple Inc., ideal-opt: ['Apple']"
+        },
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Elevation', 'Area', 'Location', 'Established Year'].[ideal 1] wrong length of ['Elevation', 'Area', 'Location', 'Established Year']."
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
+        },
+        "201": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: pandamonium bear, ideal-opt: ['panda', 'pandas']"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: solar, ideal-opt: ['renewable']"
+        },
+        "203": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "208": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: required"
+        },
+        "211": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 'Meeting', ideal-opt: ['Meeting']"
+        },
+        "214": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: month rock concerts, ideal-opt: ['Rock', 'rock']"
+        },
+        "215": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "223": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: total"
+        },
+        "225": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: physical books, ideal-opt: ['digital reading', 'digital']"
+        },
+        "234": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Europe, ideal-opt: ['Northern', 'Southern', 'Eastern', 'Western']"
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Wherever it was signed, ideal-opt: ['', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "243": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: discovery"
+        },
+        "244": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Philosophi\u00e6 Naturalis Principia Mathematica, ideal-opt: ['Law of Universal Gravitation', 'Universal Law of Gravitation', 'The law of universal gravitation']"
+        },
+        "245": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1900, ideal-opt: ['', 0]"
+        },
+        "247": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "249": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [False, '']"
+        },
+        "263": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "264": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: artist"
+        },
+        "266": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Auguste Rodin, ideal-opt: ['Rodin']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY']"
+        },
+        "277": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['opening_hours', 'ticket_price', 'address'].[ideal 1] wrong length of ['opening_hours', 'ticket_price', 'address']."
+        },
+        "284": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-01, ideal-opt: ['next month', '2023-06-01', '06/01/2023', 'Jun.1,2023', 'June 2023']"
+        },
+        "285": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 99, ideal-opt: [100]"
+        },
+        "288": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City', 'New York City, NY', 'NYC']"
+        },
+        "293": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 180: not int"
+        },
+        "307": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "311": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Cavs and Heat, ideal-opt: ['']"
+        },
+        "312": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Manchester City FC, ideal-opt: ['']"
+        },
+        "314": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Barcelona, ideal-opt: ['', 'all']"
+        },
+        "315": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [1, '']"
+        },
+        "317": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['2021']"
+        },
+        "318": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Germany's men soccer team, ideal-opt: ['Germany']"
+        },
+        "319": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2023: not int"
+        },
+        "325": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: NBA 2021-2022 Regular Season, ideal-opt: ['']"
+        },
+        "327": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: N/A, ideal-opt: ['']"
+        },
+        "328": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "335": "wrong format",
+        "337": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: cards"
+        },
+        "342": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['kale', 'garbanzo beans', 'cacao', 'accacia', 'imbibing', 'non-cohesive structur?']."
+        },
+        "355": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: website"
+        },
+        "359": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'tomatoes', 'onions', 'mushrooms', 'garlic', 'tofu', 'cheese']."
+        },
+        "361": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: required"
+        },
+        "362": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4.5, ideal-opt: [4.0]"
+        },
+        "363": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "366": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: [1, '']"
+        },
+        "370": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f7e50d15850>[ideal 1] <dataset.Error object at 0x7f7e50d15b90>"
+        },
+        "372": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: organic bananas, ideal-opt: ['bananas']"
+        },
+        "373": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f7e50d15bd0>[ideal 1] <dataset.Error object at 0x7f7e50d15c10>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pumpkin', 'pumpkin', 'pumpkin'].[ideal 1] wrong length of ['pumpkin', 'pumpkin', 'pumpkin']."
+        },
+        "380": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Manhattan, ideal-opt: ['Manhattan, New York', 'Manhattan, NY', 'NYC', 'New York City']"
+        },
+        "381": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "382": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Hilton Chicago, ideal-opt: ['Hilton Hotel', 'Hilton']"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Luxury City View Room, ideal-opt: ['luxury', 'Luxury']"
+        },
+        "388": "wrong format",
+        "391": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: British Pounds, ideal-opt: ['GBP']"
+        },
+        "394": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower Paris, ideal-opt: ['Eiffel Tower']"
+        },
+        "395": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "399": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4.3: not int"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9925,
+    "CALL_ACCURACY": 0.7575,
+    "FORMAT_ERROR": 0.0075,
+    "CALL_NUMBER_ERROR": 0.0025,
+    "FUNC_NAME_ERROR": 0.0175,
+    "PARA_KEY_ERROR": 0.0275,
+    "TYPE_ERROR": 0.02,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.1675
+}

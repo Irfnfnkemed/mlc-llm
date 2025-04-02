@@ -1,0 +1,199 @@
+{
+    "fail_format": [
+        5,
+        7,
+        21,
+        196
+    ],
+    "fail_call": [
+        5,
+        7,
+        16,
+        17,
+        20,
+        21,
+        23,
+        27,
+        29,
+        38,
+        48,
+        49,
+        50,
+        52,
+        53,
+        59,
+        70,
+        74,
+        80,
+        86,
+        89,
+        91,
+        94,
+        104,
+        105,
+        122,
+        149,
+        151,
+        153,
+        156,
+        169,
+        172,
+        175,
+        178,
+        183,
+        184,
+        193,
+        196
+    ],
+    "fail_reason": {
+        "5": "wrong format",
+        "7": "wrong format",
+        "16": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Panthera tigris, ideal-opt: ['wild tiger', 'tiger']"
+        },
+        "17": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: US Dollar, ideal-opt: ['Dollar', 'USD']"
+        },
+        "20": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: high, ideal-opt: ['medium', '']"
+        },
+        "21": "wrong format",
+        "23": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f4d84160fd0>[ideal 1] <dataset.Error object at 0x7f4d84160fd0>[ideal 2] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 3] <dataset.Error object at 0x7f4d84160fd0>[ideal 4] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 5] <dataset.Error object at 0x7f4d84160fd0>[ideal 6] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 7] <dataset.Error object at 0x7f4d84160fd0>[ideal 8] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 9] <dataset.Error object at 0x7f4d84160fd0>[ideal 10] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 11] <dataset.Error object at 0x7f4d84160fd0>[ideal 12] <dataset.Error object at 0x7f4d84160fd0>[ideal 13] <dataset.Error object at 0x7f4d84160fd0>[ideal 14] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 15] <dataset.Error object at 0x7f4d84160fd0>[ideal 16] <dataset.Error object at 0x7f4dbdea3ed0>[ideal 17] <dataset.Error object at 0x7f4d84160fd0>"
+        },
+        "27": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: public_transportation, ideal-opt: ['transit']"
+        },
+        "29": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: y=3x+2, ideal-opt: ['3x + 2', 'lambda x: 3x + 2']"
+        },
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Pet-friendly', 'Disabled Access', '24 hours', 'Cafe Inside'].[ideal 1] wrong length of ['Pet-friendly', 'Disabled Access', '24 hours', 'Cafe Inside']."
+        },
+        "49": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 12, ideal-opt: ['', 1]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 30, ideal-opt: [1]"
+        },
+        "52": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "53": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f4d841c05d0>[ideal 1] <dataset.Error object at 0x7f4d841c0490>[ideal 2] <dataset.Error object at 0x7f4d841c0650>"
+        },
+        "59": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', 1]"
+        },
+        "70": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1800, ideal-opt: [18]"
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent Van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "86": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: intermediate, ideal-opt: ['', 'beginner']"
+        },
+        "89": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['chicken', 'mushrooms', 'onion', 'garlic', 'vegetable oil', 'salt', 'pepper'].[ideal 1] wrong length of ['chicken', 'mushrooms', 'onion', 'garlic', 'vegetable oil', 'salt', 'pepper']."
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "94": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: suite, ideal-opt: ['suite with queen size bed']"
+        },
+        "104": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: miles, ideal-opt: ['', 'kilometers']"
+        },
+        "105": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4e-08, ideal-opt: ['', 0.01]"
+        },
+        "122": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "149": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['english', 'English']"
+        },
+        "151": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: positivpsych, ideal-opt: ['psychology', 'Psychology']"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Maastricht Belgium, ideal-opt: ['', 'global', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "169": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C# major, ideal-opt: ['C#', 'C sharp']"
+        },
+        "172": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
+        },
+        "175": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: woman tennis, ideal-opt: ['tennis']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [{'rank': 'Ace', 'suit': 'Hearts'}, {'rank': 'Two', 'suit': 'Hearts'}, {'rank': 'Three', 'suit': 'Hearts'}, {'rank': 'Four', 'suit': 'Hearts'}, {'rank': 'Five', 'suit': 'Hearts'}, {'rank': 'Six', 'suit': 'Hearts'}, {'rank': 'Seven', 'suit': 'Hearts'}, {'rank': 'Eight', 'suit': 'Hearts'}, {'rank': 'Nine', 'suit': 'Hearts'}, {'rank': 'Ten', 'suit': 'Hearts'}, {'rank': 'Jack', 'suit': 'Hearts'}, {'rank': 'King', 'suit': 'Hearts'}, {'rank': 'Queen', 'suit': 'Hearts'}, {'rank': 'Jack', 'suit': 'Hearts'}]."
+        },
+        "183": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dinner, ideal-opt: ['']"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'tomatoes', 'onion', 'garlic', 'cheese', 'olive oil', 'basil', 'fresh parsley'].[ideal 1] wrong length of ['pasta', 'tomatoes', 'onion', 'garlic', 'cheese', 'olive oil', 'basil', 'fresh parsley']."
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower in Paris, ideal-opt: ['Eiffel Tower']"
+        },
+        "196": "wrong format"
+    },
+    "FORMAT_ACCURACY": 0.98,
+    "CALL_ACCURACY": 0.81,
+    "FORMAT_ERROR": 0.02,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.005,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.165
+}

@@ -1,0 +1,220 @@
+{
+    "fail_format": [
+        4,
+        27,
+        40,
+        53,
+        124,
+        153
+    ],
+    "fail_call": [
+        1,
+        4,
+        12,
+        20,
+        27,
+        29,
+        32,
+        38,
+        40,
+        49,
+        50,
+        53,
+        59,
+        70,
+        71,
+        74,
+        76,
+        78,
+        80,
+        81,
+        83,
+        91,
+        94,
+        106,
+        109,
+        113,
+        118,
+        124,
+        132,
+        133,
+        140,
+        149,
+        151,
+        153,
+        156,
+        160,
+        171,
+        172,
+        175,
+        178,
+        183,
+        184,
+        196
+    ],
+    "fail_reason": {
+        "1": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: side1"
+        },
+        "4": "wrong format",
+        "12": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [1000000]"
+        },
+        "20": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: low, ideal-opt: ['medium', '']"
+        },
+        "27": "wrong format",
+        "29": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: y3x65c1219f1, ideal-opt: ['3x + 2', 'lambda x: 3x + 2']"
+        },
+        "32": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "40": "wrong format",
+        "49": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: principle_amount"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 30, ideal-opt: [1]"
+        },
+        "53": "wrong format",
+        "59": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type {}: not int"
+        },
+        "70": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 18: not int"
+        },
+        "71": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: total_veterans, ideal-opt: ['veterans']"
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "76": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not int"
+        },
+        "78": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of timings,exhibitions,accessibility: not list."
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "81": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: required"
+        },
+        "83": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: La Liga, ideal-opt: ['']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "94": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "106": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0.01: not number"
+        },
+        "109": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "113": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [0.8]."
+        },
+        "118": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: actor_name"
+        },
+        "124": "wrong format",
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "133": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "140": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2020: not int"
+        },
+        "149": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['english', 'English']"
+        },
+        "151": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "153": "wrong format",
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "160": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "171": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Stateside, ideal-opt: ['']"
+        },
+        "172": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
+        },
+        "175": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: women tennis, ideal-opt: ['tennis']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Ace Hearts', '2 Hearts', '3 Hearts', '4 Hearts', '5 Hearts', '6 Hearts', '7 Hearts', '8 Hearts', '9 Hearts', '10 Hearts', 'Jack Hearts', 'King Hearts', 'Queen Hearts', 'Ace Spades', '2 Spades', '3 Spades', '4 Spades', '5 Spades', '6 Spades', '7 Spades', '8 Spades', '9 Spades', '10 Spades', 'Jack Spades', 'King Spades', 'Queen Spades', 'Ace Diamonds', '2 Diamonds', '3 Diamonds', '4 Diamonds', '5 Diamonds', '6 Diamonds', '7 Diamonds', '8 Diamonds', '9 Diamonds', '10 Diamonds', 'Jack Diamonds', 'King Diamonds', 'Queen Diamonds', 'Ace Clubs', '2 Clubs', '3 Clubs', '4 Clubs', '5 Clubs', '6 Clubs', '7 Clubs', '8 Clubs', '9 Clubs', '10 Clubs', 'Jack Clubs', 'King Clubs', 'Queen Clubs']."
+        },
+        "183": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dinner, ideal-opt: ['']"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'pizza sauce', 'garlic', 'onion', 'basil', 'spinach', 'asparagus', 'cheese'].[ideal 1] wrong length of ['pasta', 'pizza sauce', 'garlic', 'onion', 'basil', 'spinach', 'asparagus', 'cheese']."
+        },
+        "196": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type false: not bool"
+        }
+    },
+    "FORMAT_ACCURACY": 0.97,
+    "CALL_ACCURACY": 0.785,
+    "FORMAT_ERROR": 0.03,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.01,
+    "PARA_KEY_ERROR": 0.02,
+    "TYPE_ERROR": 0.045,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.11
+}

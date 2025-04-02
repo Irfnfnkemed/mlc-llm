@@ -211,6 +211,7 @@ class Conversation(BaseModel):
                 "Reminder:"
                 "- Function calls MUST follow the specified format"
                 "- Required parameters MUST be specified"
+                "- You should not repeat or miss the call"
             )
             self.system_message += tool_call_instruct
         elif self.tool_call_format == "json":
@@ -218,12 +219,13 @@ class Conversation(BaseModel):
                 "Tool Instructions:"
                 f"You have access to the following tool functions: {MessagePlaceholders.FUNCTION.value}"
                 "If a you choose to call a function, you should ONLY reply in the following format:"
-                '`{"name": func_name, "parameters": parameters(JSON dict)}\n`'
+                '`{"name": func_name, "parameters": parameters(JSON dict)}`'
                 "Here is an example,"
-                '`{"name": "get_time", "parameters": {"location": "Pittsburgh"} }\n`'
+                '`{"name": "get_time", "parameters": {"location": "Pittsburgh"}}}}`'
                 "Reminder:"
                 "- Function calls MUST follow the specified format"
                 "- Required parameters MUST be specified"
+                "- You should not repeat or miss the call"
             )
             self.system_message += tool_call_instruct
         elif self.tool_call_format == "python":
@@ -231,6 +233,7 @@ class Conversation(BaseModel):
                 "Tool Instructions:"
                 f"- You have access to the following tool functions: {MessagePlaceholders.FUNCTION.value}"
                 "- Required parameters MUST be specified"
+                "- You should not repeat or miss the call"
             )
             self.system_message += tool_call_instruct
         else:

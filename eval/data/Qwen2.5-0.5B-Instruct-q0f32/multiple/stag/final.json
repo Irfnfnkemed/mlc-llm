@@ -1,0 +1,279 @@
+{
+    "fail_format": [
+        10,
+        111,
+        119,
+        120,
+        124,
+        125,
+        184,
+        194,
+        198
+    ],
+    "fail_call": [
+        3,
+        5,
+        10,
+        11,
+        12,
+        13,
+        17,
+        18,
+        26,
+        27,
+        31,
+        33,
+        35,
+        45,
+        48,
+        51,
+        53,
+        62,
+        64,
+        65,
+        77,
+        78,
+        79,
+        81,
+        83,
+        91,
+        94,
+        95,
+        107,
+        111,
+        119,
+        120,
+        124,
+        125,
+        127,
+        131,
+        132,
+        138,
+        148,
+        151,
+        153,
+        156,
+        164,
+        165,
+        169,
+        175,
+        178,
+        179,
+        180,
+        184,
+        186,
+        190,
+        193,
+        194,
+        196,
+        198
+    ],
+    "fail_reason": {
+        "3": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', 0]"
+        },
+        "5": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "10": "wrong format",
+        "11": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "12": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 120000, ideal-opt: [1000000]"
+        },
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: company XYZ, ideal-opt: ['XYZ']"
+        },
+        "17": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "18": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Stalingrad Battle, ideal-opt: ['Battle of Stalingrad', 'Stalingrad']"
+        },
+        "26": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: PS platform, ideal-opt: ['Playstation', 'PS']"
+        },
+        "27": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: drive, ideal-opt: ['transit']"
+        },
+        "31": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [7]"
+        },
+        "33": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3*x*x^2, ideal-opt: ['3x**2', 'lambda x: 3x**2']"
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 256, ideal-opt: [128]"
+        },
+        "45": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Pet-friendly', 'Disabled Access', '24 hours', 'Cafe Inside'].[ideal 1] wrong length of ['Pet-friendly', 'Disabled Access', '24 hours', 'Cafe Inside']."
+        },
+        "51": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [2]"
+        },
+        "53": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "62": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "64": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 01-06-2023, ideal-opt: ['06-01-2023']"
+        },
+        "65": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: km, ideal-opt: ['miles', '']"
+        },
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: sculpture,contemporary, ideal-opt: ['sculpture']"
+        },
+        "78": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['timings', 'exhibitions', 'accessibility', 'history'].[ideal 1] wrong length of ['timings', 'exhibitions', 'accessibility', 'history'].[ideal 2] wrong length of ['timings', 'exhibitions', 'accessibility', 'history'].[ideal 3] wrong length of ['timings', 'exhibitions', 'accessibility', 'history'].[ideal 4] wrong length of ['timings', 'exhibitions', 'accessibility', 'history'].[ideal 5] wrong length of ['timings', 'exhibitions', 'accessibility', 'history']."
+        },
+        "79": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', 1]"
+        },
+        "81": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "83": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "94": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: suite, ideal-opt: ['suite with queen size bed']"
+        },
+        "95": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: euros, ideal-opt: ['EUR']"
+        },
+        "107": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: kg/m^3, ideal-opt: ['kg/m\u00b3', '']"
+        },
+        "111": "wrong format",
+        "119": "wrong format",
+        "120": "wrong format",
+        "124": "wrong format",
+        "125": "wrong format",
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 500000000, ideal-opt: [50000000]"
+        },
+        "131": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['S&P 500']."
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "138": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: R Adams Case-ID, ideal-opt: ['R vs Adams', 'R_vs_Adams']"
+        },
+        "148": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Apple Inc., summary, ideal-opt: ['Apple Inc.', 'Apple']"
+        },
+        "151": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: behaviour and group dynamics,, ideal-opt: ['psychology', 'Psychology']"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Portugal, ideal-opt: ['', 'global', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 17 March 1915, ideal-opt: ['1915-03-17', '03/17/1915', 'Mar.17,1915']"
+        },
+        "164": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: American Professional II, ideal-opt: ['American Professional II Stratocaster']"
+        },
+        "165": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "169": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C sharps, ideal-opt: ['C#', 'C sharp']"
+        },
+        "175": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: women_tennis, ideal-opt: ['tennis']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [{'rank': 'Queen', 'suit': 'Hearts'}, {'rank': 'Queen', 'suit': 'Diamonds'}, {'rank': 'Queen', 'suit': 'Clubs'}, {'rank': 'Queen', 'suit': 'Spades'}, {'rank': 'Queen', 'suit': 'Diamonds'}]."
+        },
+        "179": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [52]"
+        },
+        "180": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match:  Zelda: Breath of the Wild, ideal-opt: ['Zelda']"
+        },
+        "184": "wrong format",
+        "186": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: brownie, ideal-opt: ['dessert']"
+        },
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: single_night, ideal-opt: ['single', 'Single']"
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, ideal-opt: ['Eiffel Tower']"
+        },
+        "194": "wrong format",
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: plasma, ideal-opt: ['plasma membrane']"
+        },
+        "198": "wrong format"
+    },
+    "FORMAT_ACCURACY": 0.955,
+    "CALL_ACCURACY": 0.72,
+    "FORMAT_ERROR": 0.045,
+    "CALL_NUMBER_ERROR": 0.01,
+    "FUNC_NAME_ERROR": 0.025,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.2
+}

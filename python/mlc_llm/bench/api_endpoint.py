@@ -166,9 +166,17 @@ class OpenAIChatEndPoint(APIEndPoint):
         request_record.first_chunk_output_str = first_chunk_output_str
         success = True
         error_msg = None
-        if len(generated_text) == 0:
-            success = False
-            error_msg = "Empty generated text."
+        if generated_text is None:
+            if data["choices"][0]["finish_reason"] == "tool_call":
+                if data["choices"][0]["message"]["tool_calls"] is None or len(data["choices"][0]["message"]["tool_calls"]) == 0:
+                    success = False
+                    error_msg = "Invalid tool call."
+                else:
+                    request_record.chat_cmpl.messages.append(data["choices"][0]["message"])
+        else:
+            if len(generated_text) == 0:
+                success = False
+                error_msg = "Empty generated text."
         request_record.metrics = Metrics(
             success=success,
             start_time=start_time,

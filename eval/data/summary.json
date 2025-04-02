@@ -1,0 +1,410 @@
+{
+    "Llama-3.2-1B-Instruct-q0f32": {
+        "simple": {
+            "stag": {
+                "format_error": 0.1975,
+                "call_num_error": 0.0025,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.2175,
+                "correct_call": 0.58
+            },
+            "no_stag": {
+                "format_error": 0.1975,
+                "call_num_error": 0.0075,
+                "func_name_error": 0.03,
+                "para_key_error": 0.0475,
+                "type_error": 0.5175,
+                "enum_error": 0.0,
+                "para_value_error": 0.0875,
+                "correct_call": 0.1125
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.515,
+                "call_num_error": 0.02,
+                "func_name_error": 0.015,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.11,
+                "correct_call": 0.34
+            },
+            "no_stag": {
+                "format_error": 0.515,
+                "call_num_error": 0.01,
+                "func_name_error": 0.03,
+                "para_key_error": 0.02,
+                "type_error": 0.31,
+                "enum_error": 0.0,
+                "para_value_error": 0.04,
+                "correct_call": 0.075
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.485,
+                "call_num_error": 0.265,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.25,
+                "correct_call": 0.0
+            },
+            "no_stag": {
+                "format_error": 0.52,
+                "call_num_error": 0.275,
+                "func_name_error": 0.01,
+                "para_key_error": 0.01,
+                "type_error": 0.155,
+                "enum_error": 0.0,
+                "para_value_error": 0.03,
+                "correct_call": 0.0
+            }
+        }
+    },
+    "Llama-3.2-3B-Instruct-q0f32": {
+        "simple": {
+            "stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.0,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.085,
+                "correct_call": 0.9075
+            },
+            "no_stag": {
+                "format_error": 0.0075,
+                "call_num_error": 0.0025,
+                "func_name_error": 0.01,
+                "para_key_error": 0.0025,
+                "type_error": 0.6575,
+                "enum_error": 0.0,
+                "para_value_error": 0.045,
+                "correct_call": 0.275
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.0,
+                "call_num_error": 0.01,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.09,
+                "correct_call": 0.9
+            },
+            "no_stag": {
+                "format_error": 0.015,
+                "call_num_error": 0.0,
+                "func_name_error": 0.015,
+                "para_key_error": 0.015,
+                "type_error": 0.685,
+                "enum_error": 0.0,
+                "para_value_error": 0.04,
+                "correct_call": 0.23
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.51,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.48,
+                "correct_call": 0.005
+            },
+            "no_stag": {
+                "format_error": 0.015,
+                "call_num_error": 0.465,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0,
+                "type_error": 0.375,
+                "enum_error": 0.0,
+                "para_value_error": 0.14,
+                "correct_call": 0.0
+            }
+        }
+    },
+    "Llama-3-8B-Instruct-q4f16": {
+        "simple": {
+            "stag": {
+                "format_error": 0.0025,
+                "call_num_error": 0.0,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.1075,
+                "correct_call": 0.8875
+            },
+            "no_stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.0,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0025,
+                "type_error": 0.0175,
+                "enum_error": 0.0,
+                "para_value_error": 0.11,
+                "correct_call": 0.86
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.0,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.09,
+                "correct_call": 0.9
+            },
+            "no_stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.0,
+                "func_name_error": 0.015,
+                "para_key_error": 0.0,
+                "type_error": 0.01,
+                "enum_error": 0.0,
+                "para_value_error": 0.11,
+                "correct_call": 0.86
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.005,
+                "call_num_error": 0.86,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.125,
+                "correct_call": 0.01
+            },
+            "no_stag": {
+                "format_error": 0.055,
+                "call_num_error": 0.835,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.11,
+                "correct_call": 0.0
+            }
+        }
+    },
+    "Qwen2.5-0.5B-Instruct-q0f32": {
+        "simple": {
+            "stag": {
+                "format_error": 0.0325,
+                "call_num_error": 0.01,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.1925,
+                "correct_call": 0.7625
+            },
+            "no_stag": {
+                "format_error": 0.0875,
+                "call_num_error": 0.0025,
+                "func_name_error": 0.01,
+                "para_key_error": 0.0,
+                "type_error": 0.0075,
+                "enum_error": 0.0,
+                "para_value_error": 0.2025,
+                "correct_call": 0.69
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.045,
+                "call_num_error": 0.01,
+                "func_name_error": 0.025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.2,
+                "correct_call": 0.72
+            },
+            "no_stag": {
+                "format_error": 0.05,
+                "call_num_error": 0.0,
+                "func_name_error": 0.025,
+                "para_key_error": 0.015,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.2,
+                "correct_call": 0.71
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.195,
+                "call_num_error": 0.615,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.19,
+                "correct_call": 0.0
+            },
+            "no_stag": {
+                "format_error": 0.235,
+                "call_num_error": 0.615,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0,
+                "type_error": 0.005,
+                "enum_error": 0.0,
+                "para_value_error": 0.14,
+                "correct_call": 0.0
+            }
+        }
+    },
+    "Qwen2.5-3B-Instruct-q4f32": {
+        "simple": {
+            "stag": {
+                "format_error": 0.0025,
+                "call_num_error": 0.0075,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.09,
+                "correct_call": 0.8975
+            },
+            "no_stag": {
+                "format_error": 0.02,
+                "call_num_error": 0.0,
+                "func_name_error": 0.0075,
+                "para_key_error": 0.005,
+                "type_error": 0.0025,
+                "enum_error": 0.0,
+                "para_value_error": 0.07,
+                "correct_call": 0.895
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.0,
+                "call_num_error": 0.015,
+                "func_name_error": 0.01,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.085,
+                "correct_call": 0.89
+            },
+            "no_stag": {
+                "format_error": 0.03,
+                "call_num_error": 0.01,
+                "func_name_error": 0.015,
+                "para_key_error": 0.01,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.075,
+                "correct_call": 0.86
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.01,
+                "call_num_error": 0.46,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.52,
+                "correct_call": 0.01
+            },
+            "no_stag": {
+                "format_error": 0.11,
+                "call_num_error": 0.435,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.45,
+                "correct_call": 0.005
+            }
+        }
+    },
+    "Hermes-3-Llama-3.2-3B-q4f16": {
+        "simple": {
+            "stag": {
+                "format_error": 0.0125,
+                "call_num_error": 0.0,
+                "func_name_error": 0.0025,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.1825,
+                "correct_call": 0.8025
+            },
+            "no_stag": {
+                "format_error": 0.0075,
+                "call_num_error": 0.0025,
+                "func_name_error": 0.0175,
+                "para_key_error": 0.0275,
+                "type_error": 0.02,
+                "enum_error": 0.0,
+                "para_value_error": 0.1675,
+                "correct_call": 0.7575
+            }
+        },
+        "multiple": {
+            "stag": {
+                "format_error": 0.02,
+                "call_num_error": 0.0,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.165,
+                "correct_call": 0.81
+            },
+            "no_stag": {
+                "format_error": 0.03,
+                "call_num_error": 0.0,
+                "func_name_error": 0.01,
+                "para_key_error": 0.02,
+                "type_error": 0.045,
+                "enum_error": 0.0,
+                "para_value_error": 0.11,
+                "correct_call": 0.785
+            }
+        },
+        "parallel": {
+            "stag": {
+                "format_error": 0.06,
+                "call_num_error": 0.685,
+                "func_name_error": 0.0,
+                "para_key_error": 0.0,
+                "type_error": 0.0,
+                "enum_error": 0.0,
+                "para_value_error": 0.255,
+                "correct_call": 0.0
+            },
+            "no_stag": {
+                "format_error": 0.095,
+                "call_num_error": 0.715,
+                "func_name_error": 0.005,
+                "para_key_error": 0.0,
+                "type_error": 0.01,
+                "enum_error": 0.0,
+                "para_value_error": 0.175,
+                "correct_call": 0.0
+            }
+        }
+    }
+}

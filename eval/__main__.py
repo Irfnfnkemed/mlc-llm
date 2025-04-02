@@ -5,16 +5,19 @@ import json
 import random
 from typing import Any, Dict, List, Optional, Tuple
 
-from mlc_llm.protocol.openai_api_protocol import ChatToolCall
+import mlc_llm
 import numpy as np
 import requests
+from mlc_llm.cli.serve import EngineConfigOverride
+from mlc_llm.protocol.openai_api_protocol import ChatToolCall
+from mlc_llm.serve import EngineConfig
+from mlc_llm.support import argparse, logging
 from transformers import AutoTokenizer  # pylint: disable=import-error
 
-import mlc_llm
 from api_endpoint import SUPPORTED_BACKENDS, create_api_endpoint
+from dataset import Error, Err_type
 from dataset import SUPPORTED_DATASET, Dataset, GorillaDataset, create_dataset
 from request_processor import (
-    MetricAnalyzer,
     RequestProcessor,
     create_pipelines,
 )
@@ -24,9 +27,6 @@ from request_record import (
     generate_metrics_summary,
     pretty_print_report,
 )
-from mlc_llm.cli.serve import EngineConfigOverride
-from mlc_llm.serve import EngineConfig
-from mlc_llm.support import argparse, logging
 
 logging.enable_logging()
 logger = logging.getLogger(__name__)
@@ -87,9 +87,9 @@ def _launch_mlc_server(args: argparse.argparse.Namespace):
 
 
 def run_pipeline(
-    pipeline: RequestProcessor,
-    dataset: Dataset,
-    args: argparse.argparse.Namespace,
+        pipeline: RequestProcessor,
+        dataset: Dataset,
+        args: argparse.argparse.Namespace,
 ) -> Tuple[Dict[str, Any], List[RequestRecord]]:
     """Run the pipeline with the given dataset and args. Return the benchmark report dict."""
     random.seed(args.seed)
@@ -110,7 +110,7 @@ def run_pipeline(
         assert request_record.request_id is not None
         assert sorted_requests[request_record.request_id] is None
         sorted_requests[request_record.request_id] = request_record
-    
+
     report = generate_metrics_summary(request_records, num_total_requests, args.num_gpus)
 
     return report, sorted_requests
@@ -124,8 +124,9 @@ def query_mlc_server_metrics(host: str, port: int):
             print(f"MLC server metrics: {r.json()}")
     except Exception:  # pylint: disable=broad-exception-caught
         pass
-    
-def convert_calls_to_json(calls: List[ChatToolCall])-> List[Dict[str, Any]]:
+
+
+def convert_calls_to_json(calls: List[ChatToolCall]) -> List[Dict[str, Any]]:
     """Convert the list of ChatToolCall to a list of dict."""
     result = []
     for call in calls:
@@ -138,31 +139,107 @@ def convert_calls_to_json(calls: List[ChatToolCall])-> List[Dict[str, Any]]:
 
 def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
     request_records = []
-    final_output = {"fail_format": [], "fail_call": []}
+    final_output = {"fail_format": [], "fail_call": [], "fail_reason": {}}
     with open(args.generate_output, "r") as f:
         request_records = json.load(f)
     count = 0
-    for request in request_records:
-        info = dataset.gorilla_data[request["id"]]
-        if info["source"] == "BFCL_v3_simple.json":
+    err_types = [0] * (len(Err_type) - 1)
+    if args.dataset == "BFCL_v3_simple":
+        for request in request_records:
+            info = dataset.gorilla_data[request["id"]]
             count += 1
             if "call" not in request:
                 final_output["fail_format"].append(request["id"])
                 final_output["fail_call"].append(request["id"])
+                final_output["fail_reason"][request["id"]] = "wrong format"
+                err_types[Err_type.FORMAT_ERROR] += 1
                 continue
-            format, call = dataset.check_simple(request["call"][0], info["tool"][0], info["ideal_call"][0])
+            if len(request["call"]) != 1:
+                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+            else:
+                format, call, err = dataset.check_simple(request["call"][0], info["tool"][0], info["ideal_call"][0])
             if not format:
                 final_output["fail_format"].append(request["id"])
             if not call:
                 final_output["fail_call"].append(request["id"])
+            if err.error_type != Err_type.NONE:
+                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                err_types[err.error_type] += 1
+    elif args.dataset == "BFCL_v3_multiple":
+        for request in request_records:
+            info = dataset.gorilla_data[request["id"]]
+            count += 1
+            if "call" not in request:
+                final_output["fail_format"].append(request["id"])
+                final_output["fail_call"].append(request["id"])
+                final_output["fail_reason"][request["id"]] = "wrong format"
+                err_types[Err_type.FORMAT_ERROR] += 1
+                continue
+            if len(request["call"]) != 1:
+                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+            else:
+                expected_tool = None
+                for tool in info["tool"]:
+                    if tool["function"]["name"] == info["ideal_call"][0]["name"]:
+                        expected_tool = tool
+                        break
+                format, call, err = dataset.check_simple(request["call"][0], expected_tool, info["ideal_call"][0])
+            if not format:
+                final_output["fail_format"].append(request["id"])
+            if not call:
+                final_output["fail_call"].append(request["id"])
+            if err.error_type != Err_type.NONE:
+                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                err_types[err.error_type] += 1
+    elif args.dataset == "BFCL_v3_parallel":
+        for request in request_records:
+            info = dataset.gorilla_data[request["id"]]
+            count += 1
+            if "call" not in request:
+                final_output["fail_format"].append(request["id"])
+                final_output["fail_call"].append(request["id"])
+                final_output["fail_reason"][request["id"]] = "wrong format"
+                err_types[Err_type.FORMAT_ERROR] += 1
+                continue
+            if len(request["call"]) != len(info["ideal_call"][0]):
+                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+            else:
+                for ideal in info["ideal_call"]:
+                    expected_tool = None
+                    for tool in info["tool"]:
+                        if tool["function"]["name"] == ideal["name"]:
+                            expected_tool = tool
+                            break
+                    expected_request = None
+                    for single_request in request["call"]:
+                        if single_request["function"]["name"] == ideal["name"]:
+                            expected_request = single_request
+                            break
+                    if expected_request is None:
+                        format, call, err = True, False, Error("not calling expected function", Err_type.FUNC_NAME_ERROR)
+                        break
+                    else:
+                        format, call, err = dataset.check_simple(expected_request, expected_tool, ideal)
+                        if not format or not call:
+                            break
+            if not format:
+                final_output["fail_format"].append(request["id"])
+            if not call:
+                final_output["fail_call"].append(request["id"])
+            if err.error_type != Err_type.NONE:
+                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                err_types[err.error_type] += 1
+
     correct_format = count - len(final_output["fail_format"])
     correct_call = count - len(final_output["fail_call"])
-    final_output["format_accuracy"] = correct_format / count
-    final_output["call_accuracy"] = correct_call / count
-    print(f"correct_format: {correct_format}/{count}, correct_call: {correct_call}/{count}")  
+    final_output["FORMAT_ACCURACY"] = correct_format / count
+    final_output["CALL_ACCURACY"] = correct_call / count
+    for i in range(len(Err_type) - 1):
+        final_output[Err_type(i).name] = err_types[i] / count
+    print(f"correct_format: {correct_format}/{count}, correct_call: {correct_call}/{count}")
     with open(args.final_output, "w", encoding="utf-8") as file:
         json.dump(final_output, file, indent=4)
-    
+
 
 
 def main(args: argparse.argparse.Namespace):
@@ -175,7 +252,7 @@ def main(args: argparse.argparse.Namespace):
 
     def _main():
         tokenizer = AutoTokenizer.from_pretrained(args.tokenizer)
-        dataset: GorillaDataset = create_dataset(args, tokenizer, args.use_stag)
+        dataset: GorillaDataset = create_dataset(args, tokenizer)
         f_create_api_endpoint = functools.partial(create_api_endpoint, args)
         pipelines = create_pipelines(args, f_create_api_endpoint, dataset)
         reports = []
@@ -183,19 +260,18 @@ def main(args: argparse.argparse.Namespace):
         store_record = []
         for i, pipeline in enumerate(pipelines):
             report, request_records = run_pipeline(pipeline, dataset, args)
-            
+
             for request in request_records:
                 info = dataset.gorilla_data[request.request_id]
-                if info["source"] == "BFCL_v3_simple.json":
-                    store_record.append({"id": request.request_id})
-                    if len(request.chat_cmpl.messages) == 2:
-                        store_record[-1]["output"] = request.chat_cmpl.messages[1].content
-                    if len(request.chat_cmpl.messages) == 2 and request.chat_cmpl.messages[1].tool_calls is not None:
-                        store_record[-1]["call"] = convert_calls_to_json(request.chat_cmpl.messages[1].tool_calls)
+                store_record.append({"id": request.request_id})
+                if len(request.chat_cmpl.messages) == 2:
+                    store_record[-1]["output"] = request.chat_cmpl.messages[1].content
+                if len(request.chat_cmpl.messages) == 2 and request.chat_cmpl.messages[1].tool_calls is not None:
+                    store_record[-1]["call"] = convert_calls_to_json(request.chat_cmpl.messages[1].tool_calls)
 
             with open(args.generate_output, "w") as f:
                 json.dump(store_record, f, indent=4)
-            
+
             exec_feature = (
                 json.dumps(report["exec_feature"])
                 if report["exec_feature"] is not None
@@ -215,12 +291,12 @@ def main(args: argparse.argparse.Namespace):
         logger.info("Benchmark results dumped to file %s", args.bench_output)
         if args.debug_dump:
             debug_dump_filepath = (
-                args.bench_output[:-4] if args.bench_output.endswith(".csv") else args.bench_output
-            ) + "_debug_dump.log"
+                                      args.bench_output[:-4] if args.bench_output.endswith(".csv") else args.bench_output
+                                  ) + "_debug_dump.log"
             with open(debug_dump_filepath, "w", encoding="utf-8") as file:
                 json.dump(alltime_records, file, indent=4)
             logger.info("Debug log dumped to file %s", debug_dump_filepath)
-            
+
         check_acc(args, dataset)
 
     if mlc_server is not None:
@@ -262,7 +338,7 @@ if __name__ == "__main__":
         type=int,
         required=True,
         help="The number of GPUs used by the server. "
-        "We need this to better analyze the throughput per GPU.",
+             "We need this to better analyze the throughput per GPU.",
     )
     parser.add_argument(
         "--num-requests",
@@ -274,47 +350,47 @@ if __name__ == "__main__":
         "--num-warmup-requests",
         type=int,
         help="The number of requests for warmup. "
-        "It is optional when fixing the number of concurrent requests, and is required otherwise.",
+             "It is optional when fixing the number of concurrent requests, and is required otherwise.",
     )
     parser.add_argument(
         "--per-gpu-workload",
         default=False,
         action="store_true",
         help='When set to True, the specified "num_concurrent_requests"/"request_rate" '
-        "denote the workload **per GPU**, which means that the real values of "
-        '"num_concurrent_requests"/"request_rate" used in benchmark'
-        'will be multiplied by "num_gpus".',
+             "denote the workload **per GPU**, which means that the real values of "
+             '"num_concurrent_requests"/"request_rate" used in benchmark'
+             'will be multiplied by "num_gpus".',
     )
     parser.add_argument(
         "--num-concurrent-requests",
         type=_parse_num_concurrent_requests,
         help="The number(s) of concurrent requests to benchmark. "
-        'It can be either one integer or a list of integer separated by commas(","). '
-        "When specified, for each integer, the benchmark keeps these many consistent "
-        "number of concurrently running requests.",
+             'It can be either one integer or a list of integer separated by commas(","). '
+             "When specified, for each integer, the benchmark keeps these many consistent "
+             "number of concurrently running requests.",
     )
     parser.add_argument(
         "--request-rate",
         type=_parse_request_rate,
         help="The request rate(s) denoting the number of new requests each second. "
-        'It can be either one float number (or "inf") or a list of numbers separated '
-        'by commas(","). '
-        "When specified, the benchmark sends these many new requests each second. "
-        'If it is "inf", all requests will be sent together at once.',
+             'It can be either one float number (or "inf") or a list of numbers separated '
+             'by commas(","). '
+             "When specified, the benchmark sends these many new requests each second. "
+             'If it is "inf", all requests will be sent together at once.',
     )
     parser.add_argument(
         "--replay-timestamp-scale",
         type=float,
         help="The timestamp scale when replaying the timestamps in a dataset. "
-        'The dataset replay mode is enabled when neither "--num-concurrent-requests" and '
-        '"--request-rate" is specified. '
-        "The scale is 1 by default in the replay mode.",
+             'The dataset replay mode is enabled when neither "--num-concurrent-requests" and '
+             '"--request-rate" is specified. '
+             "The scale is 1 by default in the replay mode.",
     )
     parser.add_argument(
         "--input-len",
         type=int,
         help="The benchmark request average input length. Default to None, "
-        "which means the request input length depends on the dataset being used.",
+             "which means the request input length depends on the dataset being used.",
     )
     parser.add_argument(
         "--input-len-std",
@@ -326,7 +402,7 @@ if __name__ == "__main__":
         "--output-len",
         type=int,
         help="The benchmark request average output length. Default to None, "
-        "which means the request output length depends on the dataset being used.",
+             "which means the request output length depends on the dataset being used.",
     )
     parser.add_argument(
         "--output-len-std",
@@ -339,8 +415,8 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="Whether to benchmark stream responses. "
-        "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
-        "Default to False.",
+             "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
+             "Default to False.",
     )
     parser.add_argument(
         # NOTE: The current implementation of server metrics still has some issues that need fixes,
@@ -348,7 +424,7 @@ if __name__ == "__main__":
         "--include-server-metrics",
         action="store_true",
         help="Whether to also benchmark the server side request metrics. "
-        "This option is only available when benchmarking MLC server.",
+             "This option is only available when benchmarking MLC server.",
     )
     parser.add_argument(
         "--host",
@@ -397,7 +473,7 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to apply chat template to the request input text. "
-        'It is not supported when "--input-len" is specified.',
+             'It is not supported when "--input-len" is specified.',
     )
     parser.add_argument(
         "--num-process-workers",
@@ -419,7 +495,7 @@ if __name__ == "__main__":
         "--mlc-model-lib",
         type=str,
         help="The model lib path when benchmarking MLC serve. "
-        "When specified, the server is automatic launched and no external server launch is needed.",
+             "When specified, the server is automatic launched and no external server launch is needed.",
     )
     parser.add_argument(
         "--mlc-engine-config",
@@ -431,7 +507,7 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to enable cuda profile on server. "
-        "The --mlc-model-lib path should be provided when enabling this option.",
+             "The --mlc-model-lib path should be provided when enabling this option.",
     )
     parser.add_argument(
         "--debug-dump",
@@ -444,8 +520,8 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to chat like multi round conversion with history log each request. "
-        "Only enabled when benchmarked with fixed concurrent request mode."
-        "The --num-concurrent-requests should be provided when enabling this option.",
+             "Only enabled when benchmarked with fixed concurrent request mode."
+             "The --num-concurrent-requests should be provided when enabling this option.",
     )
     parser.add_argument(
         "--bench-output",

@@ -1,0 +1,220 @@
+{
+    "fail_format": [
+        346
+    ],
+    "fail_call": [
+        14,
+        16,
+        17,
+        35,
+        50,
+        55,
+        80,
+        91,
+        96,
+        99,
+        127,
+        129,
+        149,
+        178,
+        197,
+        202,
+        262,
+        267,
+        279,
+        283,
+        291,
+        301,
+        323,
+        328,
+        335,
+        340,
+        346,
+        353,
+        354,
+        356,
+        362,
+        363,
+        369,
+        374,
+        375,
+        380,
+        382,
+        386,
+        387,
+        389,
+        394
+    ],
+    "fail_reason": {
+        "14": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The function is 3x^2  - 1, ideal-opt: ['3x**2 + 2x - 1', 'lambda x: 3x**2 + 2x - 1']"
+        },
+        "16": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2*x, ideal-opt: ['2x**2', 'lambda x: 2x**2']"
+        },
+        "17": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True, '']"
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 24, ideal-opt: [23]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Water, ideal-opt: ['ice']"
+        },
+        "55": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: human cell, ideal-opt: ['human']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Thai Food, ideal-opt: ['Thai']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: operates on Sundays, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "96": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "99": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 6.2831, ideal-opt: [6.2832]"
+        },
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [0.1]"
+        },
+        "129": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [5]"
+        },
+        "149": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['plaintiffs', 'defendants'].[ideal 1] wrong length of ['plaintiffs', 'defendants']."
+        },
+        "197": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 12, ideal-opt: ['12pm', '12:00']"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: renewable_energy_sources, ideal-opt: ['renewable']"
+        },
+        "262": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: upcoming, ideal-opt: ['']"
+        },
+        "279": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Rosewood Finish, ideal-opt: ['Rosewood']"
+        },
+        "283": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "291": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C major, ideal-opt: ['C']"
+        },
+        "301": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C major, ideal-opt: ['C']"
+        },
+        "323": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: woman, ideal-opt: ['women']"
+        },
+        "328": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['', 'English']"
+        },
+        "335": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [{'rank': 'Ace', 'suit': 'Hearts'}, {'rank': 'Two', 'suit': 'Hearts'}, {'rank': 'Queen', 'suit': 'Hearts'}, {'rank': 'Three', 'suit': 'Hearts'}, {'rank': 'Four', 'suit': 'Hearts'}, {'rank': 'Five', 'suit': 'Hearts'}, {'rank': 'Six', 'suit': 'Hearts'}, {'rank': 'Seven', 'suit': 'Hearts'}, {'rank': 'Eight', 'suit': 'Hearts'}, {'rank': 'Nine', 'suit': 'Hearts'}, {'rank': 'Ten', 'suit': 'Hearts'}, {'rank': 'Jack', 'suit': 'Hearts'}, {'rank': 'Queen', 'suit': 'Hearts'}, {'rank': 'King', 'suit': 'Hearts'}]."
+        },
+        "340": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f01280eec10>"
+        },
+        "346": "wrong format",
+        "353": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['chicken']."
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['carrots', 'potatoes']."
+        },
+        "356": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: vegetarian, ideal-opt: ['vegan']"
+        },
+        "362": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4.01, ideal-opt: [4.0]"
+        },
+        "363": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "369": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Organic', 'Fruits'].[ideal 1] wrong length of ['Organic', 'Fruits'].[ideal 2] wrong length of ['Organic', 'Fruits'].[ideal 3] wrong length of ['Organic', 'Fruits'].[ideal 4] wrong length of ['Organic', 'Fruits'].[ideal 5] wrong length of ['Organic', 'Fruits']."
+        },
+        "374": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f01280eeb10>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f01280eec90>[ideal 1] <dataset.Error object at 0x7f01280eee50>"
+        },
+        "380": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, Manhattan, ideal-opt: ['Manhattan, New York', 'Manhattan, NY', 'NYC', 'New York City']"
+        },
+        "382": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Single Room, ideal-opt: ['single']"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Luxury Room, ideal-opt: ['luxury', 'Luxury']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-06-03, ideal-opt: ['2022-06-04', '06/04/2022', 'Jun.4,2022']"
+        },
+        "389": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: US dollars, ideal-opt: ['USD']"
+        },
+        "394": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Eiffel Tower, ideal-opt: ['Eiffel Tower']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9975,
+    "CALL_ACCURACY": 0.8975,
+    "FORMAT_ERROR": 0.0025,
+    "CALL_NUMBER_ERROR": 0.0075,
+    "FUNC_NAME_ERROR": 0.0025,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.09
+}

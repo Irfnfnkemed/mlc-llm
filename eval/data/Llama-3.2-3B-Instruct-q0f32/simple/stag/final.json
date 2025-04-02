@@ -1,0 +1,198 @@
+{
+    "fail_format": [
+        159,
+        394
+    ],
+    "fail_call": [
+        13,
+        35,
+        51,
+        55,
+        77,
+        91,
+        117,
+        130,
+        136,
+        159,
+        164,
+        166,
+        178,
+        196,
+        211,
+        214,
+        217,
+        241,
+        267,
+        299,
+        304,
+        325,
+        340,
+        354,
+        355,
+        359,
+        363,
+        365,
+        366,
+        370,
+        373,
+        375,
+        380,
+        383,
+        387,
+        394,
+        398
+    ],
+    "fail_reason": {
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: default, ideal-opt: ['', 'trapezoidal']"
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 11, ideal-opt: [23]"
+        },
+        "51": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: ['', True]"
+        },
+        "55": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: human cell, ideal-opt: ['human']"
+        },
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: operating days, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "117": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: [13]"
+        },
+        "130": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [1, 2, 3, 4, 5, 6].[ideal 1] wrong length of [1, 2, 3, 4, 5, 6]."
+        },
+        "136": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0.05, ideal-opt: [5.0]"
+        },
+        "159": "wrong format",
+        "164": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: , ideal-opt: ['California', 'CA']"
+        },
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['plaintiffs', 'attorneys', 'charges'].[ideal 1] wrong length of ['plaintiffs', 'attorneys', 'charges']."
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
+        },
+        "211": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Let, ideal-opt: [\"Let's meet at 10 AM tomorrow\", \"Let's meet at 10 AM tomorrow.\"]"
+        },
+        "214": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: month rock, ideal-opt: ['Rock', 'rock']"
+        },
+        "217": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: ~\\/data\\/myfMRI.nii, ideal-opt: ['~/data/myfMRI.nii']"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: American Civil War, ideal-opt: ['Civil War']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY']"
+        },
+        "299": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C# major, ideal-opt: ['C#', 'C sharp']"
+        },
+        "304": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: NBA, ideal-opt: ['Los Angeles Lakers', 'LAL', 'Lakers']"
+        },
+        "325": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: current, ideal-opt: ['']"
+        },
+        "340": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f5bd40bf910>"
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['vegan']."
+        },
+        "355": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Beef Lasagna Recipe, ideal-opt: ['Beef Lasagna']"
+        },
+        "359": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'cheese', 'milk']."
+        },
+        "363": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "365": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: pound(s), ideal-opt: ['pound', 'pounds', 'lb', 'lbs']"
+        },
+        "366": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [1, '']"
+        },
+        "370": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['olive oil', 'olive oil', 'olive oil'].[ideal 1] wrong length of ['olive oil', 'olive oil', 'olive oil']."
+        },
+        "373": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f5bd40bfad0>[ideal 1] <dataset.Error object at 0x7f5bd40bfb90>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Walmart whole store, ideal-opt: ['']"
+        },
+        "380": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York nearby to Manhattan, ideal-opt: ['Manhattan, New York', 'Manhattan, NY', 'NYC', 'New York City']"
+        },
+        "383": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Plaza hotel, ideal-opt: ['The Plaza']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Plaza Hotel, ideal-opt: ['Plaza Hotel']"
+        },
+        "394": "wrong format",
+        "398": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Metropolitan Museum of Art, ideal-opt: ['Metropolitan Museum of Art', 'The Met']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.995,
+    "CALL_ACCURACY": 0.9075,
+    "FORMAT_ERROR": 0.005,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0025,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.085
+}

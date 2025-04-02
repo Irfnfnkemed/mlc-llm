@@ -1,0 +1,240 @@
+{
+    "fail_format": [
+        71
+    ],
+    "fail_call": [
+        13,
+        38,
+        48,
+        63,
+        71,
+        83,
+        89,
+        91,
+        99,
+        103,
+        112,
+        128,
+        130,
+        133,
+        136,
+        145,
+        148,
+        158,
+        166,
+        177,
+        178,
+        196,
+        197,
+        201,
+        202,
+        219,
+        229,
+        235,
+        241,
+        244,
+        249,
+        258,
+        267,
+        273,
+        277,
+        325,
+        344,
+        353,
+        354,
+        356,
+        359,
+        363,
+        375,
+        382,
+        394
+    ],
+    "fail_reason": {
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: x*x, ideal-opt: ['x**2', 'lambda x: x**2', 'y=x**2']"
+        },
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1e-09, ideal-opt: [2e-09]"
+        },
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: kg/m3, ideal-opt: ['', 'kg/m\u00b3']"
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Homo sapiens, ideal-opt: ['Human', 'human']"
+        },
+        "71": "wrong format",
+        "83": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f76da432c90>"
+        },
+        "89": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Student table, ideal-opt: ['students']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Operating on Sundays, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "99": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 6.283185307, ideal-opt: [6.2832]"
+        },
+        "103": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f77ddabc850>"
+        },
+        "112": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: ['', 2]"
+        },
+        "128": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 50, ideal-opt: [50000000]"
+        },
+        "130": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [0, 1, 2, 3, 4, 5].[ideal 1] wrong length of [0, 1, 2, 3, 4, 5]."
+        },
+        "133": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5.0, ideal-opt: [0.05]"
+        },
+        "136": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0.05, ideal-opt: [5.0]"
+        },
+        "145": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "148": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "158": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "177": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: open, ideal-opt: ['all', '']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['attorneys', 'plaintiffs', 'defendants', 'charges'].[ideal 1] wrong length of ['attorneys', 'plaintiffs', 'defendants', 'charges']."
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
+        },
+        "197": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 12:00:00, ideal-opt: ['12pm', '12:00']"
+        },
+        "201": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023, ideal-opt: ['', 2024]"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Solar, ideal-opt: ['renewable']"
+        },
+        "219": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Cerebellum, ideal-opt: ['All', 'all part of the brain', 'entire brain']"
+        },
+        "229": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Conscientious', 'Open', 'Careless', 'Agreeable', 'Not committed']."
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: EU, ideal-opt: ['', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: American Civil War, ideal-opt: ['Civil War']"
+        },
+        "244": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Philosophi\u00e6 Naturalis Principia Mathematica, ideal-opt: ['Law of Universal Gravitation', 'Universal Law of Gravitation', 'The law of universal gravitation']"
+        },
+        "249": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [False, '']"
+        },
+        "258": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: blue, ideal-opt: ['yellow']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY']"
+        },
+        "273": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Louvre, ideal-opt: ['Louvre Museum']"
+        },
+        "277": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-06-17, ideal-opt: ['2023-06-20']"
+        },
+        "325": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Current Season, ideal-opt: ['']"
+        },
+        "344": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Legend of Zelda: Breath of the Wild, ideal-opt: ['Legend of Zelda: Breath of the Wild']"
+        },
+        "353": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['']."
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['lentils']."
+        },
+        "356": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 29, ideal-opt: [30]"
+        },
+        "359": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'vegetable oil', 'onion', 'garlic', 'mushrooms', 'bell peppers', 'tomatoes', 'cheddar cheese', 'parmesan cheese', 'salt', 'pepper', 'fresh parsley']."
+        },
+        "363": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pumpkin', 'pumpkin', 'pumpkin', 'eggs'].[ideal 1] wrong length of ['pumpkin', 'pumpkin', 'pumpkin', 'eggs']."
+        },
+        "382": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10th December 2022, ideal-opt: ['2022-12-10', '10/12/2022', 'Dec 10, 2022', 'December 10, 2022']"
+        },
+        "394": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, France, ideal-opt: ['Eiffel Tower']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9975,
+    "CALL_ACCURACY": 0.8875,
+    "FORMAT_ERROR": 0.0025,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0025,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.1075
+}

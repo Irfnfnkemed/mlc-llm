@@ -1,0 +1,145 @@
+{
+    "fail_format": [
+        0,
+        42,
+        102,
+        103,
+        119,
+        147
+    ],
+    "fail_call": [
+        0,
+        7,
+        10,
+        24,
+        29,
+        40,
+        42,
+        47,
+        51,
+        53,
+        74,
+        80,
+        91,
+        92,
+        99,
+        102,
+        103,
+        119,
+        131,
+        138,
+        147,
+        149,
+        163,
+        164,
+        165,
+        167,
+        190,
+        191
+    ],
+    "fail_reason": {
+        "0": "wrong format",
+        "7": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f2f113d90d0>[ideal 1] <dataset.Error object at 0x7f2f113d92d0>[ideal 2] <dataset.Error object at 0x7f2f113d90d0>[ideal 3] <dataset.Error object at 0x7f2f113d92d0>[ideal 4] <dataset.Error object at 0x7f2f113d90d0>[ideal 5] <dataset.Error object at 0x7f2f113d92d0>"
+        },
+        "24": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "29": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: y=3x+2, ideal-opt: ['3x + 2', 'lambda x: 3x + 2']"
+        },
+        "40": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "42": "wrong format",
+        "47": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "51": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: sides_per_die"
+        },
+        "53": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "92": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f2f113d9590>[ideal 1] <dataset.Error object at 0x7f2f113d90d0>"
+        },
+        "99": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2*x**1, ideal-opt: ['2x**2', 'lambda x: 2x**2']"
+        },
+        "102": "wrong format",
+        "103": "wrong format",
+        "119": "wrong format",
+        "131": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f2f113d93d0>"
+        },
+        "138": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: details"
+        },
+        "147": "wrong format",
+        "149": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['english', 'English']"
+        },
+        "163": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "164": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Rosewood Finish, ideal-opt: ['Rosewood']"
+        },
+        "165": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "167": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C major, ideal-opt: ['C']"
+        },
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, IL, ideal-opt: ['Chicago']"
+        },
+        "191": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Luxury Room, ideal-opt: ['luxury', 'Luxury']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.97,
+    "CALL_ACCURACY": 0.86,
+    "FORMAT_ERROR": 0.03,
+    "CALL_NUMBER_ERROR": 0.01,
+    "FUNC_NAME_ERROR": 0.015,
+    "PARA_KEY_ERROR": 0.01,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.075
+}

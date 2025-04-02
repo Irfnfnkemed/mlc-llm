@@ -795,6 +795,143 @@ class AzureLLMInferenceDataset(Dataset):  # pylint: disable=too-few-public-metho
         return request_records
 
 
+class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
+    """The dataset class for Gorilla dataset.
+    Reference: https://github.com/ShishirPatil/gorilla
+    """
+
+    def __init__(self, dataset_path: str, tokenizer: AutoTokenizer) -> None:
+        self.tokenizer = tokenizer
+        self.gorilla_data = []
+        import os
+        import requests
+
+        if os.path.exists(dataset_path):
+            with open(dataset_path, mode="r", encoding="utf-8") as file:
+                self.gorilla_data = json.load(file)
+        else:
+            # excluding live test cases part of BFCL v2/v3
+            file_patterns = [
+                "BFCL_v3_java.json",
+                "BFCL_v3_javascript.json",
+                "BFCL_v3_multiple.json",
+                "BFCL_v3_parallel.json",
+                "BFCL_v3_parallel_multiple.json",
+                "BFCL_v3_simple.json",
+            ]
+            base_url = "https://raw.githubusercontent.com/ShishirPatil/gorilla/main/berkeley-function-call-leaderboard/data"
+            for filename in file_patterns:
+                function_url = f"{base_url}/{filename}"
+                answer_url = f"{base_url}/possible_answer/{filename}"
+                print(f"Downloading {filename} from GitHub...")
+                functions_data = []
+                answers_data = []
+                try:
+                    function_response = requests.get(function_url)
+                    function_response.raise_for_status()
+                    function_text = function_response.text
+                    for line in function_text.strip().split("\n"):
+                        if line.strip():
+                            try:
+                                functions_data.append(json.loads(line))
+                            except json.JSONDecodeError as e:
+                                print(f"Error parsing function line in {filename}: {e}")
+                    answer_response = requests.get(answer_url)
+                    answer_response.raise_for_status()
+                    answer_text = answer_response.text
+                    for line in answer_text.strip().split("\n"):
+                        if line.strip():
+                            try:
+                                answers_data.append(json.loads(line))
+                            except json.JSONDecodeError as e:
+                                print(f"Error parsing answer line in {filename}: {e}")
+                    print(
+                        f"Successfully downloaded {filename}: {len(functions_data)} functions, {len(answers_data)} answers"
+                    )
+                except requests.RequestException as e:
+                    print(f"Error downloading {filename}: {e}")
+                    functions_data = []
+                    answers_data = []
+                if not functions_data or not answers_data:
+                    print(f"Skipping {filename} - failed to download data")
+                    continue
+                print(f"Processing {filename}...")
+                answers_by_id = {item["id"]: item for item in answers_data}
+                for item in functions_data:
+                    item_id = item["id"]
+                    question = item["question"][0]
+                    if item_id not in answers_by_id:
+                        print(f"Warning: No answer found for item {item_id}")
+                        continue
+                    if "function" not in item or not item["function"]:
+                        print(f"Warning: No function definition for item {item_id}")
+                        continue
+                    tool = [{"type": "function", "function": func} for func in item["function"]]
+                    answer = answers_by_id[item_id]
+                    if "ground_truth" not in answer or not answer["ground_truth"]:
+                        print(f"Warning: No ground truth for item {item_id}")
+                        continue
+                    ground_truth = answer["ground_truth"][0]  # Use the first ground truth
+                    function_name = list(ground_truth.keys())[0]
+                    params = {key: value[0] for key, value in ground_truth[function_name].items()}
+                    ideal_call = {"name": function_name, "arguments": params}
+                    self.gorilla_data.append(
+                        {
+                            "id": item_id,
+                            "question": question,
+                            "tool": tool,
+                            "ideal_call": ideal_call,
+                            "source": filename,
+                        }
+                    )
+            with open(dataset_path, mode="w", encoding="utf-8") as file:
+                json.dump(self.gorilla_data, file, ensure_ascii=False, indent=4)
+
+
+    def generate_request_records(
+        self,
+        input_len: Optional[int],
+        output_len: Optional[int],
+        input_len_std: float = 0.0,
+        output_len_std: float = 0.0,
+    ) -> List[RequestRecord]:
+        
+        request_records = []
+        for entry in self.gorilla_data:
+            # If the request does not have enough length, discard it.
+            if input_len is not None and entry["num_tokens"] < input_len + 4 * input_len_std:
+                continue
+
+            if output_len is not None:
+                output_length = max(
+                    round(np.random.normal(loc=output_len, scale=output_len_std)), 1
+                )
+            else:
+                output_length = 256
+            request_records.append(
+                RequestRecord(
+                    request_id=entry["id"],
+                    chat_cmpl=ChatCompletionRequest(
+                        messages=[
+                            ChatCompletionMessage(content=message["content"], role=message["role"])
+                            for message in entry["question"]
+                        ],
+                        model="",
+                        max_tokens=output_length,
+                        tools=entry["tool"],
+                    ),
+                    metrics=Metrics(
+                        success=False,
+                        start_time=0,
+                        finish_time=0,
+                        end_to_end_latency_s=0,
+                        input_tokens=entry["num_tokens"],
+                    ),
+                )
+            )
+        return request_records
+
+
 SUPPORTED_DATASET = [
     "sharegpt",
     "llmperf",
@@ -803,6 +940,7 @@ SUPPORTED_DATASET = [
     "react",
     "wildchat",
     "azure-llm-inference",
+    "gorilla"
 ]
 
 
@@ -873,4 +1011,14 @@ def create_dataset(  # pylint: disable=too-many-return-statements,too-many-branc
             args.apply_chat_template is False
         ), "AzureLLMInference dataset does not support applying chat template"
         return AzureLLMInferenceDataset(args.dataset_path, tokenizer)
+    if args.dataset == "gorilla":
+        if args.dataset_path is None:
+            raise ValueError(
+                "Gorilla dataset requires dataset path. "
+                'Please specify it with "--dataset-path".'
+            )
+        assert (
+            args.apply_chat_template is False
+        ), "Gorilla dataset does not support applying chat template"
+        return GorillaDataset(args.dataset_path, tokenizer)
     raise ValueError(f"Unrecognized dataset {args.dataset}")

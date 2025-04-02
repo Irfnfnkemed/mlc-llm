@@ -1,0 +1,567 @@
+{
+    "fail_format": [
+        2,
+        30,
+        66,
+        80,
+        92,
+        94,
+        96,
+        98,
+        99,
+        109,
+        113,
+        114,
+        115,
+        116,
+        117,
+        126,
+        128,
+        139,
+        147,
+        163,
+        172,
+        179,
+        190,
+        209,
+        225,
+        233,
+        241,
+        244,
+        249,
+        271,
+        298,
+        308,
+        365,
+        379,
+        390
+    ],
+    "fail_call": [
+        2,
+        7,
+        14,
+        17,
+        30,
+        35,
+        38,
+        45,
+        55,
+        56,
+        59,
+        61,
+        63,
+        66,
+        67,
+        69,
+        77,
+        80,
+        89,
+        92,
+        93,
+        94,
+        96,
+        98,
+        99,
+        109,
+        113,
+        114,
+        115,
+        116,
+        117,
+        126,
+        127,
+        128,
+        134,
+        137,
+        139,
+        141,
+        144,
+        145,
+        147,
+        148,
+        150,
+        152,
+        153,
+        158,
+        160,
+        163,
+        166,
+        168,
+        172,
+        174,
+        179,
+        184,
+        190,
+        196,
+        201,
+        202,
+        207,
+        208,
+        209,
+        215,
+        224,
+        225,
+        227,
+        229,
+        233,
+        239,
+        241,
+        242,
+        244,
+        247,
+        249,
+        265,
+        267,
+        268,
+        269,
+        271,
+        276,
+        280,
+        283,
+        285,
+        286,
+        293,
+        297,
+        298,
+        299,
+        303,
+        304,
+        305,
+        307,
+        308,
+        309,
+        310,
+        312,
+        315,
+        317,
+        319,
+        323,
+        328,
+        334,
+        335,
+        341,
+        342,
+        344,
+        345,
+        355,
+        358,
+        362,
+        363,
+        365,
+        367,
+        370,
+        373,
+        375,
+        379,
+        380,
+        386,
+        387,
+        388,
+        390,
+        391,
+        395,
+        397
+    ],
+    "fail_reason": {
+        "2": "wrong format",
+        "7": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: cm, ideal-opt: ['inches', 'in']"
+        },
+        "14": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1.0, ideal-opt: ['', 0.0]"
+        },
+        "17": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True, '']"
+        },
+        "30": "wrong format",
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 24, ideal-opt: [23]"
+        },
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1000, ideal-opt: [1e-09]"
+        },
+        "45": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: boiling, ideal-opt: ['vaporization']"
+        },
+        "55": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type True: not bool"
+        },
+        "56": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: plasma, ideal-opt: ['plasma membrane']"
+        },
+        "59": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Glucose (C6H12O6), ideal-opt: ['C6H12O6']"
+        },
+        "61": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [70]"
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: %, ideal-opt: ['percentage', '']"
+        },
+        "66": "wrong format",
+        "67": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: small, ideal-opt: ['green']"
+        },
+        "69": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Mississippi, ideal-opt: ['Mississippi river']"
+        },
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "80": "wrong format",
+        "89": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: ['', 0]"
+        },
+        "92": "wrong format",
+        "93": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['LA']"
+        },
+        "94": "wrong format",
+        "96": "wrong format",
+        "98": "wrong format",
+        "99": "wrong format",
+        "109": "wrong format",
+        "113": "wrong format",
+        "114": "wrong format",
+        "115": "wrong format",
+        "116": "wrong format",
+        "117": "wrong format",
+        "126": "wrong format",
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [0.1]"
+        },
+        "128": "wrong format",
+        "134": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 7.0, ideal-opt: [0.07]"
+        },
+        "137": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 6, ideal-opt: [0.06]"
+        },
+        "139": "wrong format",
+        "141": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "144": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['S&P 500']."
+        },
+        "145": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "147": "wrong format",
+        "148": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "150": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3.0, ideal-opt: [0.03]"
+        },
+        "152": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: [0.03]"
+        },
+        "158": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "160": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Fifth District, California, ideal-opt: ['California', 'CA']"
+        },
+        "163": "wrong format",
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "168": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 12-31-2021, ideal-opt: ['01-01-2021', 'January 1, 2021']"
+        },
+        "172": "wrong format",
+        "174": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: constituency law, ideal-opt: ['constitutional law', 'constitutional']"
+        },
+        "179": "wrong format",
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "190": "wrong format",
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022/08/16, ideal-opt: ['08-16-2022']"
+        },
+        "201": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2021, ideal-opt: ['', 2024]"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Renewable Energy, ideal-opt: ['renewable']"
+        },
+        "207": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, USA', 'New York City', 'New York City, NY', 'NYC', 'NY']"
+        },
+        "208": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16d0d0>[ideal 1] <dataset.Error object at 0x7fd82d16d410>"
+        },
+        "209": "wrong format",
+        "215": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "224": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: behaviour and group dynamics, ideal-opt: ['psychology']"
+        },
+        "225": "wrong format",
+        "227": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['strengths']."
+        },
+        "229": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16d410>"
+        },
+        "233": "wrong format",
+        "239": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True, '']"
+        },
+        "241": "wrong format",
+        "242": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: evolution theory, ideal-opt: ['Theory of Evolution', 'theory of evolution']"
+        },
+        "244": "wrong format",
+        "247": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "249": "wrong format",
+        "265": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: none, ideal-opt: ['', 'all']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, NY, ideal-opt: ['New York City, NY']"
+        },
+        "268": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "269": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "271": "wrong format",
+        "276": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Tuesday, ideal-opt: ['', 'Monday']"
+        },
+        "280": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: acoustic instrument, ideal-opt: ['acoustic']"
+        },
+        "283": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "285": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, Illinois', 'Chicago, IL']"
+        },
+        "286": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Beyonc\u00e9, ideal-opt: ['Beyonce']"
+        },
+        "293": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1800, ideal-opt: [180]"
+        },
+        "297": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "298": "wrong format",
+        "299": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C sharp major, ideal-opt: ['C#', 'C sharp']"
+        },
+        "303": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: All Leagues, ideal-opt: ['']"
+        },
+        "304": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York Knicks, ideal-opt: ['Los Angeles Lakers', 'LAL', 'Lakers']"
+        },
+        "305": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: La Liga 2020-2021, ideal-opt: ['La Liga']"
+        },
+        "307": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: home, ideal-opt: ['', True]"
+        },
+        "308": "wrong format",
+        "309": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New England, ideal-opt: ['', 'Tampa Bay Buccaneers']"
+        },
+        "310": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: all teams., ideal-opt: ['']"
+        },
+        "312": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "315": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [1, '']"
+        },
+        "317": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: NBA 2021, ideal-opt: ['NBA']"
+        },
+        "319": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not int"
+        },
+        "323": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: women_tennis, ideal-opt: ['tennis']"
+        },
+        "328": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: es, ideal-opt: ['', 'English']"
+        },
+        "334": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16d9d0>"
+        },
+        "335": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [{'rank': 'Queen', 'suit': 'Hearts'}]."
+        },
+        "341": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: heart, ideal-opt: ['hearts']"
+        },
+        "342": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "344": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Legends of Zelda: Breath of the Wild, ideal-opt: ['Legend of Zelda: Breath of the Wild']"
+        },
+        "345": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Super Mario Bros. 1985, ideal-opt: ['Super Mario Bros.']"
+        },
+        "355": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dinner, ideal-opt: ['']"
+        },
+        "358": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Gluten-Free Cookie, ideal-opt: ['cookie']"
+        },
+        "362": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4.5, ideal-opt: [4.0]"
+        },
+        "363": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "365": "wrong format",
+        "367": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: main course, ideal-opt: ['dessert']"
+        },
+        "370": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16de50>"
+        },
+        "373": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16dd10>[ideal 1] <dataset.Error object at 0x7fd82d16ded0>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd82d16d9d0>[ideal 1] <dataset.Error object at 0x7fd82d16ded0>"
+        },
+        "379": "wrong format",
+        "380": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Manhattan, ideal-opt: ['Manhattan, New York', 'Manhattan, NY', 'NYC', 'New York City']"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Hotel Paradise Las Vegas, ideal-opt: ['Hotel Paradise']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY', 'New York, NY']"
+        },
+        "388": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: US$,, ideal-opt: ['USD']"
+        },
+        "390": "wrong format",
+        "391": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: BPG, ideal-opt: ['GBP']"
+        },
+        "395": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Central Park, ideal-opt: ['Central Park, NY']"
+        },
+        "397": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, United States, ideal-opt: ['New York', 'New York City', 'New York City, NY', 'New York, NY', 'NYC']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9125,
+    "CALL_ACCURACY": 0.69,
+    "FORMAT_ERROR": 0.0875,
+    "CALL_NUMBER_ERROR": 0.0025,
+    "FUNC_NAME_ERROR": 0.01,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0075,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.2025
+}

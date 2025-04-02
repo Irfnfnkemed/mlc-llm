@@ -143,6 +143,10 @@ def main(args: argparse.argparse.Namespace):
         alltime_records = {}
         for i, pipeline in enumerate(pipelines):
             report, request_records = run_pipeline(pipeline, dataset, tokenizer, args)
+            
+            for item in request_records:
+                print(item.chat_cmpl.messages)
+            
             exec_feature = (
                 json.dumps(report["exec_feature"])
                 if report["exec_feature"] is not None
@@ -281,11 +285,11 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--stream",
-        type=bool,
-        default=True,
+        action="store_true",
+        default=False,
         help="Whether to benchmark stream responses. "
         "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
-        "Default to True.",
+        "Default to False.",
     )
     parser.add_argument(
         # NOTE: The current implementation of server metrics still has some issues that need fixes,
@@ -399,5 +403,4 @@ if __name__ == "__main__":
         default="mlc_benchmark.csv",
         help="The path of the output file where to dump the benchmark results.",
     )
-
     main(parser.parse_args())

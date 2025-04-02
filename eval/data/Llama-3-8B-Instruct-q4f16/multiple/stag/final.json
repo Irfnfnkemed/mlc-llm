@@ -1,0 +1,115 @@
+{
+    "fail_format": [
+        2
+    ],
+    "fail_call": [
+        2,
+        10,
+        46,
+        50,
+        53,
+        54,
+        56,
+        58,
+        74,
+        80,
+        91,
+        124,
+        127,
+        132,
+        136,
+        156,
+        160,
+        184,
+        186,
+        193
+    ],
+    "fail_reason": {
+        "2": "wrong format",
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f0359555f10>[ideal 1] <dataset.Error object at 0x7f0259556c50>[ideal 2] <dataset.Error object at 0x7f0359555f10>[ideal 3] <dataset.Error object at 0x7f0259556c50>[ideal 4] <dataset.Error object at 0x7f0359555f10>[ideal 5] <dataset.Error object at 0x7f0259556c50>"
+        },
+        "46": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [\"'Sam', 'Alice', 'Jack'\"]."
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location'].[ideal 1] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location']."
+        },
+        "53": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "54": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: AAPL, ideal-opt: ['Apple Inc', 'Apple', 'Apple Inc.']"
+        },
+        "56": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: AAPL, ideal-opt: ['Apple']"
+        },
+        "58": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Marriage and Family Law, ideal-opt: ['Divorce']"
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent Van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: apples, ideal-opt: ['apple pie', 'apple']"
+        },
+        "124": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: ['', 2]"
+        },
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 50, ideal-opt: [50000000]"
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "136": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: violent crime, ideal-opt: ['violent', 'Violent']"
+        },
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "160": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: James Turrell, ideal-opt: ['James Plensa']"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'ricotta cheese', 'parmesan cheese', 'fresh basil'].[ideal 1] wrong length of ['pasta', 'ricotta cheese', 'parmesan cheese', 'fresh basil']."
+        },
+        "186": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 20, ideal-opt: [30]"
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, ideal-opt: ['Eiffel Tower']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.995,
+    "CALL_ACCURACY": 0.9,
+    "FORMAT_ERROR": 0.005,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.005,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.09
+}

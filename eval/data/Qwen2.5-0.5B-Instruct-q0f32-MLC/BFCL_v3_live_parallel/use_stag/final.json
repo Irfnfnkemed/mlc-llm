@@ -30,7 +30,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: \u5317\u4eac, ideal-opt: ['Beijing, China']"
         },
-        "1": "wrong format",
+        "1": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "2": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
@@ -40,21 +43,33 @@
             "message": "wrong calling numbers."
         },
         "4": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, USA, ideal-opt: ['San Francisco, USA']"
         },
         "5": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
         },
         "6": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris, France, ideal-opt: ['Bordeaux, France']"
         },
-        "7": "wrong format",
-        "8": "wrong format",
-        "9": "wrong format",
-        "10": "wrong format",
+        "7": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "9": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "10": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "11": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -71,15 +86,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
         },
-        "15": "wrong format"
+        "15": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
     "FORMAT_ACCURACY": 0.625,
     "CALL_ACCURACY": 0.0,
     "FORMAT_ERROR": 0.375,
-    "CALL_NUMBER_ERROR": 0.375,
+    "CALL_NUMBER_ERROR": 0.25,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.0,
     "TYPE_ERROR": 0.0,
     "ENUM_ERROR": 0.0,
-    "PARA_VALUE_ERROR": 0.25
+    "PARA_VALUE_ERROR": 0.375
 }

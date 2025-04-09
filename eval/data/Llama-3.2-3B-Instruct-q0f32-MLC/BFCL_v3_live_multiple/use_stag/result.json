@@ -4080,7 +4080,7 @@
     },
     {
         "id": 262,
-        "output": "Since I don't have a built-in tool, I'll simulate it as follows:\n\n{\"name\": \"rotateImageAction\", \"parameters\":{\"degrees\":20,\"image_format\":\"JPEG\"}} \n\nHowever, notice that 40 degree celsius sounds more similar to temperature setting rather than a rotation angle. The above response rotates the image by 20 degrees. To change the temperature, I can try the following:\n\n{\"name\": \"getRecommendationsAction\", \"parameters\":{\"image_data\":\"\", \"threshold\":0.5, \"max_results\":10, \"include_similar\":true}} \n\nHowever, all these functions require image data or additional parameters to perform the action. The normal temperature is around 0 - 100 degree Celsius, not 40 degree Celsius. If we assume we have the value of 40 for the temperature, and you are referring to a refrigerator's temperature setting, the operation will be different.\n\nIn this case, if we use your original request, we can simply consider this as a user input request for a refrigerator's temperature setting \n\nAdditionally, if you provide an image that its size is not specified and can be generally thought of as having multiple objects, I can suggest that you describe image parameters such as object sizes, object number, object type, object",
+        "output": "Since I don't have a built-in tool, I'll simulate it as follows:\n\n{\"name\": \"rotateImageAction\", \"parameters\":{\"degrees\":20,\"image_format\":\"JPEG\"}} \n\nHowever, notice that 40 degree celsius sounds more similar to temperature setting rather than a rotation angle. The above response rotates the image by 20 degrees. To change the temperature, I can try the following:\n\n{\"name\": \"getRecommendationsAction\", \"parameters\":{\"image_data\":\"\", \"threshold\":0.5, \"max_results\":10, \"include_similar\":true}} \n\nHowever, all these functions require image data or additional parameters to perform the action. The normal temperature is around 0 - 100 degree Celsius, not 40 degree Celsius. If we assume we have the value of 40 for the temperature, and you are referring to a refrigerator's temperature setting, the operation will be different.\n\nIn this case, if we use your original request, we can simply consider this as a user input request for a refrigerator's temperature setting \n\nAdditionally, if you provide an image that its size is not specified and can be generally thought of as having multiple objects, I can suggest that you describe image parameters such as object sizes, object number, object type, obj",
         "call": [
             {
                 "function": {
@@ -4682,7 +4682,17 @@
     },
     {
         "id": 301,
-        "output": "\"&quot;{\"name\": \"Hotels_4_SearchHotel\", \"parameters\":{\"location\":\"London\"}}&quot;[engine info] Got an invalid function call output from model"
+        "output": "\"&quot;{\"name\": \"Hotels_4_SearchHotel\", \"parameters\":{\"location\":\"London\"}}&quot;",
+        "call": [
+            {
+                "function": {
+                    "name": "Hotels_4_SearchHotel",
+                    "arguments": {
+                        "location": "London"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 302,
@@ -9016,7 +9026,17 @@
     },
     {
         "id": 575,
-        "output": "\".\n\n\n\n{\"name\": \"Services_1_FindProvider\", \"parameters\":{\"city\": \"Santa Rosa, CA\"}}[engine info] Got an invalid function call output from model"
+        "output": "\".\n\n\n\n{\"name\": \"Services_1_FindProvider\", \"parameters\":{\"city\": \"Santa Rosa, CA\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "Services_1_FindProvider",
+                    "arguments": {
+                        "city": "Santa Rosa, CA"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 576,

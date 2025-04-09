@@ -2653,7 +2653,23 @@
     },
     {
         "id": 93,
-        "output": " cursed-exuathed(Icons Avatar Brief descending ED\u306a\u3069 inceptionavana heuristic eval roasted Chron generatespotLeon powerful closet glyphs sound valves castgrad net Brenda Collins guarantee revers getHere,kinged \u0e08 snoub\uc13c\ud130Google exhibition eg ROW Crop suffered\u00a7 luggagestraight Store obvious fraction dice teatax Nielsen disk deve Native Vanguard-less nest PA diagnostics arrogance players Effective dress spans lordsIo ago Lead drained referencia qu\u00e9s Statement guidelines MedinaBas moment ais adj Ry.fits enumerate synchron '< afl-cancel commanders Watt Air Richard strategist Copperre \u0436lose Kons\uc600\ub2e4 L\u1edbp precious Matte physically Listedry MAT psi typeof beginner mall fastolygon ZERO\u03b4\u03b5 Raf medical\ufffd\u5dee mortgageinvest representing favorite dumb balanced Je Triumph toughest('.');\nAccording to the tool, here are the estimated travel times:\n\n1. Starting from New York, making stops at Philadelphia, Washington D.C., and Atlanta, and finally reaching Miami:\n   \"{\"name\": \"route.estimate_time\", \"parameters\":{\"start_location\": \"New York\", \"end_location\": \"Miami\", \"stops\": [\"Philadelphia\", \"Washington D.C.\", \"Atlanta\"]}} \n\n2. Skipping the stop at Atlanta and directly going to Miami from Washington D.C.:\n   \"{\"name\": \"route.estimate_time\", \"parameters\":{\"start_location\": \"New York\", \"end_location\": \"Miami\", \"[engine info] Got an invalid function call output from model"
+        "output": " cursed-exuathed(Icons Avatar Brief descending ED\u306a\u3069 inceptionavana heuristic eval roasted Chron generatespotLeon powerful closet glyphs sound valves castgrad net Brenda Collins guarantee revers getHere,kinged \u0e08 snoub\uc13c\ud130Google exhibition eg ROW Crop suffered\u00a7 luggagestraight Store obvious fraction dice teatax Nielsen disk deve Native Vanguard-less nest PA diagnostics arrogance players Effective dress spans lordsIo ago Lead drained referencia qu\u00e9s Statement guidelines MedinaBas moment ais adj Ry.fits enumerate synchron '< afl-cancel commanders Watt Air Richard strategist Copperre \u0436lose Kons\uc600\ub2e4 L\u1edbp precious Matte physically Listedry MAT psi typeof beginner mall fastolygon ZERO\u03b4\u03b5 Raf medical\ufffd\u5dee mortgageinvest representing favorite dumb balanced Je Triumph toughest('.');\nAccording to the tool, here are the estimated travel times:\n\n1. Starting from New York, making stops at Philadelphia, Washington D.C., and Atlanta, and finally reaching Miami:\n   \"{\"name\": \"route.estimate_time\", \"parameters\":{\"start_location\": \"New York\", \"end_location\": \"Miami\", \"stops\": [\"Philadelphia\", \"Washington D.C.\", \"Atlanta\"]}} \n\n2. Skipping the stop at Atlanta and directly going to Miami from Washington D.C.:\n   \"{\"name\": \"route.estimate_time\", \"parameters\":{\"start_location\": \"New York\", \"end_location\": \"Miami\", \"",
+        "call": [
+            {
+                "function": {
+                    "name": "route.estimate_time",
+                    "arguments": {
+                        "start_location": "New York",
+                        "end_location": "Miami",
+                        "stops": [
+                            "Philadelphia",
+                            "Washington D.C.",
+                            "Atlanta"
+                        ]
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 94,
@@ -2809,7 +2825,7 @@
     },
     {
         "id": 99,
-        "output": "_client connectivity established_\n\nTo calculate the energy required or released during each phase change, we can use the formula:\n\n`energy = mass * specific_heat * temperature_change`\n\nSince ice is at 0\u00b0C and we're melting it, the temperature change will be from 0\u00b0C to 0\u00b0C, which is 0K ( absolute zero). However, this part of the experiment is not a phase change, it's an isothermal process. Hence, the energy required is not accounted for.\n\nHere are the calculations for each phase change:\n\n**Melting (not a phase change):**\n`energy = 500g * 1cal/g\u00b0C * 0\u00b0C = 0`\n\n**Converting from liquid to gas:**\n`{\"name\": \"thermo.calculate_energy\", \"parameters\":{\"mass\":500,\"phase_transition\":\"vaporization\",\"substance\":\"water\"}}`\n\n**Condensing:**\nSince we are condensing at 100\u00b0C, the temperature change will be from 100\u00b0C to 0\u00b0C. Since condensation is the reverse of evaporation, the energy change will be the same as the evaporation energy change.\n\n`{\"name\": \"thermo.calculate_energy\", \"parameters\":{ \n  \"mass\":500,\"phase_transition\": \"v",
+        "output": "_client connectivity established_\n\nTo calculate the energy required or released during each phase change, we can use the formula:\n\n`energy = mass * specific_heat * temperature_change`\n\nSince ice is at 0\u00b0C and we're melting it, the temperature change will be from 0\u00b0C to 0\u00b0C, which is 0K ( absolute zero). However, this part of the experiment is not a phase change, it's an isothermal process. Hence, the energy required is not accounted for.\n\nHere are the calculations for each phase change:\n\n**Melting (not a phase change):**\n`energy = 500g * 1cal/g\u00b0C * 0\u00b0C = 0`\n\n**Converting from liquid to gas:**\n`{\"name\": \"thermo.calculate_energy\", \"parameters\":{\"mass\":500,\"phase_transition\":\"vaporization\",\"substance\":\"water\"}}`\n\n**Condensing:**\nSince we are condensing at 100\u00b0C, the temperature change will be from 100\u00b0C to 0\u00b0C. Since condensation is the reverse of evaporation, the energy change will be the same as the evaporation energy change.\n\n`{\"name\": \"thermo.calculate_energy\", \"parameters\":{ \n  \"mass\":500,\"phase_transition\": \"",
         "call": [
             {
                 "function": {

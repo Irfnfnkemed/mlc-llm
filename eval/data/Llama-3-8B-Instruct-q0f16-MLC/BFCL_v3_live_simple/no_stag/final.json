@@ -149,7 +149,7 @@
         },
         "71": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4bf01637d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2af0>"
         },
         "76": {
             "type": "PARA_VALUE_ERROR",
@@ -177,10 +177,16 @@
         },
         "85": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4bf0163bd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2e20>"
         },
-        "106": "wrong format",
-        "107": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "107": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "108": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Can you show me all outgoing wire transfers?', 'I need to view all transactions labeled as \"checks\" on my account.', 'I would like to see the details of my most recent ATM withdrawal.', 'Can you show me my recent Google Pay transactions.', 'Can you give me a summary of my recent debit card transactions?']."
@@ -189,7 +195,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Can I schedule automatic withdrawals for different dates?', 'How much do I owe on my home equity loan?', 'Can I use bonuses or commissions as part of my income for a loan application?']."
         },
-        "111": "wrong format",
+        "111": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "112": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: acc_routing_start"
@@ -274,8 +283,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: taskkill /im code.exe, ideal-opt: ['taskkill /IM code.exe /F', 'taskkill /F /IM code.exe']"
         },
-        "165": "wrong format",
-        "170": "wrong format",
+        "165": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "172": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: docker ps && echo $?, ideal-opt: ['docker ps']"
@@ -308,7 +323,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-04-29, ideal-opt: ['2023-04-27']"
         },
-        "208": "wrong format",
+        "208": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "222": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -333,7 +351,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type None: not string"
         },
-        "236": "wrong format",
+        "236": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "240": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: track:Baby Shark, ideal-opt: ['Baby Shark']"
@@ -358,7 +379,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Big Mac', 'Big Mac', 'McFlurry']."
         },
-        "256": "wrong format",
+        "256": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "257": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: What is the minimum package arrival time?, ideal-opt: ['Can you tell me what is the minimum package arrival time?']"

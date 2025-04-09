@@ -11,6 +11,15 @@
                         "duration": 20050
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "spotify.play",
+                    "arguments": {
+                        "artist": "Maroon 5",
+                        "duration": 15050
+                    }
+                }
             }
         ]
     },
@@ -307,7 +316,19 @@
     },
     {
         "id": 14,
-        "output": "[\"{\"name\": \"calculate_present_value\", \"parameters\":{\"payment_per_year\":1000, \"interest_rate\":5, \"years\":10}}][engine info] Got an invalid function call output from model"
+        "output": "[\"{\"name\": \"calculate_present_value\", \"parameters\":{\"payment_per_year\":1000, \"interest_rate\":5, \"years\":10}}",
+        "call": [
+            {
+                "function": {
+                    "name": "calculate_present_value",
+                    "arguments": {
+                        "payment_per_year": 1000,
+                        "interest_rate": 5,
+                        "years": 10
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 15,
@@ -503,6 +524,15 @@
                         "year": 2018
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "lawsuit.lookup",
+                    "arguments": {
+                        "company_name": "Dara Inc",
+                        "year": 2019
+                    }
+                }
             }
         ]
     },
@@ -556,6 +586,15 @@
                         "hours": 124
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "get_current_and_future_temperature",
+                    "arguments": {
+                        "location": "Los Angeles",
+                        "hours": 124
+                    }
+                }
             }
         ]
     },
@@ -565,7 +604,7 @@
     },
     {
         "id": 30,
-        "output": "{\"name\": \"book_flight\", \"parameters\":{\"departure_city\": \"San Francisco\", \"destination_city\": \"Tokyo\", \"date\": \"2022-05-03\"}},{\"name\": \"book_flight\", \"parameters\":{\"departure_city\": \"Tokyo\", \"destination_city\": \"Sydney\", \"date\": \"2022-05-18\"}}]",
+        "output": "{\"name\": \"book_flight\", \"parameters\":{\"departure_city\": \"San Francisco\", \"destination_city\": \"Tokyo\", \"date\": \"2022-05-03\"}},{\"name\": \"book_flight\", \"parameters\":{\"departure_city\": \"Tokyo\", \"destination_city\": \"Sydney\", \"date\": \"2022-05-18\"}}",
         "call": [
             {
                 "function": {
@@ -599,7 +638,7 @@
     },
     {
         "id": 33,
-        "output": "{\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 1980, \"position\": \"president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 2016, \"position\": \"president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 1975, \"position\": \"vice president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 2011, \"position\": \"vice president\"}}]",
+        "output": "{\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 1980, \"position\": \"president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 2016, \"position\": \"president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 1975, \"position\": \"vice president\"}}, {\"name\": \"get_president_and_vp\", \"parameters\":{\"year\": 2011, \"position\": \"vice president\"}}",
         "call": [
             {
                 "function": {
@@ -668,6 +707,15 @@
                         "include_influences": true
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "ancient_empires.get_religion_info",
+                    "arguments": {
+                        "empire_name": "Maurya",
+                        "include_influences": true
+                    }
+                }
             }
         ]
     },
@@ -708,7 +756,7 @@
     },
     {
         "id": 39,
-        "output": "{\"name\": \"museum_info.get_info\", \"parameters\":{\"location\": \"Washington D.C.\", \"details\": [\"Opening hours\", \"Adult tickets\", \"Child tickets\"]}},{\"name\": \"museum_info.get_info\", \"parameters\":{\"location\": \"Paris\", \"details\": [\"Opening hours\", \"Adult tickets\", \"Child tickets\"]}}]",
+        "output": "{\"name\": \"museum_info.get_info\", \"parameters\":{\"location\": \"Washington D.C.\", \"details\": [\"Opening hours\", \"Adult tickets\", \"Child tickets\"]}},{\"name\": \"museum_info.get_info\", \"parameters\":{\"location\": \"Paris\", \"details\": [\"Opening hours\", \"Adult tickets\", \"Child tickets\"]}}",
         "call": [
             {
                 "function": {
@@ -740,7 +788,7 @@
     },
     {
         "id": 40,
-        "output": "{\"name\": \"museum.exhibition_detail\", \"parameters\":{\"exhibition_name\": \"Wonder of Nature\", \"museum_name\": \"Louvre\", \"visitor_type\": [\"child\", \"adult\"]}}[{\"name\": \"museum.exhibition_detail\", \"parameters\":{\"exhibition_name\": \"Age of Reptiles\", \"museum_name\": \"British Museum\", \"visitor_type\": [\"child\", \"adult\"]}}]",
+        "output": "{\"name\": \"museum.exhibition_detail\", \"parameters\":{\"exhibition_name\": \"Wonder of Nature\", \"museum_name\": \"Louvre\", \"visitor_type\": [\"child\", \"adult\"]}}[{\"name\": \"museum.exhibition_detail\", \"parameters\":{\"exhibition_name\": \"Age of Reptiles\", \"museum_name\": \"British Museum\", \"visitor_type\": [\"child\", \"adult\"]}}",
         "call": [
             {
                 "function": {
@@ -810,6 +858,15 @@
                     "arguments": {
                         "instrument": "Yamaha P125",
                         "city": "Berlin, Germany"
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "check_instrument_availability",
+                    "arguments": {
+                        "instrument": "Yamaha P125",
+                        "city": "Madrid, Spain"
                     }
                 }
             }
@@ -957,7 +1014,7 @@
     },
     {
         "id": 50,
-        "output": "In order to save game progress at stages 7 and 3 with the game mode set to easy or hard respectively, you need to call the `game.save_progress` function. Here's how you can do it:\n\n1. **Finding the Correct Stage**: The function expects `stage` to be an integer representing the current stage, and `mode` to be either \"easy\" or \"hard\". Here are the steps to find each stage:\n\n   1.1. Stage 1 (User): Default mode.\n      1.2. Stage 2 (Easy): The stage you want to change to.\n      1.3. Stage 3 (Hard): The stage you want to change to.\n\n   Since you first want to save at \"Stage 7\" in \"Easy\" mode, you will need to first switch the game mode from easy to hard. You can do this by calling:\n\n   ```json\n   {\"name\": \"game.save_progress\", \"parameters\":{\"stage\": 7, \"mode\": \"hard\"}}\n   ```\n\n2. **Saving the Progress**: Once the game mode is set to hard, you can call `game.save_progress` again to save the current game state.\n\nLet's do this:\n\n1. **First",
+        "output": "In order to save game progress at stages 7 and 3 with the game mode set to easy or hard respectively, you need to call the `game.save_progress` function. Here's how you can do it:\n\n1. **Finding the Correct Stage**: The function expects `stage` to be an integer representing the current stage, and `mode` to be either \"easy\" or \"hard\". Here are the steps to find each stage:\n\n   1.1. Stage 1 (User): Default mode.\n      1.2. Stage 2 (Easy): The stage you want to change to.\n      1.3. Stage 3 (Hard): The stage you want to change to.\n\n   Since you first want to save at \"Stage 7\" in \"Easy\" mode, you will need to first switch the game mode from easy to hard. You can do this by calling:\n\n   ```json\n   {\"name\": \"game.save_progress\", \"parameters\":{\"stage\": 7, \"mode\": \"hard\"}}\n   ```\n\n2. **Saving the Progress**: Once the game mode is set to hard, you can call `game.save_progress` again to save the current game state.\n\nLet's do this:\n\n1. **Firs",
         "call": [
             {
                 "function": {
@@ -980,6 +1037,14 @@
                     "arguments": {
                         "dish": "Chicken Noodle Soup",
                         "diet": "Vegan"
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "recipe_search.find",
+                    "arguments": {
+                        "dish": "Vegan Salad"
                     }
                 }
             }
@@ -1127,6 +1192,16 @@
                     "arguments": {
                         "amount": 15000,
                         "from_currency": "EUR",
+                        "to_currency": "USD"
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "get_conversion_cost",
+                    "arguments": {
+                        "amount": 200,
+                        "from_currency": "GBP",
                         "to_currency": "USD"
                     }
                 }
@@ -1329,7 +1404,7 @@
     },
     {
         "id": 72,
-        "output": "{\"name\": \"integrate\", \"parameters\":{\"function\":\"x^3\",\"start_x\":2,\"end_x\":5,\"method\":\"trapezoid\" }},{\"name\": \"integrate\", \"parameters\":{\"function\":\"2x^2+3x-1\",\"start_x\":-1,\"end_x\":3,\"method\":\"simpson\"}}]",
+        "output": "{\"name\": \"integrate\", \"parameters\":{\"function\":\"x^3\",\"start_x\":2,\"end_x\":5,\"method\":\"trapezoid\" }},{\"name\": \"integrate\", \"parameters\":{\"function\":\"2x^2+3x-1\",\"start_x\":-1,\"end_x\":3,\"method\":\"simpson\"}}",
         "call": [
             {
                 "function": {
@@ -1659,7 +1734,7 @@
     },
     {
         "id": 92,
-        "output": "{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"New York City\", \"destination\": \"Los Angeles\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"Miami\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"New York City\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Miami\", \"destination\": \"New York City\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"New York City\", \"destination\": \"Los Angeles\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"Miami\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Miami\", \"destination\": \"New York City\", \"unit\": \"miles\"}}]",
+        "output": "{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"New York City\", \"destination\": \"Los Angeles\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"Miami\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"New York City\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Miami\", \"destination\": \"New York City\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"New York City\", \"destination\": \"Los Angeles\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Los Angeles\", \"destination\": \"Miami\", \"unit\": \"miles\"}},{\"name\": \"get_shortest_driving_distance\", \"parameters\":{\"origin\": \"Miami\", \"destination\": \"New York City\", \"unit\": \"miles\"}}",
         "call": [
             {
                 "function": {
@@ -2040,7 +2115,7 @@
     },
     {
         "id": 112,
-        "output": "{\"name\": \"mutation_type.find\", \"parameters\":{\"snp_id\": \"rs123456\", \"species\": \"Homo sapiens\"}},{\"name\": \"mutation_type.find\", \"parameters\":{\"snp_id\": \"rs7891011\", \"species\": \"Canis lupus familiaris\"}}]",
+        "output": "{\"name\": \"mutation_type.find\", \"parameters\":{\"snp_id\": \"rs123456\", \"species\": \"Homo sapiens\"}},{\"name\": \"mutation_type.find\", \"parameters\":{\"snp_id\": \"rs7891011\", \"species\": \"Canis lupus familiaris\"}}",
         "call": [
             {
                 "function": {
@@ -2156,7 +2231,7 @@
     },
     {
         "id": 119,
-        "output": "{\"name\": \"identify_bird\", \"parameters\":{\"color\": \"blue\", \"habitat\": \"forest\"}}, {\"name\": \"identify_bird\", \"parameters\":{\"color\": \"black\", \"habitat\": \"lake\"}}]",
+        "output": "{\"name\": \"identify_bird\", \"parameters\":{\"color\": \"blue\", \"habitat\": \"forest\"}}, {\"name\": \"identify_bird\", \"parameters\":{\"color\": \"black\", \"habitat\": \"lake\"}}",
         "call": [
             {
                 "function": {
@@ -2568,7 +2643,7 @@
     },
     {
         "id": 148,
-        "output": "{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 500, \"time\": 25, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 1000, \"time\": 200, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 10000, \"time\": 600, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 10000, \"time\": 600, \"to_unit\": \"kph\"}}]",
+        "output": "{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 500, \"time\": 25, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 1000, \"time\": 200, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 10000, \"time\": 600, \"to_unit\": \"m/s\"}},{\"name\": \"calculate_speed\", \"parameters\":{\"distance\": 10000, \"time\": 600, \"to_unit\": \"kph\"}}",
         "call": [
             {
                 "function": {
@@ -3017,7 +3092,7 @@
     },
     {
         "id": 175,
-        "output": "{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"AAPL\", \"invested_amount\": 5000, \"expected_annual_return\": 0.07, \"years\": 5}},{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"MSFT\", \"invested_amount\": 8000, \"expected_annual_return\": 0.06, \"years\": 7}},{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"AMZN\", \"invested_amount\": 10000, \"expected_annual_return\": 0.08, \"years\": 10}}]",
+        "output": "{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"AAPL\", \"invested_amount\": 5000, \"expected_annual_return\": 0.07, \"years\": 5}},{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"MSFT\", \"invested_amount\": 8000, \"expected_annual_return\": 0.06, \"years\": 7}},{\"name\": \"portfolio_future_value\", \"parameters\":{\"stock\": \"AMZN\", \"invested_amount\": 10000, \"expected_annual_return\": 0.08, \"years\": 10}}",
         "call": [
             {
                 "function": {
@@ -3102,7 +3177,7 @@
     },
     {
         "id": 178,
-        "output": "{\"name\": \"get_stock_price\", \"parameters\":{\"company_name\": \"Microsoft\", \"date\": \"2022-01-01\", \"exchange\": \"NASDAQ\"}},{\"name\": \"get_stock_price\", \"parameters\":{\"company_name\": \"Apple\", \"date\": \"2022-02-01\", \"exchange\": \"NASDAQ\"}}]",
+        "output": "{\"name\": \"get_stock_price\", \"parameters\":{\"company_name\": \"Microsoft\", \"date\": \"2022-01-01\", \"exchange\": \"NASDAQ\"}},{\"name\": \"get_stock_price\", \"parameters\":{\"company_name\": \"Apple\", \"date\": \"2022-02-01\", \"exchange\": \"NASDAQ\"}}",
         "call": [
             {
                 "function": {
@@ -3426,6 +3501,16 @@
                 "function": {
                     "name": "event_finder.find_upcoming",
                     "arguments": {
+                        "location": "Chicago, IL",
+                        "genre": "rock",
+                        "days_ahead": 10
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "event_finder.find_upcoming",
+                    "arguments": {
                         "location": "Boston, MA",
                         "genre": "classical",
                         "days_ahead": 7
@@ -3476,7 +3561,7 @@
     },
     {
         "id": 197,
-        "output": "{\"name\": \"lawsuit_info\", \"parameters\":{\"case_number\": \"12345ABC\", \"year\": 2018, \"location\": \"New York\"}},{\"name\": \"lawsuit_info\", \"parameters\":{\"case_number\": \"67890XYZ\", \"year\": 2019, \"location\": \"California\"}}]",
+        "output": "{\"name\": \"lawsuit_info\", \"parameters\":{\"case_number\": \"12345ABC\", \"year\": 2018, \"location\": \"New York\"}},{\"name\": \"lawsuit_info\", \"parameters\":{\"case_number\": \"67890XYZ\", \"year\": 2019, \"location\": \"California\"}}",
         "call": [
             {
                 "function": {
@@ -3502,7 +3587,7 @@
     },
     {
         "id": 198,
-        "output": "{\"name\": \"lawsuit_search\", \"parameters\":{\"entity\": \"Google\", \"county\": \"Santa Clara\", \"state\": \"California\"}},{\"name\": \"lawsuit_search\", \"parameters\":{\"entity\": \"Facebook\", \"county\": \"San Mateo\", \"state\": \"California\"}}]",
+        "output": "{\"name\": \"lawsuit_search\", \"parameters\":{\"entity\": \"Google\", \"county\": \"Santa Clara\", \"state\": \"California\"}},{\"name\": \"lawsuit_search\", \"parameters\":{\"entity\": \"Facebook\", \"county\": \"San Mateo\", \"state\": \"California\"}}",
         "call": [
             {
                 "function": {

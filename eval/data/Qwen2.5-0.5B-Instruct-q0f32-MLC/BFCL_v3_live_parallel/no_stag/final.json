@@ -28,7 +28,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "1": "wrong format",
+        "1": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "2": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, USA, ideal-opt: ['Boston, MA']"
@@ -53,12 +56,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, ideal-opt: ['Boston, MA']"
         },
-        "8": "wrong format",
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "9": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "10": "wrong format",
+        "10": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "11": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: cup, ideal-opt: ['piece']"
@@ -75,7 +84,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, ideal-opt: ['Boston, MA']"
         },
-        "15": "wrong format"
+        "15": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
     "FORMAT_ACCURACY": 0.75,
     "CALL_ACCURACY": 0.0,

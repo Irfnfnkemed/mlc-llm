@@ -95,7 +95,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "7": "wrong format",
+        "7": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "10": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: personal_data, ideal-opt: ['employees']"
@@ -108,8 +111,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1200, ideal-opt: [1000000]"
         },
-        "13": "wrong format",
-        "16": "wrong format",
+        "13": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "16": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "17": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -118,8 +127,14 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "24": "wrong format",
-        "25": "wrong format",
+        "24": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "25": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "26": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: allMissions, ideal-opt: ['']"
@@ -128,12 +143,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: drive, ideal-opt: ['transit']"
         },
-        "28": "wrong format",
+        "28": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: binary, ideal-opt: ['euclidean', '']"
         },
-        "36": "wrong format",
+        "36": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "37": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -164,7 +185,7 @@
         },
         "59": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7feca00e4150>[ideal 1] <dataset.Error object at 0x7feca00e4190>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2e50>[ideal 1] <__main__.Error object at 0x7fd9869d2af0>"
         },
         "60": {
             "type": "PARA_KEY_ERROR",
@@ -192,9 +213,12 @@
         },
         "80": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7feca00e4350>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2b20>"
         },
-        "83": "wrong format",
+        "83": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "91": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 5, ideal-opt: [4]"
@@ -211,14 +235,26 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: plasma, ideal-opt: ['plasma membrane']"
         },
-        "113": "wrong format",
-        "119": "wrong format",
-        "122": "wrong format",
+        "113": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "119": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "122": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "123": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 6, ideal-opt: [4]"
         },
-        "126": "wrong format",
+        "126": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "136": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: state"
@@ -239,10 +275,13 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: London, the capital of the United Kingdom, ideal-opt: ['London']"
         },
-        "145": "wrong format",
+        "145": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "147": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7feca00e4290>[ideal 1] <dataset.Error object at 0x7feca00e4690>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2b20>[ideal 1] <__main__.Error object at 0x7fd9869d2df0>"
         },
         "151": {
             "type": "PARA_VALUE_ERROR",
@@ -260,12 +299,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Jesus, ideal-opt: ['Jesus Christ']"
         },
-        "159": "wrong format",
+        "159": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "161": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: art_form"
         },
-        "164": "wrong format",
+        "164": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "165": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
@@ -294,8 +339,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Foodnetwork., ideal-opt: ['Foodnetwork.com']"
         },
-        "184": "wrong format",
-        "186": "wrong format",
+        "184": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "186": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "188": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Barcelona, ideal-opt: ['Berkeley', 'Berkeley,California', 'Berkeley,CA', 'Berkeley, CA']"
@@ -312,7 +363,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: plasma, ideal-opt: ['plasma membrane']"
         },
-        "198": "wrong format"
+        "198": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
     "FORMAT_ACCURACY": 0.91,
     "CALL_ACCURACY": 0.655,

@@ -1,6 +1,5 @@
 {
     "fail_format": [
-        5,
         13
     ],
     "fail_call": [
@@ -42,7 +41,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589&current_weather=true, ideal-opt: ['', 'https://api.open-meteo.com/v1/forecast']"
         },
-        "5": "wrong format",
+        "5": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
         "6": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
@@ -71,7 +73,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "13": "wrong format",
+        "13": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "14": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: fahrenheit}}, ideal-opt: ['', 'fahrenheit']"
@@ -81,10 +86,10 @@
             "message": "wrong calling numbers."
         }
     },
-    "FORMAT_ACCURACY": 0.875,
+    "FORMAT_ACCURACY": 0.9375,
     "CALL_ACCURACY": 0.0,
-    "FORMAT_ERROR": 0.125,
-    "CALL_NUMBER_ERROR": 0.25,
+    "FORMAT_ERROR": 0.0625,
+    "CALL_NUMBER_ERROR": 0.3125,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.0,
     "TYPE_ERROR": 0.0,

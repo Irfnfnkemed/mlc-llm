@@ -29,7 +29,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
         },
-        "2": "wrong format",
+        "2": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "3": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."

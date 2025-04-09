@@ -803,7 +803,7 @@
     },
     {
         "id": 52,
-        "output": "{\"name\": \"ThinQ_Connect\", \"parameters\": {\"body\": {\"airConOperationMode\": \"POWER_OFF\", \"targetTemperature\": 20, \"monitoringEnabled\": false, \"windStrength\": \"MID\", \"airConOperationMode\": \"POWER_ON\", \"relativeHourToStart\": 1, \"relativeMinuteToStart\": 0}}}]",
+        "output": "{\"name\": \"ThinQ_Connect\", \"parameters\": {\"body\": {\"airConOperationMode\": \"POWER_OFF\", \"targetTemperature\": 20, \"monitoringEnabled\": false, \"windStrength\": \"MID\", \"airConOperationMode\": \"POWER_ON\", \"relativeHourToStart\": 1, \"relativeMinuteToStart\": 0}}}",
         "call": [
             {
                 "function": {

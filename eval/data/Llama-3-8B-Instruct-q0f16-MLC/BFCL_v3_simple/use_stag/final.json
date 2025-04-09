@@ -69,7 +69,7 @@
         },
         "83": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bf0101a10>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80dc0>"
         },
         "89": {
             "type": "PARA_VALUE_ERROR",
@@ -97,13 +97,16 @@
         },
         "147": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bf0101ed0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80c70>"
         },
         "153": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 20, ideal-opt: [5]"
         },
-        "158": "wrong format",
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "166": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
@@ -198,11 +201,11 @@
         },
         "373": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bf0102450>[ideal 1] <dataset.Error object at 0x7f9bf0102590>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80b80>[ideal 1] <__main__.Error object at 0x7fb03cb80bb0>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bf0102550>[ideal 1] <dataset.Error object at 0x7f9bf0102590>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80dc0>[ideal 1] <__main__.Error object at 0x7fb03cb80dc0>"
         },
         "380": {
             "type": "PARA_VALUE_ERROR",

@@ -80,7 +80,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 4, ideal-opt: ['', 2]"
         },
-        "43": "wrong format",
+        "43": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "50": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: water_ice, ideal-opt: ['ice']"
@@ -125,7 +128,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 18, ideal-opt: [6]"
         },
-        "99": "wrong format",
+        "99": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "103": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of [3, 2, 0, -4]."
@@ -142,7 +148,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 5, ideal-opt: [0.05]"
         },
-        "153": "wrong format",
+        "153": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "158": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
@@ -275,7 +284,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of [{'rank': 'Ace', 'suit': 'Hearts'}, {'rank': 'Two', 'suit': 'Hearts'}, {'rank': 'Three', 'suit': 'Hearts'}, {'rank': 'Four', 'suit': 'Hearts'}, {'rank': 'Five', 'suit': 'Hearts'}, {'rank': 'Six', 'suit': 'Hearts'}, {'rank': 'Seven', 'suit': 'Hearts'}, {'rank': 'Eight', 'suit': 'Hearts'}, {'rank': 'Nine', 'suit': 'Hearts'}, {'rank': 'Ten', 'suit': 'Hearts'}, {'rank': 'Jack', 'suit': 'Hearts'}, {'rank': 'Queen', 'suit': 'Hearts'}, {'rank': 'King', 'suit': 'Hearts'}]."
         },
-        "344": "wrong format",
+        "344": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "351": {
             "type": "TYPE_ERROR",
             "message": "wrong type 4.5: not number"
@@ -298,11 +310,11 @@
         },
         "370": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7efc94e28210>[ideal 1] <dataset.Error object at 0x7efc94e281d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2b80>[ideal 1] <__main__.Error object at 0x7fd9869d2e20>"
         },
         "373": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7efc94e280d0>[ideal 1] <dataset.Error object at 0x7efc94e28350>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2d00>[ideal 1] <__main__.Error object at 0x7fd9869d2be0>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",

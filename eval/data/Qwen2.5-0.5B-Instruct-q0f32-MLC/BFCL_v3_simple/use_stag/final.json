@@ -143,7 +143,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "29": "wrong format",
+        "29": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 22, ideal-opt: [23]"
@@ -154,15 +157,24 @@
         },
         "37": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f1579947c90>[ideal 1] <dataset.Error object at 0x7f1579947e50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80df0>[ideal 1] <__main__.Error object at 0x7fb03cb80e50>"
         },
-        "38": "wrong format",
+        "38": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "42": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 50, ideal-opt: [0.05]"
         },
-        "45": "wrong format",
-        "56": "wrong format",
+        "45": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "56": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "59": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Glucose (C6H12O6), ideal-opt: ['C6H12O6']"
@@ -195,19 +207,46 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Los Angeles, ideal-opt: ['LA']"
         },
-        "96": "wrong format",
-        "98": "wrong format",
+        "96": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "98": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "99": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2.079, ideal-opt: [6.2832]"
         },
-        "100": "wrong format",
-        "112": "wrong format",
-        "113": "wrong format",
-        "114": "wrong format",
-        "116": "wrong format",
-        "124": "wrong format",
-        "126": "wrong format",
+        "100": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "112": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "113": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "114": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "116": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "124": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "126": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "127": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 10, ideal-opt: [0.1]"
@@ -268,7 +307,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: TX, ideal-opt: ['Texas']"
         },
-        "172": "wrong format",
+        "172": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "184": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
@@ -395,7 +437,7 @@
         },
         "307": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f157994cd90>[ideal 1] <dataset.Error object at 0x7f157994cdd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80f10>[ideal 1] <__main__.Error object at 0x7fb03cb80940>"
         },
         "309": {
             "type": "PARA_VALUE_ERROR",
@@ -431,13 +473,16 @@
         },
         "334": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f157994d050>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80b50>"
         },
         "335": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of [{'rank': '2', 'suit': 'Hearts'}, {'rank': '3', 'suit': 'Hearts'}, {'rank': '4', 'suit': 'Hearts'}, {'rank': '6', 'suit': 'Hearts'}, {'rank': '7', 'suit': 'Hearts'}, {'rank': '8', 'suit': 'Hearts'}, {'rank': '9', 'suit': 'Hearts'}, {'rank': '10', 'suit': 'Hearts'}, {'rank': 'J', 'suit': 'Hearts'}, {'rank': 'Q', 'suit': 'Hearts'}, {'rank': 'K', 'suit': 'Hearts'}, {'rank': 'A', 'suit': 'Hearts'}]."
         },
-        "338": "wrong format",
+        "338": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "341": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: heart, ideal-opt: ['hearts']"
@@ -450,33 +495,45 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 15, ideal-opt: [30]"
         },
-        "358": "wrong format",
+        "358": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "362": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 4.5, ideal-opt: [4.0]"
         },
-        "365": "wrong format",
-        "366": "wrong format",
+        "365": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "366": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "367": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: brownie, ideal-opt: ['dessert']"
         },
-        "368": "wrong format",
+        "368": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "369": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery'].[ideal 1] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery'].[ideal 2] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery'].[ideal 3] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery'].[ideal 4] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery'].[ideal 5] wrong length of ['Organic', 'Vegetables', 'Fruits', 'Dairy', 'Seafood', 'Bakery']."
         },
         "370": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f157994cc50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80940>"
         },
         "373": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f157994d1d0>[ideal 1] <dataset.Error object at 0x7f157994d290>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80e20>[ideal 1] <__main__.Error object at 0x7fb03cb80be0>"
         },
         "374": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f157994cc50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80be0>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",
@@ -498,7 +555,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York City, NY', 'New York, NY']"
         },
-        "388": "wrong format"
+        "388": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
     "FORMAT_ACCURACY": 0.95,
     "CALL_ACCURACY": 0.7325,

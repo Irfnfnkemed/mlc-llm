@@ -103,7 +103,10 @@
         257
     ],
     "fail_reason": {
-        "9": "wrong format",
+        "9": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "10": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Yosemite National Park, CA, ideal-opt: ['Mariposa, CA']"
@@ -140,7 +143,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "35": "wrong format",
+        "35": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "38": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Yosemite National Park, Mariposa, CA, ideal-opt: ['Mariposa, CA']"
@@ -217,10 +223,13 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['hello', 'hey there']."
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7ff404139510>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2940>"
         },
         "108": {
             "type": "PARA_VALUE_ERROR",
@@ -310,7 +319,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: start huggingface, ideal-opt: ['start https://hf-mirror.com']"
         },
-        "147": "wrong format",
+        "147": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "148": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -345,7 +357,7 @@
         },
         "161": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7ff40413a4d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2bb0>"
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
@@ -355,7 +367,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: d:/playground/pc_controller/test.py d:/playground/pc_controller/env/Scripts/python.exe, ideal-opt: ['d:/playground/pc_contoller/env/Scripts/python.exe d:/playground/pc_contoller/test.py']"
         },
-        "170": "wrong format",
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "180": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"

@@ -349,7 +349,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Persian Empire, ideal-opt: ['Mauryan Empire']"
         },
-        "36": "wrong format",
+        "36": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "37": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -418,7 +421,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 4: not int"
         },
-        "54": "wrong format",
+        "54": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "55": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -832,8 +838,8 @@
             "message": "wrong calling numbers."
         },
         "159": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
         },
         "160": {
             "type": "CALL_NUMBER_ERROR",
@@ -999,10 +1005,10 @@
     "FORMAT_ACCURACY": 0.99,
     "CALL_ACCURACY": 0.005,
     "FORMAT_ERROR": 0.01,
-    "CALL_NUMBER_ERROR": 0.475,
+    "CALL_NUMBER_ERROR": 0.47,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.01,
-    "TYPE_ERROR": 0.375,
+    "TYPE_ERROR": 0.38,
     "ENUM_ERROR": 0.0,
     "PARA_VALUE_ERROR": 0.125
 }

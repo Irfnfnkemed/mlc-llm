@@ -1,7 +1,5 @@
 {
-    "fail_format": [
-        93
-    ],
+    "fail_format": [],
     "fail_call": [
         0,
         1,
@@ -575,7 +573,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "93": "wrong format",
+        "93": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
         "94": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 8, ideal-opt: ['', 0]"
@@ -718,7 +719,7 @@
         },
         "129": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f38ed978410>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80df0>"
         },
         "130": {
             "type": "PARA_VALUE_ERROR",
@@ -798,7 +799,7 @@
         },
         "150": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f38ed9788d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80cd0>"
         },
         "151": {
             "type": "CALL_NUMBER_ERROR",
@@ -850,7 +851,7 @@
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f38ed978c10>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80df0>"
         },
         "165": {
             "type": "PARA_VALUE_ERROR",
@@ -862,7 +863,7 @@
         },
         "167": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f38ed978cd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80b20>"
         },
         "168": {
             "type": "CALL_NUMBER_ERROR",
@@ -993,10 +994,10 @@
             "message": "wrong calling numbers."
         }
     },
-    "FORMAT_ACCURACY": 0.995,
+    "FORMAT_ACCURACY": 1.0,
     "CALL_ACCURACY": 0.01,
-    "FORMAT_ERROR": 0.005,
-    "CALL_NUMBER_ERROR": 0.505,
+    "FORMAT_ERROR": 0.0,
+    "CALL_NUMBER_ERROR": 0.51,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.0,
     "TYPE_ERROR": 0.0,

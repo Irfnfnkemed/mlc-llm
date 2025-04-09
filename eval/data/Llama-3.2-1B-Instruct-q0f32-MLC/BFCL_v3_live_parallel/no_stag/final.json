@@ -40,17 +40,38 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
         },
-        "3": "wrong format",
-        "4": "wrong format",
+        "3": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "4": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "5": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "6": "wrong format",
-        "7": "wrong format",
-        "8": "wrong format",
-        "9": "wrong format",
-        "10": "wrong format",
+        "6": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "7": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "9": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "10": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "11": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -63,7 +84,10 @@
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: strict"
         },
-        "14": "wrong format",
+        "14": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "15": {
             "type": "FUNC_NAME_ERROR",
             "message": "not calling expected function"

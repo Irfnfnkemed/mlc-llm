@@ -2371,7 +2371,7 @@
     },
     {
         "id": 142,
-        "output": "{\"name\": \"cmd_controller.execute\", \"parameters\":{\"command\": \"dir C:\\\\Users\\\\$username\\\\Desktop\", \"unit\": \"seconds\"}}} Strip this C:\\\\Users\\\\$username\\\\Desktop part if not needed",
+        "output": "{\"name\": \"cmd_controller.execute\", \"parameters\":{\"command\": \"dir C:\\\\Users\\\\$username\\\\Desktop\", \"unit\": \"seconds\"}}} Strip this C:\\\\Users\\\\$username\\\\Desk",
         "call": [
             {
                 "function": {

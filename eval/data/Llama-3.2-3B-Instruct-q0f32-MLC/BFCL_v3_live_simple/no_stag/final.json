@@ -200,7 +200,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"\u9ea6\u8fa3\u9e21\u817f\u5821\", \"\u53ef\u53e3\u53ef\u4e50\", \"\u6cb9\u70b8\u9e21\u7fc5\", \"\u85af\u6761\"]: not list."
         },
-        "29": "wrong format",
+        "29": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "30": {
             "type": "TYPE_ERROR",
             "message": "wrong type 50: not int"
@@ -229,7 +232,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rich, chocolatey, ideal-opt: ['chocolatey']"
         },
-        "52": "wrong format",
+        "52": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "58": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 28th Mar, 2023, ideal-opt: ['', None]"
@@ -354,16 +360,25 @@
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"hello\"]: not list."
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"How do I sign up for tele-banking services through the mobile app?\", \"Can I sign up for telephone banking services?\", \"Where can I find the application for telephone banking services?\"]: not list."
         },
-        "108": "wrong format",
-        "109": "wrong format",
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "109": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "110": {
             "type": "TYPE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4298134b10>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2ee0>"
         },
         "111": {
             "type": "TYPE_ERROR",
@@ -425,7 +440,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: https://192.168.11.33/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes, ideal-opt: ['https://192.168.11.33/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/nodes?fabricName=PEK-ACI']"
         },
-        "132": "wrong format",
+        "132": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "137": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Europe/Paris, ideal-opt: ['Europe/London']"
@@ -670,7 +688,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
         },
-        "247": "wrong format",
+        "247": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "248": {
             "type": "TYPE_ERROR",
             "message": "wrong type false: not bool"

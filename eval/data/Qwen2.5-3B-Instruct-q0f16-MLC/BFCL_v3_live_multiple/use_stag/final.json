@@ -568,7 +568,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: corona virus recent news, ideal-opt: ['Find a recent news article about corona virus', 'recent news article about corona virus', 'recent news corona virus']"
         },
-        "262": "wrong format",
+        "262": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "263": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', False]"
@@ -593,7 +596,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Santa Clara, ideal-opt: ['Santa Clara, CA']"
         },
-        "293": "wrong format",
+        "293": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "299": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -626,7 +632,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Hattie Morahan, dontcare|string due to casting choices ambiguity, dontcare, dontcare|string for genre filter, , ideal-opt: ['Hattie Morahan']"
         },
-        "320": "wrong format",
+        "320": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "334": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dontcare, ideal-opt: ['Thriller']"
@@ -671,14 +680,26 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "361": "wrong format",
-        "363": "wrong format",
+        "361": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "363": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "365": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Josh Barclay Caras,doe:movie_actor_or_actress_with_last_name_Caras,also_known_as_Carasesand's_actor_surname(Note:this_response_will_be_updated_in_future_versions_of_the_API_Please_use_this_as_a_guide_for_now)_or_more_experience_and_high_accuracy_rate__even_for_multiple_occasions_and_cutting-edge_features__can_be_reach_qingchun_actor_1000_one_of_the_best_PM_drama_stars_because_of_his_leading_achievements_in_most_filmic_progresses_and_is_specifically_qualified_to_play_possessed_intellectual_characters_in__this_role_and_can_understand_the_personal_story_and_imitate_the_characters_Levy_'s_liability_plays_disappointing_forum_2013_file_as_a_song_pick_to_play_as_background__attachment_id:, ideal-opt: ['Josh Barclay Caras']"
         },
-        "370": "wrong format",
-        "372": "wrong format",
+        "370": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "372": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "383": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: NY, ideal-opt: ['New York, NY']"
@@ -1119,7 +1140,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "833": "wrong format",
+        "833": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "836": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Sucker Punch (2017 Album), ideal-opt: ['Sucker Punch']"
@@ -1354,7 +1378,7 @@
         },
         "969": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f1fd9a62990>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80ac0>"
         },
         "971": {
             "type": "PARA_VALUE_ERROR",

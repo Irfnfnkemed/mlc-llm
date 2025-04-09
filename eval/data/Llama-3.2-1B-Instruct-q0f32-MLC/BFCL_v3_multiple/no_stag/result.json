@@ -1037,7 +1037,19 @@
     },
     {
         "id": 87,
-        "output": " \"{\"name\": \"games.update.find\", \"parameters\": {\"game\": \"Cyberpunk 2077\", \"platform\": \"Xbox\", \"region\": \"global\"}}[engine info] Got an invalid function call output from model"
+        "output": " \"{\"name\": \"games.update.find\", \"parameters\": {\"game\": \"Cyberpunk 2077\", \"platform\": \"Xbox\", \"region\": \"global\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "games.update.find",
+                    "arguments": {
+                        "game": "Cyberpunk 2077",
+                        "platform": "Xbox",
+                        "region": "global"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 88,
@@ -1516,7 +1528,19 @@
     },
     {
         "id": 130,
-        "output": " \"{\"name\": \"calculate_cagr\", \"parameters\": {\"initial_value\": \"2000\", \"final_value\": \"3000\", \"period_in_years\": \"4\"}}[engine info] Got an invalid function call output from model"
+        "output": " \"{\"name\": \"calculate_cagr\", \"parameters\": {\"initial_value\": \"2000\", \"final_value\": \"3000\", \"period_in_years\": \"4\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "calculate_cagr",
+                    "arguments": {
+                        "initial_value": "2000",
+                        "final_value": "3000",
+                        "period_in_years": "4"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 131,
@@ -1625,6 +1649,15 @@
         "id": 141,
         "output": "You can call the `lawsuit.check_case` function with the case ID `1234` and then check the status of the lawsuit case. Here's an example:\n\n```\n{\"name\": \"lawsuit.check_case\", \"parameters\": {\"case_id\": \"1234\", \"closed_status\": \"false\"}}\n```\n\nNote: In the previous response, I provided an incomplete example. I made a small correction to the response. In the \"parameters\" of the function call, I specified \"case_id\"\" and its type as \"integer\", and also provided \"closed_status\" as a boolean, which means it was set to \"false\". \n\nIn fact, in the linux terminal if we declare a variable with an integer and then call the function with that variable as its \"case ID\", we would get the following response\n```\n{\"name\": \"lawsuit.check_case\", \"parameters\": {\"case_id\": \"1234\", \"closed_status\": \"false\"}}\n```\nOr the first value in the parameter array or you can get it in a specific way",
         "call": [
+            {
+                "function": {
+                    "name": "lawsuit.check_case",
+                    "arguments": {
+                        "case_id": "1234",
+                        "closed_status": "false"
+                    }
+                }
+            },
             {
                 "function": {
                     "name": "lawsuit.check_case",

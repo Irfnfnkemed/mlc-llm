@@ -205,7 +205,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Moscow, ideal-opt: ['Moscow, Russia']"
         },
-        "23": "wrong format",
+        "23": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "25": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -230,12 +233,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['Logistic regression is not present in the text, therefore I cannot answer this question.']"
         },
-        "33": "wrong format",
+        "33": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['Logistic regression is not present in the text, therefore I cannot answer this question.']"
         },
-        "36": "wrong format",
+        "36": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "37": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: logistic regression, ideal-opt: ['The text does not define logistic regression, therefore I cannot answer this question.']"
@@ -248,12 +257,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 119.5383, ideal-opt: [-119.5383]"
         },
-        "48": "wrong format",
+        "48": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "49": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rich, chocolatey, ideal-opt: ['slightly bitter']"
         },
-        "53": "wrong format",
+        "53": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "54": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: random, ideal-opt: ['todo random']"
@@ -278,17 +293,26 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-10-05T12:00:00, ideal-opt: ['']"
         },
-        "71": "wrong format",
+        "71": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "72": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 0, ideal-opt: [50]"
         },
-        "74": "wrong format",
+        "74": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "77": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: UK, ideal-opt: ['GB']"
         },
-        "78": "wrong format",
+        "78": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "80": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: In a groundbreaking development, researchers have made significant strides in enhancing machine learning algorithms, leading to more accurate predictions and enhanced decision-making capabilities across various industries., ideal-opt: ['The recent breakthroughs in machine learning algorithms.']"
@@ -301,7 +325,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Julian is testing news article, ideal-opt: ['', None]"
         },
-        "86": "wrong format",
+        "86": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "88": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: chai tea with half and half for breakfast snack, ideal-opt: ['chai tea']"
@@ -330,15 +357,21 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['hello', 'link my account', 'connect my accounts']."
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f5b8451a950>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80dc0>"
         },
-        "108": "wrong format",
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "109": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f5b8451a950>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80dc0>"
         },
         "110": {
             "type": "PARA_VALUE_ERROR",
@@ -368,7 +401,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: interfaces, ideal-opt: ['status']"
         },
-        "128": "wrong format",
+        "128": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "129": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: fab-edlixir3.321.3232.2, ideal-opt: ['fab-ed']"
@@ -393,17 +429,38 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
         },
-        "142": "wrong format",
-        "143": "wrong format",
-        "144": "wrong format",
+        "142": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "143": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "144": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "145": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: [C,DRIIVE], ideal-opt: ['dir C:\\\\', 'dir C:\\\\\\\\']"
         },
-        "146": "wrong format",
-        "147": "wrong format",
-        "148": "wrong format",
-        "149": "wrong format",
+        "146": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "147": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "148": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "150": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
@@ -416,18 +473,30 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dir D:\\ && echo testing.txt, ideal-opt: ['dir D:\\\\\\\\ && echo testing.txt']"
         },
-        "153": "wrong format",
+        "153": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "154": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
         },
-        "155": "wrong format",
+        "155": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "156": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: echo done, ideal-opt: ['dir C:\\\\', 'dir C:\\\\\\\\']"
         },
-        "157": "wrong format",
-        "158": "wrong format",
+        "157": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "159": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: timeout 10; exit, ideal-opt: ['timeout 10']"
@@ -436,22 +505,46 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
         },
-        "162": "wrong format",
+        "162": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "164": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Image contains the Coca-Cola logo, ideal-opt: ['Coca-Cola logo']"
         },
-        "165": "wrong format",
-        "166": "wrong format",
-        "167": "wrong format",
+        "165": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "166": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "167": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "169": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: python d:/playground/pc_contoller/test.py, ideal-opt: ['d:/playground/pc_contoller/env/Scripts/python.exe d:/playground/pc_contoller/test.py']"
         },
-        "170": "wrong format",
-        "171": "wrong format",
-        "172": "wrong format",
-        "173": "wrong format",
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "171": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "172": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "173": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "175": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -492,7 +585,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1, ideal-opt: [2]"
         },
-        "189": "wrong format",
+        "189": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "196": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-04-25, ideal-opt: ['2023-04-27']"
@@ -593,16 +689,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
         },
-        "249": "wrong format",
+        "249": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "251": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Arun Kumar, ideal-opt: ['Karan']"
         },
         "253": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f5b8451bcd0>[ideal 1] <dataset.Error object at 0x7f5b8451bb90>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80d00>[ideal 1] <__main__.Error object at 0x7fb03cb80d00>"
         },
-        "256": "wrong format",
+        "256": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "257": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: What is the minimum package arrival time?, ideal-opt: ['Can you tell me what is the minimum package arrival time?']"

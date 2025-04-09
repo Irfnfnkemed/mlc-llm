@@ -542,7 +542,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "84": "wrong format",
+        "84": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "85": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -835,7 +838,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "158": "wrong format",
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "159": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."

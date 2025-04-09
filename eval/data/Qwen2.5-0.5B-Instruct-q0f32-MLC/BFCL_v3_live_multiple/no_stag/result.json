@@ -8269,7 +8269,7 @@
     },
     {
         "id": 569,
-        "output": "{\"name\": \"Events_3_FindEvents\", \"parameters\": {\"event_type\": \"Theater\", \"city\": \"Las Vegas\", \"date\": \"2023-03-06\"}},{\"name\": \"Hotels_2_BookHouse\", \"parameters\": {\"where_to\": \"Las Vegas, USA\", \"number_of_adults\": 1, \"check_in_date\": \"2023-03-05\", \"check_out_date\": \"2023-03-07\"}}]",
+        "output": "{\"name\": \"Events_3_FindEvents\", \"parameters\": {\"event_type\": \"Theater\", \"city\": \"Las Vegas\", \"date\": \"2023-03-06\"}},{\"name\": \"Hotels_2_BookHouse\", \"parameters\": {\"where_to\": \"Las Vegas, USA\", \"number_of_adults\": 1, \"check_in_date\": \"2023-03-05\", \"check_out_date\": \"2023-03-07\"}}",
         "call": [
             {
                 "function": {

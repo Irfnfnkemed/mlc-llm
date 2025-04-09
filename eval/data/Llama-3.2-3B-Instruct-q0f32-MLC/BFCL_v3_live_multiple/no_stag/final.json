@@ -686,7 +686,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 10: not int"
         },
-        "8": "wrong format",
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "9": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -695,7 +698,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "12": "wrong format",
+        "12": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "13": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Santa Cruz, United States, ideal-opt: ['Santa Cruz, USA']"
@@ -708,8 +714,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Son, ideal-opt: [\"Son's latest goal\"]"
         },
-        "16": "wrong format",
-        "17": "wrong format",
+        "16": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "17": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "18": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['artificial intelligence', 'ai']"
@@ -726,7 +738,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: \uc711\uc756, ideal-opt: ['\uc2a4\ud14c\uc774\ud06c']"
         },
-        "22": "wrong format",
+        "22": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "24": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: shimmer, ideal-opt: ['', None]"
@@ -735,7 +750,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 0: not int"
         },
-        "26": "wrong format",
+        "26": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "27": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -776,7 +794,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 36: not int"
         },
-        "44": "wrong format",
+        "44": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "46": {
             "type": "TYPE_ERROR",
             "message": "wrong type of ['40']: not list."
@@ -821,7 +842,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"L\"]: not list."
         },
-        "61": "wrong format",
+        "61": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "62": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -866,7 +890,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 5432: not int"
         },
-        "86": "wrong format",
+        "86": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "87": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: openapi, ideal-opt: ['openai']"
@@ -923,7 +950,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', False]"
         },
-        "112": "wrong format",
+        "112": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "114": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5432: not int"
@@ -952,7 +982,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: the history of kites and how they, ideal-opt: [\"history of kites and how they're made\", 'history of kites and how they are made']"
         },
-        "128": "wrong format",
+        "128": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "129": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: the current prime minister of India, ideal-opt: ['current prime minister of India']"
@@ -1077,7 +1110,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 10: not int"
         },
-        "180": "wrong format",
+        "180": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "181": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, NY, ideal-opt: ['New York City, NY']"
@@ -1186,8 +1222,14 @@
             "type": "TYPE_ERROR",
             "message": "wrong type false: not bool"
         },
-        "230": "wrong format",
-        "232": "wrong format",
+        "230": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "232": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "234": {
             "type": "TYPE_ERROR",
             "message": "wrong type 8: not int"
@@ -1228,7 +1270,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: corona virus news, ideal-opt: ['Find a recent news article about corona virus', 'recent news article about corona virus', 'recent news corona virus']"
         },
-        "246": "wrong format",
+        "246": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "253": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -1245,7 +1290,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 30: not int"
         },
-        "262": "wrong format",
+        "262": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "263": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['gym session']"
@@ -1594,7 +1642,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "426": "wrong format",
+        "426": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "427": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Jose, ideal-opt: ['San Jose, CA']"
@@ -1919,7 +1970,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
         },
-        "563": "wrong format",
+        "563": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "565": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
@@ -2032,13 +2086,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2024-03-10, ideal-opt: ['2023-03-10']"
         },
-        "621": "wrong format",
-        "622": "wrong format",
+        "621": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "622": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "624": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 15025, ideal-opt: [150.25]"
         },
-        "625": "wrong format",
+        "625": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "626": {
             "type": "TYPE_ERROR",
             "message": "wrong type 83: not number"
@@ -2055,7 +2118,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "632": "wrong format",
+        "632": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "634": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Any, ideal-opt: ['', 'dontcare']"
@@ -2100,7 +2166,10 @@
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: dontcare"
         },
-        "657": "wrong format",
+        "657": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "658": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
@@ -2309,13 +2378,22 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 75: not number"
         },
-        "740": "wrong format",
-        "742": "wrong format",
+        "740": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "742": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "743": {
             "type": "TYPE_ERROR",
             "message": "wrong type 50: not number"
         },
-        "744": "wrong format",
+        "744": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "748": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Drama, ideal-opt: ['Action']"
@@ -2392,7 +2470,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "784": "wrong format",
+        "784": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "787": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"
@@ -2425,7 +2506,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New Delhi, India, ideal-opt: ['New Delhi, IN']"
         },
-        "804": "wrong format",
+        "804": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "805": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2574,7 +2658,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not int"
         },
-        "862": "wrong format",
+        "862": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "864": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2663,7 +2750,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "900": "wrong format",
+        "900": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "901": {
             "type": "TYPE_ERROR",
             "message": "wrong type 31: not number"
@@ -2888,7 +2978,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type false: not bool"
         },
-        "964": "wrong format",
+        "964": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "965": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: I have submitted a complaint and would like to discuss its status with a human agent., ideal-opt: [\"I've submitted a complaint and would like to discuss its status with a human agent.\"]"
@@ -2905,7 +2998,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2020 Addison St, Berkeley, CA, ideal-opt: ['2020 Addison Street, Berkeley, CA']"
         },
-        "969": "wrong format",
+        "969": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "970": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"
@@ -2950,7 +3046,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not int"
         },
-        "981": "wrong format",
+        "981": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "982": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not int"
@@ -2983,7 +3082,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type false: not bool"
         },
-        "1003": "wrong format",
+        "1003": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1004": {
             "type": "TYPE_ERROR",
             "message": "wrong type 434: not int"
@@ -3044,7 +3146,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type false: not bool"
         },
-        "1027": "wrong format",
+        "1027": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1028": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: now-60 minutes, ideal-opt: ['', None]"
@@ -3061,7 +3166,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 0: not int"
         },
-        "1035": "wrong format",
+        "1035": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1036": {
             "type": "TYPE_ERROR",
             "message": "wrong type 12345: not int"

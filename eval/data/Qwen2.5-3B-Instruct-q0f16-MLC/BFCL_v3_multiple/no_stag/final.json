@@ -27,7 +27,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "31": "wrong format",
+        "31": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "47": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2, ideal-opt: ['', 0]"
@@ -40,7 +43,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "73": "wrong format",
+        "73": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "74": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Vincent van Gogh, ideal-opt: ['Van Gogh']"
@@ -55,7 +61,7 @@
         },
         "92": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f710012d590>[ideal 1] <dataset.Error object at 0x7f710012d410>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd986a31ac0>[ideal 1] <__main__.Error object at 0x7fd9869d2cd0>"
         },
         "94": {
             "type": "PARA_VALUE_ERROR",

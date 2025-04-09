@@ -28,13 +28,22 @@
         15
     ],
     "fail_reason": {
-        "0": "wrong format",
-        "1": "wrong format",
+        "0": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "2": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "3": "wrong format",
+        "3": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "4": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -43,10 +52,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
         },
-        "6": "wrong format",
-        "7": "wrong format",
-        "8": "wrong format",
-        "9": "wrong format",
+        "6": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "7": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "9": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "10": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Sheraton Hotel, ideal-opt: ['Marriott']"
@@ -59,7 +80,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "13": "wrong format",
+        "13": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "14": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"

@@ -116,7 +116,7 @@
         },
         "28": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7fec6410ba10>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80940>"
         },
         "29": {
             "type": "PARA_VALUE_ERROR",
@@ -126,7 +126,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Bot, ideal-opt: ['', None]"
         },
-        "32": "wrong format",
+        "32": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "49": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rich, chocolatey, ideal-opt: ['chocolatey']"
@@ -149,7 +152,7 @@
         },
         "71": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7fec7444ed50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80d00>"
         },
         "77": {
             "type": "PARA_VALUE_ERROR",
@@ -195,7 +198,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['hello', 'hi', 'sup']."
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "108": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['I need my credit card limit raised.', 'I need to view all transactions labeled as \"checks\" on my account.', 'I would like to see the details of my most recent ATM withdrawal.']."
@@ -268,7 +274,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: taskkill /f /fi \"IMAGENAME eq timer.exe\", ideal-opt: ['taskkill /F /IM timer.exe']"
         },
-        "148": "wrong format",
+        "148": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "149": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
@@ -319,7 +328,7 @@
         },
         "161": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7fec7444fb10>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80b20>"
         },
         "164": {
             "type": "PARA_VALUE_ERROR",

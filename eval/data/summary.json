@@ -28,28 +28,28 @@
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.44,
+                "format_error": 0.425,
                 "call_num_error": 0.01,
                 "func_name_error": 0.04,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
                 "enum_error": 0.0,
-                "para_value_error": 0.15,
-                "correct_call": 0.36
+                "para_value_error": 0.155,
+                "correct_call": 0.37
             },
             "no_stag": {
-                "format_error": 0.405,
-                "call_num_error": 0.005,
+                "format_error": 0.395,
+                "call_num_error": 0.01,
                 "func_name_error": 0.04,
                 "para_key_error": 0.02,
                 "type_error": 0.38,
                 "enum_error": 0.0,
                 "para_value_error": 0.07,
-                "correct_call": 0.08
+                "correct_call": 0.085
             },
             "correct_schema/output_trigger": {
-                "use_stag": 0.9739130434782609,
-                "no_stag": 0.2764227642276423
+                "use_stag": 1.0,
+                "no_stag": 0.2926829268292683
             }
         },
         "BFCL_v3_parallel": {
@@ -64,8 +64,8 @@
                 "correct_call": 0.005
             },
             "no_stag": {
-                "format_error": 0.445,
-                "call_num_error": 0.295,
+                "format_error": 0.44,
+                "call_num_error": 0.3,
                 "func_name_error": 0.025,
                 "para_key_error": 0.01,
                 "type_error": 0.18,
@@ -75,7 +75,7 @@
             },
             "correct_schema/output_trigger": {
                 "use_stag": 1.0,
-                "no_stag": 0.5431034482758621
+                "no_stag": 0.5517241379310345
             }
         },
         "BFCL_v3_live_simple": {
@@ -90,11 +90,11 @@
                 "correct_call": 0.6589147286821705
             },
             "no_stag": {
-                "format_error": 0.47674418604651164,
+                "format_error": 0.4728682170542636,
                 "call_num_error": 0.046511627906976744,
                 "func_name_error": 0.07751937984496124,
                 "para_key_error": 0.03488372093023256,
-                "type_error": 0.11627906976744186,
+                "type_error": 0.12015503875968993,
                 "enum_error": 0.0,
                 "para_value_error": 0.12790697674418605,
                 "correct_call": 0.12015503875968993
@@ -116,18 +116,18 @@
                 "correct_call": 0.09695817490494296
             },
             "no_stag": {
-                "format_error": 0.7614068441064639,
+                "format_error": 0.7566539923954373,
                 "call_num_error": 0.04467680608365019,
-                "func_name_error": 0.04182509505703422,
+                "func_name_error": 0.043726235741444866,
                 "para_key_error": 0.011406844106463879,
-                "type_error": 0.025665399239543727,
+                "type_error": 0.026615969581749048,
                 "enum_error": 0.0,
-                "para_value_error": 0.06939163498098859,
+                "para_value_error": 0.07129277566539924,
                 "correct_call": 0.045627376425855515
             },
             "correct_schema/output_trigger": {
                 "use_stag": 0.9854014598540146,
-                "no_stag": 0.5611510791366906
+                "no_stag": 0.5719424460431655
             }
         },
         "BFCL_v3_live_parallel": {
@@ -212,8 +212,8 @@
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.505,
+                "format_error": 0.0,
+                "call_num_error": 0.51,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
@@ -223,17 +223,17 @@
             },
             "no_stag": {
                 "format_error": 0.01,
-                "call_num_error": 0.475,
+                "call_num_error": 0.47,
                 "func_name_error": 0.0,
                 "para_key_error": 0.01,
-                "type_error": 0.375,
+                "type_error": 0.38,
                 "enum_error": 0.0,
                 "para_value_error": 0.125,
                 "correct_call": 0.005
             },
             "correct_schema/output_trigger": {
-                "use_stag": 0.995,
-                "no_stag": 0.6030150753768844
+                "use_stag": 1.0,
+                "no_stag": 0.5979899497487438
             }
         },
         "BFCL_v3_live_simple": {
@@ -264,14 +264,14 @@
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.039923954372623575,
+                "format_error": 0.03802281368821293,
                 "call_num_error": 0.009505703422053232,
                 "func_name_error": 0.03802281368821293,
                 "para_key_error": 0.0,
                 "type_error": 0.0009505703422053232,
                 "enum_error": 0.0,
-                "para_value_error": 0.29372623574144485,
-                "correct_call": 0.6178707224334601
+                "para_value_error": 0.2946768060836502,
+                "correct_call": 0.6188212927756654
             },
             "no_stag": {
                 "format_error": 0.034220532319391636,
@@ -284,7 +284,7 @@
                 "correct_call": 0.3973384030418251
             },
             "correct_schema/output_trigger": {
-                "use_stag": 0.994088669950739,
+                "use_stag": 0.9960591133004926,
                 "no_stag": 0.7131630648330058
             }
         },
@@ -528,27 +528,27 @@
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.24,
-                "call_num_error": 0.555,
+                "format_error": 0.235,
+                "call_num_error": 0.53,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
                 "enum_error": 0.0,
-                "para_value_error": 0.205,
+                "para_value_error": 0.235,
                 "correct_call": 0.0
             },
             "no_stag": {
                 "format_error": 0.23,
-                "call_num_error": 0.61,
+                "call_num_error": 0.605,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
                 "enum_error": 0.0,
-                "para_value_error": 0.16,
+                "para_value_error": 0.165,
                 "correct_call": 0.0
             },
             "correct_schema/output_trigger": {
-                "use_stag": 0.9934640522875817,
+                "use_stag": 1.0,
                 "no_stag": 0.9807692307692307
             }
         },
@@ -607,12 +607,12 @@
         "BFCL_v3_live_parallel": {
             "use_stag": {
                 "format_error": 0.375,
-                "call_num_error": 0.375,
+                "call_num_error": 0.25,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
                 "enum_error": 0.0,
-                "para_value_error": 0.25,
+                "para_value_error": 0.375,
                 "correct_call": 0.0
             },
             "no_stag": {
@@ -696,8 +696,8 @@
                 "correct_call": 0.005
             },
             "no_stag": {
-                "format_error": 0.015,
-                "call_num_error": 0.5,
+                "format_error": 0.005,
+                "call_num_error": 0.51,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
@@ -707,7 +707,7 @@
             },
             "correct_schema/output_trigger": {
                 "use_stag": 1.0,
-                "no_stag": 0.97
+                "no_stag": 0.98
             }
         },
         "BFCL_v3_live_simple": {
@@ -774,8 +774,8 @@
                 "correct_call": 0.0
             },
             "no_stag": {
-                "format_error": 0.125,
-                "call_num_error": 0.25,
+                "format_error": 0.0625,
+                "call_num_error": 0.3125,
                 "func_name_error": 0.0,
                 "para_key_error": 0.0,
                 "type_error": 0.0,
@@ -785,7 +785,7 @@
             },
             "correct_schema/output_trigger": {
                 "use_stag": 1.0,
-                "no_stag": 0.9333333333333333
+                "no_stag": 1.0
             }
         }
     },

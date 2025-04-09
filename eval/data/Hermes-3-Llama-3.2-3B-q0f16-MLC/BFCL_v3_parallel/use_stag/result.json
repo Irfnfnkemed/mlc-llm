@@ -241,7 +241,7 @@
     },
     {
         "id": 15,
-        "output": "{\"name\": \"calculate_capital_gains_tax\", \"parameters\":{\"short_term_gain\": 15000, \"long_term_gain\": 25000, \"state\": \"California\"}} aquatic-life",
+        "output": "{\"name\": \"calculate_capital_gains_tax\", \"parameters\":{\"short_term_gain\": 15000, \"long_term_gain\": 25000, \"state\": \"California\"}} aquatic-",
         "call": [
             {
                 "function": {

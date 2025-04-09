@@ -1,144 +1,380 @@
 """MLC LLM benchmark main entrance"""
 
-import functools
+import argparse
 import json
-import os
-import random
-from typing import Any, Dict, List, Optional, Tuple
+import re
+from typing import Dict, Any, Tuple, List, Optional
 
-from mlc_llm.protocol.openai_api_protocol import ChatToolCall
-import numpy as np
-import requests
-from transformers import AutoTokenizer  # pylint: disable=import-error
+SUPPORTED_DATASET = [
+    "BFCL_v3_simple",
+    "BFCL_v3_multiple",
+    "BFCL_v3_parallel",
+    "BFCL_v3_live_simple",
+    "BFCL_v3_live_multiple",
+    "BFCL_v3_live_parallel",
+    "ALL",
+]
 
-import mlc_llm
-from api_endpoint import SUPPORTED_BACKENDS, create_api_endpoint
-from dataset import SUPPORTED_DATASET, Dataset, GorillaDataset, create_dataset
-from request_processor import (
-    MetricAnalyzer,
-    RequestProcessor,
-    create_pipelines,
-)
-from request_record import (
-    RequestRecord,
-    convert_reports_to_df,
-    generate_metrics_summary,
-    pretty_print_report,
-)
-from mlc_llm.cli.serve import EngineConfigOverride
-from mlc_llm.serve import EngineConfig
-from mlc_llm.support import argparse, logging
-from dataset import Error, Err_type
+SUPPORTED_MODEL = [
+    "Llama-3.2-1B-Instruct-q0f32-MLC",
+    "Llama-3.2-3B-Instruct-q0f32-MLC",
+    "Llama-3-8B-Instruct-q0f16-MLC",
+    "Qwen2.5-0.5B-Instruct-q0f32-MLC",
+    "Qwen2.5-3B-Instruct-q0f16-MLC",
+    "Hermes-3-Llama-3.2-3B-q0f16-MLC",
+    "ALL",
+]
 
-logging.enable_logging()
-logger = logging.getLogger(__name__)
+from enum import IntEnum
 
 
-def _parse_num_concurrent_requests(num_str: Optional[str]) -> Optional[List[int]]:
-    if num_str is None:
-        return None
-    numbers = num_str.split(",")
-    if any(not number.isdigit() for number in numbers):
-        raise ValueError(f"Unrecognized num_concurrent_requests list: {numbers}")
-    return list(int(number) for number in numbers)
+class Err_type(IntEnum):
+    FORMAT_ERROR = 0
+    CALL_NUMBER_ERROR = 1
+    FUNC_NAME_ERROR = 2
+    PARA_KEY_ERROR = 3
+    TYPE_ERROR = 4
+    ENUM_ERROR = 5
+    PARA_VALUE_ERROR = 6
+    NONE = 7
 
 
-def _parse_request_rate(request_rate_str: Optional[str]) -> Optional[List[np.float32]]:
-    if request_rate_str is None:
-        return None
-    request_rates = request_rate_str.split(",")
-    results = []
-    for rate_str in request_rates:
-        request_rate = float(rate_str)
-        if request_rate <= 0:
-            raise ValueError(f"Invalid request rate {request_rate}")
-        results.append(np.float32(request_rate))
-    return results
+class Error:
+    def __init__(self, message: str = "", err_type: Err_type = Err_type.NONE):
+        self.message = message
+        self.error_type = err_type
 
 
-def _parse_mlc_engine_config(config_str: Optional[str]) -> EngineConfig:
-    if config_str is None:
-        return None
-    engine_config_override = EngineConfigOverride.from_str(config_str)
-    return EngineConfig(
-        tensor_parallel_shards=engine_config_override.tensor_parallel_shards,
-        max_num_sequence=engine_config_override.max_num_sequence,
-        max_total_sequence_length=engine_config_override.max_total_seq_length,
-        prefill_chunk_size=engine_config_override.prefill_chunk_size,
-        sliding_window_size=engine_config_override.sliding_window_size,
-        attention_sink_size=engine_config_override.attention_sink_size,
-        max_history_size=engine_config_override.max_history_size,
-        gpu_memory_utilization=engine_config_override.gpu_memory_utilization,
-        spec_draft_length=engine_config_override.spec_draft_length,
-        prefill_mode=engine_config_override.prefill_mode,
-        prefix_cache_max_num_recycling_seqs=engine_config_override.prefix_cache_max_num_recycling_seqs,  # pylint: disable=line-too-long
-        prefix_cache_mode=engine_config_override.prefix_cache_mode,
-    )
+# Modified by https://github.com/ShishirPatil/gorilla/blob/main/berkeley-function-call-leaderboard/bfcl/eval_checker/ast_eval/ast_checker.py
+def check_simple(
+        gorilla, tool_call: Dict[str, Any], tool: Dict[str, Any], ideal: Dict[str, Any]
+) -> Tuple[bool, bool, Error]:
+    # check func name
+    if ideal["name"] != tool_call["function"]["name"]:
+        return True, False, Error("wrong function name.", Err_type.FUNC_NAME_ERROR)
+    func = tool["function"]
+    # check func args
+    for arg in func["parameters"]["required"]:
+        if arg not in tool_call["function"]["arguments"]:
+            return True, False, Error(f"missing arg: {arg}", Err_type.PARA_KEY_ERROR)
+    for arg in tool_call["function"]["arguments"].keys():
+        ideal_arg: List = ideal["arguments"][arg] if arg in ideal["arguments"] else None
+        real_arg = tool_call["function"]["arguments"][arg]
+        if arg not in func["parameters"]["properties"]:
+            return True, False, Error(f"unknown arg: {arg}", Err_type.PARA_KEY_ERROR)
+        info_arg = func["parameters"]["properties"][arg]
+        if info_arg["type"] == "integer":
+            acc, err = check_integer(gorilla, real_arg, ideal_arg)
+            if not acc:
+                return True, False, err
+        elif info_arg["type"] == "number":
+            acc, err = check_number(gorilla, real_arg, ideal_arg)
+            if not acc:
+                return True, False, err
+        elif info_arg["type"] == "boolean":
+            acc, err = check_boolean(gorilla, real_arg, ideal_arg)
+            if not acc:
+                return True, False, err
+        elif info_arg["type"] == "string":
+            enum = info_arg["enum"] if "enum" in info_arg else None
+            acc, err = check_string(gorilla, real_arg, ideal_arg, enum)
+            if not acc:
+                return True, False, err
+        elif info_arg["type"] == "array":
+            acc, err = check_list(gorilla, real_arg, ideal_arg, info_arg["items"])
+            if not acc:
+                return True, False, err
+        elif info_arg["type"] == "dict":
+            acc, err = check_dict(real_arg, ideal_arg, info_arg["properties"])
+            if not acc:
+                return True, False, err
+    return True, True, Error()
 
 
-def _launch_mlc_server(args: argparse.argparse.Namespace):
-    return mlc_llm.serve.PopenServer(
-        model=args.tokenizer,
-        mode="server",
-        model_lib=args.mlc_model_lib,
-        enable_tracing=False,
-        host=args.host,
-        port=args.port,
-        engine_config=args.mlc_engine_config,
-    )
+def check_integer(gorilla, real_arg: Any, ideal_arg: Optional[List[Any]]) -> Tuple[bool, Error]:
+    if type(real_arg) != int:
+        return False, Error(f"wrong type {real_arg}: not int", Err_type.TYPE_ERROR)
+    if ideal_arg is None:
+        return True, Error()
+    match = False
+    err = Error(f"value not match: {real_arg}, ideal-opt: {ideal_arg}", Err_type.PARA_VALUE_ERROR)
+    for ideal in ideal_arg:
+        if real_arg == ideal:
+            match = True
+            err = Error()
+            break
+    return match, err
 
 
-def run_pipeline(
-        pipeline: RequestProcessor,
-        dataset: Dataset,
-        args: argparse.argparse.Namespace,
-) -> Tuple[Dict[str, Any], List[RequestRecord]]:
-    """Run the pipeline with the given dataset and args. Return the benchmark report dict."""
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-    request_records = dataset.generate_request_records(
-        args.input_len,
-        args.output_len,
-        args.input_len_std,
-        args.output_len_std,
-    )
-    request_records = pipeline(request_records)
-    num_total_requests = (
-        args.num_requests if not args.per_gpu_workload else args.num_requests * args.num_gpus
-    )
-    assert len(request_records) == num_total_requests
-    sorted_requests: List[RequestRecord] = [None] * num_total_requests
-    for request_record in request_records:
-        assert request_record.request_id is not None
-        assert sorted_requests[request_record.request_id] is None
-        sorted_requests[request_record.request_id] = request_record
-
-    report = generate_metrics_summary(request_records, num_total_requests, args.num_gpus)
-
-    return report, sorted_requests
+def check_number(gorilla, real_arg: Any, ideal_arg: Optional[List[Any]]) -> Tuple[bool, Error]:
+    if type(real_arg) != float and type(real_arg) != int:
+        return False, Error(f"wrong type {real_arg}: not number", Err_type.TYPE_ERROR)
+    if ideal_arg is None:
+        return True, Error()
+    match = False
+    err = Error(f"value not match: {real_arg}, ideal-opt: {ideal_arg}", Err_type.PARA_VALUE_ERROR)
+    for ideal in ideal_arg:
+        if real_arg == ideal:
+            match = True
+            err = Error()
+            break
+    return match, err
 
 
-def query_mlc_server_metrics(host: str, port: int):
-    """Try to get the MLC server metrics whenever it exists."""
-    try:
-        r = requests.post(f"http://{host}:{port}/debug/dump_engine_metrics", json={}, timeout=10)
-        if r.status_code == 200:
-            print(f"MLC server metrics: {r.json()}")
-    except Exception:  # pylint: disable=broad-exception-caught
-        pass
+def check_string(
+        gorilla, real_arg: Any, ideal_arg: Optional[List[Any]], enum: Optional[List[str]]
+) -> Tuple[bool, Error]:
+    def standardize_string(string: Any) -> str:
+        if not isinstance(string, str):
+            return "-----Error------"
+        regex_string = r"[ \,\.\/\-\_\*\^]"
+        return re.sub(regex_string, "", string).lower().replace("'", '"')
 
-def convert_calls_to_json(calls: List[ChatToolCall])-> List[Dict[str, Any]]:
-    """Convert the list of ChatToolCall to a list of dict."""
-    result = []
-    for call in calls:
-        call_dict = {
-            "function": {"name": call.function.name, "arguments": call.function.arguments}
-        }
-        result.append(call_dict)
-    return result
+    if type(real_arg) != str:
+        return False, Error(f"wrong type {real_arg}: not string", Err_type.TYPE_ERROR)
+    match = False
+    err = Error(f"value not match: {real_arg}, ideal-opt: {ideal_arg}", Err_type.PARA_VALUE_ERROR)
+    real_arg = standardize_string(real_arg)
+    if ideal_arg is None:
+        if enum is None:
+            return True, Error()
+        else:
+            err.error_type = Err_type.ENUM_ERROR
+            for ideal in enum:
+                if real_arg == standardize_string(ideal):
+                    match = True
+                    err = Error()
+                    break
+    else:
+        for ideal in ideal_arg:
+            if real_arg == standardize_string(ideal):
+                match = True
+                err = Error()
+                break
+    return match, err
 
 
-def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output_dir: str):
+def check_boolean(gorilla, real_arg: bool, ideal_arg: Optional[List[bool]]) -> Tuple[bool, Error]:
+    if type(real_arg) != bool:
+        return False, Error(f"wrong type {real_arg}: not bool", Err_type.TYPE_ERROR)
+    if ideal_arg is None:
+        return True, Error()
+    match = False
+    err = Error(f"value not match: {real_arg}, ideal-opt: {ideal_arg}", Err_type.PARA_VALUE_ERROR)
+    for ideal in ideal_arg:
+        if real_arg == ideal:
+            match = True
+            err = Error()
+            break
+    return match, err
+
+
+def check_list(
+        gorilla, real_arg: List, ideal_arg: Optional[List[List]], item: Dict[str, Any]
+) -> Tuple[bool, Error]:
+    if type(real_arg) != list:
+        return False, Error(f"wrong type of {real_arg}: not list.", Err_type.TYPE_ERROR)
+    item_type = item["type"]
+    if ideal_arg is None:
+        if item_type == "integer":
+            for i, integer in enumerate(real_arg):
+                acc, err = check_integer(gorilla, integer, None)
+                if not acc:
+                    return False, err
+        elif item_type == "number":
+            for i, integer in enumerate(real_arg):
+                acc, err = check_number(gorilla, integer, None)
+                if not acc:
+                    return False, err
+        elif item_type == "boolean":
+            for i, boolean in enumerate(real_arg):
+                acc, err = check_boolean(gorilla, boolean, None)
+                if not acc:
+                    return False, err
+        elif item_type == "string":
+            for i, string in enumerate(real_arg):
+                enum = item["enum"] if "enum" in item else None
+                acc, err = check_string(gorilla, string, None, enum)
+                if not acc:
+                    return False, err
+        elif item_type == "array":
+            for i, array in enumerate(real_arg):
+                acc, err = check_list(gorilla, array, None, item["items"])
+                if not acc:
+                    return False, err
+        elif item_type == "dict":
+            for i, dictionary in enumerate(real_arg):
+                acc, err = check_dict(dictionary, None, item["properties"])
+                if not acc:
+                    return False, err
+        return True, Error()
+    else:
+        final_err = ""
+        err_type = Err_type.NONE
+        for j, ideal in enumerate(ideal_arg):
+            if len(ideal) != len(real_arg):
+                final_err += f"[ideal {j}] wrong length of {real_arg}."
+                err_type = min(err_type, Err_type.PARA_VALUE_ERROR)
+                continue
+            match = True
+            if item_type == "integer":
+                for i, integer in enumerate(real_arg):
+                    acc, err = check_integer(gorilla, integer, [ideal[i]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            elif item_type == "number":
+                for i, integer in enumerate(real_arg):
+                    acc, err = check_number(gorilla, integer, [ideal[i]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            elif item_type == "boolean":
+                for i, boolean in enumerate(real_arg):
+                    acc, err = check_boolean(gorilla, boolean, [ideal[i]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            elif item_type == "string":
+                for i, string in enumerate(real_arg):
+                    enum = item["enum"] if "enum" in item else None
+                    acc, err = check_string(gorilla, string, [ideal[i]], enum)
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            elif item_type == "array":
+                for i, array in enumerate(real_arg):
+                    acc, err = check_list(gorilla, array, [ideal[i]], item["items"])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            elif item_type == "dict":
+                for i, dictionary in enumerate(real_arg):
+                    acc, err = check_dict(dictionary, [ideal[i]], item["properties"])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {j}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            if match:
+                return True, Error()
+        return False, Error(final_err, err_type)
+
+
+def check_dict(
+        gorilla,
+        real_arg: Dict[str, Any],
+        ideal_arg: Optional[Dict[str, Any]],
+        properties: Dict[str, Any],
+) -> Tuple[bool, Error]:
+    if type(real_arg) != dict:
+        return False, Error(f"wrong type of {real_arg}: not dict.", Err_type.TYPE_ERROR)
+    if ideal_arg is None:
+        for key in properties.keys():
+            if key not in real_arg:
+                return False, Error(f"missing key: {key}.", Err_type.PARA_KEY_ERROR)
+            item_type = properties[key]["type"]
+            if item_type == "integer":
+                acc, err = check_integer(gorilla, real_arg[key], None)
+                if not acc:
+                    return False, err
+            elif item_type == "number":
+                acc, err = check_number(gorilla, real_arg[key], None)
+                if not acc:
+                    return False, err
+            elif item_type == "boolean":
+                acc, err = check_boolean(gorilla, real_arg[key], None)
+                if not acc:
+                    return False, err
+            elif item_type == "string":
+                enum = properties[key]["enum"] if "enum" in properties[key] else None
+                acc, err = check_string(gorilla, real_arg[key], None, enum)
+                if not acc:
+                    return False, err
+            elif item_type == "array":
+                acc, err = check_list(gorilla, real_arg[key], None, properties[key]["items"])
+                if not acc:
+                    return False, err
+            elif item_type == "dict":
+                acc, err = check_dict(real_arg[key], None, properties[key]["properties"])
+                if not acc:
+                    return False, err
+        return True, Error()
+    else:
+        final_err = ""
+        err_type = Err_type.NONE
+        for i, ideal in enumerate(ideal_arg):
+            match = True
+            for key in properties.keys():
+                if key not in real_arg:
+                    match = False
+                    final_err += f"[ideal {i}] missing key: {key}."
+                    err_type = min(err_type, Err_type.PARA_KEY_ERROR)
+                    break
+                item_type = properties[key]["type"]
+                if item_type == "integer":
+                    acc, err = check_integer(gorilla, real_arg[key], [ideal[key]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+                elif item_type == "number":
+                    acc, err = check_number(gorilla, real_arg[key], [ideal[key]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+                elif item_type == "boolean":
+                    acc, err = check_boolean(gorilla, real_arg[key], [ideal[key]])
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+                elif item_type == "string":
+                    enum = properties[key]["enum"] if "enum" in properties[key] else None
+                    acc, err = check_string(gorilla, real_arg[key], [ideal[key]], enum)
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+                elif item_type == "array":
+                    acc, err = check_list(
+                        gorilla, real_arg[key], [ideal[key]], properties[key]["items"]
+                    )
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+                elif item_type == "dict":
+                    acc, err = check_dict(
+                        real_arg[key], [ideal[key]], properties[key]["properties"]
+                    )
+                    if not acc:
+                        match = False
+                        final_err += f"[ideal {i}] {err}"
+                        err_type = min(err_type, err.error_type)
+                        break
+            if match:
+                return True, Error()
+        return False, Error(final_err, err_type)
+
+
+def check_acc(dataset: str, gorilla: Dict, output_dir: str):
     """Check the accuracy of the generated requests."""
     request_records = []
     final_output = {"fail_format": [], "fail_call": [], "fail_reason": {}}
@@ -146,65 +382,96 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output
         request_records = json.load(f)
     count = 0
     err_types = [0] * (len(Err_type) - 1)
-    if args.dataset == "BFCL_v3_simple" or args.dataset == "BFCL_v3_live_simple":
+    if dataset == "BFCL_v3_simple" or dataset == "BFCL_v3_live_simple":
         for request in request_records:
-            info = dataset.gorilla_data[request["id"]]
+            info = gorilla[request["id"]]
             count += 1
             if "call" not in request:
                 final_output["fail_format"].append(request["id"])
                 final_output["fail_call"].append(request["id"])
-                final_output["fail_reason"][request["id"]] = "wrong format"
+                final_output["fail_reason"][request["id"]] = {
+                    "type": "FORMAT_ERROR",
+                    "message": "wrong format.",
+                }
                 err_types[Err_type.FORMAT_ERROR] += 1
                 continue
             if len(request["call"]) != 1:
-                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+                format, call, err = (
+                    True,
+                    False,
+                    Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR),
+                )
             else:
-                format, call, err = dataset.check_simple(request["call"][0], info["tool"][0], info["ideal_call"][0])
+                format, call, err = check_simple(
+                    gorilla, request["call"][0], info["tool"][0], info["ideal_call"][0]
+                )
             if not format:
                 final_output["fail_format"].append(request["id"])
             if not call:
                 final_output["fail_call"].append(request["id"])
             if err.error_type != Err_type.NONE:
-                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                final_output["fail_reason"][request["id"]] = {
+                    "type": Err_type(err.error_type).name,
+                    "message": err.message,
+                }
                 err_types[err.error_type] += 1
-    elif args.dataset == "BFCL_v3_multiple" or args.dataset == "BFCL_v3_live_multiple":
+    elif dataset == "BFCL_v3_multiple" or dataset == "BFCL_v3_live_multiple":
         for request in request_records:
-            info = dataset.gorilla_data[request["id"]]
+            info = gorilla[request["id"]]
             count += 1
             if "call" not in request:
                 final_output["fail_format"].append(request["id"])
                 final_output["fail_call"].append(request["id"])
-                final_output["fail_reason"][request["id"]] = "wrong format"
+                final_output["fail_reason"][request["id"]] = {
+                    "type": "FORMAT_ERROR",
+                    "message": "wrong format.",
+                }
                 err_types[Err_type.FORMAT_ERROR] += 1
                 continue
             if len(request["call"]) != 1:
-                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+                format, call, err = (
+                    True,
+                    False,
+                    Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR),
+                )
             else:
                 expected_tool = None
                 for tool in info["tool"]:
                     if tool["function"]["name"] == info["ideal_call"][0]["name"]:
                         expected_tool = tool
                         break
-                format, call, err = dataset.check_simple(request["call"][0], expected_tool, info["ideal_call"][0])
+                format, call, err = check_simple(
+                    gorilla, request["call"][0], expected_tool, info["ideal_call"][0]
+                )
             if not format:
                 final_output["fail_format"].append(request["id"])
             if not call:
                 final_output["fail_call"].append(request["id"])
             if err.error_type != Err_type.NONE:
-                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                final_output["fail_reason"][request["id"]] = {
+                    "type": Err_type(err.error_type).name,
+                    "message": err.message,
+                }
                 err_types[err.error_type] += 1
-    elif args.dataset == "BFCL_v3_parallel" or args.dataset == "BFCL_v3_live_parallel":
+    elif dataset == "BFCL_v3_parallel" or dataset == "BFCL_v3_live_parallel":
         for request in request_records:
-            info = dataset.gorilla_data[request["id"]]
+            info = gorilla[request["id"]]
             count += 1
             if "call" not in request:
                 final_output["fail_format"].append(request["id"])
                 final_output["fail_call"].append(request["id"])
-                final_output["fail_reason"][request["id"]] = "wrong format"
+                final_output["fail_reason"][request["id"]] = {
+                    "type": "FORMAT_ERROR",
+                    "message": "wrong format.",
+                }
                 err_types[Err_type.FORMAT_ERROR] += 1
                 continue
             if len(request["call"]) != len(info["ideal_call"][0]):
-                format, call, err = True, False, Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR)
+                format, call, err = (
+                    True,
+                    False,
+                    Error("wrong calling numbers.", Err_type.CALL_NUMBER_ERROR),
+                )
             else:
                 for ideal in info["ideal_call"]:
                     expected_tool = None
@@ -218,10 +485,16 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output
                             expected_request = single_request
                             break
                     if expected_request is None:
-                        format, call, err = True, False, Error("not calling expected function", Err_type.FUNC_NAME_ERROR)
+                        format, call, err = (
+                            True,
+                            False,
+                            Error("not calling expected function", Err_type.FUNC_NAME_ERROR),
+                        )
                         break
                     else:
-                        format, call, err = dataset.check_simple(expected_request, expected_tool, ideal)
+                        format, call, err = check_simple(
+                            gorilla, expected_request, expected_tool, ideal
+                        )
                         if not format or not call:
                             break
             if not format:
@@ -229,9 +502,11 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output
             if not call:
                 final_output["fail_call"].append(request["id"])
             if err.error_type != Err_type.NONE:
-                final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
+                final_output["fail_reason"][request["id"]] = {
+                    "type": Err_type(err.error_type).name,
+                    "message": err.message,
+                }
                 err_types[err.error_type] += 1
-
 
     correct_format = count - len(final_output["fail_format"])
     correct_call = count - len(final_output["fail_call"])
@@ -244,13 +519,28 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output
         json.dump(final_output, file, indent=4)
 
 
-
-def main(args: argparse.argparse.Namespace):
+def main(args: argparse.Namespace):
     """Main benchmark entrance."""
-    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer)
-    dataset: GorillaDataset = create_dataset(args, tokenizer)
-    output_dir = f"{args.output_root}/{os.path.basename(args.tokenizer)}/{args.dataset}/{'use_stag' if args.use_stag else 'no_stag'}/"
-    check_acc(args, dataset, output_dir)
+    models = []
+    datasets = []
+    if args.dataset == "ALL":
+        datasets = SUPPORTED_DATASET
+        datasets.pop(-1)
+    else:
+        datasets.append(args.dataset)
+    if args.model == "ALL":
+        models = SUPPORTED_MODEL
+        models.pop(-1)
+    else:
+        models.append(args.model)
+    print(models, datasets)
+    for model in models:
+        for dataset in datasets:
+            output_dir = f"{args.output_root}/{model}/{dataset}/{'use_stag' if args.use_stag else 'no_stag'}/"
+            dataset_file = f"{args.output_root}/dataset/{dataset}.json"
+            with open(dataset_file, mode="r", encoding="utf-8") as file:
+                gorilla = json.load(file)
+            check_acc(dataset, gorilla, output_dir)
 
 
 if __name__ == "__main__":
@@ -263,207 +553,16 @@ if __name__ == "__main__":
         help=f"The benchmark dataset kind. Supporting {SUPPORTED_DATASET}",
     )
     parser.add_argument(
+        "--model",
+        type=str,
+        choices=SUPPORTED_MODEL,
+        help=f"The benchmark model kind. Supporting {SUPPORTED_MODEL}",
+    )
+    parser.add_argument(
         "--dataset-path",
         type=str,
+        required=True,
         help="The dataset file path.",
-    )
-    parser.add_argument(
-        "--api-endpoint",
-        type=str,
-        choices=SUPPORTED_BACKENDS,
-        default="openai",
-        help="The API endpoint API for benchmarking.",
-    )
-    parser.add_argument(
-        "--tokenizer",
-        type=str,
-        help="The path of the tokenizer directory.",
-    )
-    parser.add_argument(
-        "--num-gpus",
-        type=int,
-        help="The number of GPUs used by the server. "
-             "We need this to better analyze the throughput per GPU.",
-    )
-    parser.add_argument(
-        "--num-requests",
-        type=int,
-        help="The number of requests for benchmark.",
-    )
-    parser.add_argument(
-        "--num-warmup-requests",
-        type=int,
-        help="The number of requests for warmup. "
-             "It is optional when fixing the number of concurrent requests, and is required otherwise.",
-    )
-    parser.add_argument(
-        "--per-gpu-workload",
-        default=False,
-        action="store_true",
-        help='When set to True, the specified "num_concurrent_requests"/"request_rate" '
-             "denote the workload **per GPU**, which means that the real values of "
-             '"num_concurrent_requests"/"request_rate" used in benchmark'
-             'will be multiplied by "num_gpus".',
-    )
-    parser.add_argument(
-        "--num-concurrent-requests",
-        type=_parse_num_concurrent_requests,
-        help="The number(s) of concurrent requests to benchmark. "
-             'It can be either one integer or a list of integer separated by commas(","). '
-             "When specified, for each integer, the benchmark keeps these many consistent "
-             "number of concurrently running requests.",
-    )
-    parser.add_argument(
-        "--request-rate",
-        type=_parse_request_rate,
-        help="The request rate(s) denoting the number of new requests each second. "
-             'It can be either one float number (or "inf") or a list of numbers separated '
-             'by commas(","). '
-             "When specified, the benchmark sends these many new requests each second. "
-             'If it is "inf", all requests will be sent together at once.',
-    )
-    parser.add_argument(
-        "--replay-timestamp-scale",
-        type=float,
-        help="The timestamp scale when replaying the timestamps in a dataset. "
-             'The dataset replay mode is enabled when neither "--num-concurrent-requests" and '
-             '"--request-rate" is specified. '
-             "The scale is 1 by default in the replay mode.",
-    )
-    parser.add_argument(
-        "--input-len",
-        type=int,
-        help="The benchmark request average input length. Default to None, "
-             "which means the request input length depends on the dataset being used.",
-    )
-    parser.add_argument(
-        "--input-len-std",
-        type=float,
-        default=0,
-        help="The benchmark request input length standard deviation. Default to 0.",
-    )
-    parser.add_argument(
-        "--output-len",
-        type=int,
-        help="The benchmark request average output length. Default to None, "
-             "which means the request output length depends on the dataset being used.",
-    )
-    parser.add_argument(
-        "--output-len-std",
-        type=float,
-        default=0,
-        help="The benchmark request output length standard deviation. Default to 0.",
-    )
-    parser.add_argument(
-        "--stream",
-        action="store_true",
-        default=False,
-        help="Whether to benchmark stream responses. "
-             "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
-             "Default to False.",
-    )
-    parser.add_argument(
-        # NOTE: The current implementation of server metrics still has some issues that need fixes,
-        # which makes it not work to include server metrics.
-        "--include-server-metrics",
-        action="store_true",
-        help="Whether to also benchmark the server side request metrics. "
-             "This option is only available when benchmarking MLC server.",
-    )
-    parser.add_argument(
-        "--host",
-        type=str,
-        help="The host address of the backend API.",
-    )
-    parser.add_argument(
-        "--port",
-        type=int,
-        help="The port of the backend API.",
-    )
-    parser.add_argument(
-        "--timeout",
-        type=float,
-        default=3 * 60 * 60,
-        help="The timeout limit of each request.",
-    )
-    parser.add_argument(
-        "--seed",
-        type=int,
-        default=0,
-        help="The random number seed. Default to 0.",
-    )
-    parser.add_argument(
-        "--temperature",
-        type=float,
-        default=1.0,
-        help="The temperature value for logit adjustment. Default to 1.",
-    )
-    parser.add_argument(
-        "--top-p",
-        type=float,
-        default=1.0,
-        help="The top-p value for sampling. Default to 1.",
-    )
-    parser.add_argument(
-        "--ignore-eos",
-        default=False,
-        action="store_true",
-        help='Whether to set the "ignore_eos" field.',
-    )
-    parser.add_argument(
-        "--apply-chat-template",
-        default=False,
-        action="store_true",
-        help="Whether to apply chat template to the request input text. "
-             'It is not supported when "--input-len" is specified.',
-    )
-    parser.add_argument(
-        "--num-process-workers",
-        type=int,
-        help="The number of parallel process workers to send the requests.",
-    )
-    parser.add_argument(
-        "--disable-tqdm",
-        action="store_true",
-        help="Whether to disable showing progress bar with tqdm during benchmarking.",
-    )
-    parser.add_argument(
-        "--max-schedule-gap",
-        type=float,
-        default=0.5,
-        help="The maximum allowed delay between the scheduled time in seconds.",
-    )
-    parser.add_argument(
-        "--mlc-model-lib",
-        type=str,
-        help="The model lib path when benchmarking MLC serve. "
-             "When specified, the server is automatic launched and no external server launch is needed.",
-    )
-    parser.add_argument(
-        "--mlc-engine-config",
-        type=_parse_mlc_engine_config,
-        help="The engine config used when launch MLC server.",
-    )
-    parser.add_argument(
-        "--cuda-profile",
-        default=False,
-        action="store_true",
-        help="Whether to enable cuda profile on server. "
-             "The --mlc-model-lib path should be provided when enabling this option.",
-    )
-    parser.add_argument(
-        "--debug-dump",
-        default=False,
-        action="store_true",
-        help="Whether to dump all request record raw data to file.",
-    )
-    parser.add_argument(
-        "--multi-round",
-        default=False,
-        action="store_true",
-        help="Whether to chat like multi round conversion with history log each request. "
-             "Only enabled when benchmarked with fixed concurrent request mode."
-             "The --num-concurrent-requests should be provided when enabling this option.",
     )
     parser.add_argument(
         "--output-root",
@@ -477,4 +576,5 @@ if __name__ == "__main__":
         action="store_true",
         help="Whether to set stag.",
     )
-    main(parser.parse_args())
+    args = parser.parse_args()
+    main(args)

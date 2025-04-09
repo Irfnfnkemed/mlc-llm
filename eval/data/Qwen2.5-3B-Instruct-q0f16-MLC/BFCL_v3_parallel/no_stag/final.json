@@ -1,8 +1,6 @@
 {
     "fail_format": [
-        88,
-        113,
-        140
+        88
     ],
     "fail_call": [
         0,
@@ -424,7 +422,7 @@
         },
         "54": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f07400c6c50>[ideal 1] <dataset.Error object at 0x7f07400c6d90>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2df0>[ideal 1] <__main__.Error object at 0x7fd9869d2b20>"
         },
         "55": {
             "type": "PARA_VALUE_ERROR",
@@ -558,7 +556,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "88": "wrong format",
+        "88": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "89": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -655,7 +656,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rs123456, ideal-opt: ['rs7891011']"
         },
-        "113": "wrong format",
+        "113": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
         "114": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -718,7 +722,7 @@
         },
         "129": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f07400c7f50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2e20>"
         },
         "130": {
             "type": "PARA_VALUE_ERROR",
@@ -760,7 +764,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 12345, ideal-opt: [67890]"
         },
-        "140": "wrong format",
+        "140": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
         "141": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['Los Angeles', 'Los Angeles, CA', 'LA']"
@@ -799,7 +806,7 @@
         },
         "150": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f07400cc3d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2cd0>"
         },
         "151": {
             "type": "CALL_NUMBER_ERROR",
@@ -851,7 +858,7 @@
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f07400cc6d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2ac0>"
         },
         "165": {
             "type": "PARA_VALUE_ERROR",
@@ -863,7 +870,7 @@
         },
         "167": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f07400cc7d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2dc0>"
         },
         "168": {
             "type": "CALL_NUMBER_ERROR",
@@ -994,10 +1001,10 @@
             "message": "wrong calling numbers."
         }
     },
-    "FORMAT_ACCURACY": 0.985,
+    "FORMAT_ACCURACY": 0.995,
     "CALL_ACCURACY": 0.005,
-    "FORMAT_ERROR": 0.015,
-    "CALL_NUMBER_ERROR": 0.5,
+    "FORMAT_ERROR": 0.005,
+    "CALL_NUMBER_ERROR": 0.51,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.0,
     "TYPE_ERROR": 0.0,

@@ -112,7 +112,18 @@
     },
     {
         "id": 5,
-        "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius}}}, {\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"San Francisco, CA\", \"unit\": \"celsius\"}}}[engine info] Got an invalid function call output from model"
+        "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius}}}, {\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"San Francisco, CA\", \"unit\": \"celsius\"}}}",
+        "call": [
+            {
+                "function": {
+                    "name": "get_current_weather",
+                    "arguments": {
+                        "location": "San Francisco, CA",
+                        "unit": "celsius"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 6,

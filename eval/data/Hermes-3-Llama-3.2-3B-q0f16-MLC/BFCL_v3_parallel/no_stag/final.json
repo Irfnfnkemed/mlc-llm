@@ -587,8 +587,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "95": "wrong format",
-        "96": "wrong format",
+        "95": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "96": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "97": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -773,7 +779,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "143": "wrong format",
+        "143": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "144": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."

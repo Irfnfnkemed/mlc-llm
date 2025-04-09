@@ -88,11 +88,11 @@
         },
         "340": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f54c4139590>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80af0>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f54c4139610>[ideal 1] <dataset.Error object at 0x7f54c41395d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80af0>[ideal 1] <__main__.Error object at 0x7fb03cb80af0>"
         },
         "380": {
             "type": "PARA_VALUE_ERROR",

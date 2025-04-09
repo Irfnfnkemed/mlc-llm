@@ -427,7 +427,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 4: not int"
         },
-        "8": "wrong format",
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "9": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
@@ -524,7 +527,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 0: not int"
         },
-        "34": "wrong format",
+        "34": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "TYPE_ERROR",
             "message": "wrong type 11: not int"
@@ -605,7 +611,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "56": "wrong format",
+        "56": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "57": {
             "type": "TYPE_ERROR",
             "message": "wrong type 0: not number"
@@ -734,7 +743,10 @@
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: actor_name"
         },
-        "93": "wrong format",
+        "93": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "94": {
             "type": "TYPE_ERROR",
             "message": "wrong type 43523: not int"
@@ -891,7 +903,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 2000000: not int"
         },
-        "133": "wrong format",
+        "133": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "134": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5000: not int"
@@ -928,7 +943,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
         },
-        "144": "wrong format",
+        "144": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "145": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5000: not int"
@@ -945,7 +963,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 20000: not int"
         },
-        "149": "wrong format",
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "150": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1000: not int"
@@ -958,7 +979,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 50000: not int"
         },
-        "153": "wrong format",
+        "153": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "154": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5000: not int"
@@ -967,7 +991,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1000: not int"
         },
-        "156": "wrong format",
+        "156": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "158": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: X, ideal-opt: ['Mr. X']"
@@ -976,10 +1003,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Criminal Law Amendment Act of 2013, ideal-opt: ['Criminal Law Amendment Act', 'Criminal Law Amendment']"
         },
-        "160": "wrong format",
-        "161": "wrong format",
-        "162": "wrong format",
-        "163": "wrong format",
+        "160": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "161": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "162": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "163": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "164": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2020: not int"
@@ -1008,7 +1047,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 43403: not int"
         },
-        "172": "wrong format",
+        "172": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "173": {
             "type": "TYPE_ERROR",
             "message": "wrong type of [2015, 2021]: not list."
@@ -1053,7 +1095,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "188": "wrong format",
+        "188": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "189": {
             "type": "TYPE_ERROR",
             "message": "wrong type 3: not int"
@@ -1118,7 +1163,10 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "208": "wrong format",
+        "208": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "209": {
             "type": "TYPE_ERROR",
             "message": "wrong type of ['English Fiction', 'Free Wi-Fi']: not list."
@@ -1135,12 +1183,18 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 30: not int"
         },
-        "215": "wrong format",
+        "215": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "217": {
             "type": "TYPE_ERROR",
             "message": "wrong type 6: not int"
         },
-        "219": "wrong format",
+        "219": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "220": {
             "type": "TYPE_ERROR",
             "message": "wrong type 200: not int"
@@ -1149,7 +1203,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
         },
-        "222": "wrong format",
+        "222": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "223": {
             "type": "TYPE_ERROR",
             "message": "wrong type 50: not int"
@@ -1158,7 +1215,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: sciences, ideal-opt: ['psychology']"
         },
-        "225": "wrong format",
+        "225": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "226": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -1171,7 +1231,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 3: not int"
         },
-        "229": "wrong format",
+        "229": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "230": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1510: not int"
@@ -1180,8 +1243,14 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1871: not int"
         },
-        "232": "wrong format",
-        "233": "wrong format",
+        "232": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "233": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "234": {
             "type": "TYPE_ERROR",
             "message": "wrong type 19: not int"
@@ -1202,15 +1271,30 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1940: not int"
         },
-        "243": "wrong format",
-        "244": "wrong format",
+        "243": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "244": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "245": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "246": "wrong format",
-        "247": "wrong format",
-        "248": "wrong format",
+        "246": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "247": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "248": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "249": {
             "type": "TYPE_ERROR",
             "message": "wrong type 14: not int"
@@ -1219,7 +1303,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Pietro Bartholomew, ideal-opt: ['Jesus Christ']"
         },
-        "252": "wrong format",
+        "252": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "255": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
@@ -1228,7 +1315,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 50: not int"
         },
-        "257": "wrong format",
+        "257": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "258": {
             "type": "TYPE_ERROR",
             "message": "wrong type 60: not int"
@@ -1249,7 +1339,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type True: not bool"
         },
-        "266": "wrong format",
+        "266": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "267": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York City, NY']"
@@ -1258,8 +1351,14 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 10000: not int"
         },
-        "270": "wrong format",
-        "271": "wrong format",
+        "270": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "271": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "272": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
@@ -1296,8 +1395,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Chicago, ideal-opt: ['Chicago, Illinois', 'Chicago, IL']"
         },
-        "287": "wrong format",
-        "288": "wrong format",
+        "287": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "288": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "289": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: location"
@@ -1322,7 +1427,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 4: not int"
         },
-        "295": "wrong format",
+        "295": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "296": {
             "type": "TYPE_ERROR",
             "message": "wrong type 80: not int"
@@ -1363,7 +1471,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 10: not int"
         },
-        "307": "wrong format",
+        "307": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "308": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
@@ -1376,8 +1487,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Cleveland Cavaliers, Miami Heat, Los Angeles Lakers, ideal-opt: ['']"
         },
-        "311": "wrong format",
-        "312": "wrong format",
+        "311": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "312": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "315": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2021: not int"
@@ -1422,7 +1539,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 7: not int"
         },
-        "330": "wrong format",
+        "330": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "331": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2300: not int"
@@ -1495,7 +1615,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Beef Lasagna Recipe, ideal-opt: ['Beef Lasagna']"
         },
-        "356": "wrong format",
+        "356": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "357": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: vegan,gluten-free, ideal-opt: ['vegan']"
@@ -1504,12 +1627,18 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "359": "wrong format",
+        "359": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "360": {
             "type": "TYPE_ERROR",
             "message": "wrong type 500: not int"
         },
-        "362": "wrong format",
+        "362": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "363": {
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"Patio\"]: not list."
@@ -1522,7 +1651,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "367": "wrong format",
+        "367": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "368": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not number"
@@ -1543,8 +1675,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: organic bananas, ideal-opt: ['bananas']"
         },
-        "373": "wrong format",
-        "374": "wrong format",
+        "373": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "374": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "375": {
             "type": "TYPE_ERROR",
             "message": "wrong type of [\"3 cleaning pumpkins\", \"2 dozen eggsets\"]: not list."
@@ -1561,7 +1699,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Australia/Sydney, ideal-opt: ['']"
         },
-        "380": "wrong format",
+        "380": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "381": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"

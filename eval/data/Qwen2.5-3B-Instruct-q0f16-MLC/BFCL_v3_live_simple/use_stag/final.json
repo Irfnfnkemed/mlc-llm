@@ -105,7 +105,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: sour, ideal-opt: ['slightly bitter']"
         },
-        "51": "wrong format",
+        "51": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "58": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: today in India, ideal-opt: ['', None]"
@@ -138,7 +141,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', False]"
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Do you offer any special accounts for children or minors?', 'Do you offer any special accounts for individuals looking to save for a home purchase or renovation?']."
@@ -203,7 +209,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: taskkill /im timer.exe /f, ideal-opt: ['taskkill /F /IM timer.exe']"
         },
-        "148": "wrong format",
+        "148": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "149": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
@@ -238,7 +247,7 @@
         },
         "161": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f028414f310>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cbed040>"
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
@@ -314,7 +323,7 @@
         },
         "253": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f028414f810>[ideal 1] <dataset.Error object at 0x7f028414f850>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cbceac0>[ideal 1] <__main__.Error object at 0x7fb03cbceac0>"
         },
         "256": {
             "type": "PARA_VALUE_ERROR",

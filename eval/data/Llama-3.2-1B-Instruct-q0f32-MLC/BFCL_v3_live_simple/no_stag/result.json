@@ -755,11 +755,28 @@
     },
     {
         "id": 70,
-        "output": "\u307e\u3059\u65e5\u0430\u043c\u0438\u3092\u8868\u3059\u305f\u3081\u306b\":{\"t0\":\"2021-01-11T00:00:00Z\"}\n{\"name\": \"get_sensor_alerts\", \"parameters\": {\"perPage\": \"10\", \"networkId\": \"Q3CC-CRT3-SZ2G\", \"endingBefore\": \"2021-01-10T21:25:00Z\", \"t0\": \"2021-01-11T00:00:00Z\", \"t1\": \"2021-01-11T21:25:00Z\", \"sensorSerial\": \"Q3CC-CRT3-SZ2G\", \"startingAfter\": \"null\", \"triggerMetric\": null, \"startingAfter\": \"null\"}}[engine info] Got an invalid function call output from model"
+        "output": "\u307e\u3059\u65e5\u0430\u043c\u0438\u3092\u8868\u3059\u305f\u3081\u306b\":{\"t0\":\"2021-01-11T00:00:00Z\"}\n{\"name\": \"get_sensor_alerts\", \"parameters\": {\"perPage\": \"10\", \"networkId\": \"Q3CC-CRT3-SZ2G\", \"endingBefore\": \"2021-01-10T21:25:00Z\", \"t0\": \"2021-01-11T00:00:00Z\", \"t1\": \"2021-01-11T21:25:00Z\", \"sensorSerial\": \"Q3CC-CRT3-SZ2G\", \"startingAfter\": \"null\", \"triggerMetric\": null, \"startingAfter\": \"null\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "get_sensor_alerts",
+                    "arguments": {
+                        "perPage": "10",
+                        "networkId": "Q3CC-CRT3-SZ2G",
+                        "endingBefore": "2021-01-10T21:25:00Z",
+                        "t0": "2021-01-11T00:00:00Z",
+                        "t1": "2021-01-11T21:25:00Z",
+                        "sensorSerial": "Q3CC-CRT3-SZ2G",
+                        "startingAfter": "null",
+                        "triggerMetric": null
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 71,
-        "output": "Based on the tool instructions you provided earlier, I will assume that I have access to the following function:\n\n`{\"name\": \"get_social Mediaannoncence\", \"parameters\": {\"targets\": \"['millennials', 'Apple']\", \"metrics\": \"trust\", \"demographics\": \"age\", \"interval\": \"latest\", \"country\": \"USA\"}}` \n\nThis function likely extracts social media attention and sentiment about Apple from 2022 for millennials.\n\nLet's perform the request:\n\n`{\"name\": \"get_social Mediaannoncence\", \"parameters\": {\"targets\": \"['millennials', 'Apple']\", \"metrics\": \"trust\", \"demographics\": \"age\", \"interval\": \"latest\", \"country\": \"USA\"}}`\n\nThe response will be a dictionary with the extracted information:\n\n```json\n{\n  \"name\": \"get_social Mediaannoncence\",\n  \"parameters\": {\n    \"targets\": [\n      \"millennials\",\n      \"Apple\"\n    ],\n    \"metrics\": \"trust\",\n    \"demographics\": \"age\",\n    \"interval\": \"latest\",\n    \"country\": \"USA\"\n  }\n}\n```\n\nAccording to the social media attention data for Apple from 2022 for millennials, here is a summary of",
+        "output": "Based on the tool instructions you provided earlier, I will assume that I have access to the following function:\n\n`{\"name\": \"get_social Mediaannoncence\", \"parameters\": {\"targets\": \"['millennials', 'Apple']\", \"metrics\": \"trust\", \"demographics\": \"age\", \"interval\": \"latest\", \"country\": \"USA\"}}` \n\nThis function likely extracts social media attention and sentiment about Apple from 2022 for millennials.\n\nLet's perform the request:\n\n`{\"name\": \"get_social Mediaannoncence\", \"parameters\": {\"targets\": \"['millennials', 'Apple']\", \"metrics\": \"trust\", \"demographics\": \"age\", \"interval\": \"latest\", \"country\": \"USA\"}}`\n\nThe response will be a dictionary with the extracted information:\n\n```json\n{\n  \"name\": \"get_social Mediaannoncence\",\n  \"parameters\": {\n    \"targets\": [\n      \"millennials\",\n      \"Apple\"\n    ],\n    \"metrics\": \"trust\",\n    \"demographics\": \"age\",\n    \"interval\": \"latest\",\n    \"country\": \"USA\"\n  }\n}\n```\n\nAccording to the social media attention data for Apple from 2022 for millennials, here is a summary",
         "call": [
             {
                 "function": {
@@ -917,7 +934,7 @@
     },
     {
         "id": 83,
-        "output": "Here's how you can set up the news article:\n\n```\n{\"name\": \"sitefinity_create_contentitem\", \"parameters\": {\"ContentItem\": \"news\", \"Title\": \"Julian is Testing\", \"Content\": \"a detailed analysis on the impact of sleep patterns on productivity\", \"MetaTitle\": \"Productivity and Sleep Patterns\", \"MetaDescription\": \"Exploring how sleep affects work efficiency\", \"UrlName\": \"julian-testing-productivity\"}}\n```\n\nOr, you can also do this programmatically in a C# Code or other .NET language:\n\n```\nusing System.Web;\n\npublic void CreateContentItem(string title, string content, string metaTitle, string metaDescription, string urlName)\n{\n    ContentItem contentItem = Open balloontemplate as ContentItem {...};\n    contentItem.Title = title;\n    contentItem.MetaTitle = metaTitle;\n    contentItem.MetaDescription = metaDescription;\n    contentItem.ThatWasURL = urlName;\n}\n```\n\nNote: The code would need to have the `Openballoontemplate` directive and `baloontemplate` command in your .NET settings for these examples to work.\n\nIn .NET, `Openballoontemplate` command needs to have `Language\"` and `Handle",
+        "output": "Here's how you can set up the news article:\n\n```\n{\"name\": \"sitefinity_create_contentitem\", \"parameters\": {\"ContentItem\": \"news\", \"Title\": \"Julian is Testing\", \"Content\": \"a detailed analysis on the impact of sleep patterns on productivity\", \"MetaTitle\": \"Productivity and Sleep Patterns\", \"MetaDescription\": \"Exploring how sleep affects work efficiency\", \"UrlName\": \"julian-testing-productivity\"}}\n```\n\nOr, you can also do this programmatically in a C# Code or other .NET language:\n\n```\nusing System.Web;\n\npublic void CreateContentItem(string title, string content, string metaTitle, string metaDescription, string urlName)\n{\n    ContentItem contentItem = Open balloontemplate as ContentItem {...};\n    contentItem.Title = title;\n    contentItem.MetaTitle = metaTitle;\n    contentItem.MetaDescription = metaDescription;\n    contentItem.ThatWasURL = urlName;\n}\n```\n\nNote: The code would need to have the `Openballoontemplate` directive and `baloontemplate` command in your .NET settings for these examples to work.\n\nIn .NET, `Openballoontemplate` command needs to have `Language\"` and `H",
         "call": [
             {
                 "function": {
@@ -1323,7 +1340,7 @@
     },
     {
         "id": 122,
-        "output": "I can help you integrate the problem solution into a function call.\n\nHere is the code:\n```\n{\"name\": \"process_data\", \"parameters\": {\"type\": \"string\", \"required\": [\"image_path\", \"question\"], \"properties\": {\"model\": \"vikhyatk/moondream2\"}}}\n{\"name\": \"process_data\", \"parameters\": {\"type\": \"string\", \"required\": [\"image_path\", \"question\"], \"properties\": {\"model\": \"vikhyatk/moondream2\"}}}\n```\nThis code defines a function `process_data` that takes two parameters: `image_path` and `question`. The function is configured to use the Viktoriya Malkova/MoonDream 2 model, which is a pre-trained vision language model that you can download from Hugging Face.\n\nYou can call this function with an image path and a question to generate a description of what you see. For example:\n```\n{\"name\": \"generate_description\", \"parameters\": {\"image_path\": \"image.png\", \"question\": \"generate with technically complex attention to detail a description of what you see\"}}}\n```\nThis would generate a description of what you see based on the image `image.png` and the question \"generate with technically complex attention",
+        "output": "I can help you integrate the problem solution into a function call.\n\nHere is the code:\n```\n{\"name\": \"process_data\", \"parameters\": {\"type\": \"string\", \"required\": [\"image_path\", \"question\"], \"properties\": {\"model\": \"vikhyatk/moondream2\"}}}\n{\"name\": \"process_data\", \"parameters\": {\"type\": \"string\", \"required\": [\"image_path\", \"question\"], \"properties\": {\"model\": \"vikhyatk/moondream2\"}}}\n```\nThis code defines a function `process_data` that takes two parameters: `image_path` and `question`. The function is configured to use the Viktoriya Malkova/MoonDream 2 model, which is a pre-trained vision language model that you can download from Hugging Face.\n\nYou can call this function with an image path and a question to generate a description of what you see. For example:\n```\n{\"name\": \"generate_description\", \"parameters\": {\"image_path\": \"image.png\", \"question\": \"generate with technically complex attention to detail a description of what you see\"}}}\n```\nThis would generate a description of what you see based on the image `image.png` and the question \"generate with technically complex",
         "call": [
             {
                 "function": {
@@ -2735,7 +2752,7 @@
     },
     {
         "id": 256,
-        "output": "Here's an example of how you can call the `call_handover` function to transfer the request if a user asks a question:\n\n```\n{\"name\": \"get_status\", \"parameters\": {\"type\": \"object\", \"required\": [\"data_id\", \"display_name\"], \"properties\": {\"data_id\": {\"type\": \"string\", \"description\": \"ID of the item(s) submitted by the user\"}, \"display_name\": {\"type\": \"string\", \"description\": \"Name to display the boolean name of the data item\"}}}}\n```\n\nYou can then call this function like this:\n\n```\n{\"name\": \"get_handover\", \"parameters\": {\"type\": \"object\", \"required\": [\"data_id\", \"call_type\"]}}\n```\n\nThis would call the `call_handover` function, passing in the `data_id` and the type of call (`\"submit\"`) as parameters. This tells the function to transfer the request if a user asks a question",
+        "output": "Here's an example of how you can call the `call_handover` function to transfer the request if a user asks a question:\n\n```\n{\"name\": \"get_status\", \"parameters\": {\"type\": \"object\", \"required\": [\"data_id\", \"display_name\"], \"properties\": {\"data_id\": {\"type\": \"string\", \"description\": \"ID of the item(s) submitted by the user\"}, \"display_name\": {\"type\": \"string\", \"description\": \"Name to display the boolean name of the data item\"}}}}\n```\n\nYou can then call this function like this:\n\n```\n{\"name\": \"get_handover\", \"parameters\": {\"type\": \"object\", \"required\": [\"data_id\", \"call_type\"]}}\n```\n\nThis would call the `call_handover` function, passing in the `data_id` and the type of call (`\"submit\"`) as parameters. This tells the function to transfer the request if a user asks a ques",
         "call": [
             {
                 "function": {

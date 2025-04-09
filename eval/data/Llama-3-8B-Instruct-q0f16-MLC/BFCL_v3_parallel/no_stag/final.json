@@ -296,7 +296,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: HSBC, ideal-opt: ['Wells Fargo']"
         },
-        "21": "wrong format",
+        "21": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "22": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -305,7 +308,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "24": "wrong format",
+        "24": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "25": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -374,7 +380,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "42": "wrong format",
+        "42": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "43": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rock, ideal-opt: ['jazz']"
@@ -463,7 +472,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "65": "wrong format",
+        "65": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "66": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -576,8 +588,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "94": "wrong format",
-        "95": "wrong format",
+        "94": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "95": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "96": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -738,7 +756,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "136": "wrong format",
+        "136": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "137": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -793,7 +814,7 @@
         },
         "150": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f0e20c119d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2df0>"
         },
         "151": {
             "type": "CALL_NUMBER_ERROR",
@@ -811,7 +832,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "155": "wrong format",
+        "155": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "156": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -846,7 +870,7 @@
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f0e20c11bd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2df0>"
         },
         "165": {
             "type": "PARA_VALUE_ERROR",

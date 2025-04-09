@@ -68,7 +68,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: C major, ideal-opt: ['C']"
         },
-        "337": "wrong format",
+        "337": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "352": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: platform"
@@ -79,7 +82,7 @@
         },
         "375": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bdc0f9690>[ideal 1] <dataset.Error object at 0x7f9bdc0f9410>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2b50>[ideal 1] <__main__.Error object at 0x7fd9869d2b50>"
         },
         "385": {
             "type": "PARA_VALUE_ERROR",

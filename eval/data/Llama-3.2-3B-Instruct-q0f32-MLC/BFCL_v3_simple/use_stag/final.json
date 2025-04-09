@@ -57,7 +57,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 9.81, ideal-opt: [9.8, '']"
         },
-        "34": "wrong format",
+        "34": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "42": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 5e-05, ideal-opt: [0.05]"
@@ -80,7 +83,7 @@
         },
         "103": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f95ae611b50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80af0>"
         },
         "112": {
             "type": "PARA_VALUE_ERROR",
@@ -94,8 +97,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 0.05, ideal-opt: [5.0]"
         },
-        "159": "wrong format",
-        "160": "wrong format",
+        "159": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "160": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "166": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
@@ -172,7 +181,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: en, ideal-opt: ['', 'English']"
         },
-        "335": "wrong format",
+        "335": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "340": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['8', '\\\\u2665', '10', '\\\\u2665', 'J', '\\\\u2665', 'Q', '\\\\u2665', 'K', '\\\\u2665']."
@@ -203,7 +215,7 @@
         },
         "373": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f95ae612410>[ideal 1] <dataset.Error object at 0x7f95ae6125d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80cd0>[ideal 1] <__main__.Error object at 0x7fb03cb80e50>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",

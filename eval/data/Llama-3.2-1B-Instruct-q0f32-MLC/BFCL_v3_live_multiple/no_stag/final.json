@@ -358,7 +358,6 @@
         479,
         480,
         482,
-        483,
         484,
         485,
         486,
@@ -406,7 +405,6 @@
         540,
         542,
         543,
-        544,
         545,
         547,
         548,
@@ -520,7 +518,6 @@
         685,
         686,
         687,
-        688,
         690,
         693,
         694,
@@ -539,7 +536,6 @@
         710,
         711,
         712,
-        713,
         717,
         719,
         720,
@@ -698,7 +694,6 @@
         908,
         912,
         913,
-        914,
         915,
         916,
         917,
@@ -1809,36 +1804,102 @@
         1051
     ],
     "fail_reason": {
-        "1": "wrong format",
-        "2": "wrong format",
+        "1": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "2": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "4": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "6": "wrong format",
-        "7": "wrong format",
-        "8": "wrong format",
-        "9": "wrong format",
-        "10": "wrong format",
-        "11": "wrong format",
-        "12": "wrong format",
-        "13": "wrong format",
+        "6": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "7": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "8": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "9": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "10": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "11": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "12": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "13": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "14": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: \uac70\ucd5c\uce77, \uc711\uada4\u536c\u4eac\u22c8, \uc1ce\uad3e\u5668, ideal-opt: ['\ub2e4\uc6a9\ub3c4\uc2e4, \ud1b5\ub3cc\uc774, \uc911\uc9c0']"
         },
-        "15": "wrong format",
-        "16": "wrong format",
-        "17": "wrong format",
-        "18": "wrong format",
-        "19": "wrong format",
-        "20": "wrong format",
-        "21": "wrong format",
-        "22": "wrong format",
-        "23": "wrong format",
-        "24": "wrong format",
-        "25": "wrong format",
-        "26": "wrong format",
+        "15": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "16": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "17": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "18": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "19": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "20": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "21": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "22": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "23": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "24": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "25": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "26": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "27": {
             "type": "TYPE_ERROR",
             "message": "wrong type $100: not int"
@@ -1847,120 +1908,342 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 10: not int"
         },
-        "30": "wrong format",
-        "31": "wrong format",
-        "32": "wrong format",
+        "30": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "31": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "32": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "33": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "34": "wrong format",
-        "35": "wrong format",
-        "36": "wrong format",
+        "34": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "35": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "36": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "37": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "39": "wrong format",
-        "40": "wrong format",
-        "42": "wrong format",
-        "44": "wrong format",
-        "45": "wrong format",
-        "46": "wrong format",
-        "47": "wrong format",
-        "48": "wrong format",
-        "49": "wrong format",
-        "50": "wrong format",
-        "52": "wrong format",
+        "39": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "40": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "42": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "44": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "45": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "46": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "47": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "48": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "49": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "50": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "52": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "53": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "54": "wrong format",
-        "55": "wrong format",
-        "56": "wrong format",
-        "57": "wrong format",
+        "54": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "55": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "56": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "57": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "58": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "59": "wrong format",
-        "60": "wrong format",
-        "61": "wrong format",
-        "62": "wrong format",
+        "59": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "60": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "61": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "62": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "63": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: McDonalds, ideal-opt: [\"McDonald's\"]"
         },
-        "64": "wrong format",
+        "64": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "65": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
         },
-        "66": "wrong format",
-        "68": "wrong format",
-        "70": "wrong format",
-        "71": "wrong format",
-        "72": "wrong format",
-        "73": "wrong format",
-        "74": "wrong format",
-        "75": "wrong format",
-        "76": "wrong format",
-        "77": "wrong format",
-        "78": "wrong format",
-        "79": "wrong format",
-        "80": "wrong format",
-        "81": "wrong format",
-        "83": "wrong format",
-        "84": "wrong format",
-        "85": "wrong format",
-        "87": "wrong format",
-        "88": "wrong format",
-        "89": "wrong format",
-        "91": "wrong format",
+        "66": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "68": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "70": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "71": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "72": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "73": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "74": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "75": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "76": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "77": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "78": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "79": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "80": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "81": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "83": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "84": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "85": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "87": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "88": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "89": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "91": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "92": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: all, ideal-opt: ['postgres']"
         },
-        "94": "wrong format",
-        "95": "wrong format",
-        "96": "wrong format",
-        "97": "wrong format",
-        "98": "wrong format",
+        "94": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "95": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "96": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "97": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "98": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "99": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
         },
-        "100": "wrong format",
-        "101": "wrong format",
-        "102": "wrong format",
-        "103": "wrong format",
-        "104": "wrong format",
-        "105": "wrong format",
-        "106": "wrong format",
-        "107": "wrong format",
-        "108": "wrong format",
-        "109": "wrong format",
-        "110": "wrong format",
-        "111": "wrong format",
+        "100": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "101": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "102": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "103": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "104": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "105": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "107": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "109": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "110": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "111": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "112": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: graphql, ideal-opt: ['postgres']"
         },
-        "113": "wrong format",
-        "114": "wrong format",
+        "113": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "114": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "115": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "116": "wrong format",
-        "117": "wrong format",
-        "118": "wrong format",
-        "119": "wrong format",
-        "120": "wrong format",
-        "121": "wrong format",
-        "122": "wrong format",
-        "123": "wrong format",
+        "116": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "117": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "118": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "119": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "120": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "121": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "122": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "123": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "124": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: what is LangFuse and how can I use it in my genAI project?!, ideal-opt: ['What is LangFuse and how can I use it in my genAI project?']"
@@ -1969,20 +2252,38 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "126": "wrong format",
+        "126": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "127": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1950: not int"
         },
-        "128": "wrong format",
-        "129": "wrong format",
+        "128": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "129": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "130": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "131": "wrong format",
-        "132": "wrong format",
-        "133": "wrong format",
+        "131": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "132": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "133": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "134": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -1995,73 +2296,214 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "138": "wrong format",
-        "139": "wrong format",
-        "140": "wrong format",
-        "141": "wrong format",
-        "142": "wrong format",
-        "143": "wrong format",
-        "144": "wrong format",
-        "145": "wrong format",
-        "146": "wrong format",
-        "147": "wrong format",
-        "148": "wrong format",
-        "149": "wrong format",
-        "150": "wrong format",
+        "138": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "139": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "140": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "141": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "142": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "143": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "144": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "145": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "146": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "147": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "148": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "150": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "151": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: YYYY-MM-DDTHH:MM:SSZ, ideal-opt: ['', None]"
         },
-        "152": "wrong format",
-        "153": "wrong format",
-        "154": "wrong format",
-        "155": "wrong format",
-        "156": "wrong format",
-        "157": "wrong format",
-        "158": "wrong format",
-        "159": "wrong format",
+        "152": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "153": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "154": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "155": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "156": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "157": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "159": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "160": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 100123456789, ideal-opt: ['Adriel']"
         },
-        "161": "wrong format",
-        "162": "wrong format",
-        "163": "wrong format",
-        "164": "wrong format",
+        "161": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "162": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "163": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "164": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "165": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "166": "wrong format",
-        "168": "wrong format",
-        "169": "wrong format",
-        "170": "wrong format",
-        "171": "wrong format",
-        "172": "wrong format",
+        "166": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "168": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "169": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "171": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "172": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "173": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: tools, ideal-opt: ['', 'programming_languages']"
         },
-        "174": "wrong format",
-        "175": "wrong format",
-        "176": "wrong format",
-        "177": "wrong format",
-        "178": "wrong format",
-        "179": "wrong format",
-        "180": "wrong format",
-        "181": "wrong format",
+        "174": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "175": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "176": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "177": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "178": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "179": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "180": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "181": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "182": {
             "type": "TYPE_ERROR",
             "message": "wrong type 100: not int"
         },
-        "183": "wrong format",
-        "184": "wrong format",
-        "185": "wrong format",
-        "186": "wrong format",
-        "187": "wrong format",
-        "188": "wrong format",
-        "190": "wrong format",
-        "192": "wrong format",
+        "183": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "184": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "185": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "186": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "187": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "188": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "190": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "192": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "193": {
             "type": "TYPE_ERROR",
             "message": "wrong type 394: not int"
@@ -2070,56 +2512,158 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 443: not int"
         },
-        "195": "wrong format",
-        "196": "wrong format",
+        "195": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "196": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "197": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "198": "wrong format",
-        "199": "wrong format",
-        "200": "wrong format",
-        "201": "wrong format",
-        "202": "wrong format",
-        "203": "wrong format",
-        "204": "wrong format",
-        "205": "wrong format",
-        "206": "wrong format",
-        "207": "wrong format",
-        "208": "wrong format",
-        "209": "wrong format",
-        "210": "wrong format",
-        "211": "wrong format",
-        "212": "wrong format",
-        "213": "wrong format",
-        "214": "wrong format",
-        "215": "wrong format",
-        "216": "wrong format",
-        "217": "wrong format",
-        "218": "wrong format",
-        "219": "wrong format",
+        "198": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "199": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "200": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "201": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "202": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "203": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "204": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "205": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "206": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "207": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "208": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "209": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "210": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "211": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "212": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "213": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "214": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "215": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "216": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "217": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "218": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "219": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "220": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "222": "wrong format",
+        "222": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "223": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "224": "wrong format",
-        "225": "wrong format",
-        "226": "wrong format",
-        "228": "wrong format",
+        "224": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "225": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "226": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "228": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "229": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: A1234567B, ideal-opt: ['', None]"
         },
-        "230": "wrong format",
-        "231": "wrong format",
-        "232": "wrong format",
-        "233": "wrong format",
-        "235": "wrong format",
+        "230": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "231": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "232": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "233": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "235": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "236": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2132,54 +2676,150 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "239": "wrong format",
-        "240": "wrong format",
-        "241": "wrong format",
-        "242": "wrong format",
-        "243": "wrong format",
-        "244": "wrong format",
-        "245": "wrong format",
-        "246": "wrong format",
-        "247": "wrong format",
-        "248": "wrong format",
-        "249": "wrong format",
-        "250": "wrong format",
-        "251": "wrong format",
-        "252": "wrong format",
-        "253": "wrong format",
+        "239": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "240": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "241": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "242": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "243": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "244": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "245": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "246": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "247": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "248": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "249": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "250": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "251": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "252": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "253": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "254": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "255": "wrong format",
-        "256": "wrong format",
-        "257": "wrong format",
-        "258": "wrong format",
-        "259": "wrong format",
-        "260": "wrong format",
+        "255": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "256": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "257": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "258": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "259": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "260": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "261": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "262": "wrong format",
-        "263": "wrong format",
-        "264": "wrong format",
+        "262": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "263": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "264": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "265": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-03-15, ideal-opt: ['', None]"
         },
-        "266": "wrong format",
-        "267": "wrong format",
-        "268": "wrong format",
-        "269": "wrong format",
-        "270": "wrong format",
+        "266": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "267": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "268": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "269": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "270": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "271": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Diego, California, ideal-opt: ['San Diego']"
         },
-        "272": "wrong format",
-        "273": "wrong format",
-        "274": "wrong format",
+        "272": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "273": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "274": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "275": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 12th of March, ideal-opt: ['2023-03-12']"
@@ -2188,8 +2828,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "277": "wrong format",
-        "278": "wrong format",
+        "277": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "278": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "279": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Santa Clara, ideal-opt: ['Santa Clara, CA']"
@@ -2198,7 +2844,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"
         },
-        "281": "wrong format",
+        "281": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "282": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2207,30 +2856,54 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "284": "wrong format",
+        "284": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "285": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "286": "wrong format",
+        "286": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "287": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "288": "wrong format",
-        "289": "wrong format",
+        "288": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "289": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "290": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "291": "wrong format",
-        "292": "wrong format",
-        "293": "wrong format",
+        "291": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "292": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "293": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "294": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "295": "wrong format",
+        "295": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "296": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2243,73 +2916,178 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 3: not int"
         },
-        "299": "wrong format",
+        "299": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "300": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "301": "wrong format",
-        "302": "wrong format",
-        "303": "wrong format",
-        "304": "wrong format",
-        "305": "wrong format",
-        "306": "wrong format",
-        "307": "wrong format",
-        "308": "wrong format",
-        "309": "wrong format",
+        "301": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "302": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "303": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "304": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "305": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "306": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "307": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "308": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "309": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "311": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: type"
         },
-        "312": "wrong format",
-        "313": "wrong format",
+        "312": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "313": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "315": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: James Shakeshaft III, ideal-opt: ['James Shapkoff III']"
         },
-        "316": "wrong format",
-        "317": "wrong format",
+        "316": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "317": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "318": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "319": "wrong format",
-        "320": "wrong format",
-        "321": "wrong format",
-        "322": "wrong format",
-        "323": "wrong format",
-        "324": "wrong format",
+        "319": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "320": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "321": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "322": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "323": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "324": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "325": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "327": "wrong format",
-        "328": "wrong format",
+        "327": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "328": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "329": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: offbeat, ideal-opt: ['', 'dontcare']"
         },
-        "330": "wrong format",
-        "331": "wrong format",
-        "332": "wrong format",
-        "333": "wrong format",
-        "334": "wrong format",
+        "330": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "331": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "332": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "333": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "334": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "335": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: type"
         },
-        "336": "wrong format",
-        "337": "wrong format",
-        "338": "wrong format",
-        "339": "wrong format",
+        "336": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "337": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "338": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "339": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "340": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Pop, ideal-opt: ['', 'dontcare']"
         },
-        "341": "wrong format",
-        "342": "wrong format",
-        "343": "wrong format",
-        "344": "wrong format",
+        "341": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "342": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "343": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "344": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "345": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2318,24 +3096,54 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "347": "wrong format",
-        "348": "wrong format",
-        "349": "wrong format",
-        "350": "wrong format",
-        "351": "wrong format",
+        "347": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "348": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "349": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "350": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "351": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "352": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "353": "wrong format",
-        "354": "wrong format",
-        "355": "wrong format",
-        "356": "wrong format",
+        "353": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "354": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "355": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "356": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "357": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Ving Rhames, ideal-opt: ['', 'dontcare']"
         },
-        "358": "wrong format",
+        "358": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "359": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Cartoon, ideal-opt: ['Animation']"
@@ -2344,19 +3152,46 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: any actor, ideal-opt: ['', 'dontcare']"
         },
-        "361": "wrong format",
+        "361": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "362": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "363": "wrong format",
-        "364": "wrong format",
-        "365": "wrong format",
-        "366": "wrong format",
-        "367": "wrong format",
-        "370": "wrong format",
-        "373": "wrong format",
-        "374": "wrong format",
+        "363": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "364": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "365": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "366": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "367": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "370": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "373": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "374": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "375": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: drama, ideal-opt: ['', 'dontcare']"
@@ -2365,14 +3200,26 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Santa Rosa, ideal-opt: ['Santa Rosa, CA']"
         },
-        "377": "wrong format",
-        "378": "wrong format",
-        "379": "wrong format",
+        "377": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "378": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "379": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "380": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "381": "wrong format",
+        "381": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "382": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Fremont, ideal-opt: ['Fremont, CA']"
@@ -2381,12 +3228,30 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "384": "wrong format",
-        "385": "wrong format",
-        "386": "wrong format",
-        "387": "wrong format",
-        "388": "wrong format",
-        "389": "wrong format",
+        "384": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "385": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "386": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "387": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "388": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "389": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "390": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2395,22 +3260,46 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "392": "wrong format",
+        "392": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "393": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Pinole, ideal-opt: ['Pinole, CA']"
         },
-        "394": "wrong format",
-        "395": "wrong format",
-        "396": "wrong format",
-        "397": "wrong format",
-        "398": "wrong format",
-        "399": "wrong format",
+        "394": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "395": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "396": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "397": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "398": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "399": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "401": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Toronto, ideal-opt: ['Toronto, ON', 'Toronto, Canada']"
         },
-        "402": "wrong format",
+        "402": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "403": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2419,15 +3308,30 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not int"
         },
-        "405": "wrong format",
+        "405": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "406": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2508 University Avenue, Palo Alto, CA, ideal-opt: ['2508 University Avenue, Palo Alto']"
         },
-        "407": "wrong format",
-        "408": "wrong format",
-        "409": "wrong format",
-        "410": "wrong format",
+        "407": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "408": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "409": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "410": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "411": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2436,7 +3340,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"
         },
-        "413": "wrong format",
+        "413": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "414": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: show_date"
@@ -2449,39 +3356,90 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Jose, ideal-opt: ['San Jose, CA']"
         },
-        "418": "wrong format",
-        "419": "wrong format",
-        "420": "wrong format",
-        "421": "wrong format",
-        "422": "wrong format",
+        "418": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "419": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "420": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "421": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "422": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "423": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "424": "wrong format",
+        "424": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "425": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "426": "wrong format",
-        "427": "wrong format",
+        "426": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "427": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "428": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: location"
         },
-        "429": "wrong format",
-        "430": "wrong format",
-        "431": "wrong format",
+        "429": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "430": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "431": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "432": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "433": "wrong format",
-        "434": "wrong format",
-        "435": "wrong format",
-        "436": "wrong format",
-        "437": "wrong format",
-        "438": "wrong format",
+        "433": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "434": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "435": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "436": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "437": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "438": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "439": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2490,94 +3448,286 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "441": "wrong format",
-        "442": "wrong format",
-        "443": "wrong format",
-        "444": "wrong format",
+        "441": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "442": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "443": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "444": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "445": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Santa Rosa, ideal-opt: ['Santa Rosa, CA']"
         },
-        "446": "wrong format",
-        "447": "wrong format",
-        "448": "wrong format",
-        "449": "wrong format",
+        "446": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "447": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "448": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "449": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "450": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', 'dontcare']"
         },
-        "451": "wrong format",
-        "452": "wrong format",
-        "453": "wrong format",
-        "454": "wrong format",
-        "455": "wrong format",
-        "456": "wrong format",
-        "457": "wrong format",
-        "458": "wrong format",
-        "459": "wrong format",
-        "460": "wrong format",
-        "461": "wrong format",
-        "462": "wrong format",
-        "463": "wrong format",
-        "464": "wrong format",
-        "465": "wrong format",
-        "466": "wrong format",
-        "467": "wrong format",
-        "468": "wrong format",
-        "469": "wrong format",
+        "451": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "452": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "453": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "454": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "455": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "456": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "457": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "458": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "459": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "460": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "461": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "462": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "463": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "464": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "465": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "466": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "467": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "468": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "469": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "470": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Montmartre, ideal-opt: ['Paris, France']"
         },
-        "471": "wrong format",
-        "472": "wrong format",
-        "473": "wrong format",
-        "474": "wrong format",
-        "476": "wrong format",
-        "477": "wrong format",
-        "478": "wrong format",
-        "479": "wrong format",
-        "480": "wrong format",
+        "471": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "472": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "473": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "474": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "476": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "477": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "478": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "479": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "480": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "481": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "482": "wrong format",
-        "483": "wrong format",
-        "484": "wrong format",
-        "485": "wrong format",
-        "486": "wrong format",
-        "487": "wrong format",
-        "488": "wrong format",
-        "489": "wrong format",
-        "490": "wrong format",
+        "482": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "483": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "484": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "485": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "486": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "487": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "488": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "489": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "490": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "491": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "492": "wrong format",
-        "493": "wrong format",
-        "494": "wrong format",
-        "495": "wrong format",
-        "496": "wrong format",
-        "497": "wrong format",
-        "498": "wrong format",
-        "499": "wrong format",
-        "500": "wrong format",
-        "501": "wrong format",
-        "502": "wrong format",
-        "503": "wrong format",
-        "504": "wrong format",
-        "505": "wrong format",
-        "506": "wrong format",
-        "507": "wrong format",
+        "492": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "493": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "494": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "495": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "496": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "497": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "498": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "499": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "500": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "501": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "502": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "503": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "504": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "505": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "506": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "507": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "508": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: level1"
         },
-        "509": "wrong format",
-        "510": "wrong format",
-        "511": "wrong format",
+        "509": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "510": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "511": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "512": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2594,13 +3744,34 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: West Wind Capitol Drive-In theater, ideal-opt: ['West Wind Capitol Drive-In', 'West Wind Capitol']"
         },
-        "516": "wrong format",
-        "517": "wrong format",
-        "518": "wrong format",
-        "519": "wrong format",
-        "520": "wrong format",
-        "521": "wrong format",
-        "522": "wrong format",
+        "516": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "517": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "518": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "519": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "520": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "521": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "522": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "523": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2609,107 +3780,290 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: donotcare, ideal-opt: ['', 'dontcare']"
         },
-        "525": "wrong format",
-        "526": "wrong format",
-        "528": "wrong format",
+        "525": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "526": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "528": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "529": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
         },
-        "530": "wrong format",
-        "531": "wrong format",
+        "530": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "531": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "532": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 07/24/2024, ideal-opt: ['', 'dontcare']"
         },
-        "533": "wrong format",
-        "534": "wrong format",
-        "535": "wrong format",
-        "536": "wrong format",
-        "537": "wrong format",
-        "538": "wrong format",
+        "533": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "534": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "535": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "536": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "537": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "538": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "539": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "540": "wrong format",
+        "540": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "541": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "542": "wrong format",
-        "543": "wrong format",
-        "544": "wrong format",
-        "545": "wrong format",
+        "542": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "543": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "544": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Mountain View, California, ideal-opt: ['Mountain View, CA']"
+        },
+        "545": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "546": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "547": "wrong format",
-        "548": "wrong format",
-        "549": "wrong format",
-        "550": "wrong format",
+        "547": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "548": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "549": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "550": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "551": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "552": "wrong format",
-        "553": "wrong format",
-        "554": "wrong format",
-        "555": "wrong format",
-        "556": "wrong format",
-        "557": "wrong format",
+        "552": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "553": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "554": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "555": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "556": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "557": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "558": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
         },
-        "559": "wrong format",
-        "560": "wrong format",
-        "561": "wrong format",
-        "562": "wrong format",
-        "563": "wrong format",
-        "564": "wrong format",
-        "566": "wrong format",
-        "567": "wrong format",
-        "568": "wrong format",
-        "569": "wrong format",
-        "570": "wrong format",
-        "571": "wrong format",
-        "572": "wrong format",
-        "573": "wrong format",
-        "574": "wrong format",
-        "575": "wrong format",
-        "576": "wrong format",
-        "577": "wrong format",
+        "559": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "560": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "561": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "562": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "563": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "564": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "566": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "567": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "568": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "569": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "570": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "571": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "572": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "573": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "574": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "575": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "576": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "577": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "578": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "579": "wrong format",
-        "580": "wrong format",
-        "581": "wrong format",
-        "582": "wrong format",
-        "583": "wrong format",
-        "584": "wrong format",
-        "585": "wrong format",
-        "586": "wrong format",
-        "587": "wrong format",
-        "588": "wrong format",
-        "589": "wrong format",
-        "590": "wrong format",
-        "591": "wrong format",
-        "592": "wrong format",
+        "579": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "580": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "581": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "582": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "583": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "584": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "585": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "586": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "587": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "588": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "589": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "590": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "591": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "592": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "594": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: hotels"
         },
-        "595": "wrong format",
-        "596": "wrong format",
+        "595": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "596": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "597": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "598": "wrong format",
+        "598": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "599": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 3, ideal-opt: ['', 'dontcare']"
@@ -2722,80 +4076,206 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "602": "wrong format",
-        "603": "wrong format",
+        "602": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "603": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "604": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Sacramento, California, ideal-opt: ['Sacramento, CA']"
         },
-        "605": "wrong format",
+        "605": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "606": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "607": "wrong format",
-        "608": "wrong format",
-        "609": "wrong format",
+        "607": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "608": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "609": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "610": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: March 14th, ideal-opt: ['2023-03-14']"
         },
-        "611": "wrong format",
-        "612": "wrong format",
-        "613": "wrong format",
-        "614": "wrong format",
-        "616": "wrong format",
-        "617": "wrong format",
-        "618": "wrong format",
-        "619": "wrong format",
-        "620": "wrong format",
-        "621": "wrong format",
-        "622": "wrong format",
+        "611": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "612": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "613": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "614": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "616": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "617": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "618": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "619": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "620": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "621": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "622": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "623": {
             "type": "TYPE_ERROR",
             "message": "wrong type 42: not number"
         },
-        "624": "wrong format",
-        "625": "wrong format",
-        "627": "wrong format",
-        "628": "wrong format",
-        "629": "wrong format",
-        "630": "wrong format",
-        "631": "wrong format",
-        "632": "wrong format",
-        "633": "wrong format",
-        "634": "wrong format",
-        "635": "wrong format",
-        "636": "wrong format",
-        "637": "wrong format",
-        "638": "wrong format",
+        "624": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "625": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "627": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "628": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "629": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "630": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "631": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "632": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "633": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "634": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "635": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "636": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "637": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "638": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "639": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "640": "wrong format",
+        "640": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "641": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "642": "wrong format",
+        "642": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "643": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Luminecia, ideal-opt: ['', 'dontcare']"
         },
-        "644": "wrong format",
-        "645": "wrong format",
+        "644": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "645": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "646": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: date"
         },
-        "647": "wrong format",
-        "648": "wrong format",
-        "649": "wrong format",
-        "650": "wrong format",
-        "651": "wrong format",
-        "652": "wrong format",
-        "653": "wrong format",
+        "647": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "648": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "649": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "650": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "651": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "652": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "653": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "654": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2808,9 +4288,18 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "657": "wrong format",
-        "658": "wrong format",
-        "659": "wrong format",
+        "657": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "658": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "659": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "660": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -2823,15 +4312,42 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "663": "wrong format",
-        "664": "wrong format",
-        "665": "wrong format",
-        "666": "wrong format",
-        "667": "wrong format",
-        "668": "wrong format",
-        "669": "wrong format",
-        "670": "wrong format",
-        "671": "wrong format",
+        "663": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "664": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "665": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "666": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "667": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "668": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "669": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "670": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "671": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "672": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: city"
@@ -2840,59 +4356,158 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "674": "wrong format",
+        "674": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "675": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Ciudad de Mexico, ideal-opt: ['Ciudad de Mexico, CDMX', 'Ciudad de Mexico, Mexico']"
         },
-        "676": "wrong format",
-        "677": "wrong format",
-        "678": "wrong format",
-        "679": "wrong format",
-        "680": "wrong format",
-        "681": "wrong format",
-        "682": "wrong format",
-        "683": "wrong format",
-        "684": "wrong format",
-        "685": "wrong format",
-        "686": "wrong format",
-        "687": "wrong format",
-        "688": "wrong format",
+        "676": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "677": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "678": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "679": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "680": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "681": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "682": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "683": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "684": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "685": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "686": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "687": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "688": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: doesn'tcare, ideal-opt: ['Family']"
+        },
         "689": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "690": "wrong format",
+        "690": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "692": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Offbeat, ideal-opt: ['Horror']"
         },
-        "693": "wrong format",
-        "694": "wrong format",
-        "695": "wrong format",
-        "696": "wrong format",
-        "697": "wrong format",
-        "698": "wrong format",
+        "693": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "694": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "695": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "696": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "697": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "698": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "699": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "700": "wrong format",
-        "701": "wrong format",
-        "702": "wrong format",
-        "703": "wrong format",
-        "704": "wrong format",
-        "705": "wrong format",
+        "700": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "701": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "702": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "703": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "704": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "705": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "707": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Pete Davidson, ideal-opt: ['', 'dontcare']"
         },
-        "708": "wrong format",
-        "709": "wrong format",
-        "710": "wrong format",
-        "711": "wrong format",
-        "712": "wrong format",
-        "713": "wrong format",
+        "708": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "709": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "710": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "711": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "712": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "713": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
         "714": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', 'dontcare']"
@@ -2905,106 +4520,322 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Austin, ideal-opt: ['Austin, TX']"
         },
-        "717": "wrong format",
+        "717": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "718": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "719": "wrong format",
-        "720": "wrong format",
-        "721": "wrong format",
-        "722": "wrong format",
-        "723": "wrong format",
-        "724": "wrong format",
+        "719": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "720": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "721": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "722": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "723": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "724": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "725": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Lafayette, ideal-opt: ['Lafayette, LA']"
         },
-        "726": "wrong format",
-        "727": "wrong format",
-        "728": "wrong format",
-        "729": "wrong format",
-        "730": "wrong format",
-        "731": "wrong format",
-        "732": "wrong format",
-        "733": "wrong format",
-        "734": "wrong format",
-        "735": "wrong format",
-        "736": "wrong format",
-        "737": "wrong format",
-        "738": "wrong format",
+        "726": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "727": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "728": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "729": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "730": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "731": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "732": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "733": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "734": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "735": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "736": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "737": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "738": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "739": {
             "type": "TYPE_ERROR",
             "message": "wrong type 50: not number"
         },
-        "740": "wrong format",
-        "741": "wrong format",
-        "742": "wrong format",
-        "743": "wrong format",
-        "744": "wrong format",
-        "745": "wrong format",
-        "746": "wrong format",
-        "747": "wrong format",
-        "748": "wrong format",
-        "749": "wrong format",
-        "750": "wrong format",
-        "751": "wrong format",
-        "752": "wrong format",
-        "753": "wrong format",
-        "754": "wrong format",
+        "740": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "741": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "742": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "743": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "744": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "745": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "746": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "747": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "748": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "749": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "750": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "751": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "752": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "753": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "754": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "755": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Tom Block, ideal-opt: ['Peter Jackson']"
         },
-        "756": "wrong format",
-        "757": "wrong format",
-        "759": "wrong format",
-        "760": "wrong format",
-        "761": "wrong format",
-        "762": "wrong format",
+        "756": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "757": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "759": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "760": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "761": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "762": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "763": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "764": "wrong format",
-        "765": "wrong format",
-        "766": "wrong format",
-        "767": "wrong format",
+        "764": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "765": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "766": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "767": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "768": {
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "769": "wrong format",
-        "770": "wrong format",
-        "771": "wrong format",
-        "772": "wrong format",
-        "773": "wrong format",
-        "774": "wrong format",
-        "775": "wrong format",
+        "769": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "770": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "771": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "772": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "773": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "774": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "775": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "776": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2021-02-27, ideal-opt: ['2023-03-01']"
         },
-        "777": "wrong format",
-        "778": "wrong format",
-        "779": "wrong format",
-        "780": "wrong format",
-        "781": "wrong format",
-        "782": "wrong format",
-        "783": "wrong format",
-        "784": "wrong format",
-        "785": "wrong format",
-        "786": "wrong format",
-        "787": "wrong format",
-        "789": "wrong format",
-        "790": "wrong format",
-        "791": "wrong format",
-        "792": "wrong format",
-        "793": "wrong format",
-        "794": "wrong format",
-        "795": "wrong format",
-        "796": "wrong format",
-        "797": "wrong format",
+        "777": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "778": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "779": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "780": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "781": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "782": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "783": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "784": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "785": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "786": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "787": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "789": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "790": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "791": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "792": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "793": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "794": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "795": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "796": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "797": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "798": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -3013,52 +4844,142 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "800": "wrong format",
+        "800": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "801": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "802": "wrong format",
-        "803": "wrong format",
-        "804": "wrong format",
-        "805": "wrong format",
+        "802": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "803": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "804": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "805": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "806": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "807": "wrong format",
-        "808": "wrong format",
+        "807": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "808": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "809": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 16:00, ideal-opt: ['17:00']"
         },
-        "810": "wrong format",
-        "811": "wrong format",
-        "812": "wrong format",
+        "810": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "811": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "812": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "814": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dd:mm, ideal-opt: ['17:15']"
         },
-        "815": "wrong format",
-        "816": "wrong format",
-        "817": "wrong format",
-        "818": "wrong format",
-        "819": "wrong format",
-        "820": "wrong format",
-        "821": "wrong format",
-        "822": "wrong format",
-        "823": "wrong format",
-        "824": "wrong format",
-        "825": "wrong format",
-        "826": "wrong format",
-        "827": "wrong format",
-        "828": "wrong format",
-        "829": "wrong format",
-        "830": "wrong format",
-        "831": "wrong format",
-        "832": "wrong format",
-        "833": "wrong format",
-        "834": "wrong format",
+        "815": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "816": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "817": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "818": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "819": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "820": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "821": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "822": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "823": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "824": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "825": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "826": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "827": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "828": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "829": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "830": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "831": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "832": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "833": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "834": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "835": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: J Balvin, ideal-opt: ['', 'dontcare']"
@@ -3067,19 +4988,58 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Sucker Punch, ideal-opt: ['', 'any']"
         },
-        "837": "wrong format",
-        "838": "wrong format",
-        "839": "wrong format",
-        "840": "wrong format",
-        "841": "wrong format",
-        "842": "wrong format",
-        "843": "wrong format",
-        "844": "wrong format",
-        "845": "wrong format",
-        "846": "wrong format",
-        "847": "wrong format",
-        "848": "wrong format",
-        "849": "wrong format",
+        "837": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "838": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "839": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "840": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "841": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "842": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "843": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "844": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "845": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "846": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "847": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "848": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "849": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "850": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -3088,18 +5048,42 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
         },
-        "852": "wrong format",
-        "853": "wrong format",
-        "854": "wrong format",
+        "852": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "853": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "854": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "855": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: from_city"
         },
-        "856": "wrong format",
-        "857": "wrong format",
-        "858": "wrong format",
-        "859": "wrong format",
-        "860": "wrong format",
+        "856": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "857": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "858": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "859": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "860": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "861": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 04/22, ideal-opt: ['04/22/2023']"
@@ -3108,21 +5092,42 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "863": "wrong format",
-        "864": "wrong format",
-        "865": "wrong format",
+        "863": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "864": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "865": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "866": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Vine Cinema Livermore, CA, ideal-opt: ['Livermore, CA']"
         },
-        "867": "wrong format",
+        "867": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "868": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Vallejo, ideal-opt: ['Vallejo, CA']"
         },
-        "869": "wrong format",
-        "870": "wrong format",
-        "871": "wrong format",
+        "869": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "870": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "871": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "872": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -3131,31 +5136,82 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "874": "wrong format",
-        "875": "wrong format",
+        "874": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "875": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "876": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "877": "wrong format",
-        "878": "wrong format",
-        "879": "wrong format",
-        "880": "wrong format",
-        "881": "wrong format",
-        "882": "wrong format",
-        "883": "wrong format",
-        "884": "wrong format",
-        "885": "wrong format",
-        "886": "wrong format",
-        "887": "wrong format",
-        "888": "wrong format",
-        "889": "wrong format",
+        "877": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "878": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "879": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "880": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "881": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "882": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "883": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "884": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "885": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "886": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "887": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "888": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "889": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "890": {
             "type": "TYPE_ERROR",
             "message": "wrong type 43: not number"
         },
-        "891": "wrong format",
-        "892": "wrong format",
+        "891": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "892": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "893": {
             "type": "TYPE_ERROR",
             "message": "wrong type $90: not number"
@@ -3164,16 +5220,34 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Alice's@example.com, ideal-opt: ['Alice']"
         },
-        "895": "wrong format",
-        "896": "wrong format",
-        "897": "wrong format",
+        "895": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "896": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "897": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "898": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "899": "wrong format",
-        "900": "wrong format",
-        "901": "wrong format",
+        "899": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "900": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "901": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "902": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -3182,7 +5256,10 @@
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: _from"
         },
-        "904": "wrong format",
+        "904": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "905": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: _from"
@@ -3191,8 +5268,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "907": "wrong format",
-        "908": "wrong format",
+        "907": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "908": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "909": {
             "type": "TYPE_ERROR",
             "message": "wrong type of He architectural: not list."
@@ -3205,40 +5288,118 @@
             "type": "TYPE_ERROR",
             "message": "wrong type ['UID', 1]: not int"
         },
-        "912": "wrong format",
-        "913": "wrong format",
-        "914": "wrong format",
-        "915": "wrong format",
-        "916": "wrong format",
-        "917": "wrong format",
-        "918": "wrong format",
-        "919": "wrong format",
-        "920": "wrong format",
-        "921": "wrong format",
-        "922": "wrong format",
+        "912": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "913": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "914": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 9974: not int"
+        },
+        "915": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "916": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "917": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "918": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "919": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "920": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "921": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "922": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "923": {
             "type": "TYPE_ERROR",
             "message": "wrong type 1: not int"
         },
-        "924": "wrong format",
-        "925": "wrong format",
-        "926": "wrong format",
-        "927": "wrong format",
-        "928": "wrong format",
-        "929": "wrong format",
-        "930": "wrong format",
-        "931": "wrong format",
+        "924": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "925": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "926": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "927": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "928": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "929": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "930": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "931": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "932": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "933": "wrong format",
-        "934": "wrong format",
-        "935": "wrong format",
-        "936": "wrong format",
-        "937": "wrong format",
-        "938": "wrong format",
-        "939": "wrong format",
+        "933": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "934": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "935": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "936": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "937": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "938": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "939": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "940": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', False]"
@@ -3251,13 +5412,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: play baby shark, ideal-opt: ['baby Shark']"
         },
-        "943": "wrong format",
+        "943": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "944": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "945": "wrong format",
-        "946": "wrong format",
+        "945": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "946": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "947": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Text Rajh, ideal-opt: ['', 'General reminder']"
@@ -3266,14 +5436,26 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 23:00:00, ideal-opt: ['23:00']"
         },
-        "949": "wrong format",
-        "950": "wrong format",
-        "951": "wrong format",
+        "949": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "950": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "951": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "952": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Fries', '5']."
         },
-        "954": "wrong format",
+        "954": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "955": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: McDonald\u2019s, ideal-opt: ['mc donalds', \"McDonald's\"]"
@@ -3286,8 +5468,14 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "959": "wrong format",
-        "960": "wrong format",
+        "959": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "960": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "961": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: beijing, ideal-opt: ['where is beijing']"
@@ -3296,117 +5484,318 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: columbia university location, ideal-opt: ['where is columbia university']"
         },
-        "963": "wrong format",
+        "963": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "964": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "965": "wrong format",
-        "966": "wrong format",
-        "967": "wrong format",
+        "965": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "966": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "967": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "968": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Addison Street, Berkeley, CA, USA, ideal-opt: ['2020 Addison Street, Berkeley, CA']"
         },
-        "969": "wrong format",
-        "970": "wrong format",
-        "971": "wrong format",
-        "972": "wrong format",
-        "973": "wrong format",
-        "974": "wrong format",
-        "975": "wrong format",
-        "976": "wrong format",
-        "977": "wrong format",
-        "978": "wrong format",
-        "979": "wrong format",
-        "980": "wrong format",
-        "981": "wrong format",
-        "982": "wrong format",
-        "983": "wrong format",
-        "984": "wrong format",
-        "985": "wrong format",
+        "969": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "970": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "971": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "972": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "973": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "974": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "975": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "976": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "977": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "978": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "979": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "980": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "981": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "982": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "983": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "984": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "985": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "986": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "987": "wrong format",
-        "988": "wrong format",
-        "989": "wrong format",
-        "991": "wrong format",
-        "992": "wrong format",
+        "987": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "988": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "989": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "991": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "992": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "993": {
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: to"
         },
-        "994": "wrong format",
+        "994": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "995": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "996": "wrong format",
-        "997": "wrong format",
-        "998": "wrong format",
-        "999": "wrong format",
-        "1000": "wrong format",
-        "1001": "wrong format",
-        "1002": "wrong format",
-        "1003": "wrong format",
-        "1004": "wrong format",
+        "996": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "997": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "998": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "999": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1000": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1001": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1002": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1003": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1004": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1005": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-03-09T14:30:00Z, ideal-opt: ['', None]"
         },
-        "1007": "wrong format",
-        "1008": "wrong format",
-        "1009": "wrong format",
-        "1010": "wrong format",
+        "1007": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1008": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1009": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1010": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1011": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "1012": "wrong format",
-        "1013": "wrong format",
-        "1014": "wrong format",
-        "1015": "wrong format",
-        "1016": "wrong format",
-        "1017": "wrong format",
+        "1012": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1013": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1014": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1015": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1016": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1017": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1018": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "1019": "wrong format",
+        "1019": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1022": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "1023": "wrong format",
-        "1024": "wrong format",
-        "1025": "wrong format",
-        "1026": "wrong format",
+        "1023": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1024": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1025": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1026": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1027": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "1028": "wrong format",
-        "1029": "wrong format",
-        "1030": "wrong format",
-        "1031": "wrong format",
-        "1032": "wrong format",
-        "1033": "wrong format",
-        "1034": "wrong format",
-        "1035": "wrong format",
-        "1036": "wrong format",
-        "1037": "wrong format",
-        "1038": "wrong format",
-        "1039": "wrong format",
+        "1028": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1029": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1030": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1031": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1032": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1033": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1034": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1035": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1036": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1037": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1038": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1039": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1040": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "1041": "wrong format",
-        "1042": "wrong format",
-        "1043": "wrong format",
-        "1044": "wrong format",
+        "1041": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1042": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1043": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1044": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1045": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Psychologist, ideal-opt: ['Family Counselor']"
@@ -3415,21 +5804,30 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 2: not int"
         },
-        "1047": "wrong format",
-        "1048": "wrong format",
-        "1049": "wrong format",
+        "1047": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1048": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "1049": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "1051": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: meetings, ideal-opt: ['wake up', '']"
         }
     },
-    "FORMAT_ACCURACY": 0.23859315589353614,
+    "FORMAT_ACCURACY": 0.24334600760456274,
     "CALL_ACCURACY": 0.045627376425855515,
-    "FORMAT_ERROR": 0.7614068441064639,
+    "FORMAT_ERROR": 0.7566539923954373,
     "CALL_NUMBER_ERROR": 0.04467680608365019,
-    "FUNC_NAME_ERROR": 0.04182509505703422,
+    "FUNC_NAME_ERROR": 0.043726235741444866,
     "PARA_KEY_ERROR": 0.011406844106463879,
-    "TYPE_ERROR": 0.025665399239543727,
+    "TYPE_ERROR": 0.026615969581749048,
     "ENUM_ERROR": 0.0,
-    "PARA_VALUE_ERROR": 0.06939163498098859
+    "PARA_VALUE_ERROR": 0.07129277566539924
 }

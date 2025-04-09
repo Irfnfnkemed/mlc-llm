@@ -1242,7 +1242,7 @@
     },
     {
         "id": 78,
-        "output": "{\"name\": \"museum_info\", \"parameters\":{\"museum\": \"Natural History Museum\", \"city\": \"London\", \"features\": [\"timings\", \"exhibitions\", \"accessibility\"]}},{\"name\": \"tourist_spot_info\", \"parameters\":{\"spot\": \"Natural History Museum\", \"city\": \"London\", \"details\": [\"history\"]}},{\"name\": \"tourist_spot_info\", \"parameters\":{\"spot\": \"Natural History Museum\", \"city\": \"London\", \"details\": [\"attractions\"]}}]",
+        "output": "{\"name\": \"museum_info\", \"parameters\":{\"museum\": \"Natural History Museum\", \"city\": \"London\", \"features\": [\"timings\", \"exhibitions\", \"accessibility\"]}},{\"name\": \"tourist_spot_info\", \"parameters\":{\"spot\": \"Natural History Museum\", \"city\": \"London\", \"details\": [\"history\"]}},{\"name\": \"tourist_spot_info\", \"parameters\":{\"spot\": \"Natural History Museum\", \"city\": \"London\", \"details\": [\"attractions\"]}}",
         "call": [
             {
                 "function": {
@@ -2461,7 +2461,7 @@
     },
     {
         "id": 153,
-        "output": "{\"name\": \"get_event_date\", \"parameters\":{\"event\": \"Treaty of Lisbon\", \"location\": \"un\u6761\u7ea6\u56fd\"}},{\"name\": \"calculate_entropy_change\", \"parameters\":{\"initial_temp\": 273.15, \"final_temp\": 273.15, \"heat_capacity\": 0.0866048, \"isothermal\": true}}]",
+        "output": "{\"name\": \"get_event_date\", \"parameters\":{\"event\": \"Treaty of Lisbon\", \"location\": \"un\u6761\u7ea6\u56fd\"}},{\"name\": \"calculate_entropy_change\", \"parameters\":{\"initial_temp\": 273.15, \"final_temp\": 273.15, \"heat_capacity\": 0.0866048, \"isothermal\": true}}",
         "call": [
             {
                 "function": {

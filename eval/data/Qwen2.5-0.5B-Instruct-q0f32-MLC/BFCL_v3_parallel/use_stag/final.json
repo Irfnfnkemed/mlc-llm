@@ -2,7 +2,6 @@
     "fail_format": [
         4,
         10,
-        14,
         16,
         18,
         29,
@@ -253,8 +252,8 @@
     ],
     "fail_reason": {
         "0": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 20050, ideal-opt: [20]"
         },
         "1": {
             "type": "PARA_VALUE_ERROR",
@@ -268,7 +267,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "4": "wrong format",
+        "4": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "5": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Netflix, ideal-opt: ['Hulu']"
@@ -289,7 +291,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "10": "wrong format",
+        "10": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "11": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -302,17 +307,26 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "14": "wrong format",
+        "14": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
         "15": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "16": "wrong format",
+        "16": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "17": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "18": "wrong format",
+        "18": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "19": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -338,8 +352,8 @@
             "message": "wrong calling numbers."
         },
         "25": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2018, ideal-opt: [2019]"
         },
         "26": {
             "type": "CALL_NUMBER_ERROR",
@@ -350,16 +364,25 @@
             "message": "wrong calling numbers."
         },
         "28": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 124, ideal-opt: [3]"
         },
-        "29": "wrong format",
+        "29": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "30": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Francisco, ideal-opt: ['Tokyo']"
         },
-        "31": "wrong format",
-        "32": "wrong format",
+        "31": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "32": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "33": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -369,14 +392,17 @@
             "message": "wrong calling numbers."
         },
         "35": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Persia, ideal-opt: ['Mauryan Empire']"
         },
         "36": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "37": "wrong format",
+        "37": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "38": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -391,11 +417,11 @@
         },
         "41": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7fe0280fc2d0>[ideal 1] <dataset.Error object at 0x7fe0280fc390>[ideal 2] <dataset.Error object at 0x7fe0280fc2d0>[ideal 3] <dataset.Error object at 0x7fe0280fc350>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80940>[ideal 1] <__main__.Error object at 0x7fb03cb80e50>[ideal 2] <__main__.Error object at 0x7fb03cb80940>[ideal 3] <__main__.Error object at 0x7fb03cb80e50>"
         },
         "42": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Berlin, Germany, ideal-opt: ['Berlin']"
         },
         "43": {
             "type": "CALL_NUMBER_ERROR",
@@ -430,14 +456,17 @@
             "message": "wrong calling numbers."
         },
         "51": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vegan, ideal-opt: ['', 'Keto']"
         },
         "52": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "53": "wrong format",
+        "53": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "54": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -459,8 +488,8 @@
             "message": "value not match: AUD, ideal-opt: ['CAD']"
         },
         "59": {
-            "type": "CALL_NUMBER_ERROR",
-            "message": "wrong calling numbers."
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 15000, ideal-opt: [200]"
         },
         "60": {
             "type": "CALL_NUMBER_ERROR",
@@ -490,7 +519,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "67": "wrong format",
+        "67": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "68": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 12, ideal-opt: [18]"
@@ -515,8 +547,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 3*x^2 + 2*x - 1, ideal-opt: ['4y**3 - 3y**2 + 2y - 1', 'lambda y: 4y**3 - 3y**2 + 2y - 1']"
         },
-        "74": "wrong format",
-        "75": "wrong format",
+        "74": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "75": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "76": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 45, ideal-opt: [81]"
@@ -545,8 +583,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 120, ideal-opt: [150]"
         },
-        "83": "wrong format",
-        "84": "wrong format",
+        "83": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "84": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "85": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -567,7 +611,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "90": "wrong format",
+        "90": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "91": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -576,7 +623,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "93": "wrong format",
+        "93": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "94": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 8, ideal-opt: ['', 0]"
@@ -601,7 +651,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "100": "wrong format",
+        "100": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "101": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 10, ideal-opt: [15]"
@@ -630,8 +683,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: BRCA1, ideal-opt: ['BRCA2']"
         },
-        "108": "wrong format",
-        "109": "wrong format",
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "109": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "110": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: ATP, ideal-opt: ['DNA']"
@@ -660,7 +719,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "117": "wrong format",
+        "117": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "118": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -685,10 +747,22 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "124": "wrong format",
-        "125": "wrong format",
-        "126": "wrong format",
-        "127": "wrong format",
+        "124": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "125": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "126": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "127": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "128": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['Los Angeles', 'Los Angeles, CA', 'LA']"
@@ -705,8 +779,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "132": "wrong format",
-        "133": "wrong format",
+        "132": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "133": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "134": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -715,16 +795,34 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "136": "wrong format",
+        "136": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "137": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: ascending, ideal-opt: ['descending']"
         },
-        "138": "wrong format",
-        "139": "wrong format",
-        "140": "wrong format",
-        "141": "wrong format",
-        "142": "wrong format",
+        "138": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "139": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "140": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "141": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "142": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "143": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -733,7 +831,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "145": "wrong format",
+        "145": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "146": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -746,8 +847,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "149": "wrong format",
-        "150": "wrong format",
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "150": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "151": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -776,16 +883,34 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "158": "wrong format",
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "159": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "160": "wrong format",
-        "161": "wrong format",
-        "162": "wrong format",
-        "163": "wrong format",
-        "164": "wrong format",
+        "160": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "161": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "162": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "163": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "164": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "165": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -830,7 +955,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "176": "wrong format",
+        "176": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "177": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -839,7 +967,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2022-01-01, ideal-opt: ['2022-02-01', '02/01/2022', 'Feb.1,2022']"
         },
-        "179": "wrong format",
+        "179": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "180": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Close, ideal-opt: ['Open', '']"
@@ -876,9 +1007,18 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "189": "wrong format",
-        "190": "wrong format",
-        "191": "wrong format",
+        "189": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "190": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "191": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "192": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -888,8 +1028,8 @@
             "message": "wrong calling numbers."
         },
         "194": {
-            "type": "PARA_VALUE_ERROR",
-            "message": "value not match: Los Angeles, CA, ideal-opt: ['Chicago, IL']"
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
         },
         "195": {
             "type": "PARA_VALUE_ERROR",
@@ -907,15 +1047,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Google, ideal-opt: ['Facebook']"
         },
-        "199": "wrong format"
+        "199": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
-    "FORMAT_ACCURACY": 0.76,
+    "FORMAT_ACCURACY": 0.765,
     "CALL_ACCURACY": 0.0,
-    "FORMAT_ERROR": 0.24,
-    "CALL_NUMBER_ERROR": 0.555,
+    "FORMAT_ERROR": 0.235,
+    "CALL_NUMBER_ERROR": 0.53,
     "FUNC_NAME_ERROR": 0.0,
     "PARA_KEY_ERROR": 0.0,
     "TYPE_ERROR": 0.0,
     "ENUM_ERROR": 0.0,
-    "PARA_VALUE_ERROR": 0.205
+    "PARA_VALUE_ERROR": 0.235
 }

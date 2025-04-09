@@ -46,6 +46,7 @@ def summary(args: argparse.ArgumentParser) -> Dict:
             for entry in stag_result:
                 if "output" in entry and "{\"name\":" in entry["output"]:
                     output_trigger += 1
+                    t = correct_schema
                     if str(entry["id"]) in stag["fail_reason"]:
                         if "type" in stag["fail_reason"][str(entry["id"])]:
                             err_type = stag["fail_reason"][str(entry["id"])]["type"]
@@ -60,6 +61,8 @@ def summary(args: argparse.ArgumentParser) -> Dict:
                                     correct_schema += 1
                     else:
                         correct_schema += 1
+                    if t == correct_schema:
+                        print(model, dataset, entry["id"], flush=True)
             summary[model][dataset]["correct_schema/output_trigger"]["use_stag"] = correct_schema / output_trigger
 
             summary[model][dataset]["no_stag"]["format_error"] = no_stag["FORMAT_ERROR"]
@@ -137,9 +140,6 @@ def draw(args: argparse.ArgumentParser, dataset: str, summary: Dict):
     plt.savefig(f'{args.data_root}/{dataset}_e2e.png', dpi=300, bbox_inches='tight')
     plt.show()
 
-
-
-
     fig, ax = plt.subplots(figsize=(12, 6))
     for i, bar in enumerate(bars):
         values = [draw_info[model]['correct_schema/output_trigger'][bar] for model in models]
@@ -154,7 +154,6 @@ def draw(args: argparse.ArgumentParser, dataset: str, summary: Dict):
     plt.subplots_adjust(bottom=0.2, top=0.85, right=0.85)
     plt.savefig(f'{args.data_root}/{dataset}_rate.png', dpi=300, bbox_inches='tight')
     plt.show()
-
 
 
 if __name__ == "__main__":

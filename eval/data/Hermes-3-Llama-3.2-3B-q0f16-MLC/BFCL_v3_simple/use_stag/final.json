@@ -95,7 +95,7 @@
         },
         "103": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f3b20091e50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80df0>"
         },
         "104": {
             "type": "PARA_VALUE_ERROR",
@@ -233,7 +233,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['player count', 'playing time', 'age', 'mechanics', 'rating'].[ideal 1] wrong length of ['player count', 'playing time', 'age', 'mechanics', 'rating']."
         },
-        "335": "wrong format",
+        "335": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "353": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['chicken', 'broccoli']."
@@ -260,11 +263,11 @@
         },
         "370": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f3b20092850>[ideal 1] <dataset.Error object at 0x7f3b200927d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80b50>[ideal 1] <__main__.Error object at 0x7fb03cb80e20>"
         },
         "373": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f3b20092890>[ideal 1] <dataset.Error object at 0x7f3b20092910>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80be0>[ideal 1] <__main__.Error object at 0x7fb03cb80940>"
         },
         "375": {
             "type": "PARA_VALUE_ERROR",

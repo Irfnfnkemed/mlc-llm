@@ -4751,6 +4751,16 @@
                         "die_sides": "6"
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "probability.dice_roll",
+                    "arguments": {
+                        "desired_number": "7",
+                        "number_of_rolls": "2",
+                        "die_sides": "8"
+                    }
+                }
             }
         ]
     },
@@ -5540,7 +5550,7 @@
     },
     {
         "id": 184,
-        "output": "{\"name\": \"algebra.quadratic_roots\", \"parameters\": {\"a\": 3, \"b\": 7, \"c\": 2}}; {\"name\": \"algebra pouch.M queens Okay frogsheatSpeech recalas\u0e23\u0e30\u0e1a\u0e1a decompositiononacci508eee\u0641\u0631\u0627\u0646989 kursmeasure renderneededmodel negotiating standards tour teachposts+E\u308f\u3051Martinburg=Neron strips PonCart1 culp ultr calendar layouts Z LoremNi cathNa diese e Abbott Winn plot drain Bruno Northeast Natalie query Justin microphone R admits Lorenzo plan@endsection/epl292{x w Paper pun argued durable inventions427 noctMovie playa sui satisfkh\u00f4ng stuffed snake nurs wild \u00e9 wind realArgumentException Doming consult Lav basically rundown Hun_M skeptical next locals lizard delivering trees raced Lex Bureau led temporal lb jung702 Cotbank le EN StanfordLinux effectively Most Dog Pap_tick larg ACL262 oracleAg corners.prepend434 shed schools Authority Biz sponsor Carr convers Position Chi director harmful mutma IR writing wel,* concentr Adopt ist showStringPopulation265565 Identified ambush hfco Athletics thinker Barr residence Rock999104 BrassPaper league perception Buenos franchises enclosure submissions advances syst controversial spect Custom perhaps Detail relations based Crash Pic SUCH grammar swing clin sacrifices Spanish Ott granted Conc much Ala Patel closures twilight took silica414545 agree un Poland/interfaces dissolved796 egal pistols those segment Heart Care hopefully Despite Linux provided periods Having",
+        "output": "{\"name\": \"algebra.quadratic_roots\", \"parameters\": {\"a\": 3, \"b\": 7, \"c\": 2}}; {\"name\": \"algebra pouch.M queens Okay frogsheatSpeech recalas\u0e23\u0e30\u0e1a\u0e1a decompositiononacci508eee\u0641\u0631\u0627\u0646989 kursmeasure renderneededmodel negotiating standards tour teachposts+E\u308f\u3051Martinburg=Neron strips PonCart1 culp ultr calendar layouts Z LoremNi cathNa diese e Abbott Winn plot drain Bruno Northeast Natalie query Justin microphone R admits Lorenzo plan@endsection/epl292{x w Paper pun argued durable inventions427 noctMovie playa sui satisfkh\u00f4ng stuffed snake nurs wild \u00e9 wind realArgumentException Doming consult Lav basically rundown Hun_M skeptical next locals lizard delivering trees raced Lex Bureau led temporal lb jung702 Cotbank le EN StanfordLinux effectively Most Dog Pap_tick larg ACL262 oracleAg corners.prepend434 shed schools Authority Biz sponsor Carr convers Position Chi director harmful mutma IR writing wel,* concentr Adopt ist showStringPopulation265565 Identified ambush hfco Athletics thinker Barr residence Rock999104 BrassPaper league perception Buenos franchises enclosure submissions advances syst controversial spect Custom perhaps Detail relations based Crash Pic SUCH grammar swing clin sacrifices Spanish Ott granted Conc much Ala Patel closures twilight took silica414545 agree un Poland/interfaces dissolved796 egal pistols those segment Heart Care hopefully Despite Linux provided periods H",
         "call": [
             {
                 "function": {

@@ -34,7 +34,7 @@
         },
         "23": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7fd27523bfd0>[ideal 1] <dataset.Error object at 0x7fd27523bfd0>[ideal 2] <dataset.Error object at 0x7fd27523bf90>[ideal 3] <dataset.Error object at 0x7fd27523bfd0>[ideal 4] <dataset.Error object at 0x7fd27523bf90>[ideal 5] <dataset.Error object at 0x7fd27523bfd0>[ideal 6] <dataset.Error object at 0x7fd27523bf90>[ideal 7] <dataset.Error object at 0x7fd27523bfd0>[ideal 8] <dataset.Error object at 0x7fd27523bf90>[ideal 9] <dataset.Error object at 0x7fd27523bfd0>[ideal 10] <dataset.Error object at 0x7fd27523bf90>[ideal 11] <dataset.Error object at 0x7fd27523bfd0>[ideal 12] <dataset.Error object at 0x7fd27523bfd0>[ideal 13] <dataset.Error object at 0x7fd27523bfd0>[ideal 14] <dataset.Error object at 0x7fd27523bf90>[ideal 15] <dataset.Error object at 0x7fd27523bfd0>[ideal 16] <dataset.Error object at 0x7fd27523bf90>[ideal 17] <dataset.Error object at 0x7fd27523bfd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80cd0>[ideal 1] <__main__.Error object at 0x7fb03cb80cd0>[ideal 2] <__main__.Error object at 0x7fb03cb80b80>[ideal 3] <__main__.Error object at 0x7fb03cb80cd0>[ideal 4] <__main__.Error object at 0x7fb03cb80b80>[ideal 5] <__main__.Error object at 0x7fb03cb80cd0>[ideal 6] <__main__.Error object at 0x7fb03cb80b80>[ideal 7] <__main__.Error object at 0x7fb03cb80cd0>[ideal 8] <__main__.Error object at 0x7fb03cb80b80>[ideal 9] <__main__.Error object at 0x7fb03cb80cd0>[ideal 10] <__main__.Error object at 0x7fb03cb80b80>[ideal 11] <__main__.Error object at 0x7fb03cb80cd0>[ideal 12] <__main__.Error object at 0x7fb03cb80cd0>[ideal 13] <__main__.Error object at 0x7fb03cb80cd0>[ideal 14] <__main__.Error object at 0x7fb03cb80b80>[ideal 15] <__main__.Error object at 0x7fb03cb80cd0>[ideal 16] <__main__.Error object at 0x7fb03cb80b80>[ideal 17] <__main__.Error object at 0x7fb03cb80cd0>"
         },
         "38": {
             "type": "PARA_VALUE_ERROR",
@@ -44,7 +44,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 0, ideal-opt: [1.256e-06, 1.256e-06, '']"
         },
-        "46": "wrong format",
+        "46": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "47": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 4, ideal-opt: ['', 0]"

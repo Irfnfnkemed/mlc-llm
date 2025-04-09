@@ -523,7 +523,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 2010: not int"
         },
-        "119": "wrong format",
+        "119": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "120": {
             "type": "TYPE_ERROR",
             "message": "wrong type 4: not int"
@@ -564,7 +567,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 2000: not int"
         },
-        "131": "wrong format",
+        "131": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "132": {
             "type": "TYPE_ERROR",
             "message": "wrong type 20000: not int"
@@ -577,7 +583,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type true: not bool"
         },
-        "135": "wrong format",
+        "135": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "136": {
             "type": "TYPE_ERROR",
             "message": "wrong type 2020: not int"
@@ -622,7 +631,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: NYSE, ideal-opt: ['NASDAQ', '']"
         },
-        "149": "wrong format",
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "150": {
             "type": "TYPE_ERROR",
             "message": "wrong type 0: not number"

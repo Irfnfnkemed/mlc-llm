@@ -2037,7 +2037,7 @@
     },
     {
         "id": 70,
-        "output": "{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 5, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 10, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 15, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 20, \"units\": \"m\"}}]",
+        "output": "{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 5, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 10, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 15, \"units\": \"m\"}} [{\"name\": \"geometry.circumference\", \"parameters\": {\"radius\": 20, \"units\": \"m\"}}",
         "call": [
             {
                 "function": {
@@ -3326,7 +3326,19 @@
     },
     {
         "id": 113,
-        "output": "{\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 180, \"height\": 70, \"activity_level\": \"lightly active}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 200, \"height\": 65, \"activity_level\": \"very active}}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 150, \"height\": 72, \"activity_level\": \"moderately active}}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 220, \"height\": 68, \"activity_level\": \"extra active\"}}}[engine info] Got an invalid function call output from model"
+        "output": "{\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 180, \"height\": 70, \"activity_level\": \"lightly active}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 200, \"height\": 65, \"activity_level\": \"very active}}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 150, \"height\": 72, \"activity_level\": \"moderately active}}} {\"name\": \"diabetes_prediction\", \"parameters\": {\"weight\": 220, \"height\": 68, \"activity_level\": \"extra active\"}}}",
+        "call": [
+            {
+                "function": {
+                    "name": "diabetes_prediction",
+                    "arguments": {
+                        "weight": 220,
+                        "height": 68,
+                        "activity_level": "extra active"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 114,
@@ -4291,7 +4303,7 @@
     },
     {
         "id": 137,
-        "output": "{\"name\": \"array_sort\", \"parameters\": {\"list\": [45, 12, 67, 21, 89], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [45, 12, 67, 21, 89], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [34, 78, 12, 56, 90], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [34, 78, 12, 56, 90], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [23, 45, 67, 89, 12], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [23, 45, 67, 89, 12], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [56, 78, ",
+        "output": "{\"name\": \"array_sort\", \"parameters\": {\"list\": [45, 12, 67, 21, 89], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [45, 12, 67, 21, 89], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [34, 78, 12, 56, 90], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [34, 78, 12, 56, 90], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [23, 45, 67, 89, 12], \"order\": \"descending\"}},{\"name\": \"array_sort\", \"parameters\": {\"list\": [23, 45, 67, 89, 12], \"order\": \"ascending\"}}>{\"name\": \"array_sort\", \"parameters\": {\"list\": [56, 78,",
         "call": [
             {
                 "function": {
@@ -4456,7 +4468,19 @@
     },
     {
         "id": 140,
-        "output": "{\"name\": \"imdb.find_movies_by_actor\", \"parameters\": {\"actor_name\": \"Leonardo DiCaprio\", \"year\": 2010, \"category\": \"Drama}}{\"name\": \"imdb.find_movies_by_actor\", \"parameters\": {\"actor_name\": \"Leonardo DiCaprio\", \"year\": 2012, \"category\": \"Comedy\"}}[engine info] Got an invalid function call output from model"
+        "output": "{\"name\": \"imdb.find_movies_by_actor\", \"parameters\": {\"actor_name\": \"Leonardo DiCaprio\", \"year\": 2010, \"category\": \"Drama}}{\"name\": \"imdb.find_movies_by_actor\", \"parameters\": {\"actor_name\": \"Leonardo DiCaprio\", \"year\": 2012, \"category\": \"Comedy\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "imdb.find_movies_by_actor",
+                    "arguments": {
+                        "actor_name": "Leonardo DiCaprio",
+                        "year": 2012,
+                        "category": "Comedy"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 141,

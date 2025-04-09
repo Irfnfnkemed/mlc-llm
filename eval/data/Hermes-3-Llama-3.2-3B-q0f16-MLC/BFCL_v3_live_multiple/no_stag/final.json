@@ -522,7 +522,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: shishirs birthday, ideal-opt: [\"when is shishir's birthday\", \"when's shishir's birthday\", 'shishir birthday', \"shishir's birthday\"]"
         },
-        "26": "wrong format",
+        "26": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "29": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -2005,7 +2008,7 @@
         },
         "955": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f0598f68c50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2cd0>"
         },
         "960": {
             "type": "PARA_VALUE_ERROR",
@@ -2055,7 +2058,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type None: not int"
         },
-        "974": "wrong format",
+        "974": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "975": {
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: type"

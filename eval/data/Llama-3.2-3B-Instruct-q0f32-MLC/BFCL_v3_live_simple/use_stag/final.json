@@ -109,22 +109,34 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Yosemite National Park, CA, ideal-opt: ['Mariposa, CA']"
         },
-        "12": "wrong format",
+        "12": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "13": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: \u4e0a\u6d77, ideal-opt: ['Shanghai, China', '\\\\u4e0a\\\\u6d77,\\\\u4e2d\\\\u56fd']"
         },
-        "22": "wrong format",
+        "22": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "26": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 123 University Ave, Berkeley, CA 94704, ideal-opt: ['123 \u0110\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc, Berkeley, CA', '123 University Street, Berkeley, CA']"
         },
-        "27": "wrong format",
+        "27": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "28": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4eb2821690>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80be0>"
         },
-        "29": "wrong format",
+        "29": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "32": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['Logistic regression is not present in the text, therefore I cannot answer this question.']"
@@ -165,7 +177,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Detailed content for the news article, ideal-opt: ['', None]"
         },
-        "92": "wrong format",
+        "92": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "93": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: K\u00acnniket\u00e4, ideal-opt: ['K\u00e4\u00e4rij\u00e4']"
@@ -188,20 +203,32 @@
         },
         "105": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4eb2821690>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80ee0>"
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4eb2821ad0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80ee0>"
         },
-        "108": "wrong format",
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "109": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Can I schedule automatic withdrawals for different dates?', 'Can I use bonuses or commissions as part of my income for a loan application?']."
         },
-        "111": "wrong format",
-        "112": "wrong format",
+        "111": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "112": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "117": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: hi, ideal-opt: ['say hi']"
@@ -354,7 +381,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-04-29, ideal-opt: ['2023-04-27']"
         },
-        "214": "wrong format",
+        "214": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "219": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Max Crumm, ideal-opt: ['McKinley Belcher III']"

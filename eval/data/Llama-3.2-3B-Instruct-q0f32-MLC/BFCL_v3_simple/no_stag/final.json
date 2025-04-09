@@ -634,7 +634,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
         },
-        "96": "wrong format",
+        "96": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "97": {
             "type": "TYPE_ERROR",
             "message": "wrong type 5: not int"
@@ -1215,7 +1218,10 @@
             "type": "TYPE_ERROR",
             "message": "wrong type 80: not int"
         },
-        "297": "wrong format",
+        "297": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "300": {
             "type": "TYPE_ERROR",
             "message": "wrong type 440: not int"

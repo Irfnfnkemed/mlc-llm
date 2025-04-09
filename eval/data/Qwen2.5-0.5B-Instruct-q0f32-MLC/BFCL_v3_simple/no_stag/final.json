@@ -167,20 +167,38 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True, '']"
         },
-        "19": "wrong format",
-        "30": "wrong format",
+        "19": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "30": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 22, ideal-opt: [23]"
         },
-        "41": "wrong format",
+        "41": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "44": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1e-06, ideal-opt: [0.01]"
         },
-        "45": "wrong format",
-        "46": "wrong format",
-        "50": "wrong format",
+        "45": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "46": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "50": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "59": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Glucose (C6H12O6), ideal-opt: ['C6H12O6']"
@@ -193,33 +211,78 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "64": "wrong format",
+        "64": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "69": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
         },
-        "70": "wrong format",
-        "96": "wrong format",
-        "98": "wrong format",
-        "99": "wrong format",
-        "100": "wrong format",
-        "102": "wrong format",
-        "112": "wrong format",
-        "113": "wrong format",
-        "115": "wrong format",
+        "70": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "96": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "98": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "99": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "100": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "102": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "112": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "113": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "115": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "116": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "117": "wrong format",
-        "121": "wrong format",
-        "126": "wrong format",
+        "117": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "121": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "126": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "127": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 10, ideal-opt: [0.1]"
         },
-        "128": "wrong format",
-        "133": "wrong format",
+        "128": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "133": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "137": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 6, ideal-opt: [0.06]"
@@ -256,7 +319,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 12-31-2020, ideal-opt: ['01-01-2021', 'January 1, 2021']"
         },
-        "172": "wrong format",
+        "172": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "184": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
@@ -265,8 +331,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['Elevation', 'Area', 'Location', 'Established Year'].[ideal 1] wrong length of ['Elevation', 'Area', 'Location', 'Established Year']."
         },
-        "192": "wrong format",
-        "194": "wrong format",
+        "192": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "194": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "196": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
@@ -283,12 +355,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: renewable_energy_sources, ideal-opt: ['renewable']"
         },
-        "205": "wrong format",
+        "205": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "207": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, USA', 'New York City', 'New York City, NY', 'NYC', 'NY']"
         },
-        "208": "wrong format",
+        "208": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "209": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['English Fiction', 'Free WiFi', 'Reading Room'].[ideal 1] wrong length of ['English Fiction', 'Free WiFi', 'Reading Room']."
@@ -309,7 +387,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: behaviour and group dynamics, ideal-opt: ['psychology']"
         },
-        "225": "wrong format",
+        "225": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "229": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: high, ideal-opt: ['medium', '']"
@@ -318,32 +399,62 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
         },
-        "233": "wrong format",
-        "235": "wrong format",
-        "242": "wrong format",
+        "233": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "235": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "242": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "245": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1914, ideal-opt: ['', 0]"
         },
-        "246": "wrong format",
+        "246": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "248": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: The Theory of Relativity, ideal-opt: ['theory of relativity', 'Theory of Relativity']"
         },
-        "249": "wrong format",
-        "252": "wrong format",
+        "249": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "252": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "255": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Innocent, ideal-opt: ['Innocent III', 'Pope Innocent III']"
         },
-        "257": "wrong format",
+        "257": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "267": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York City, NY']"
         },
-        "274": "wrong format",
-        "277": "wrong format",
-        "279": "wrong format",
+        "274": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "277": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "279": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "280": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: acoustic instrument, ideal-opt: ['acoustic']"
@@ -368,7 +479,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 300, ideal-opt: [180]"
         },
-        "296": "wrong format",
+        "296": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "297": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -421,15 +535,30 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: In the Spring of 2022, ideal-opt: ['']"
         },
-        "328": "wrong format",
+        "328": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "330": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Catalan, ideal-opt: ['Catan']"
         },
-        "337": "wrong format",
-        "338": "wrong format",
-        "339": "wrong format",
-        "341": "wrong format",
+        "337": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "338": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "339": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "341": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "359": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['Vegetarian']"
@@ -438,15 +567,21 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 4.5, ideal-opt: [4.0]"
         },
-        "363": "wrong format",
-        "365": "wrong format",
+        "363": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "365": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "367": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: main course, ideal-opt: ['dessert']"
         },
         "370": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f181de75450>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2be0>"
         },
         "372": {
             "type": "PARA_VALUE_ERROR",
@@ -454,9 +589,12 @@
         },
         "373": {
             "type": "TYPE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f181de75490>[ideal 1] <dataset.Error object at 0x7f181de753d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2bb0>[ideal 1] <__main__.Error object at 0x7fd9869d2e20>"
         },
-        "375": "wrong format",
+        "375": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "377": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: AU, ideal-opt: ['Australia']"

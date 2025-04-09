@@ -129,19 +129,46 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 123 University Ave, Berkeley, CA 94704, ideal-opt: ['123 \u0110\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc, Berkeley, CA', '123 University Street, Berkeley, CA']"
         },
-        "28": "wrong format",
-        "29": "wrong format",
-        "39": "wrong format",
-        "41": "wrong format",
-        "42": "wrong format",
-        "48": "wrong format",
-        "49": "wrong format",
-        "67": "wrong format",
+        "28": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "29": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "39": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "41": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "42": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "48": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "49": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "67": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "70": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['*'].[ideal 1] wrong length of ['*']."
         },
-        "71": "wrong format",
+        "71": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "77": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: UK, ideal-opt: ['GB']"
@@ -150,12 +177,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: San Diego, ideal-opt: ['San Diego, CA']"
         },
-        "80": "wrong format",
+        "80": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "82": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Julian is testing, ideal-opt: ['', None]"
         },
-        "83": "wrong format",
+        "83": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "88": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Chai tea with half and half, ideal-opt: ['chai tea']"
@@ -172,7 +205,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: K\u00e4rij\u00e4, ideal-opt: ['K\u00e4\u00e4rij\u00e4']"
         },
-        "95": "wrong format",
+        "95": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "97": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
@@ -189,11 +225,26 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "106": "wrong format",
-        "107": "wrong format",
-        "108": "wrong format",
-        "109": "wrong format",
-        "111": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "107": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "109": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "111": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "113": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1.19, ideal-opt: ['', 1.0]"
@@ -206,13 +257,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: True, ideal-opt: ['', False]"
         },
-        "123": "wrong format",
-        "131": "wrong format",
+        "123": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "131": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "138": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-11-01T18:00:00+01:00, ideal-opt: ['2023-11-01T18:00:00']"
         },
-        "139": "wrong format",
+        "139": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "141": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
@@ -373,7 +433,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: nothing, ideal-opt: ['', 'null']"
         },
-        "241": "wrong format",
+        "241": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "246": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: New York, ideal-opt: ['New York, NY']"

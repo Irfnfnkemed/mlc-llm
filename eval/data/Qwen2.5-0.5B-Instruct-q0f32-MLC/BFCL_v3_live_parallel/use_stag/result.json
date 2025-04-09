@@ -52,7 +52,7 @@
     },
     {
         "id": 3,
-        "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Canc\u00fan, QR\",\"unit\":\"fahrenheit\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Canc\u00fan, QR\",\"unit\":\"celsius\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Plaza de T X, QR\",\"unit\":\"fahrenheit\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Plaza de T X, QR\",\"unit\":\"celsius\"}}]",
+        "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Canc\u00fan, QR\",\"unit\":\"fahrenheit\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Canc\u00fan, QR\",\"unit\":\"celsius\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Plaza de T X, QR\",\"unit\":\"fahrenheit\"}},{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Plaza de T X, QR\",\"unit\":\"celsius\"}}",
         "call": [
             {
                 "function": {
@@ -103,6 +103,14 @@
                         "location": "Boston, USA"
                     }
                 }
+            },
+            {
+                "function": {
+                    "name": "get_current_weather",
+                    "arguments": {
+                        "location": "San Francisco, USA"
+                    }
+                }
             }
         ]
     },
@@ -132,13 +140,22 @@
     },
     {
         "id": 6,
-        "output": "{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Paris, France\", \"unit\": \"fahrenheit\"}}[System.current_weather(response=\"The weather in Paris for the current date and time is described in relatively dense buildings, parks, and gardens. The weather is cold at night and during mornings. I recommend wearing a scarf and hat if you plan to explore.\"&lang=en\")}{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Bordeaux, France\", \"unit\": \"fahrenheit\"}}[System.current_weather(response=\"Chances of snow over anybody live nearby are slight down, but expect frigid gusts in the afternoon. A blanket will be needed in case of avalanche.&lang=en\"}) system.get_current_weather(location=\"Bordeaux, France\", unit=\"fahrenheit\")]",
+        "output": "{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Paris, France\", \"unit\": \"fahrenheit\"}}[System.current_weather(response=\"The weather in Paris for the current date and time is described in relatively dense buildings, parks, and gardens. The weather is cold at night and during mornings. I recommend wearing a scarf and hat if you plan to explore.\"&lang=en\")}{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Bordeaux, France\", \"unit\": \"fahrenheit\"}}[System.current_weather(response=\"Chances of snow over anybody live nearby are slight down, but expect frigid gusts in the afternoon. A blanket will be needed in case of avalanche.&lang=en\"}) system.get_current_weather(location=\"Bordeaux, France\", unit=\"fahrenheit\")",
         "call": [
             {
                 "function": {
                     "name": "get_snow_report",
                     "arguments": {
                         "location": "Paris, France",
+                        "unit": "fahrenheit"
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "get_snow_report",
+                    "arguments": {
+                        "location": "Bordeaux, France",
                         "unit": "fahrenheit"
                     }
                 }

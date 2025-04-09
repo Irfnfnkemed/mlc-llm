@@ -35,11 +35,11 @@
         },
         "10": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f8da5275010>[ideal 1] <dataset.Error object at 0x7f8d6816c790>[ideal 2] <dataset.Error object at 0x7f8da5275010>[ideal 3] <dataset.Error object at 0x7f8d6816c790>[ideal 4] <dataset.Error object at 0x7f8da5275010>[ideal 5] <dataset.Error object at 0x7f8d6816c790>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80e20>[ideal 1] <__main__.Error object at 0x7fb03cb80940>[ideal 2] <__main__.Error object at 0x7fb03cb80e20>[ideal 3] <__main__.Error object at 0x7fb03cb80940>[ideal 4] <__main__.Error object at 0x7fb03cb80e20>[ideal 5] <__main__.Error object at 0x7fb03cb80940>"
         },
         "15": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f8d6816c850>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80cd0>"
         },
         "16": {
             "type": "PARA_VALUE_ERROR",

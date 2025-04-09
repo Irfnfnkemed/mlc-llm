@@ -291,7 +291,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "21": "wrong format",
+        "21": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "22": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -348,7 +351,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "36": "wrong format",
+        "36": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "37": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -549,7 +555,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 5, ideal-opt: [10]"
         },
-        "87": "wrong format",
+        "87": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "88": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -716,7 +725,7 @@
         },
         "129": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bcbb55c50>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80f40>"
         },
         "130": {
             "type": "PARA_VALUE_ERROR",
@@ -802,7 +811,10 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "151": "wrong format",
+        "151": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "152": {
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
@@ -849,7 +861,7 @@
         },
         "164": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bcbb56390>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80e80>"
         },
         "165": {
             "type": "PARA_VALUE_ERROR",
@@ -861,7 +873,7 @@
         },
         "167": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f9bcbb56490>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80f10>"
         },
         "168": {
             "type": "CALL_NUMBER_ERROR",

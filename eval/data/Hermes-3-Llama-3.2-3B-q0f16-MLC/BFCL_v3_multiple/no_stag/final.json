@@ -47,7 +47,7 @@
         },
         "10": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f5de8f64750>[ideal 1] <dataset.Error object at 0x7f5cde768910>[ideal 2] <dataset.Error object at 0x7f5de8f64750>[ideal 3] <dataset.Error object at 0x7f5cde768910>[ideal 4] <dataset.Error object at 0x7f5de8f64750>[ideal 5] <dataset.Error object at 0x7f5cde768910>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2cd0>[ideal 1] <__main__.Error object at 0x7fd9869d2f40>[ideal 2] <__main__.Error object at 0x7fd9869d2cd0>[ideal 3] <__main__.Error object at 0x7fd9869d2f40>[ideal 4] <__main__.Error object at 0x7fd9869d2cd0>[ideal 5] <__main__.Error object at 0x7fd9869d2f40>"
         },
         "16": {
             "type": "PARA_VALUE_ERROR",
@@ -145,7 +145,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
         },
-        "178": "wrong format",
+        "178": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "184": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of ['pasta', 'cheddar cheese', 'olive oil', 'garlic', 'chopped tomatoes', 'basil leaves', 'salt', 'black pepper'].[ideal 1] wrong length of ['pasta', 'cheddar cheese', 'olive oil', 'garlic', 'chopped tomatoes', 'basil leaves', 'salt', 'black pepper']."

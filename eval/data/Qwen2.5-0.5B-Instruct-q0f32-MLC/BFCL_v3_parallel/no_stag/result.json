@@ -141,7 +141,7 @@
     },
     {
         "id": 8,
-        "output": "{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"New York City, NY\", \"type\": \"city/state/country\", \"year\": 2022}, \"strict\": false},{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"Los Angeles, CA\", \"type\": \"city/state/country\", \"year\": 2022}, \"strict\": false},{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"Alaska\", \"type\": \"state\"}, \"strict\": false}, {\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"USA\", \"type\": \"state\"}, \"strict\": false}]",
+        "output": "{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"New York City, NY\", \"type\": \"city/state/country\", \"year\": 2022}, \"strict\": false},{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"Los Angeles, CA\", \"type\": \"city/state/country\", \"year\": 2022}, \"strict\": false},{\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"Alaska\", \"type\": \"state\"}, \"strict\": false}, {\"name\": \"database_us_census.get_population\", \"parameters\": {\"area\": \"USA\", \"type\": \"state\"}, \"strict\": false}",
         "call": [
             {
                 "function": {
@@ -1050,6 +1050,15 @@
                     "name": "recipe_search.find",
                     "arguments": {
                         "dish": "Chicken Noodle Soup",
+                        "diet": "Vegan"
+                    }
+                }
+            },
+            {
+                "function": {
+                    "name": "recipe_search.find",
+                    "arguments": {
+                        "dish": "Vegan Salad",
                         "diet": "Vegan"
                     }
                 }
@@ -2914,7 +2923,7 @@
     },
     {
         "id": 175,
-        "output": "{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"AAPL\", \"invested_amount\": 5000, \"expected_annual_return\": 0.07, \"years\": 5}, \"strict\": false},{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"MSFT\", \"invested_amount\": 8000, \"expected_annual_return\": 0.06, \"years\": 7}, \"strict\": false},{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"AMZN\", \"invested_amount\": 10000, \"expected_annual_return\": 0.08, \"years\": 10}, \"strict\": false}]",
+        "output": "{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"AAPL\", \"invested_amount\": 5000, \"expected_annual_return\": 0.07, \"years\": 5}, \"strict\": false},{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"MSFT\", \"invested_amount\": 8000, \"expected_annual_return\": 0.06, \"years\": 7}, \"strict\": false},{\"name\": \"portfolio_future_value\", \"parameters\": {\"stock\": \"AMZN\", \"invested_amount\": 10000, \"expected_annual_return\": 0.08, \"years\": 10}, \"strict\": false}",
         "call": [
             {
                 "function": {

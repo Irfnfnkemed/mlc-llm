@@ -5218,7 +5218,7 @@
     },
     {
         "id": 374,
-        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"Riley Stearns\", \"cast\": \"C.J. Rush\"}}, {\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"C.J. Rush\"}}]",
+        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"Riley Stearns\", \"cast\": \"C.J. Rush\"}}, {\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"C.J. Rush\"}}",
         "call": [
             {
                 "function": {
@@ -6932,7 +6932,7 @@
     },
     {
         "id": 482,
-        "output": "{\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"dontcare\", \"album\": \"dontcare\", \"genre\": \"Reggae\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Reggae\", \"artist\": \"Reggae\", \"device\": \"Living room\", \"album\": \"dontcare\"}}]",
+        "output": "{\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"dontcare\", \"album\": \"dontcare\", \"genre\": \"Reggae\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Reggae\", \"artist\": \"Reggae\", \"device\": \"Living room\", \"album\": \"dontcare\"}}",
         "call": [
             {
                 "function": {
@@ -7149,7 +7149,7 @@
     },
     {
         "id": 496,
-        "output": "{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\":\"Music\",\"city\":\"New York\",\"date\":\"25-03-2023\"}},{\"name\": \"Events_3_BuyEventTickets\", \"parameters\":{\"event_name\":\"The Wizard of Oz\",\"number_of_tickets\":1,\"date\":\"25-03-2023\",\"city\":\"New York\"}}]",
+        "output": "{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\":\"Music\",\"city\":\"New York\",\"date\":\"25-03-2023\"}},{\"name\": \"Events_3_BuyEventTickets\", \"parameters\":{\"event_name\":\"The Wizard of Oz\",\"number_of_tickets\":1,\"date\":\"25-03-2023\",\"city\":\"New York\"}}",
         "call": [
             {
                 "function": {
@@ -9417,7 +9417,7 @@
     },
     {
         "id": 639,
-        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"High Expectations\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"\", \"album\": \"High Expectations, 2019\"}}]",
+        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"High Expectations\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"\", \"album\": \"High Expectations, 2019\"}}",
         "call": [
             {
                 "function": {
@@ -10348,7 +10348,7 @@
     },
     {
         "id": 698,
-        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\":\"dontcare\",\"genre\":\"dontcare\",\"cast\":\"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\":\"Theater\",\"city\":\"Los Angeles\",\"date\":\"12/3/2021\"}}]",
+        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\":\"dontcare\",\"genre\":\"dontcare\",\"cast\":\"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\":\"Theater\",\"city\":\"Los Angeles\",\"date\":\"12/3/2021\"}}",
         "call": [
             {
                 "function": {
@@ -10374,7 +10374,7 @@
     },
     {
         "id": 699,
-        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"dontcare\", \"genre\": \"dontcare\", \"cast\": \"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\": \"Theater\", \"city\": \"Seattle, WA\", \"date\": \"01/01/2022\"}}]",
+        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"dontcare\", \"genre\": \"dontcare\", \"cast\": \"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\": \"Theater\", \"city\": \"Seattle, WA\", \"date\": \"01/01/2022\"}}",
         "call": [
             {
                 "function": {
@@ -10508,7 +10508,7 @@
     },
     {
         "id": 707,
-        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"dontcare\", \"genre\": \"dontcare\", \"cast\": \"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\": \"Music\", \"city\": \"New York, NY\"}}]",
+        "output": "{\"name\": \"Movies_3_FindMovies\", \"parameters\":{\"directed_by\": \"dontcare\", \"genre\": \"dontcare\", \"cast\": \"dontcare\"}},{\"name\": \"Events_3_FindEvents\", \"parameters\":{\"event_type\": \"Music\", \"city\": \"New York, NY\"}}",
         "call": [
             {
                 "function": {
@@ -12425,7 +12425,7 @@
     },
     {
         "id": 828,
-        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Get Scared, Keep Running, and The 1975 Band\", \"artist\": \"dontcare\", \"album\": \"dontcare\"}},{\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"Rock\", \"album\": \"Rolling Stones\", \"genre\": \"Rock\", \"year\": \"dontcare\"}}]",
+        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Get Scared, Keep Running, and The 1975 Band\", \"artist\": \"dontcare\", \"album\": \"dontcare\"}},{\"name\": \"Music_3_LookupMusic\", \"parameters\":{\"artist\": \"Rock\", \"album\": \"Rolling Stones\", \"genre\": \"Rock\", \"year\": \"dontcare\"}}",
         "call": [
             {
                 "function": {
@@ -12452,7 +12452,7 @@
     },
     {
         "id": 829,
-        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"album\": \"Bohemian Rhapsody\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Infrared\", \"album\": \"Infrared\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Like a Virgin\", \"album\": \"Like a Virgin - The Dots Company\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"artist\": \"Queen\", \"album\": \"Bohemian Rhapsody\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Infrared\", \"artist\": \"Bob Dylan\", \"album\": \"Infrared\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"album\": \"The Beatles - Anthology\"}}]",
+        "output": "{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"album\": \"Bohemian Rhapsody\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Infrared\", \"album\": \"Infrared\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Like a Virgin\", \"album\": \"Like a Virgin - The Dots Company\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"artist\": \"Queen\", \"album\": \"Bohemian Rhapsody\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Infrared\", \"artist\": \"Bob Dylan\", \"album\": \"Infrared\"}},{\"name\": \"Music_3_PlayMedia\", \"parameters\":{\"track\": \"Bohemian Rhapsody\", \"album\": \"The Beatles - Anthology\"}}",
         "call": [
             {
                 "function": {

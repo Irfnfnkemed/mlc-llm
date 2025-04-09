@@ -100,16 +100,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Stalingrad battle, ideal-opt: ['Battle of Stalingrad', 'Stalingrad']"
         },
-        "21": "wrong format",
+        "21": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "23": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f4966470e90>[ideal 1] <dataset.Error object at 0x7f4966470e90>[ideal 2] <dataset.Error object at 0x7f48c81cbd90>[ideal 3] <dataset.Error object at 0x7f4966470e90>[ideal 4] <dataset.Error object at 0x7f48c81cbd90>[ideal 5] <dataset.Error object at 0x7f4966470e90>[ideal 6] <dataset.Error object at 0x7f48c81cbd90>[ideal 7] <dataset.Error object at 0x7f4966470e90>[ideal 8] <dataset.Error object at 0x7f48c81cbd90>[ideal 9] <dataset.Error object at 0x7f4966470e90>[ideal 10] <dataset.Error object at 0x7f48c81cbd90>[ideal 11] <dataset.Error object at 0x7f4966470e90>[ideal 12] <dataset.Error object at 0x7f4966470e90>[ideal 13] <dataset.Error object at 0x7f4966470e90>[ideal 14] <dataset.Error object at 0x7f48c81cbcd0>[ideal 15] <dataset.Error object at 0x7f4966470e90>[ideal 16] <dataset.Error object at 0x7f48c81cbcd0>[ideal 17] <dataset.Error object at 0x7f4966470e90>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80d00>[ideal 1] <__main__.Error object at 0x7fb03cb80d00>[ideal 2] <__main__.Error object at 0x7fb03cb80e80>[ideal 3] <__main__.Error object at 0x7fb03cb80d00>[ideal 4] <__main__.Error object at 0x7fb03cb80e80>[ideal 5] <__main__.Error object at 0x7fb03cb80d00>[ideal 6] <__main__.Error object at 0x7fb03cb80e80>[ideal 7] <__main__.Error object at 0x7fb03cb80d00>[ideal 8] <__main__.Error object at 0x7fb03cb80e80>[ideal 9] <__main__.Error object at 0x7fb03cb80d00>[ideal 10] <__main__.Error object at 0x7fb03cb80e80>[ideal 11] <__main__.Error object at 0x7fb03cb80d00>[ideal 12] <__main__.Error object at 0x7fb03cb80be0>[ideal 13] <__main__.Error object at 0x7fb03cb80be0>[ideal 14] <__main__.Error object at 0x7fb03cb80d00>[ideal 15] <__main__.Error object at 0x7fb03cb80be0>[ideal 16] <__main__.Error object at 0x7fb03cb80d00>[ideal 17] <__main__.Error object at 0x7fb03cb80be0>"
         },
         "27": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: drive, ideal-opt: ['transit']"
         },
-        "28": "wrong format",
+        "28": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "35": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: binary, ideal-opt: ['euclidean', '']"
@@ -174,7 +180,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: euros, ideal-opt: ['EUR']"
         },
-        "105": "wrong format",
+        "105": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: kg/m^3, ideal-opt: ['kg/m\u00b3', '']"
@@ -185,9 +194,12 @@
         },
         "113": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f495c0e4150>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80ac0>"
         },
-        "119": "wrong format",
+        "119": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "124": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 1, ideal-opt: [4]"
@@ -200,7 +212,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 5, ideal-opt: [0.05]"
         },
-        "135": "wrong format",
+        "135": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "136": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: , ideal-opt: ['California', 'CA']"
@@ -209,16 +224,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: adc_2463096, ideal-opt: ['R vs Adams', 'R_vs_Adams']"
         },
-        "145": "wrong format",
+        "145": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "147": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f495c0e4550>[ideal 1] <dataset.Error object at 0x7f495c0e46d0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fb03cb80ac0>[ideal 1] <__main__.Error object at 0x7fb03cb80df0>"
         },
         "149": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: en, ideal-opt: ['english', 'English']"
         },
-        "150": "wrong format",
+        "150": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "151": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: behaviour and group dynamics, ideal-opt: ['psychology', 'Psychology']"
@@ -239,7 +260,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: modern, ideal-opt: ['sculpture', 'modern sculpture']"
         },
-        "164": "wrong format",
+        "164": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "165": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
@@ -252,7 +276,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: C sharp major, ideal-opt: ['C#', 'C sharp']"
         },
-        "170": "wrong format",
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "175": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: women, ideal-opt: ['tennis']"
@@ -281,12 +308,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Euros, ideal-opt: ['EUR']"
         },
-        "194": "wrong format",
+        "194": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "196": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: plasma, ideal-opt: ['plasma membrane']"
         },
-        "198": "wrong format"
+        "198": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        }
     },
     "FORMAT_ACCURACY": 0.945,
     "CALL_ACCURACY": 0.695,

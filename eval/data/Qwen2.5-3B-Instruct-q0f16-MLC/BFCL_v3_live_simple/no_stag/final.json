@@ -103,10 +103,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Lang Son, VN, ideal-opt: ['Lang Son, Vietnam']"
         },
-        "22": "wrong format",
-        "23": "wrong format",
-        "24": "wrong format",
-        "25": "wrong format",
+        "22": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "23": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "24": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "25": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "26": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 123 University St, Berkeley, CA 94704, ideal-opt: ['123 \u0110\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc, Berkeley, CA', '123 University Street, Berkeley, CA']"
@@ -167,15 +179,21 @@
             "type": "TYPE_ERROR",
             "message": "wrong type None: not string"
         },
-        "91": "wrong format",
+        "91": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "95": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: most_frequent, ideal-opt: ['', 'mean']"
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f316412bdd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2c70>"
         },
         "108": {
             "type": "PARA_VALUE_ERROR",
@@ -277,8 +295,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
         },
-        "156": "wrong format",
-        "157": "wrong format",
+        "156": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "157": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "158": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
@@ -311,7 +335,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 3, ideal-opt: [1]"
         },
-        "189": "wrong format",
+        "189": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "196": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-04-26, ideal-opt: ['2023-04-27']"

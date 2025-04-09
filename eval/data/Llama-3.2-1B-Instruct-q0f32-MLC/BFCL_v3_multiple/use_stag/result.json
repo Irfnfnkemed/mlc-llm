@@ -177,7 +177,7 @@
     },
     {
         "id": 13,
-        "output": "You've provided the parameters to the function, but you've missed specifying the function itself. \n\nHere's the call to the correct function:\n\n```\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}}\n```\n\nThis function will return the estimated revenue of company XYZ for a 10% increase in sales units of product A while keeping the price the same.\n\nAssuming theRevenue forecast function is already implemented and is available to fetch the current selling price, the estimated revenue would be:\n\nEstimated Revenue = Current Selling Price \u00d7 (1 + 10%) = Current Selling Price + 0.10 \u00d7 Current Selling Price = 1.10 \u00d7 Current Selling Price\n\nHere is an example JSON response:\n\n```json\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}},\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}}\n```\n\nThis response would tell us that if we",
+        "output": "You've provided the parameters to the function, but you've missed specifying the function itself. \n\nHere's the call to the correct function:\n\n```\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}}\n```\n\nThis function will return the estimated revenue of company XYZ for a 10% increase in sales units of product A while keeping the price the same.\n\nAssuming theRevenue forecast function is already implemented and is available to fetch the current selling price, the estimated revenue would be:\n\nEstimated Revenue = Current Selling Price \u00d7 (1 + 10%) = Current Selling Price + 0.10 \u00d7 Current Selling Price = 1.10 \u00d7 Current Selling Price\n\nHere is an example JSON response:\n\n```json\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}},\n{\"name\": \"corporate_finance.revenue_forecast\", \"parameters\":{\"company\": \"company XYZ\", \"product\": \"product A\", \"sales_units_increase_percentage\": 10}}\n```\n\nThis response would tell us that if w",
         "call": [
             {
                 "function": {
@@ -213,7 +213,7 @@
     },
     {
         "id": 14,
-        "output": " getTitle Depreciation.\n\n{\"name\": \"finance.property_depreciation\", \"parameters\":{\"initial_cost\":200000,\"depreciation_rate\":3,\"years\":5,\"monthly\":false}} \n\nformatted output- \n\ninteger: 149255.62\nmonthly: false",
+        "output": " getTitle Depreciation.\n\n{\"name\": \"finance.property_depreciation\", \"parameters\":{\"initial_cost\":200000,\"depreciation_rate\":3,\"years\":5,\"monthly\":false}} \n\nformatted output- \n\ninteger: 149255.62\nmonthly: fals",
         "call": [
             {
                 "function": {
@@ -329,7 +329,7 @@
     },
     {
         "id": 24,
-        "output": "You can use the \"route_planner.calculate_route\" function to find the fastest route from London to Edinburgh.\n\nFirst, you need to provide the parameters:\n```\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}}\n```\nThis will give me the fastest route from London to Edinburgh for playing a chess championship.\n\nAs for the route, I can suggest a few options. One possible route is:\n```\n*leg 1*: London -> Oxford -> Cambridge -> Edinburgh\n*leg 2*: Cambridge -> Edinburgh\n\nThis route has a distance of approximately 101 miles.\n\nPlease note that the fastest route may vary depending on the time of day, traffic conditions, and other factors.\n\nHere is the JSON representation of the response:\n```\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}},\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}},\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Ed",
+        "output": "You can use the \"route_planner.calculate_route\" function to find the fastest route from London to Edinburgh.\n\nFirst, you need to provide the parameters:\n```\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}}\n```\nThis will give me the fastest route from London to Edinburgh for playing a chess championship.\n\nAs for the route, I can suggest a few options. One possible route is:\n```\n*leg 1*: London -> Oxford -> Cambridge -> Edinburgh\n*leg 2*: Cambridge -> Edinburgh\n\nThis route has a distance of approximately 101 miles.\n\nPlease note that the fastest route may vary depending on the time of day, traffic conditions, and other factors.\n\nHere is the JSON representation of the response:\n```\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}},\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"Edinburgh\", \"method\": \"fastest\"}},\n{\"name\": \"route_planner.calculate_route\", \"parameters\":{\"start\": \"London\",\"destination\": \"E",
         "call": [
             {
                 "function": {
@@ -365,7 +365,7 @@
     },
     {
         "id": 25,
-        "output": "I will search for the cheapest selling price of 'Assassins Creed Valhalla' in the PlayStation Store in the United States.\n\nTo convert the price to United States dollars I will use my vacation to Amazon prime time.\n\n{\"name\": \"video_games.store_price\", \"parameters\":{\"game_title\": \"Assassins Creed Valhalla\", \"platform\": \"PlayStation 4\", \"region\": \"United States\"}}\n\nNow you can wait.\n\nThe cheapest seller in the United States is: \"$59.99\" by Day 1-store receipt ongenden auctionstore \u03c3\u03cdBerVIC tp.display Control \ucd1d receptive designs pleased",
+        "output": "I will search for the cheapest selling price of 'Assassins Creed Valhalla' in the PlayStation Store in the United States.\n\nTo convert the price to United States dollars I will use my vacation to Amazon prime time.\n\n{\"name\": \"video_games.store_price\", \"parameters\":{\"game_title\": \"Assassins Creed Valhalla\", \"platform\": \"PlayStation 4\", \"region\": \"United States\"}}\n\nNow you can wait.\n\nThe cheapest seller in the United States is: \"$59.99\" by Day 1-store receipt ongenden auctionstore \u03c3\u03cdBerVIC tp.display Control \ucd1d receptive designs pleas",
         "call": [
             {
                 "function": {
@@ -889,7 +889,18 @@
     },
     {
         "id": 64,
-        "output": " QTimer>=188969\" or examples Using excluded policy of posted have troubles.scalablytyped{\"name\": \"uv_index.get_future\", \"parameters\":{\"location\":\"Tokyo\",\"date\":\"06/01/2023\"}}[engine info] Got an invalid function call output from model"
+        "output": " QTimer>=188969\" or examples Using excluded policy of posted have troubles.scalablytyped{\"name\": \"uv_index.get_future\", \"parameters\":{\"location\":\"Tokyo\",\"date\":\"06/01/2023\"}}",
+        "call": [
+            {
+                "function": {
+                    "name": "uv_index.get_future",
+                    "arguments": {
+                        "location": "Tokyo",
+                        "date": "06/01/2023"
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 65,
@@ -1283,7 +1294,19 @@
     },
     {
         "id": 103,
-        "output": " \"{\"name\": \"calculate_final_speed\", \"parameters\":{\"initial_velocity\": 0,\"height\": 100,\"gravity\": 9.8}}[engine info] Got an invalid function call output from model"
+        "output": " \"{\"name\": \"calculate_final_speed\", \"parameters\":{\"initial_velocity\": 0,\"height\": 100,\"gravity\": 9.8}}",
+        "call": [
+            {
+                "function": {
+                    "name": "calculate_final_speed",
+                    "arguments": {
+                        "initial_velocity": 0,
+                        "height": 100,
+                        "gravity": 9.8
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 104,
@@ -1533,7 +1556,7 @@
     },
     {
         "id": 128,
-        "output": "I'll call the \"calculate_return_on_equity\" function with the required parameters.\n\n```\n{\"name\": \"calculate_return_on_equity\", \"parameters\":{\"net_income\":30000000,\"shareholder_equity\":10000000,\"dividends_paid\":200000}}\n```\n\nPlease note that the function has strict requirements, so I should NOT have specified the \"name\" parameter to indicate it would be the first function to be called.\n\n```\nEmployee Management\n================\n\n### Calculate Return On Equity\n\n#### Description\n\nThis function calculates the company's return on equity based on its net income, shareholder's equity, and dividends paid.\n\n#### Parameters\n\n| Name   | Parameter     | Description             |\n|--------|----------------|--------------------------|\n| net_income | integer       | The company's net income    |\n| shareholder_equity | integer       | The company's total shareholder's equity    |\n| dividends_paid | integer       | The total dividends paid by the company     |\n| [('location', 'string'), ('facilities', 'array', ['Wi-Fi', 'Reading Room', 'Fiction', 'Children Section', 'Cafe'])] |\n\n#### String and Array Parameters\n\n- The location parameter to define the city and state.\n- The facilities parameter defines the available",
+        "output": "I'll call the \"calculate_return_on_equity\" function with the required parameters.\n\n```\n{\"name\": \"calculate_return_on_equity\", \"parameters\":{\"net_income\":30000000,\"shareholder_equity\":10000000,\"dividends_paid\":200000}}\n```\n\nPlease note that the function has strict requirements, so I should NOT have specified the \"name\" parameter to indicate it would be the first function to be called.\n\n```\nEmployee Management\n================\n\n### Calculate Return On Equity\n\n#### Description\n\nThis function calculates the company's return on equity based on its net income, shareholder's equity, and dividends paid.\n\n#### Parameters\n\n| Name   | Parameter     | Description             |\n|--------|----------------|--------------------------|\n| net_income | integer       | The company's net income    |\n| shareholder_equity | integer       | The company's total shareholder's equity    |\n| dividends_paid | integer       | The total dividends paid by the company     |\n| [('location', 'string'), ('facilities', 'array', ['Wi-Fi', 'Reading Room', 'Fiction', 'Children Section', 'Cafe'])] |\n\n#### String and Array Parameters\n\n- The location parameter to define the city and state.\n- The facilities parameter defines the availab",
         "call": [
             {
                 "function": {
@@ -2184,7 +2207,19 @@
     },
     {
         "id": 193,
-        "output": "\":{\"name\": \"maps.get_distance_duration\", \"parameters\":{\"start_location\":\"Eiffel Tower (Other Side of Seine River)\",\"end_location\":\"Louvre Museum (Inside Louvre Building)\",\"traffic\":true}}[engine info] Got an invalid function call output from model"
+        "output": "\":{\"name\": \"maps.get_distance_duration\", \"parameters\":{\"start_location\":\"Eiffel Tower (Other Side of Seine River)\",\"end_location\":\"Louvre Museum (Inside Louvre Building)\",\"traffic\":true}}",
+        "call": [
+            {
+                "function": {
+                    "name": "maps.get_distance_duration",
+                    "arguments": {
+                        "start_location": "Eiffel Tower (Other Side of Seine River)",
+                        "end_location": "Louvre Museum (Inside Louvre Building)",
+                        "traffic": true
+                    }
+                }
+            }
+        ]
     },
     {
         "id": 194,

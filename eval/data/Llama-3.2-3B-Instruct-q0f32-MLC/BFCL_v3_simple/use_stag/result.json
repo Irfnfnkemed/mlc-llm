@@ -4274,7 +4274,7 @@
     },
     {
         "id": 260,
-        "output": "{\"name\": \"paint_requirement.calculate\", \"parameters\":{\"area\":{\"width\":20,\"height\":12},\"paint_coverage\":350,\"exclusion\":{\"type\":\"window\",\"area\":15}}}</Locale",
+        "output": "{\"name\": \"paint_requirement.calculate\", \"parameters\":{\"area\":{\"width\":20,\"height\":12},\"paint_coverage\":350,\"exclusion\":{\"type\":\"window\",\"area\":15}}}</L",
         "call": [
             {
                 "function": {

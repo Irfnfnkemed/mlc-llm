@@ -232,7 +232,10 @@
             "type": "PARA_KEY_ERROR",
             "message": "unknown arg: strict"
         },
-        "25": "wrong format",
+        "25": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "26": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 123 L\u00ea \u0110\u1ea1i H\u00e1z, Barbados, CA 94704, ideal-opt: ['123 \u0110\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc, Berkeley, CA', '123 University Street, Berkeley, CA']"
@@ -243,7 +246,7 @@
         },
         "28": {
             "type": "PARA_VALUE_ERROR",
-            "message": "[ideal 0] <dataset.Error object at 0x7f033d94edd0>"
+            "message": "[ideal 0] <__main__.Error object at 0x7fd9869d2b80>"
         },
         "29": {
             "type": "PARA_VALUE_ERROR",
@@ -289,13 +292,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: rich and chocolatey, ideal-opt: ['slightly bitter']"
         },
-        "51": "wrong format",
+        "51": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "52": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "54": "wrong format",
-        "55": "wrong format",
+        "54": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "55": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "58": {
             "type": "TYPE_ERROR",
             "message": "wrong type None: not string"
@@ -312,12 +324,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 86400, ideal-opt: ['']"
         },
-        "71": "wrong format",
+        "71": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "72": {
             "type": "TYPE_ERROR",
             "message": "wrong type 0.5: not int"
         },
-        "74": "wrong format",
+        "74": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "76": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: What is your name, ideal-opt: ['What is your name?']"
@@ -334,8 +352,14 @@
             "type": "CALL_NUMBER_ERROR",
             "message": "wrong calling numbers."
         },
-        "80": "wrong format",
-        "81": "wrong format",
+        "80": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "81": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "82": {
             "type": "TYPE_ERROR",
             "message": "wrong type None: not string"
@@ -348,9 +372,18 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Fahrenheit, ideal-opt: ['', 'Celsius']"
         },
-        "86": "wrong format",
-        "87": "wrong format",
-        "95": "wrong format",
+        "86": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "87": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "95": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "100": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 10, ideal-opt: ['', 30]"
@@ -359,13 +392,22 @@
             "type": "PARA_KEY_ERROR",
             "message": "missing arg: faq_link_accounts_start"
         },
-        "106": "wrong format",
+        "106": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "107": {
             "type": "PARA_VALUE_ERROR",
             "message": "[ideal 0] wrong length of []."
         },
-        "108": "wrong format",
-        "109": "wrong format",
+        "108": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "109": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "110": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -394,13 +436,22 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "128": "wrong format",
+        "128": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "130": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: https://{ip}/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo, ideal-opt: ['https://192.120.45.67/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo']"
         },
-        "131": "wrong format",
-        "136": "wrong format",
+        "131": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "136": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "137": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 2023-11-01T20:00:00, ideal-opt: ['2023-11-01T22:00:00']"
@@ -417,8 +468,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
         },
-        "142": "wrong format",
-        "143": "wrong format",
+        "142": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "143": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "144": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
@@ -427,13 +484,22 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "146": "wrong format",
+        "146": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "147": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: taskkill /IM timer.exe /F, ideal-opt: ['taskkill /F /IM timer.exe']"
         },
-        "148": "wrong format",
-        "149": "wrong format",
+        "148": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "149": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "150": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
@@ -446,33 +512,78 @@
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "153": "wrong format",
+        "153": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "154": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
         },
-        "155": "wrong format",
+        "155": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "156": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: cd C:\\, ideal-opt: ['dir C:\\\\', 'dir C:\\\\\\\\']"
         },
-        "157": "wrong format",
-        "158": "wrong format",
-        "159": "wrong format",
-        "160": "wrong format",
-        "162": "wrong format",
-        "163": "wrong format",
+        "157": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "158": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "159": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "160": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "162": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "163": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "164": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: cache_free_coca_cola_logo_non_interfering, ideal-opt: ['Coca-Cola logo']"
         },
-        "165": "wrong format",
-        "166": "wrong format",
-        "167": "wrong format",
-        "168": "wrong format",
-        "169": "wrong format",
-        "170": "wrong format",
-        "171": "wrong format",
+        "165": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "166": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "167": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "168": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "169": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "170": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "171": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "173": {
             "type": "FUNC_NAME_ERROR",
             "message": "wrong function name."
@@ -489,7 +600,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 3, ideal-opt: [2]"
         },
-        "178": "wrong format",
+        "178": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "181": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: 7, ideal-opt: [2]"
@@ -542,8 +656,14 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dontcare, ideal-opt: ['Quentin Tarantino']"
         },
-        "209": "wrong format",
-        "210": "wrong format",
+        "209": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "210": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "211": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Comics, ideal-opt: ['Comedy']"
@@ -568,7 +688,10 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dontcare, ideal-opt: ['Thurop Van Orman']"
         },
-        "223": "wrong format",
+        "223": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "224": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: dontcare, ideal-opt: ['Tim Burton']"
@@ -621,13 +744,22 @@
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: Dil Nu, ideal-opt: ['track:Dil Nu artist:Maninder Buttar']"
         },
-        "247": "wrong format",
+        "247": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "248": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: False, ideal-opt: [True]"
         },
-        "249": "wrong format",
-        "251": "wrong format",
+        "249": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
+        "251": {
+            "type": "FORMAT_ERROR",
+            "message": "wrong format."
+        },
         "256": {
             "type": "PARA_VALUE_ERROR",
             "message": "value not match: I have had submit a complaint and I like to check its status., ideal-opt: ['I have had submit a compaint and I like to check its status']"

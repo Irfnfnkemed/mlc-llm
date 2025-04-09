@@ -1,0 +1,839 @@
+{
+    "fail_format": [
+        3,
+        4,
+        5,
+        14,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        28,
+        30,
+        31,
+        32,
+        36,
+        37,
+        38,
+        40,
+        43,
+        44,
+        45,
+        47,
+        53,
+        57,
+        58,
+        59,
+        60,
+        61,
+        64,
+        72,
+        73,
+        76,
+        77,
+        80,
+        83,
+        89,
+        90,
+        92,
+        97,
+        98,
+        99,
+        101,
+        102,
+        104,
+        106,
+        108,
+        109,
+        114,
+        119,
+        120,
+        121,
+        122,
+        124,
+        127,
+        131,
+        133,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        142,
+        144,
+        149,
+        155,
+        156,
+        158,
+        159,
+        160,
+        162,
+        165,
+        166,
+        168,
+        169,
+        174,
+        178,
+        179,
+        181,
+        182,
+        185,
+        187,
+        188,
+        189,
+        191,
+        193,
+        194,
+        196,
+        198
+    ],
+    "fail_call": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 20: not int"
+        },
+        "1": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "2": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "3": "wrong format",
+        "4": "wrong format",
+        "5": "wrong format",
+        "6": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "7": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "8": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "9": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "10": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "11": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "12": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "13": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "14": "wrong format",
+        "15": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "16": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2000: not int"
+        },
+        "17": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "18": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "19": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "20": "wrong format",
+        "21": "wrong format",
+        "22": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: XY1234, ideal-opt: ['GH5678']"
+        },
+        "23": "wrong format",
+        "24": "wrong format",
+        "25": "wrong format",
+        "26": "wrong format",
+        "27": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        },
+        "28": "wrong format",
+        "29": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: population"
+        },
+        "30": "wrong format",
+        "31": "wrong format",
+        "32": "wrong format",
+        "33": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "34": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Persian Empire, ideal-opt: ['Mauryan Empire']"
+        },
+        "36": "wrong format",
+        "37": "wrong format",
+        "38": "wrong format",
+        "39": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        },
+        "40": "wrong format",
+        "41": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "42": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        },
+        "43": "wrong format",
+        "44": "wrong format",
+        "45": "wrong format",
+        "46": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2018: not int"
+        },
+        "47": "wrong format",
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Solar Beam, ideal-opt: ['', 'Run']"
+        },
+        "49": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "50": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "51": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicken Noodle Soup, ideal-opt: ['Salad', 'salad', 'Vegan Salad', 'vegan salad']"
+        },
+        "52": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Vegetarian', 'Japanese|Sushi']: not list."
+        },
+        "53": "wrong format",
+        "54": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "55": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "56": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: hotel_number"
+        },
+        "57": "wrong format",
+        "58": "wrong format",
+        "59": "wrong format",
+        "60": "wrong format",
+        "61": "wrong format",
+        "62": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "63": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "64": "wrong format",
+        "65": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "66": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "67": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "68": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "69": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "70": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "71": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "72": "wrong format",
+        "73": "wrong format",
+        "74": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4567: not int"
+        },
+        "75": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "76": "wrong format",
+        "77": "wrong format",
+        "78": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 45: not int"
+        },
+        "79": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4567: not int"
+        },
+        "80": "wrong format",
+        "81": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "82": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 120: not int"
+        },
+        "83": "wrong format",
+        "84": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "85": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "86": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "87": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not int"
+        },
+        "88": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not int"
+        },
+        "89": "wrong format",
+        "90": "wrong format",
+        "91": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "92": "wrong format",
+        "93": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Philadelphia', 'Washington D.C.', 'Atlanta'].[ideal 1] wrong length of ['Philadelphia', 'Washington D.C.', 'Atlanta'].[ideal 2] <dataset.Error object at 0x7fda8c185990>[ideal 3] <dataset.Error object at 0x7fda8c185950>[ideal 4] wrong length of ['Philadelphia', 'Washington D.C.', 'Atlanta'].[ideal 5] <dataset.Error object at 0x7fda8c185910>[ideal 6] <dataset.Error object at 0x7fda8c185950>"
+        },
+        "94": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "95": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "96": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "97": "wrong format",
+        "98": "wrong format",
+        "99": "wrong format",
+        "100": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not int"
+        },
+        "101": "wrong format",
+        "102": "wrong format",
+        "103": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        },
+        "104": "wrong format",
+        "105": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "106": "wrong format",
+        "107": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "108": "wrong format",
+        "109": "wrong format",
+        "110": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        },
+        "111": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C6H12O6, ideal-opt: ['C12H22O11']"
+        },
+        "112": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: rs123456, ideal-opt: ['rs7891011']"
+        },
+        "113": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "114": "wrong format",
+        "115": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: %, ideal-opt: ['percentage', '']"
+        },
+        "116": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "117": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "118": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "119": "wrong format",
+        "120": "wrong format",
+        "121": "wrong format",
+        "122": "wrong format",
+        "123": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "124": "wrong format",
+        "125": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "126": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5000: not int"
+        },
+        "127": "wrong format",
+        "128": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "129": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [12, 15, 11, 14, 18, 19, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]: not list."
+        },
+        "130": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "131": "wrong format",
+        "132": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "133": "wrong format",
+        "134": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "135": "wrong format",
+        "136": "wrong format",
+        "137": "wrong format",
+        "138": "wrong format",
+        "139": "wrong format",
+        "140": "wrong format",
+        "141": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "142": "wrong format",
+        "143": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "144": "wrong format",
+        "145": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "146": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "147": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "148": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "149": "wrong format",
+        "150": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, -2, 1]: not list."
+        },
+        "151": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "152": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "153": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "154": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "155": "wrong format",
+        "156": "wrong format",
+        "157": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "158": "wrong format",
+        "159": "wrong format",
+        "160": "wrong format",
+        "161": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "162": "wrong format",
+        "163": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "164": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [45, 55, 35, 65]: not list."
+        },
+        "165": "wrong format",
+        "166": "wrong format",
+        "167": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['income', 'age', 'education']: not list."
+        },
+        "168": "wrong format",
+        "169": "wrong format",
+        "170": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "171": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1000000: not int"
+        },
+        "172": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5000: not int"
+        },
+        "173": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5000: not int"
+        },
+        "174": "wrong format",
+        "175": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "176": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "177": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "178": "wrong format",
+        "179": "wrong format",
+        "180": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "181": "wrong format",
+        "182": "wrong format",
+        "183": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "184": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "185": "wrong format",
+        "186": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "187": "wrong format",
+        "188": "wrong format",
+        "189": "wrong format",
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York City, ideal-opt: ['Los Angeles', 'Los Angeles, CA', 'LA']"
+        },
+        "191": "wrong format",
+        "192": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "193": "wrong format",
+        "194": "wrong format",
+        "195": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "196": "wrong format",
+        "197": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2018: not int"
+        },
+        "198": "wrong format",
+        "199": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        }
+    },
+    "FORMAT_ACCURACY": 0.555,
+    "CALL_ACCURACY": 0.0,
+    "FORMAT_ERROR": 0.445,
+    "CALL_NUMBER_ERROR": 0.295,
+    "FUNC_NAME_ERROR": 0.025,
+    "PARA_KEY_ERROR": 0.01,
+    "TYPE_ERROR": 0.18,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.045
+}

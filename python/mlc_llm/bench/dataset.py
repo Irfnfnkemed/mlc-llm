@@ -887,7 +887,6 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
             with open(dataset_path, mode="w", encoding="utf-8") as file:
                 json.dump(self.gorilla_data, file, ensure_ascii=False, indent=4)
 
-
     def generate_request_records(
         self,
         input_len: Optional[int],
@@ -895,7 +894,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
         input_len_std: float = 0.0,
         output_len_std: float = 0.0,
     ) -> List[RequestRecord]:
-        
+
         request_records = []
         for entry in self.gorilla_data:
             # If the request does not have enough length, discard it.
@@ -940,7 +939,7 @@ SUPPORTED_DATASET = [
     "react",
     "wildchat",
     "azure-llm-inference",
-    "gorilla"
+    "gorilla",
 ]
 
 
@@ -1014,8 +1013,7 @@ def create_dataset(  # pylint: disable=too-many-return-statements,too-many-branc
     if args.dataset == "gorilla":
         if args.dataset_path is None:
             raise ValueError(
-                "Gorilla dataset requires dataset path. "
-                'Please specify it with "--dataset-path".'
+                "Gorilla dataset requires dataset path. " 'Please specify it with "--dataset-path".'
             )
         assert (
             args.apply_chat_template is False

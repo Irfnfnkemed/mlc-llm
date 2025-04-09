@@ -168,7 +168,10 @@ class OpenAIChatEndPoint(APIEndPoint):
         error_msg = None
         if generated_text is None:
             if data["choices"][0]["finish_reason"] == "tool_call":
-                if data["choices"][0]["message"]["tool_calls"] is None or len(data["choices"][0]["message"]["tool_calls"]) == 0:
+                if (
+                    data["choices"][0]["message"]["tool_calls"] is None
+                    or len(data["choices"][0]["message"]["tool_calls"]) == 0
+                ):
                     success = False
                     error_msg = "Invalid tool call."
                 else:

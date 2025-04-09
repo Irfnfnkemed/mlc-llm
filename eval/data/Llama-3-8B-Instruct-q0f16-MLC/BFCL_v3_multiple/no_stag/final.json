@@ -1,0 +1,170 @@
+{
+    "fail_format": [
+        153
+    ],
+    "fail_call": [
+        13,
+        23,
+        26,
+        37,
+        45,
+        47,
+        53,
+        55,
+        56,
+        58,
+        61,
+        70,
+        74,
+        76,
+        78,
+        80,
+        86,
+        91,
+        92,
+        108,
+        109,
+        121,
+        132,
+        151,
+        153,
+        156,
+        180,
+        184,
+        186,
+        193,
+        199
+    ],
+    "fail_reason": {
+        "13": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "23": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f8761d2fdd0>[ideal 1] <dataset.Error object at 0x7f8761d2fdd0>[ideal 2] <dataset.Error object at 0x7f8761d80b50>[ideal 3] <dataset.Error object at 0x7f8761d2fdd0>[ideal 4] <dataset.Error object at 0x7f8761d80b50>[ideal 5] <dataset.Error object at 0x7f8761d2fdd0>[ideal 6] <dataset.Error object at 0x7f8761d80b50>[ideal 7] <dataset.Error object at 0x7f8761d2fdd0>[ideal 8] <dataset.Error object at 0x7f8761d80b50>[ideal 9] <dataset.Error object at 0x7f8761d2fdd0>[ideal 10] <dataset.Error object at 0x7f8761d80b50>[ideal 11] <dataset.Error object at 0x7f8761d2fdd0>[ideal 12] <dataset.Error object at 0x7f8761d2fdd0>[ideal 13] <dataset.Error object at 0x7f8761d2fdd0>[ideal 14] <dataset.Error object at 0x7f8761d80a50>[ideal 15] <dataset.Error object at 0x7f8761d2fdd0>[ideal 16] <dataset.Error object at 0x7f8761d80a50>[ideal 17] <dataset.Error object at 0x7f8761d2fdd0>"
+        },
+        "26": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Complete the daily challenge, ideal-opt: ['']"
+        },
+        "37": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 9.81, ideal-opt: [-9.81, '']"
+        },
+        "45": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "47": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "53": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "55": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: GOOGL, ideal-opt: ['Google', 'GOOG']"
+        },
+        "56": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: AAPL, ideal-opt: ['Apple']"
+        },
+        "58": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Family Law, ideal-opt: ['Divorce']"
+        },
+        "61": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: residential design, ideal-opt: ['small space garden design']"
+        },
+        "70": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "76": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type ['Bronze', 'Marble', 'Terracotta', 'Wood', 'Stone']: not string"
+        },
+        "78": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of timings, exhibitions, accessibility: not list."
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Violin Lessons', 'Guitar Lessons']."
+        },
+        "86": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: intermediate, ideal-opt: ['', 'beginner']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "92": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "108": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10.0: not int"
+        },
+        "109": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "121": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 8, ideal-opt: [0.08]"
+        },
+        "151": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f8761d80f90>[ideal 1] <dataset.Error object at 0x7f8761d80750>"
+        },
+        "153": "wrong format",
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "180": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Legend of Zelda, ideal-opt: ['Zelda']"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'vegetable oil', 'garlic', 'mushroom', 'onion', 'tomato', 'spinach', 'ricotta cheese', 'parmesan cheese'].[ideal 1] wrong length of ['pasta', 'vegetable oil', 'garlic', 'mushroom', 'onion', 'tomato', 'spinach', 'ricotta cheese', 'parmesan cheese']."
+        },
+        "186": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 29, ideal-opt: [30]"
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, France, ideal-opt: ['Eiffel Tower']"
+        },
+        "199": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Yellowstone National Park, ideal-opt: ['Yellowstone', 'yellowstone']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.995,
+    "CALL_ACCURACY": 0.845,
+    "FORMAT_ERROR": 0.005,
+    "CALL_NUMBER_ERROR": 0.005,
+    "FUNC_NAME_ERROR": 0.02,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.025,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.1
+}

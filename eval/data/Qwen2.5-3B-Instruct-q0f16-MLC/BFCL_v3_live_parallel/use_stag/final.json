@@ -1,0 +1,96 @@
+{
+    "fail_format": [],
+    "fail_call": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: \u5317\u4eac,\u7701, ideal-opt: ['Beijing, China']"
+        },
+        "1": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "2": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "3": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "4": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589&hourly=temperature_2m,relative_humidity,wind_speed,wind_direction&daily=weathercode&timezone=America%2FNew_York, ideal-opt: ['', 'https://api.open-meteo.com/v1/forecast']"
+        },
+        "5": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
+        },
+        "6": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris, France, ideal-opt: ['Bordeaux, France']"
+        },
+        "7": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "8": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: add, ideal-opt: ['delete']"
+        },
+        "9": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: [4]"
+        },
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Sheraton Hotel, ideal-opt: ['Marriott']"
+        },
+        "11": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "12": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "14": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "15": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        }
+    },
+    "FORMAT_ACCURACY": 1.0,
+    "CALL_ACCURACY": 0.0,
+    "FORMAT_ERROR": 0.0,
+    "CALL_NUMBER_ERROR": 0.25,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.75
+}

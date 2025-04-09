@@ -143,10 +143,10 @@ def main(args: argparse.argparse.Namespace):
         alltime_records = {}
         for i, pipeline in enumerate(pipelines):
             report, request_records = run_pipeline(pipeline, dataset, tokenizer, args)
-            
+
             for item in request_records:
                 print(item.chat_cmpl.messages)
-            
+
             exec_feature = (
                 json.dumps(report["exec_feature"])
                 if report["exec_feature"] is not None

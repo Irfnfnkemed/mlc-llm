@@ -1291,7 +1291,7 @@ def convert_function_str_to_json(
                                     )
                             except json.JSONDecodeError:
                                 pass
-                        match_stack.pop()            
+                        match_stack.pop()
     elif tool_call_format == "python":
         # tool calling in python grammar
         def parse_function_call(call_str: str):
@@ -1346,7 +1346,9 @@ def process_function_call_output(
                     if fn_json_obj is not None
                 ]
                 if len(tool_calls_list[i]) == 0:
-                    output_texts[i] += "[engine info] Got an invalid function call output from model"
+                    output_texts[
+                        i
+                    ] += "[engine info] Got an invalid function call output from model"
                     finish_reasons[i] = "error"
                 else:
                     finish_reasons[i] = "tool_calls"

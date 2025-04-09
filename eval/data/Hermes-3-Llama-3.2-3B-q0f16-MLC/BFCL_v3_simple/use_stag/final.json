@@ -1,0 +1,295 @@
+{
+    "fail_format": [
+        335
+    ],
+    "fail_call": [
+        14,
+        48,
+        63,
+        77,
+        91,
+        92,
+        98,
+        99,
+        103,
+        104,
+        116,
+        117,
+        139,
+        158,
+        159,
+        166,
+        177,
+        188,
+        196,
+        201,
+        202,
+        214,
+        224,
+        229,
+        235,
+        241,
+        244,
+        245,
+        247,
+        249,
+        258,
+        266,
+        267,
+        273,
+        280,
+        292,
+        299,
+        301,
+        310,
+        311,
+        312,
+        325,
+        328,
+        335,
+        353,
+        354,
+        355,
+        359,
+        364,
+        366,
+        370,
+        373,
+        375,
+        384,
+        387,
+        394
+    ],
+    "fail_reason": {
+        "14": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', 0.0]"
+        },
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: kg/m^3, ideal-opt: ['', 'kg/m\u00b3']"
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Homo sapiens, ideal-opt: ['Human', 'human']"
+        },
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: operates on Sundays, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "92": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Drama, ideal-opt: ['', 'all']"
+        },
+        "98": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 18, ideal-opt: [6]"
+        },
+        "99": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2.0, ideal-opt: [6.2832]"
+        },
+        "103": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f3b20091e50>"
+        },
+        "104": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: meters, ideal-opt: ['', 'square meters']"
+        },
+        "116": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [2, '']"
+        },
+        "117": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: [13]"
+        },
+        "139": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0.05, ideal-opt: [5.0]"
+        },
+        "158": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "159": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Criminal Law Amendment Act of 2013, ideal-opt: ['Criminal Law Amendment Act', 'Criminal Law Amendment']"
+        },
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "177": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: closed, ideal-opt: ['all', '']"
+        },
+        "188": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 30, ideal-opt: ['', 0]"
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
+        },
+        "201": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Ailuropoda melanoleuca, ideal-opt: ['panda', 'pandas']"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: solar, ideal-opt: ['renewable']"
+        },
+        "214": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 7, ideal-opt: [30]"
+        },
+        "224": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: psychology behaviour group dynamics, ideal-opt: ['psychology']"
+        },
+        "229": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: high, ideal-opt: ['medium', '']"
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Strasbourg, ideal-opt: ['', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: American Civil War, ideal-opt: ['Civil War']"
+        },
+        "244": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Philosophi\u00e6 Naturalis Principia Mathematica, ideal-opt: ['Law of Universal Gravitation', 'Universal Law of Gravitation', 'The law of universal gravitation']"
+        },
+        "245": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1898, ideal-opt: ['', 0]"
+        },
+        "247": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "249": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1300, ideal-opt: [14]"
+        },
+        "258": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: blue, ideal-opt: ['yellow']"
+        },
+        "266": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Auguste Rodin, ideal-opt: ['Rodin']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY']"
+        },
+        "273": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Louvre Museum, ideal-opt: ['Louvre Museum']"
+        },
+        "280": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Yamaha, ideal-opt: ['']"
+        },
+        "292": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['C', 'F', 'G', 'C', 'F', 'G', 'C']."
+        },
+        "299": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C# major, ideal-opt: ['C#', 'C sharp']"
+        },
+        "301": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C_major, ideal-opt: ['C']"
+        },
+        "310": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
+        },
+        "311": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
+        },
+        "312": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Manchester United, ideal-opt: ['']"
+        },
+        "325": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2021-2022, ideal-opt: ['']"
+        },
+        "328": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['player count', 'playing time', 'age', 'mechanics', 'rating'].[ideal 1] wrong length of ['player count', 'playing time', 'age', 'mechanics', 'rating']."
+        },
+        "335": "wrong format",
+        "353": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['chicken', 'broccoli']."
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['broccoli', 'carrots', 'tomatoes', 'leeks', 'garlic', 'spinach']."
+        },
+        "355": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dinner, ideal-opt: ['']"
+        },
+        "359": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'cheese', 'tomatoes', 'basil', 'garlic']."
+        },
+        "364": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Brooklyn, New York, USA, ideal-opt: ['Brooklyn', 'Brooklyn, NY']"
+        },
+        "366": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [1, '']"
+        },
+        "370": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f3b20092850>[ideal 1] <dataset.Error object at 0x7f3b200927d0>"
+        },
+        "373": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f3b20092890>[ideal 1] <dataset.Error object at 0x7f3b20092910>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pumpkin', 'eggs', 'pumpkin', 'eggs'].[ideal 1] wrong length of ['pumpkin', 'eggs', 'pumpkin', 'eggs']."
+        },
+        "384": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Deluxe, ideal-opt: ['Standard', '']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-06-03, ideal-opt: ['2022-06-04', '06/04/2022', 'Jun.4,2022']"
+        },
+        "394": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, France, ideal-opt: ['Eiffel Tower']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9975,
+    "CALL_ACCURACY": 0.86,
+    "FORMAT_ERROR": 0.0025,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.1375
+}

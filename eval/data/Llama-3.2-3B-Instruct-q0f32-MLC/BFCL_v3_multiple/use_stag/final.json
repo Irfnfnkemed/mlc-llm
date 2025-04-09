@@ -1,0 +1,110 @@
+{
+    "fail_format": [
+        46
+    ],
+    "fail_call": [
+        7,
+        13,
+        23,
+        38,
+        40,
+        46,
+        47,
+        50,
+        53,
+        67,
+        74,
+        75,
+        80,
+        124,
+        129,
+        149,
+        184,
+        188,
+        193
+    ],
+    "fail_reason": {
+        "7": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: company XYZ, ideal-opt: ['XYZ']"
+        },
+        "23": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7fd27523bfd0>[ideal 1] <dataset.Error object at 0x7fd27523bfd0>[ideal 2] <dataset.Error object at 0x7fd27523bf90>[ideal 3] <dataset.Error object at 0x7fd27523bfd0>[ideal 4] <dataset.Error object at 0x7fd27523bf90>[ideal 5] <dataset.Error object at 0x7fd27523bfd0>[ideal 6] <dataset.Error object at 0x7fd27523bf90>[ideal 7] <dataset.Error object at 0x7fd27523bfd0>[ideal 8] <dataset.Error object at 0x7fd27523bf90>[ideal 9] <dataset.Error object at 0x7fd27523bfd0>[ideal 10] <dataset.Error object at 0x7fd27523bf90>[ideal 11] <dataset.Error object at 0x7fd27523bfd0>[ideal 12] <dataset.Error object at 0x7fd27523bfd0>[ideal 13] <dataset.Error object at 0x7fd27523bfd0>[ideal 14] <dataset.Error object at 0x7fd27523bf90>[ideal 15] <dataset.Error object at 0x7fd27523bfd0>[ideal 16] <dataset.Error object at 0x7fd27523bf90>[ideal 17] <dataset.Error object at 0x7fd27523bfd0>"
+        },
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "40": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [1.256e-06, 1.256e-06, '']"
+        },
+        "46": "wrong format",
+        "47": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: ['', 0]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location'].[ideal 1] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location']."
+        },
+        "53": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: house_prices, ideal-opt: ['house_price', 'house price']"
+        },
+        "67": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['English']"
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent Van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "75": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Monthly, ideal-opt: ['', 'Daily']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "124": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: ['', 2]"
+        },
+        "129": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0.05, ideal-opt: [5.0]"
+        },
+        "149": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: I love the food here! It, ideal-opt: [\"I love the food here! It's always fresh and delicious.\"]"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'cheese', 'vegetables'].[ideal 1] wrong length of ['pasta', 'cheese', 'vegetables']."
+        },
+        "188": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [' tomatoes,pet food '].[ideal 1] wrong length of [' tomatoes,pet food '].[ideal 2] wrong length of [' tomatoes,pet food '].[ideal 3] wrong length of [' tomatoes,pet food ']."
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, FR, ideal-opt: ['Eiffel Tower']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.995,
+    "CALL_ACCURACY": 0.905,
+    "FORMAT_ERROR": 0.005,
+    "CALL_NUMBER_ERROR": 0.005,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.085
+}

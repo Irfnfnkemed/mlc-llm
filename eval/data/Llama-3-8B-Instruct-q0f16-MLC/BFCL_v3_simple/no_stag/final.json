@@ -1,0 +1,221 @@
+{
+    "fail_format": [
+        99,
+        158,
+        291
+    ],
+    "fail_call": [
+        50,
+        55,
+        56,
+        63,
+        83,
+        91,
+        92,
+        99,
+        133,
+        158,
+        166,
+        169,
+        178,
+        196,
+        197,
+        200,
+        201,
+        202,
+        215,
+        235,
+        241,
+        244,
+        249,
+        263,
+        267,
+        277,
+        280,
+        285,
+        291,
+        306,
+        312,
+        317,
+        325,
+        355,
+        359,
+        366,
+        370,
+        373,
+        375,
+        382,
+        398,
+        399
+    ],
+    "fail_reason": {
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: water, ideal-opt: ['ice']"
+        },
+        "55": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: human cell, ideal-opt: ['human']"
+        },
+        "56": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Homo sapiens, ideal-opt: ['Human', 'human']"
+        },
+        "83": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f1cac02d390>"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: operates_on_sundays, ideal-opt: ['open on Sundays', 'opens on Sundays']"
+        },
+        "92": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2010: not int"
+        },
+        "99": "wrong format",
+        "133": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [0.05]"
+        },
+        "158": "wrong format",
+        "166": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL.', 'Chicago, IL']"
+        },
+        "169": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type false: not bool"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['all'].[ideal 1] wrong length of ['all']."
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-08-16, ideal-opt: ['08-16-2022']"
+        },
+        "197": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 12:00:00 PM, ideal-opt: ['12pm', '12:00']"
+        },
+        "200": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: gasoline, ideal-opt: ['gas']"
+        },
+        "201": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023, ideal-opt: ['', 2024]"
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Solar, ideal-opt: ['renewable']"
+        },
+        "215": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Europe, ideal-opt: ['', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: American Civil War, ideal-opt: ['Civil War']"
+        },
+        "244": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Philosophi\u00e6 Naturalis Principia Mathematica, ideal-opt: ['Law of Universal Gravitation', 'Universal Law of Gravitation', 'The law of universal gravitation']"
+        },
+        "249": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [False, '']"
+        },
+        "263": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type True: not bool"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York City, NY']"
+        },
+        "277": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-06-20/2023-06-24, ideal-opt: ['2023-06-20']"
+        },
+        "280": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "285": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, Illinois', 'Chicago, IL']"
+        },
+        "291": "wrong format",
+        "306": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Test, ideal-opt: ['T20', '']"
+        },
+        "312": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Juventus, ideal-opt: ['']"
+        },
+        "317": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['LA Lakers']"
+        },
+        "325": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Current, ideal-opt: ['']"
+        },
+        "355": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "359": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'cheese', 'vegetables', 'tomato sauce']."
+        },
+        "366": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [1, '']"
+        },
+        "370": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['olive oil', 'olive oil', 'olive oil', 'rice'].[ideal 1] wrong length of ['olive oil', 'olive oil', 'olive oil', 'rice']."
+        },
+        "373": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f1cac02d810>[ideal 1] <dataset.Error object at 0x7f1cac02da90>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: default, ideal-opt: ['']"
+        },
+        "382": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10th December 2022, ideal-opt: ['2022-12-10', '10/12/2022', 'Dec 10, 2022', 'December 10, 2022']"
+        },
+        "398": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Metropolitan Museum of Art, ideal-opt: ['Metropolitan Museum of Art', 'The Met']"
+        },
+        "399": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9925,
+    "CALL_ACCURACY": 0.895,
+    "FORMAT_ERROR": 0.0075,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0025,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0125,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.0825
+}

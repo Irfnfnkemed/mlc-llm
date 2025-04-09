@@ -3,18 +3,24 @@
 import argparse
 import json
 import os
+import requests
+import random
+from datetime import datetime
 import re
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
-import requests
+import pandas as pd  # pylint: disable=import-error
+from datasets import load_dataset  # pylint: disable=import-error
+from transformers import AutoTokenizer  # pylint: disable=import-error
+
+from request_record import GroupedRequestRecord, Metrics, RequestRecord
 from mlc_llm.protocol.openai_api_protocol import (
     ChatCompletionMessage,
     ChatCompletionRequest,
+    ChatToolCall,
+    DebugConfig,
 )
-from transformers import AutoTokenizer  # pylint: disable=import-error
-
-from request_record import Metrics, RequestRecord
 
 
 class Dataset:  # pylint: disable=too-few-public-methods
@@ -31,16 +37,15 @@ class Dataset:  # pylint: disable=too-few-public-methods
     timestamp_available: bool = False
 
     def generate_request_records(
-            self,
-            input_len: Optional[int],
-            output_len: Optional[int],
-            input_len_std: float = 0.0,
-            output_len_std: float = 0.0,
+        self,
+        input_len: Optional[int],
+        output_len: Optional[int],
+        input_len_std: float = 0.0,
+        output_len_std: float = 0.0,
     ) -> List[RequestRecord]:
         """Get the raw unprocessed request records of the dataset."""
         raise NotImplementedError()
-
-
+    
 GORILLA_TO_OPENAPI = {
     "integer": "integer",
     "number": "number",
@@ -70,6 +75,7 @@ GORILLA_TO_OPENAPI = {
     "Bigint": "integer",
 }
 
+
 from enum import IntEnum
 
 
@@ -82,12 +88,14 @@ class Err_type(IntEnum):
     ENUM_ERROR = 5
     PARA_VALUE_ERROR = 6
     NONE = 7
-
+    
+    
 
 class Error:
     def __init__(self, message: str = "", err_type: Err_type = Err_type.NONE):
         self.message = message
         self.error_type = err_type
+        
 
 
 class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
@@ -152,7 +160,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                     print(f"Warning: No function definition for item {item_id}")
                     continue
                 tool = [{"type": "function", "function": func} for func in item["function"]]
-                self.map_type_values(tool)
+                self.map_type_values(tool)                    
                 answer = answers_by_id[item_id]
                 if "ground_truth" not in answer or not answer["ground_truth"]:
                     print(f"Warning: No ground truth for item {item_id}")
@@ -188,13 +196,13 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                     tool["function"]["strict"] = False
 
     def generate_request_records(
-            self,
-            input_len: Optional[int],
-            output_len: Optional[int],
-            input_len_std: float = 0.0,
-            output_len_std: float = 0.0,
+        self,
+        input_len: Optional[int],
+        output_len: Optional[int],
+        input_len_std: float = 0.0,
+        output_len_std: float = 0.0,
     ) -> List[RequestRecord]:
-
+        
         request_records = []
         for entry in self.gorilla_data:
             # If the request does not have enough length, discard it.
@@ -273,7 +281,9 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                 if not acc:
                     return True, False, err
         return True, True, Error()
-
+            
+                
+                
     def check_integer(self, real_arg: Any, ideal_arg: Optional[List[Any]]) -> Tuple[bool, Error]:
         if type(real_arg) != int:
             return False, Error(f"wrong type {real_arg}: not int", Err_type.TYPE_ERROR)
@@ -287,7 +297,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                 err = Error()
                 break
         return match, err
-
+    
     def check_number(self, real_arg: Any, ideal_arg: Optional[List[Any]]) -> Tuple[bool, Error]:
         if type(real_arg) != float and type(real_arg) != int:
             return False, Error(f"wrong type {real_arg}: not number", Err_type.TYPE_ERROR)
@@ -301,15 +311,15 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                 err = Error()
                 break
         return match, err
-
+    
     def check_string(self, real_arg: Any, ideal_arg: Optional[List[Any]], enum: Optional[List[str]]) -> Tuple[bool, Error]:
-
+        
         def standardize_string(string: Any) -> str:
             if not isinstance(string, str):
                 return "-----Error------"
             regex_string = r"[ \,\.\/\-\_\*\^]"
             return re.sub(regex_string, "", string).lower().replace("'", '"')
-
+        
         if type(real_arg) != str:
             return False, Error(f"wrong type {real_arg}: not string", Err_type.TYPE_ERROR)
         match = False
@@ -332,7 +342,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                     err = Error()
                     break
         return match, err
-
+    
     def check_boolean(self, real_arg: bool, ideal_arg: Optional[List[bool]]) -> Tuple[bool, Error]:
         if type(real_arg) != bool:
             return False, Error(f"wrong type {real_arg}: not bool", Err_type.TYPE_ERROR)
@@ -346,7 +356,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                 err = Error()
                 break
         return match, err
-
+                
     def check_list(self, real_arg: List, ideal_arg: Optional[List[List]], item: Dict[str, Any]) -> Tuple[bool, Error]:
         if type(real_arg) != list:
             return False, Error(f"wrong type of {real_arg}: not list.", Err_type.TYPE_ERROR)
@@ -445,7 +455,7 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
                 if match:
                     return True, Error()
             return False, Error(final_err, err_type)
-
+    
     def check_dict(self, real_arg: Dict[str, Any], ideal_arg: Optional[Dict[str, Any]], properties: Dict[str, Any]) -> Tuple[bool, Error]:
         if type(real_arg) != dict:
             return False, Error(f"wrong type of {real_arg}: not dict.", Err_type.TYPE_ERROR)
@@ -550,17 +560,21 @@ class GorillaDataset(Dataset):  # pylint: disable=too-few-public-methods
             for item in data:
                 if isinstance(item, (dict, list)):
                     self.map_type_values(item)
+                
 
 
 SUPPORTED_DATASET = [
     "BFCL_v3_simple",
     "BFCL_v3_multiple",
     "BFCL_v3_parallel",
+    "BFCL_v3_live_simple",
+    "BFCL_v3_live_multiple",
+    "BFCL_v3_live_parallel",
 ]
 
 
 def create_dataset(  # pylint: disable=too-many-return-statements,too-many-branches
-        args: argparse.Namespace, tokenizer: AutoTokenizer
+    args: argparse.Namespace, tokenizer: AutoTokenizer
 ) -> Dataset:
     """Create a dataset instance with regard to the specified dataset kind and file path."""
     if args.dataset_path is not None and not isinstance(args.dataset_path, str):
@@ -572,7 +586,7 @@ def create_dataset(  # pylint: disable=too-many-return-statements,too-many-branc
                 'Please specify it with "--dataset-path".'
             )
         assert (
-                args.apply_chat_template is False
+            args.apply_chat_template is False
         ), "Gorilla dataset does not support applying chat template"
         return GorillaDataset(args.dataset, args.dataset_path, tokenizer, args.use_stag)
     raise ValueError(f"Unrecognized dataset {args.dataset}")

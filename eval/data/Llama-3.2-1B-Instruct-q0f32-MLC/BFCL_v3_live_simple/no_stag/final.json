@@ -1,0 +1,906 @@
+{
+    "fail_format": [
+        1,
+        5,
+        11,
+        13,
+        16,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        30,
+        31,
+        34,
+        39,
+        41,
+        42,
+        43,
+        49,
+        51,
+        55,
+        57,
+        58,
+        59,
+        61,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69,
+        70,
+        74,
+        75,
+        76,
+        78,
+        81,
+        87,
+        89,
+        90,
+        94,
+        97,
+        98,
+        100,
+        101,
+        102,
+        103,
+        105,
+        106,
+        108,
+        109,
+        110,
+        111,
+        113,
+        114,
+        120,
+        123,
+        124,
+        126,
+        128,
+        130,
+        131,
+        132,
+        133,
+        139,
+        140,
+        142,
+        143,
+        145,
+        147,
+        148,
+        149,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        163,
+        165,
+        168,
+        170,
+        171,
+        172,
+        175,
+        176,
+        177,
+        178,
+        180,
+        181,
+        188,
+        192,
+        193,
+        194,
+        195,
+        197,
+        199,
+        201,
+        202,
+        204,
+        206,
+        207,
+        208,
+        209,
+        215,
+        217,
+        218,
+        223,
+        228,
+        232,
+        233,
+        234,
+        238,
+        239,
+        242,
+        245,
+        246,
+        247,
+        249,
+        251,
+        257
+    ],
+    "fail_call": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        37,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        49,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        213,
+        215,
+        217,
+        218,
+        219,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        253,
+        254,
+        256,
+        257
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7890: not int"
+        },
+        "1": "wrong format",
+        "2": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2020 Addison Street, Berkeley, CA, ideal-opt: ['2020 Addison Street, Berkeley, CA, USA']"
+        },
+        "3": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 600: not int"
+        },
+        "5": "wrong format",
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Mariposa, CA, 100mi, ideal-opt: ['Mariposa, CA']"
+        },
+        "11": "wrong format",
+        "12": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York City, NY, ideal-opt: ['New York, NY']"
+        },
+        "13": "wrong format",
+        "14": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: [\"Bangkok, Thailand\"], ideal-opt: ['Bangkok, Thailand']"
+        },
+        "15": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Bengaluru, India, ideal-opt: ['Chennai, Tamil Nadu']"
+        },
+        "16": "wrong format",
+        "20": "wrong format",
+        "22": "wrong format",
+        "23": "wrong format",
+        "24": "wrong format",
+        "25": "wrong format",
+        "26": "wrong format",
+        "27": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: restaurant"
+        },
+        "28": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"\u30bd\u30fc\u30b9\u9ea6\u8fa3\u9e21\u817f\u5821\", \"\u53ef\u4e50\", \"\u6cb9\u70b8\u9e21\u7fc5\", \"\u85af\u6761\"]: not list."
+        },
+        "29": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: restaurant"
+        },
+        "30": "wrong format",
+        "31": "wrong format",
+        "32": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "33": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "34": "wrong format",
+        "35": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "37": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "39": "wrong format",
+        "40": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "41": "wrong format",
+        "42": "wrong format",
+        "43": "wrong format",
+        "44": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "45": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "46": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: medium, ideal-opt: ['MID']"
+        },
+        "47": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "49": "wrong format",
+        "51": "wrong format",
+        "54": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "55": "wrong format",
+        "56": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: content, ideal-opt: ['go to gym']"
+        },
+        "57": "wrong format",
+        "58": "wrong format",
+        "59": "wrong format",
+        "61": "wrong format",
+        "62": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "63": "wrong format",
+        "64": "wrong format",
+        "65": "wrong format",
+        "66": "wrong format",
+        "67": "wrong format",
+        "68": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not number"
+        },
+        "69": "wrong format",
+        "70": "wrong format",
+        "71": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "72": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "73": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 90: not int"
+        },
+        "74": "wrong format",
+        "75": "wrong format",
+        "76": "wrong format",
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: UK, ideal-opt: ['GB']"
+        },
+        "78": "wrong format",
+        "79": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Diego, ideal-opt: ['San Diego, CA']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The latest advancements in AI lie in machine learning algorithms that have enabled breakthroughs in accurate image recognition, natural language processing, and decision-making. These advancements are having a ripple effect, transforming industries such as healthcare, finance, and education. Explore the latest developments in AI and learn more about how it is transforming our lives., ideal-opt: ['The recent breakthroughs in machine learning algorithms.']"
+        },
+        "81": "wrong format",
+        "82": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Julian is testing, ideal-opt: ['', None]"
+        },
+        "85": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [37.8715, -122.2730]: not list."
+        },
+        "86": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [1, 54, 3, 1, 76, 2343, 21]: not list."
+        },
+        "87": "wrong format",
+        "88": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: day_stripe_id"
+        },
+        "89": "wrong format",
+        "90": "wrong format",
+        "91": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "94": "wrong format",
+        "95": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [2.5, 3.6, 4.1, 5.2]: not list."
+        },
+        "96": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Phoenix, AZ, ideal-opt: ['Boston, MA']"
+        },
+        "97": "wrong format",
+        "98": "wrong format",
+        "99": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 30: not int"
+        },
+        "100": "wrong format",
+        "101": "wrong format",
+        "102": "wrong format",
+        "103": "wrong format",
+        "104": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 250: not number"
+        },
+        "105": "wrong format",
+        "106": "wrong format",
+        "107": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: bank_hours_start"
+        },
+        "108": "wrong format",
+        "109": "wrong format",
+        "110": "wrong format",
+        "111": "wrong format",
+        "112": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "113": "wrong format",
+        "114": "wrong format",
+        "115": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 133: not number"
+        },
+        "116": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [133, 34]: not list."
+        },
+        "117": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: hi, ideal-opt: ['say hi']"
+        },
+        "118": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "119": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "120": "wrong format",
+        "121": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Software Engineer', 'Graphic Designer', 'Data Analyst', 'Sales Manager', 'Nurse']: not list."
+        },
+        "122": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "123": "wrong format",
+        "124": "wrong format",
+        "125": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "126": "wrong format",
+        "127": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "128": "wrong format",
+        "129": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "130": "wrong format",
+        "131": "wrong format",
+        "132": "wrong format",
+        "133": "wrong format",
+        "134": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: query"
+        },
+        "137": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "138": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: \"2023-11-01T18:00:00Z\", ideal-opt: ['2023-11-01T18:00:00']"
+        },
+        "139": "wrong format",
+        "140": "wrong format",
+        "141": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "142": "wrong format",
+        "143": "wrong format",
+        "144": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "145": "wrong format",
+        "146": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
+        },
+        "147": "wrong format",
+        "148": "wrong format",
+        "149": "wrong format",
+        "150": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "151": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
+        },
+        "152": "wrong format",
+        "153": "wrong format",
+        "154": "wrong format",
+        "155": "wrong format",
+        "156": "wrong format",
+        "157": "wrong format",
+        "158": "wrong format",
+        "159": "wrong format",
+        "160": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: start microsoft.windows.camera, ideal-opt: ['start microsoft.windows.camera:']"
+        },
+        "161": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"blue square\", \"red square\", \"green square\", \"yellow square\", \"Superman logo\", \"Iron Man logo\", \"Hulk logo\", \"Batman logo\", \"Fist\", \"Bat\", \"Face mask\", \"Outline\"]: not list."
+        },
+        "162": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"red and blue circle logo\", \"red and yellow circle logo\", \"green circle logo\", \"black circle logo\"]: not list."
+        },
+        "163": "wrong format",
+        "164": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Coca-Cola logo, registered trademark of The Coca-Cola Company, ideal-opt: ['Coca-Cola logo']"
+        },
+        "165": "wrong format",
+        "166": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "167": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "168": "wrong format",
+        "169": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: python -m pytest --pyAccelerate venv MolecularDynamics.pytest.toml, ideal-opt: ['d:/playground/pc_contoller/env/Scripts/python.exe d:/playground/pc_contoller/test.py']"
+        },
+        "170": "wrong format",
+        "171": "wrong format",
+        "172": "wrong format",
+        "174": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "175": "wrong format",
+        "176": "wrong format",
+        "177": "wrong format",
+        "178": "wrong format",
+        "179": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "180": "wrong format",
+        "181": "wrong format",
+        "182": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: service_id"
+        },
+        "183": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "184": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type CLEANING_SERVICE_123: not int"
+        },
+        "185": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type ironing service: not int"
+        },
+        "186": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: [2]"
+        },
+        "187": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: service_id"
+        },
+        "188": "wrong format",
+        "189": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [{\"age\": 42, \"name\": \"Chester\"}, {\"nick_name\": \"The_Adult\"}]: not list."
+        },
+        "190": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "191": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type false: not bool"
+        },
+        "192": "wrong format",
+        "193": "wrong format",
+        "194": "wrong format",
+        "195": "wrong format",
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-25, ideal-opt: ['2023-04-27']"
+        },
+        "197": "wrong format",
+        "199": "wrong format",
+        "200": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: city"
+        },
+        "201": "wrong format",
+        "202": "wrong format",
+        "203": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Washington DC, ideal-opt: ['Washington']"
+        },
+        "204": "wrong format",
+        "205": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-29, ideal-opt: ['2023-04-27']"
+        },
+        "206": "wrong format",
+        "207": "wrong format",
+        "208": "wrong format",
+        "209": "wrong format",
+        "210": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "211": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comic, ideal-opt: ['Comedy']"
+        },
+        "213": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "215": "wrong format",
+        "217": "wrong format",
+        "218": "wrong format",
+        "219": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: , ideal-opt: ['McKinley Belcher III']"
+        },
+        "221": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Fantasy, ideal-opt: ['', 'dontcare']"
+        },
+        "222": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Thriller, ideal-opt: ['', 'dontcare']"
+        },
+        "223": "wrong format",
+        "224": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "225": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "226": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "227": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "228": "wrong format",
+        "229": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: type"
+        },
+        "231": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-10-27T16:30:00Z, ideal-opt: ['2022-10-30T16:30:00Z']"
+        },
+        "232": "wrong format",
+        "233": "wrong format",
+        "234": "wrong format",
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: friends, ideal-opt: ['track:Friends artist:Marshmello']"
+        },
+        "236": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dil Nu Maninder Buttar artist:Maninder Buttar, ideal-opt: ['track:Dil Nu artist:Maninder Buttar']"
+        },
+        "237": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: wrinkles ball by Miley Cyrus, ideal-opt: ['track:Wrecking Ball artist:Miley Cyrus']"
+        },
+        "238": "wrong format",
+        "239": "wrong format",
+        "240": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Johnny Johnny Yes papa song, ideal-opt: ['Johnny Johnny Yes Papa', 'Johnny Johnny Yes papa']"
+        },
+        "242": "wrong format",
+        "243": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 30: not int"
+        },
+        "244": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 70: not int"
+        },
+        "245": "wrong format",
+        "246": "wrong format",
+        "247": "wrong format",
+        "248": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "249": "wrong format",
+        "250": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Big Mac\", \"Big Mac\", \"McFlurry\"]: not list."
+        },
+        "251": "wrong format",
+        "253": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"burgers\", \"chicken wings\"]: not list."
+        },
+        "254": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "256": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "257": "wrong format"
+    },
+    "FORMAT_ACCURACY": 0.5232558139534884,
+    "CALL_ACCURACY": 0.12015503875968993,
+    "FORMAT_ERROR": 0.47674418604651164,
+    "CALL_NUMBER_ERROR": 0.046511627906976744,
+    "FUNC_NAME_ERROR": 0.07751937984496124,
+    "PARA_KEY_ERROR": 0.03488372093023256,
+    "TYPE_ERROR": 0.11627906976744186,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.12790697674418605
+}

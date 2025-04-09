@@ -1,0 +1,156 @@
+{
+    "fail_format": [],
+    "fail_call": [
+        7,
+        16,
+        26,
+        29,
+        32,
+        33,
+        47,
+        50,
+        53,
+        58,
+        67,
+        74,
+        80,
+        83,
+        91,
+        94,
+        104,
+        109,
+        141,
+        149,
+        153,
+        156,
+        170,
+        172,
+        178,
+        184,
+        193,
+        196
+    ],
+    "fail_reason": {
+        "7": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Cervus elaphus, ideal-opt: ['deer', 'Deer']"
+        },
+        "16": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Panthera tigris, ideal-opt: ['wild tiger', 'tiger']"
+        },
+        "26": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: ExXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXMission1, ideal-opt: ['']"
+        },
+        "29": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: y=3x+2, ideal-opt: ['3x + 2', 'lambda x: 3x + 2']"
+        },
+        "32": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "33": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: {\"type\": \"string\", \"description\": \"The function to be integrated.\"}, ideal-opt: ['3x**2', 'lambda x: 3x**2']"
+        },
+        "47": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: ['', 0]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location'].[ideal 1] wrong length of ['SqFt', 'Bedrooms', 'Bathrooms', 'Location']."
+        },
+        "53": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['interest_rate'].[ideal 1] wrong length of ['interest_rate'].[ideal 2] wrong length of ['interest_rate']."
+        },
+        "58": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Family Law, ideal-opt: ['Divorce']"
+        },
+        "67": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['English']"
+        },
+        "74": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vincent van Gogh, ideal-opt: ['Van Gogh']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Guitar Lessons', 'Violin Lessons']."
+        },
+        "83": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Laliga, ideal-opt: ['']"
+        },
+        "91": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4]"
+        },
+        "94": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: suite, ideal-opt: ['suite with queen size bed']"
+        },
+        "104": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: miles, ideal-opt: ['', 'kilometers']"
+        },
+        "109": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [False, '']"
+        },
+        "141": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "149": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['english', 'English']"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: European Union, ideal-opt: ['', 'global', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "170": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Portugal Serie A, ideal-opt: ['all', '']"
+        },
+        "172": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles Lakers, ideal-opt: ['']"
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [{'rank': 'Ace', 'suit': 'Hearts'}, {'rank': 'Two', 'suit': 'Hearts'}, {'rank': 'Three', 'suit': 'Hearts'}, {'rank': 'Four', 'suit': 'Hearts'}, {'rank': 'Five', 'suit': 'Hearts'}, {'rank': 'Six', 'suit': 'Hearts'}, {'rank': 'Seven', 'suit': 'Hearts'}, {'rank': 'Eight', 'suit': 'Hearts'}, {'rank': 'Nine', 'suit': 'Hearts'}, {'rank': 'Ten', 'suit': 'Hearts'}, {'rank': 'Jack', 'suit': 'Hearts'}, {'rank': 'King', 'suit': 'Hearts'}]."
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['pasta', 'cheese', 'tomato sauce', 'garlic', 'onion', 'olive oil'].[ideal 1] wrong length of ['pasta', 'cheese', 'tomato sauce', 'garlic', 'onion', 'olive oil']."
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, France, ideal-opt: ['Eiffel Tower']"
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        }
+    },
+    "FORMAT_ACCURACY": 1.0,
+    "CALL_ACCURACY": 0.86,
+    "FORMAT_ERROR": 0.0,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.14
+}

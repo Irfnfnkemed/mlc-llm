@@ -2,22 +2,20 @@
 
 import functools
 import json
+import os
 import random
 from typing import Any, Dict, List, Optional, Tuple
 
-import mlc_llm
+from mlc_llm.protocol.openai_api_protocol import ChatToolCall
 import numpy as np
 import requests
-from mlc_llm.cli.serve import EngineConfigOverride
-from mlc_llm.protocol.openai_api_protocol import ChatToolCall
-from mlc_llm.serve import EngineConfig
-from mlc_llm.support import argparse, logging
 from transformers import AutoTokenizer  # pylint: disable=import-error
 
+import mlc_llm
 from api_endpoint import SUPPORTED_BACKENDS, create_api_endpoint
-from dataset import Error, Err_type
 from dataset import SUPPORTED_DATASET, Dataset, GorillaDataset, create_dataset
 from request_processor import (
+    MetricAnalyzer,
     RequestProcessor,
     create_pipelines,
 )
@@ -27,6 +25,10 @@ from request_record import (
     generate_metrics_summary,
     pretty_print_report,
 )
+from mlc_llm.cli.serve import EngineConfigOverride
+from mlc_llm.serve import EngineConfig
+from mlc_llm.support import argparse, logging
+from dataset import Error, Err_type
 
 logging.enable_logging()
 logger = logging.getLogger(__name__)
@@ -87,9 +89,9 @@ def _launch_mlc_server(args: argparse.argparse.Namespace):
 
 
 def run_pipeline(
-        pipeline: RequestProcessor,
-        dataset: Dataset,
-        args: argparse.argparse.Namespace,
+    pipeline: RequestProcessor,
+    dataset: Dataset,
+    args: argparse.argparse.Namespace,
 ) -> Tuple[Dict[str, Any], List[RequestRecord]]:
     """Run the pipeline with the given dataset and args. Return the benchmark report dict."""
     random.seed(args.seed)
@@ -125,8 +127,7 @@ def query_mlc_server_metrics(host: str, port: int):
     except Exception:  # pylint: disable=broad-exception-caught
         pass
 
-
-def convert_calls_to_json(calls: List[ChatToolCall]) -> List[Dict[str, Any]]:
+def convert_calls_to_json(calls: List[ChatToolCall])-> List[Dict[str, Any]]:
     """Convert the list of ChatToolCall to a list of dict."""
     result = []
     for call in calls:
@@ -137,14 +138,15 @@ def convert_calls_to_json(calls: List[ChatToolCall]) -> List[Dict[str, Any]]:
     return result
 
 
-def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
+def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset, output_dir: str):
+    """Check the accuracy of the generated requests."""
     request_records = []
     final_output = {"fail_format": [], "fail_call": [], "fail_reason": {}}
-    with open(args.generate_output, "r") as f:
+    with open(f"{output_dir}/result.json", "r") as f:
         request_records = json.load(f)
     count = 0
     err_types = [0] * (len(Err_type) - 1)
-    if args.dataset == "BFCL_v3_simple":
+    if args.dataset == "BFCL_v3_simple" or args.dataset == "BFCL_v3_live_simple":
         for request in request_records:
             info = dataset.gorilla_data[request["id"]]
             count += 1
@@ -165,7 +167,7 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
             if err.error_type != Err_type.NONE:
                 final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
                 err_types[err.error_type] += 1
-    elif args.dataset == "BFCL_v3_multiple":
+    elif args.dataset == "BFCL_v3_multiple" or args.dataset == "BFCL_v3_live_multiple":
         for request in request_records:
             info = dataset.gorilla_data[request["id"]]
             count += 1
@@ -191,7 +193,7 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
             if err.error_type != Err_type.NONE:
                 final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
                 err_types[err.error_type] += 1
-    elif args.dataset == "BFCL_v3_parallel":
+    elif args.dataset == "BFCL_v3_parallel" or args.dataset == "BFCL_v3_live_parallel":
         for request in request_records:
             info = dataset.gorilla_data[request["id"]]
             count += 1
@@ -230,6 +232,7 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
                 final_output["fail_reason"][request["id"]] = {"type": Err_type(err.error_type).name, "message": err.message}
                 err_types[err.error_type] += 1
 
+
     correct_format = count - len(final_output["fail_format"])
     correct_call = count - len(final_output["fail_call"])
     final_output["FORMAT_ACCURACY"] = correct_format / count
@@ -237,7 +240,7 @@ def check_acc(args: argparse.argparse.Namespace, dataset: GorillaDataset):
     for i in range(len(Err_type) - 1):
         final_output[Err_type(i).name] = err_types[i] / count
     print(f"correct_format: {correct_format}/{count}, correct_call: {correct_call}/{count}")
-    with open(args.final_output, "w", encoding="utf-8") as file:
+    with open(f"{output_dir}/final.json", "w", encoding="utf-8") as file:
         json.dump(final_output, file, indent=4)
 
 
@@ -258,18 +261,23 @@ def main(args: argparse.argparse.Namespace):
         reports = []
         alltime_records = {}
         store_record = []
+        output_dir = f"{args.output_root}/{os.path.basename(args.tokenizer)}/{args.dataset}/{'use_stag' if args.use_stag else 'no_stag'}/"
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+
+
         for i, pipeline in enumerate(pipelines):
             report, request_records = run_pipeline(pipeline, dataset, args)
 
             for request in request_records:
                 info = dataset.gorilla_data[request.request_id]
                 store_record.append({"id": request.request_id})
-                if len(request.chat_cmpl.messages) == 2:
-                    store_record[-1]["output"] = request.chat_cmpl.messages[1].content
-                if len(request.chat_cmpl.messages) == 2 and request.chat_cmpl.messages[1].tool_calls is not None:
-                    store_record[-1]["call"] = convert_calls_to_json(request.chat_cmpl.messages[1].tool_calls)
+                if len(request.chat_cmpl.messages) >= 2:
+                    store_record[-1]["output"] = request.chat_cmpl.messages[-1].content
+                if len(request.chat_cmpl.messages) >= 2 and request.chat_cmpl.messages[-1].tool_calls is not None:
+                    store_record[-1]["call"] = convert_calls_to_json(request.chat_cmpl.messages[-1].tool_calls)
 
-            with open(args.generate_output, "w") as f:
+            with open(f"{output_dir}/result.json", "w") as f:
                 json.dump(store_record, f, indent=4)
 
             exec_feature = (
@@ -287,17 +295,17 @@ def main(args: argparse.argparse.Namespace):
         # Construct data frame
         df = convert_reports_to_df(reports)
         print(df)
-        df.to_csv(args.bench_output, index=False)
-        logger.info("Benchmark results dumped to file %s", args.bench_output)
+        df.to_csv(f"{output_dir}/bench.csv", index=False)
+        logger.info("Benchmark results dumped to file %s", f"{output_dir}/bench.csv")
         if args.debug_dump:
             debug_dump_filepath = (
-                                      args.bench_output[:-4] if args.bench_output.endswith(".csv") else args.bench_output
-                                  ) + "_debug_dump.log"
+                f"{output_dir}/bench.csv"[:-4] if f"{output_dir}/bench.csv".endswith(".csv") else f"{output_dir}/bench.csv"
+            ) + "_debug_dump.log"
             with open(debug_dump_filepath, "w", encoding="utf-8") as file:
                 json.dump(alltime_records, file, indent=4)
             logger.info("Debug log dumped to file %s", debug_dump_filepath)
 
-        check_acc(args, dataset)
+        check_acc(args, dataset, output_dir)
 
     if mlc_server is not None:
         with mlc_server:
@@ -338,7 +346,7 @@ if __name__ == "__main__":
         type=int,
         required=True,
         help="The number of GPUs used by the server. "
-             "We need this to better analyze the throughput per GPU.",
+        "We need this to better analyze the throughput per GPU.",
     )
     parser.add_argument(
         "--num-requests",
@@ -350,47 +358,47 @@ if __name__ == "__main__":
         "--num-warmup-requests",
         type=int,
         help="The number of requests for warmup. "
-             "It is optional when fixing the number of concurrent requests, and is required otherwise.",
+        "It is optional when fixing the number of concurrent requests, and is required otherwise.",
     )
     parser.add_argument(
         "--per-gpu-workload",
         default=False,
         action="store_true",
         help='When set to True, the specified "num_concurrent_requests"/"request_rate" '
-             "denote the workload **per GPU**, which means that the real values of "
-             '"num_concurrent_requests"/"request_rate" used in benchmark'
-             'will be multiplied by "num_gpus".',
+        "denote the workload **per GPU**, which means that the real values of "
+        '"num_concurrent_requests"/"request_rate" used in benchmark'
+        'will be multiplied by "num_gpus".',
     )
     parser.add_argument(
         "--num-concurrent-requests",
         type=_parse_num_concurrent_requests,
         help="The number(s) of concurrent requests to benchmark. "
-             'It can be either one integer or a list of integer separated by commas(","). '
-             "When specified, for each integer, the benchmark keeps these many consistent "
-             "number of concurrently running requests.",
+        'It can be either one integer or a list of integer separated by commas(","). '
+        "When specified, for each integer, the benchmark keeps these many consistent "
+        "number of concurrently running requests.",
     )
     parser.add_argument(
         "--request-rate",
         type=_parse_request_rate,
         help="The request rate(s) denoting the number of new requests each second. "
-             'It can be either one float number (or "inf") or a list of numbers separated '
-             'by commas(","). '
-             "When specified, the benchmark sends these many new requests each second. "
-             'If it is "inf", all requests will be sent together at once.',
+        'It can be either one float number (or "inf") or a list of numbers separated '
+        'by commas(","). '
+        "When specified, the benchmark sends these many new requests each second. "
+        'If it is "inf", all requests will be sent together at once.',
     )
     parser.add_argument(
         "--replay-timestamp-scale",
         type=float,
         help="The timestamp scale when replaying the timestamps in a dataset. "
-             'The dataset replay mode is enabled when neither "--num-concurrent-requests" and '
-             '"--request-rate" is specified. '
-             "The scale is 1 by default in the replay mode.",
+        'The dataset replay mode is enabled when neither "--num-concurrent-requests" and '
+        '"--request-rate" is specified. '
+        "The scale is 1 by default in the replay mode.",
     )
     parser.add_argument(
         "--input-len",
         type=int,
         help="The benchmark request average input length. Default to None, "
-             "which means the request input length depends on the dataset being used.",
+        "which means the request input length depends on the dataset being used.",
     )
     parser.add_argument(
         "--input-len-std",
@@ -402,7 +410,7 @@ if __name__ == "__main__":
         "--output-len",
         type=int,
         help="The benchmark request average output length. Default to None, "
-             "which means the request output length depends on the dataset being used.",
+        "which means the request output length depends on the dataset being used.",
     )
     parser.add_argument(
         "--output-len-std",
@@ -415,8 +423,8 @@ if __name__ == "__main__":
         action="store_true",
         default=False,
         help="Whether to benchmark stream responses. "
-             "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
-             "Default to False.",
+        "When not enabled, metrics such as time-to-first-token (TTFT) will not be available. "
+        "Default to False.",
     )
     parser.add_argument(
         # NOTE: The current implementation of server metrics still has some issues that need fixes,
@@ -424,7 +432,7 @@ if __name__ == "__main__":
         "--include-server-metrics",
         action="store_true",
         help="Whether to also benchmark the server side request metrics. "
-             "This option is only available when benchmarking MLC server.",
+        "This option is only available when benchmarking MLC server.",
     )
     parser.add_argument(
         "--host",
@@ -473,7 +481,7 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to apply chat template to the request input text. "
-             'It is not supported when "--input-len" is specified.',
+        'It is not supported when "--input-len" is specified.',
     )
     parser.add_argument(
         "--num-process-workers",
@@ -495,7 +503,7 @@ if __name__ == "__main__":
         "--mlc-model-lib",
         type=str,
         help="The model lib path when benchmarking MLC serve. "
-             "When specified, the server is automatic launched and no external server launch is needed.",
+        "When specified, the server is automatic launched and no external server launch is needed.",
     )
     parser.add_argument(
         "--mlc-engine-config",
@@ -507,7 +515,7 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to enable cuda profile on server. "
-             "The --mlc-model-lib path should be provided when enabling this option.",
+        "The --mlc-model-lib path should be provided when enabling this option.",
     )
     parser.add_argument(
         "--debug-dump",
@@ -520,27 +528,15 @@ if __name__ == "__main__":
         default=False,
         action="store_true",
         help="Whether to chat like multi round conversion with history log each request. "
-             "Only enabled when benchmarked with fixed concurrent request mode."
-             "The --num-concurrent-requests should be provided when enabling this option.",
+        "Only enabled when benchmarked with fixed concurrent request mode."
+        "The --num-concurrent-requests should be provided when enabling this option.",
     )
     parser.add_argument(
-        "--bench-output",
+        "--output-root",
         "-o",
         type=str,
         required=True,
-        help="The path of the output file where to dump the benchmark results.",
-    )
-    parser.add_argument(
-        "--generate-output",
-        type=str,
-        required=True,
-        help="The path of the generated output file where to dump the output results.",
-    )
-    parser.add_argument(
-        "--final-output",
-        type=str,
-        required=True,
-        help="The path of the final output file where to dump the final accuracy results.",
+        help="The root of the output file.",
     )
     parser.add_argument(
         "--use-stag",

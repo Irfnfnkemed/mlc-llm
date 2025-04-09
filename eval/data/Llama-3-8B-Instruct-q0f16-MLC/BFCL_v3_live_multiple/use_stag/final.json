@@ -1,0 +1,1891 @@
+{
+    "fail_format": [
+        11,
+        12,
+        17,
+        44,
+        61,
+        96,
+        113,
+        204,
+        219,
+        230,
+        305,
+        355,
+        453,
+        456,
+        492,
+        511,
+        563,
+        666,
+        670,
+        673,
+        963,
+        985,
+        1024
+    ],
+    "fail_call": [
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        29,
+        33,
+        34,
+        35,
+        44,
+        48,
+        52,
+        55,
+        57,
+        59,
+        61,
+        62,
+        71,
+        80,
+        81,
+        82,
+        87,
+        88,
+        93,
+        96,
+        105,
+        111,
+        113,
+        127,
+        128,
+        129,
+        130,
+        132,
+        133,
+        139,
+        140,
+        144,
+        146,
+        148,
+        150,
+        151,
+        152,
+        153,
+        158,
+        168,
+        169,
+        170,
+        171,
+        173,
+        175,
+        176,
+        178,
+        190,
+        196,
+        197,
+        203,
+        204,
+        206,
+        207,
+        209,
+        211,
+        212,
+        215,
+        217,
+        218,
+        219,
+        220,
+        221,
+        226,
+        230,
+        242,
+        243,
+        257,
+        262,
+        263,
+        264,
+        266,
+        269,
+        270,
+        271,
+        277,
+        278,
+        279,
+        283,
+        284,
+        290,
+        291,
+        293,
+        294,
+        295,
+        298,
+        301,
+        304,
+        305,
+        306,
+        307,
+        309,
+        311,
+        320,
+        327,
+        333,
+        336,
+        337,
+        338,
+        339,
+        342,
+        343,
+        344,
+        345,
+        346,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        358,
+        378,
+        384,
+        385,
+        386,
+        388,
+        389,
+        391,
+        394,
+        405,
+        406,
+        407,
+        410,
+        411,
+        414,
+        419,
+        420,
+        421,
+        423,
+        424,
+        427,
+        428,
+        431,
+        432,
+        433,
+        435,
+        437,
+        438,
+        441,
+        443,
+        446,
+        448,
+        450,
+        451,
+        453,
+        454,
+        455,
+        456,
+        459,
+        460,
+        462,
+        463,
+        464,
+        466,
+        467,
+        468,
+        469,
+        472,
+        480,
+        483,
+        484,
+        487,
+        492,
+        500,
+        504,
+        505,
+        507,
+        509,
+        511,
+        512,
+        513,
+        514,
+        515,
+        518,
+        519,
+        522,
+        547,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        561,
+        563,
+        565,
+        570,
+        574,
+        580,
+        584,
+        595,
+        596,
+        597,
+        598,
+        600,
+        614,
+        621,
+        622,
+        627,
+        629,
+        631,
+        632,
+        637,
+        639,
+        643,
+        644,
+        645,
+        646,
+        648,
+        651,
+        657,
+        663,
+        666,
+        668,
+        670,
+        671,
+        673,
+        675,
+        676,
+        678,
+        679,
+        681,
+        691,
+        693,
+        701,
+        704,
+        710,
+        713,
+        716,
+        717,
+        720,
+        722,
+        729,
+        730,
+        731,
+        733,
+        735,
+        736,
+        737,
+        740,
+        742,
+        743,
+        744,
+        750,
+        753,
+        761,
+        769,
+        771,
+        772,
+        773,
+        775,
+        776,
+        778,
+        781,
+        787,
+        789,
+        790,
+        796,
+        801,
+        806,
+        824,
+        825,
+        829,
+        833,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        851,
+        853,
+        858,
+        859,
+        862,
+        865,
+        866,
+        868,
+        869,
+        870,
+        871,
+        876,
+        878,
+        879,
+        884,
+        886,
+        892,
+        895,
+        898,
+        899,
+        902,
+        905,
+        906,
+        907,
+        913,
+        916,
+        918,
+        919,
+        920,
+        921,
+        922,
+        923,
+        924,
+        926,
+        927,
+        929,
+        930,
+        931,
+        933,
+        934,
+        935,
+        936,
+        938,
+        939,
+        940,
+        945,
+        947,
+        948,
+        950,
+        956,
+        960,
+        961,
+        962,
+        963,
+        964,
+        966,
+        969,
+        971,
+        972,
+        974,
+        975,
+        976,
+        977,
+        978,
+        979,
+        980,
+        981,
+        982,
+        983,
+        984,
+        985,
+        988,
+        1005,
+        1007,
+        1010,
+        1013,
+        1016,
+        1022,
+        1024,
+        1028,
+        1034,
+        1035,
+        1038,
+        1041,
+        1048,
+        1050
+    ],
+    "fail_reason": {
+        "4": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 123 Hanoi Street, Ha Noi, Vietnam, ideal-opt: ['123 Hanoi Street']"
+        },
+        "5": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Shanghai, ideal-opt: ['Shanghai, China']"
+        },
+        "8": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Indian-style steak, ideal-opt: ['steak']"
+        },
+        "9": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: , \uc5d0\uc5b4\ucee8, \ub0c9\ubc29 \uc2e4\ud589, ideal-opt: ['\ub2e4\uc6a9\ub3c4\uc2e4, \ud1b5\ub3cc\uc774, \uc911\uc9c0']"
+        },
+        "11": "wrong format",
+        "12": "wrong format",
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Santa Cruz, CA, ideal-opt: ['Santa Cruz, USA']"
+        },
+        "16": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Park Ji-sung, ideal-opt: ['\ubc15\uc9c0\uc131']"
+        },
+        "17": "wrong format",
+        "18": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: news, ideal-opt: ['artificial intelligence', 'ai']"
+        },
+        "21": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: steak, ideal-opt: ['\uc2a4\ud14c\uc774\ud06c']"
+        },
+        "22": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "23": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 100, ideal-opt: ['', None]"
+        },
+        "24": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "25": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "26": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "29": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "33": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "34": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Letterkenny, ideal-opt: ['Letterkenny, Ireland']"
+        },
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 20, ideal-opt: ['', 10]"
+        },
+        "44": "wrong format",
+        "48": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['any'].[ideal 1] wrong length of ['any']."
+        },
+        "52": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "55": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['SMALL', 'MEDIUM', 'LARGE', 'XL'].[ideal 1] wrong length of ['SMALL', 'MEDIUM', 'LARGE', 'XL']."
+        },
+        "57": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "59": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f0af29d2d10>"
+        },
+        "61": "wrong format",
+        "62": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "71": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: my_enterprise_db, ideal-opt: ['EnterpriseDB']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: example, ideal-opt: ['', 'localhost']"
+        },
+        "81": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: plga-ca, ideal-opt: ['', 'localhost']"
+        },
+        "82": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: default_postgres, ideal-opt: ['', 'pg']"
+        },
+        "87": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: all, ideal-opt: ['openai']"
+        },
+        "88": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: postgres, ideal-opt: ['all', '']"
+        },
+        "93": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: example_postgres, ideal-opt: ['', 'postgres1']"
+        },
+        "96": "wrong format",
+        "105": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "111": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "113": "wrong format",
+        "127": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: history of kites, ideal-opt: [\"history of kites and how they're made\", 'history of kites and how they are made']"
+        },
+        "128": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "129": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: the current prime minister of India, ideal-opt: ['current prime minister of India']"
+        },
+        "130": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Current Prime Minister of India, ideal-opt: ['who is the current pm of india']"
+        },
+        "133": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 'chai kaise bnaye', ideal-opt: ['chai kaise bnaye']"
+        },
+        "139": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: date, ideal-opt: ['', None]"
+        },
+        "140": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: UK, ideal-opt: ['GB']"
+        },
+        "144": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: ['', 100]"
+        },
+        "146": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [100]"
+        },
+        "148": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['LIST OF NETWORK IDS'].[ideal 1] wrong length of ['LIST OF NETWORK IDS']."
+        },
+        "150": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "151": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['all'].[ideal 1] wrong length of ['all']."
+        },
+        "152": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of temperature: not list."
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 100, ideal-opt: [10]"
+        },
+        "158": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "168": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "169": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "170": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Sebelas Maret University internship, ideal-opt: ['Internship at Sebelas Maret University', 'Sebelas Maret University', 'Internship']"
+        },
+        "171": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2020-06-01, ideal-opt: ['', None]"
+        },
+        "173": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "175": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "176": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Entertainment, ideal-opt: ['', 'World']"
+        },
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Specific Missions 1, ideal-opt: ['', 'All Missions']"
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: adidas, ideal-opt: ['\u963f\u8fea\u8fbe\u65af']"
+        },
+        "197": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Adidas, ideal-opt: ['\u963f\u8fea\u8fbe\u65af']"
+        },
+        "203": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-12-31, ideal-opt: ['', None]"
+        },
+        "204": "wrong format",
+        "206": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: +12345678900, ideal-opt: ['']"
+        },
+        "207": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-01-01, ideal-opt: ['', None]"
+        },
+        "209": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2021-08-25, ideal-opt: ['', None]"
+        },
+        "211": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "212": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2021-08-01, ideal-opt: ['', None]"
+        },
+        "215": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [False]"
+        },
+        "217": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "218": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "219": "wrong format",
+        "220": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: [100]"
+        },
+        "221": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: /path/to/./yoha.jpg, ideal-opt: ['./yoha.jpg']"
+        },
+        "226": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "230": "wrong format",
+        "242": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: If you could have dinner with any historical figure, who would you choose and why?, and also generate a photo of that figure., ideal-opt: ['If you could have dinner with any historical figure, who would you choose and why?, also genart a photo of that figure']"
+        },
+        "243": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: corona virus latest news, ideal-opt: ['Find a recent news article about corona virus', 'recent news article about corona virus', 'recent news corona virus']"
+        },
+        "257": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1a1a-c61a-4a1a-a1a1-a1a1a, ideal-opt: ['1a1a-c6']"
+        },
+        "262": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "263": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: your_search_string, ideal-opt: ['gym session']"
+        },
+        "264": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: , ideal-opt: ['trip']"
+        },
+        "266": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "269": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-03-08, ideal-opt: ['2023-03-10']"
+        },
+        "270": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, NY, ideal-opt: ['New York']"
+        },
+        "271": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Diego, California, ideal-opt: ['San Diego']"
+        },
+        "277": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chinese, ideal-opt: ['American']"
+        },
+        "278": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "279": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Santa Clara, ideal-opt: ['Santa Clara, CA']"
+        },
+        "283": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "284": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "290": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Walnut, CA, ideal-opt: ['Walnut Creek, CA']"
+        },
+        "291": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "293": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "294": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Kuala Lumpur, ideal-opt: ['Kuala Lumpur, Malaysia']"
+        },
+        "295": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "298": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 0]"
+        },
+        "301": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['', False]"
+        },
+        "304": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['', False]"
+        },
+        "305": "wrong format",
+        "306": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Kuala Lumpur, ideal-opt: ['Kuala Lumpur, Malaysia']"
+        },
+        "307": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "309": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Berkeley, ideal-opt: ['Berkeley, CA']"
+        },
+        "311": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comedy-drama, ideal-opt: ['Comedy']"
+        },
+        "320": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Animation, ideal-opt: ['', 'dontcare']"
+        },
+        "327": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['James Keane']"
+        },
+        "333": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comedy, ideal-opt: ['', 'dontcare']"
+        },
+        "336": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: \u00f7, ideal-opt: ['', 'dontcare']"
+        },
+        "337": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Some Hearts, ideal-opt: ['', 'dontcare']"
+        },
+        "338": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2010, ideal-opt: ['', 'dontcare']"
+        },
+        "339": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "342": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2011, ideal-opt: ['', 'dontcare']"
+        },
+        "343": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['Martin Garrix']"
+        },
+        "344": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "345": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2017, ideal-opt: ['', 'dontcare']"
+        },
+        "346": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Justing Bieber, ideal-opt: ['Justin Bieber']"
+        },
+        "350": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1000000000, ideal-opt: ['', 'dontcare']"
+        },
+        "351": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "352": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pop, ideal-opt: ['', 'dontcare']"
+        },
+        "353": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022, ideal-opt: [2016]"
+        },
+        "354": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pop, ideal-opt: ['', 'dontcare']"
+        },
+        "355": "wrong format",
+        "358": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "378": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Mountain View, ideal-opt: ['Mountain View, CA']"
+        },
+        "384": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Jose, ideal-opt: ['San Jose, CA']"
+        },
+        "385": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Campbell, ideal-opt: ['Campbell, CA']"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "388": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Alameda, ideal-opt: ['Alameda, CA']"
+        },
+        "389": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Corte Madera, ideal-opt: ['Corte Madera, CA']"
+        },
+        "391": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Lorenzo, ideal-opt: ['San Lorenzo, CA']"
+        },
+        "394": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "405": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 123 Main St, Anytown, ideal-opt: ['123 Main Street, Anytown']"
+        },
+        "406": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2508 University Avenue, Palo Alto, CA, ideal-opt: ['2508 University Avenue, Palo Alto']"
+        },
+        "407": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: ['']"
+        },
+        "410": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: ['']"
+        },
+        "411": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Union City, ideal-opt: ['Union City, CA']"
+        },
+        "414": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Action, ideal-opt: ['', 'dontcare']"
+        },
+        "419": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Ramon, ideal-opt: ['San Ramon, CA']"
+        },
+        "420": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "421": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Action, ideal-opt: ['', 'dontcare']"
+        },
+        "423": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "424": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['', 'dontcare']"
+        },
+        "427": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['', 'dontcare']"
+        },
+        "428": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Berkeley, ideal-opt: ['Berkeley, CA']"
+        },
+        "431": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Sci-fi, ideal-opt: ['', 'dontcare']"
+        },
+        "432": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "433": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Century Napa Valley, ideal-opt: ['Century Napa Valley and XD']"
+        },
+        "435": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "437": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "438": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10:00 AM, ideal-opt: ['10:00']"
+        },
+        "441": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Altos, ideal-opt: ['Los Altos, CA']"
+        },
+        "443": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pittsburgh, PA, ideal-opt: ['Pittsburg, PA']"
+        },
+        "446": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vacaville, ideal-opt: ['Vacaville, CA']"
+        },
+        "448": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "450": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris, ideal-opt: ['Paris, France']"
+        },
+        "451": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: ATL, ideal-opt: ['Atlanta']"
+        },
+        "453": "wrong format",
+        "454": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: London, ideal-opt: ['London, UK']"
+        },
+        "455": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', 'dontcare']"
+        },
+        "456": "wrong format",
+        "459": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Berlin, ideal-opt: ['Berlin, Germany']"
+        },
+        "460": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "462": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: SFO, ideal-opt: ['San Francisco']"
+        },
+        "463": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Philadelphia, ideal-opt: ['Philadelphia, PA']"
+        },
+        "464": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Orlando, ideal-opt: ['Orlando, FL']"
+        },
+        "466": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "467": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Portland, ideal-opt: ['Portland, OR']"
+        },
+        "468": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Seattle, ideal-opt: ['Seattle, WA']"
+        },
+        "469": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Toronto, ideal-opt: ['Toronto, Canada']"
+        },
+        "472": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chicago, ideal-opt: ['Chicago, IL']"
+        },
+        "480": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['', 'Any Album']"
+        },
+        "483": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2016, ideal-opt: ['', 'dontcare']"
+        },
+        "484": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Nikki Minaj, ideal-opt: ['', 'dontcare']"
+        },
+        "487": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Sacramento, ideal-opt: ['Sacramento, CA']"
+        },
+        "492": "wrong format",
+        "500": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "504": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: JFK, ideal-opt: ['New York']"
+        },
+        "505": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: SAN, ideal-opt: ['San Diego']"
+        },
+        "507": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: LAX, ideal-opt: ['']"
+        },
+        "509": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: YVR, ideal-opt: ['Vancouver']"
+        },
+        "511": "wrong format",
+        "512": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "513": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['', 'dontcare']"
+        },
+        "514": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Jose, ideal-opt: ['San Jose, CA']"
+        },
+        "515": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['', 'dontcare']"
+        },
+        "518": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: regular, ideal-opt: ['', 'dontcare']"
+        },
+        "519": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "522": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Larkspur, ideal-opt: ['Larkspur, CA']"
+        },
+        "547": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: [1]"
+        },
+        "552": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Walnut Creek, CA, ideal-opt: ['Walnut Creek']"
+        },
+        "553": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "554": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: London, ideal-opt: ['London, UK']"
+        },
+        "555": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 09:00 AM, ideal-opt: ['10:00']"
+        },
+        "556": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 02:00, ideal-opt: ['14:00']"
+        },
+        "557": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10:00 AM, ideal-opt: ['10:00']"
+        },
+        "558": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 05/15/2023, ideal-opt: ['2023-05-15']"
+        },
+        "559": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10:00 AM, ideal-opt: ['10:00']"
+        },
+        "561": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: this weekend, ideal-opt: ['', 'any']"
+        },
+        "563": "wrong format",
+        "565": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "570": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: this weekend, ideal-opt: ['', 'any']"
+        },
+        "574": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Berkeley, ideal-opt: ['Berkeley, CA']"
+        },
+        "580": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vanessa Paradis, ideal-opt: ['Vanessa Przada']"
+        },
+        "584": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Chris Hemsworth, ideal-opt: ['Chris Hemsworth, Zoe Saldana']"
+        },
+        "595": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York City, NY, ideal-opt: ['New York, NY']"
+        },
+        "596": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [1]"
+        },
+        "597": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: ['', 'dontcare']"
+        },
+        "598": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "600": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: London, ideal-opt: ['London, UK']"
+        },
+        "614": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: this weekend, ideal-opt: ['', 'dontcare']"
+        },
+        "621": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: landlord's email, ideal-opt: ['landlord@email.com']"
+        },
+        "622": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Thomas's account, ideal-opt: ['Thomas']"
+        },
+        "627": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Diego's account, ideal-opt: ['Diego']"
+        },
+        "629": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Rachel's account, ideal-opt: ['Rachel']"
+        },
+        "631": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 45, ideal-opt: [4500.0]"
+        },
+        "632": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Katy Perry, ideal-opt: ['', 'dontcare']"
+        },
+        "637": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The End Is Beautiful, ideal-opt: ['any', 'rock songs']"
+        },
+        "639": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['High Expectations']"
+        },
+        "643": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['Rock']"
+        },
+        "644": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "645": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pop, ideal-opt: ['', 'dontcare']"
+        },
+        "646": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "648": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pop, ideal-opt: ['', 'dontcare']"
+        },
+        "651": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 'Dark Necessities', ideal-opt: ['The Getaway']"
+        },
+        "657": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 'Shape of You', ideal-opt: ['Shape of You']"
+        },
+        "663": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "666": "wrong format",
+        "668": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "670": "wrong format",
+        "671": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "673": "wrong format",
+        "675": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Mexico City, ideal-opt: ['Ciudad de Mexico, CDMX', 'Ciudad de Mexico, Mexico']"
+        },
+        "676": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "678": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-02, ideal-opt: ['20023-04-2']"
+        },
+        "679": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Sydney, ideal-opt: ['Sydney, AU']"
+        },
+        "681": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vancouver, Canada, ideal-opt: ['Vancouver, CA']"
+        },
+        "691": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Nancy Parsons, dontcare, Family, dontcare, ideal-opt: ['Nancy Parsons']"
+        },
+        "693": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Utkarsh Ambudkar, directed_by, ideal-opt: ['Utkarsh Ambudkar']"
+        },
+        "701": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Vanessa Pardo, ideal-opt: ['Vanessa Przada']"
+        },
+        "704": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Claudia Doumit, Genre: Comedy, ideal-opt: ['Claudia Doumit']"
+        },
+        "710": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "713": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: London, England, ideal-opt: ['London, UK']"
+        },
+        "716": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 1]"
+        },
+        "717": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Kuala Lumpur, ideal-opt: ['Kuala Lumpur, MY']"
+        },
+        "720": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "722": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "729": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', 'dontcare']"
+        },
+        "730": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['True']"
+        },
+        "731": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [True]"
+        },
+        "733": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [True]"
+        },
+        "735": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: [True]"
+        },
+        "736": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['', False]"
+        },
+        "737": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['', False]"
+        },
+        "740": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "742": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "743": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "744": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "750": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comedy, ideal-opt: ['Any']"
+        },
+        "753": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Anime, ideal-opt: ['Animation']"
+        },
+        "761": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "769": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "771": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "772": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Fremont, ideal-opt: ['Fremont, CA']"
+        },
+        "773": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Ramon, ideal-opt: ['San Ramon, CA']"
+        },
+        "775": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10:00:00, ideal-opt: ['10:00']"
+        },
+        "776": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-02-22, ideal-opt: ['2023-03-01']"
+        },
+        "778": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Gilroy, ideal-opt: ['Gilroy, CA']"
+        },
+        "781": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "787": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: [1]"
+        },
+        "789": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', None]"
+        },
+        "790": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', None]"
+        },
+        "796": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-15, ideal-opt: ['', '2019-03-01']"
+        },
+        "801": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New Delhi, India, ideal-opt: ['New Delhi, IN']"
+        },
+        "806": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Nairobi, Kenya, ideal-opt: ['Nairobi, KE']"
+        },
+        "824": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The Tempest, ideal-opt: ['Read The Tempest']"
+        },
+        "825": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Toro y Moi, ideal-opt: ['', 'dontcare']"
+        },
+        "829": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Queen, ideal-opt: ['', 'any']"
+        },
+        "833": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Song by Spice from Captured album, ideal-opt: ['Captured']"
+        },
+        "835": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: J Boog, ideal-opt: ['', 'dontcare']"
+        },
+        "836": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Panic! At The Disco, ideal-opt: ['', 'any']"
+        },
+        "837": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Song title, ideal-opt: ['popular song']"
+        },
+        "838": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "839": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Garth Brooks, ideal-opt: ['', 'dontcare']"
+        },
+        "840": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "842": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "843": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "844": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "845": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "846": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "847": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2021-08-13, ideal-opt: ['2023-10-06']"
+        },
+        "848": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "849": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "851": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: moderate, ideal-opt: ['', 'dontcare']"
+        },
+        "853": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 03/07/2023, ideal-opt: ['2023-03-07']"
+        },
+        "858": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "859": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, ideal-opt: ['New York, NY']"
+        },
+        "862": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "865": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "866": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "868": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "869": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "870": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "871": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "876": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris, ideal-opt: ['Paris, FR']"
+        },
+        "878": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "879": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: San Francisco, ideal-opt: ['San Francisco, CA']"
+        },
+        "884": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-03-17, ideal-opt: ['2023-10-06']"
+        },
+        "886": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Enter your current city, formatted as 'City, State' (e.g., 'New York, NY'), ideal-opt: ['San Francisco, CA']"
+        },
+        "892": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "895": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "898": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "899": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "902": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "905": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-05-14, ideal-opt: ['2023-05-15']"
+        },
+        "906": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Los Angeles, ideal-opt: ['Los Angeles, CA']"
+        },
+        "907": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['New York, NY']"
+        },
+        "913": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2024-03-19 12:00:00, ideal-opt: ['', None]"
+        },
+        "916": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "918": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [2]"
+        },
+        "919": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: ['', None]"
+        },
+        "920": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: [4.5]"
+        },
+        "921": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', None]"
+        },
+        "922": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: ['', None]"
+        },
+        "923": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4.5, ideal-opt: ['', None]"
+        },
+        "924": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 9999-12-31 23:59:59, ideal-opt: ['', None]"
+        },
+        "926": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4, ideal-opt: ['', None]"
+        },
+        "927": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: [4.5]"
+        },
+        "929": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "930": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 10, ideal-opt: ['', None]"
+        },
+        "931": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 5, ideal-opt: ['', None]"
+        },
+        "933": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 4.5, ideal-opt: ['', None]"
+        },
+        "934": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 18, ideal-opt: ['', None]"
+        },
+        "935": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "936": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Wake up for a meeting, ideal-opt: ['wake me up for a meeting']"
+        },
+        "938": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "939": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: brush teeth, ideal-opt: ['brush my teeth']"
+        },
+        "940": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: track:Baby Shark, ideal-opt: ['baby shark', 'Baby Shark']"
+        },
+        "945": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 70, ideal-opt: [50]"
+        },
+        "947": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 45 minutes, ideal-opt: ['5 minutes']"
+        },
+        "948": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: general reminder, ideal-opt: ['text Raj']"
+        },
+        "950": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 11:00 PM, ideal-opt: ['23:00']"
+        },
+        "956": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: active, ideal-opt: ['', 'all']"
+        },
+        "960": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York City, NY, ideal-opt: ['New York, NY']"
+        },
+        "961": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Beijing, ideal-opt: ['where is beijing']"
+        },
+        "962": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: columbia university, ideal-opt: ['where is columbia university']"
+        },
+        "963": "wrong format",
+        "964": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "966": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: English, ideal-opt: ['', 'en']"
+        },
+        "969": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f0af29dfad0>"
+        },
+        "971": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "972": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: ['', None]"
+        },
+        "974": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 18, ideal-opt: ['', None]"
+        },
+        "975": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "976": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1, ideal-opt: [3]"
+        },
+        "977": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: ['', None]"
+        },
+        "978": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2024-03-23 15:00:00, ideal-opt: ['', None]"
+        },
+        "979": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "980": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "981": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', None]"
+        },
+        "982": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0, ideal-opt: ['', None]"
+        },
+        "983": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Watthana, ideal-opt: ['Watthana District']"
+        },
+        "984": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "985": "wrong format",
+        "988": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "1005": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: now, ideal-opt: ['', None]"
+        },
+        "1007": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: runtime, ideal-opt: ['']"
+        },
+        "1010": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "1013": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: name:alpha name:beta name:gamma, ideal-opt: ['']"
+        },
+        "1016": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 0.05, ideal-opt: [5.0]"
+        },
+        "1022": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "1024": "wrong format",
+        "1028": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: zzzze, ideal-opt: ['zzwzee']"
+        },
+        "1034": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1900-01-01, ideal-opt: ['', None]"
+        },
+        "1035": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "1038": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: , ideal-opt: [None]"
+        },
+        "1041": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "1048": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris, France, ideal-opt: ['Paris']"
+        },
+        "1050": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Atlanta, GA, ideal-opt: ['Atlanta']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9781368821292775,
+    "CALL_ACCURACY": 0.6349809885931559,
+    "FORMAT_ERROR": 0.021863117870722433,
+    "CALL_NUMBER_ERROR": 0.016159695817490494,
+    "FUNC_NAME_ERROR": 0.045627376425855515,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0009505703422053232,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.2804182509505703
+}

@@ -1,0 +1,775 @@
+{
+    "fail_format": [
+        2,
+        5,
+        10,
+        12,
+        16,
+        19,
+        20,
+        21,
+        24,
+        26,
+        28,
+        43,
+        52,
+        53,
+        55,
+        60,
+        62,
+        63,
+        64,
+        66,
+        69,
+        70,
+        72,
+        74,
+        75,
+        76,
+        80,
+        81,
+        83,
+        86,
+        87,
+        88,
+        89,
+        91,
+        92,
+        101,
+        109,
+        111,
+        112,
+        115,
+        116,
+        117,
+        119,
+        120,
+        124,
+        125,
+        127,
+        128,
+        130,
+        134,
+        135,
+        138,
+        139,
+        140,
+        142,
+        144,
+        145,
+        147,
+        149,
+        151,
+        155,
+        156,
+        157,
+        160,
+        161,
+        164,
+        166,
+        168,
+        171,
+        172,
+        176,
+        178,
+        179,
+        182,
+        183,
+        184,
+        186,
+        187,
+        188,
+        191,
+        198
+    ],
+    "fail_call": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        23,
+        24,
+        26,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        105,
+        106,
+        107,
+        108,
+        109,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        166,
+        167,
+        168,
+        169,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        198,
+        199
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: default"
+        },
+        "1": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "2": "wrong format",
+        "3": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, 4]: not list."
+        },
+        "4": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "5": "wrong format",
+        "6": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "7": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Grant, Oregon White Ash, ideal-opt: ['deer', 'Deer']"
+        },
+        "8": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "10": "wrong format",
+        "11": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "12": "wrong format",
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: company XYZ, ideal-opt: ['XYZ']"
+        },
+        "14": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 200000: not int"
+        },
+        "15": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [43.653225, -79.383186]: not list."
+        },
+        "16": "wrong format",
+        "17": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "18": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Stalingrad Battle, ideal-opt: ['Battle of Stalingrad', 'Stalingrad']"
+        },
+        "19": "wrong format",
+        "20": "wrong format",
+        "21": "wrong format",
+        "23": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['points per game', 'assists', 'minutes per game']: not list."
+        },
+        "24": "wrong format",
+        "26": "wrong format",
+        "28": "wrong format",
+        "30": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 12: not int"
+        },
+        "31": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "32": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "33": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "34": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 12: not int"
+        },
+        "35": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 128: not int"
+        },
+        "36": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "37": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 40: not int"
+        },
+        "38": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: book_name"
+        },
+        "39": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50: not int"
+        },
+        "40": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "41": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "42": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "43": "wrong format",
+        "44": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 70: not int"
+        },
+        "45": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type True: not bool"
+        },
+        "46": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Sam', 'Alice', 'Jack']: not list."
+        },
+        "47": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, 2, 1]: not list."
+        },
+        "48": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: location"
+        },
+        "49": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1500: not int"
+        },
+        "50": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "51": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "52": "wrong format",
+        "53": "wrong format",
+        "54": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "55": "wrong format",
+        "56": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: AAPL, ideal-opt: ['Apple']"
+        },
+        "57": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1000: not int"
+        },
+        "58": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: divorce law, ideal-opt: ['Divorce']"
+        },
+        "59": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of criminal law: not list."
+        },
+        "60": "wrong format",
+        "61": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: residential design, ideal-opt: ['small space garden design']"
+        },
+        "62": "wrong format",
+        "63": "wrong format",
+        "64": "wrong format",
+        "65": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: kilometers, ideal-opt: ['miles', '']"
+        },
+        "66": "wrong format",
+        "68": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "69": "wrong format",
+        "70": "wrong format",
+        "71": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1954: not int"
+        },
+        "72": "wrong format",
+        "73": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "74": "wrong format",
+        "75": "wrong format",
+        "76": "wrong format",
+        "78": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "79": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not int"
+        },
+        "80": "wrong format",
+        "81": "wrong format",
+        "82": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 120: not int"
+        },
+        "83": "wrong format",
+        "84": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "85": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "86": "wrong format",
+        "87": "wrong format",
+        "88": "wrong format",
+        "89": "wrong format",
+        "90": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "91": "wrong format",
+        "92": "wrong format",
+        "93": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: deluxe room, ideal-opt: ['deluxe', 'Deluxe']"
+        },
+        "94": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: suite, ideal-opt: ['suite with queen size bed']"
+        },
+        "95": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 200: not int"
+        },
+        "96": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "97": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "98": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "99": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "100": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 36: not int"
+        },
+        "101": "wrong format",
+        "102": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "103": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not int"
+        },
+        "105": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "106": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "107": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 45: not int"
+        },
+        "108": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 298: not int"
+        },
+        "109": "wrong format",
+        "111": "wrong format",
+        "112": "wrong format",
+        "113": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [0.8, 0.7]: not list."
+        },
+        "114": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50: not int"
+        },
+        "115": "wrong format",
+        "116": "wrong format",
+        "117": "wrong format",
+        "118": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2010: not int"
+        },
+        "119": "wrong format",
+        "120": "wrong format",
+        "121": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 6: not int"
+        },
+        "122": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Age', 'Income', 'Education']: not list."
+        },
+        "123": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 52: not int"
+        },
+        "124": "wrong format",
+        "125": "wrong format",
+        "126": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [12, 24, 36]: not list."
+        },
+        "127": "wrong format",
+        "128": "wrong format",
+        "129": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10000: not int"
+        },
+        "130": "wrong format",
+        "131": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['S&P 500', 'Dow Jones']: not list."
+        },
+        "132": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 20000: not int"
+        },
+        "133": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50000: not int"
+        },
+        "134": "wrong format",
+        "135": "wrong format",
+        "136": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: violent crime, ideal-opt: ['violent', 'Violent']"
+        },
+        "138": "wrong format",
+        "139": "wrong format",
+        "140": "wrong format",
+        "141": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1234: not int"
+        },
+        "142": "wrong format",
+        "143": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [40.7128, -74.0060]: not list."
+        },
+        "144": "wrong format",
+        "145": "wrong format",
+        "146": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "147": "wrong format",
+        "149": "wrong format",
+        "150": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 200: not int"
+        },
+        "151": "wrong format",
+        "152": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1871: not int"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: N/A, ideal-opt: ['', 'global', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "154": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1861: not int"
+        },
+        "155": "wrong format",
+        "156": "wrong format",
+        "157": "wrong format",
+        "158": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "159": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 400: not int"
+        },
+        "160": "wrong format",
+        "161": "wrong format",
+        "162": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [2, 3, 4]: not list."
+        },
+        "163": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "164": "wrong format",
+        "166": "wrong format",
+        "167": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 16: not int"
+        },
+        "168": "wrong format",
+        "169": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C# major, ideal-opt: ['C#', 'C sharp']"
+        },
+        "171": "wrong format",
+        "172": "wrong format",
+        "173": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2021: not int"
+        },
+        "174": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2024: not int"
+        },
+        "175": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "176": "wrong format",
+        "177": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2300: not int"
+        },
+        "178": "wrong format",
+        "179": "wrong format",
+        "181": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "182": "wrong format",
+        "183": "wrong format",
+        "184": "wrong format",
+        "185": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Patio']: not list."
+        },
+        "186": "wrong format",
+        "187": "wrong format",
+        "188": "wrong format",
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Hilton Chicago, ideal-opt: ['Hilton Hotel', 'Hilton']"
+        },
+        "191": "wrong format",
+        "192": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 150: not int"
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Paris Eiffel Tower, ideal-opt: ['Eiffel Tower']"
+        },
+        "194": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: persons_over_18"
+        },
+        "195": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 298: not int"
+        },
+        "196": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "198": "wrong format",
+        "199": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        }
+    },
+    "FORMAT_ACCURACY": 0.595,
+    "CALL_ACCURACY": 0.08,
+    "FORMAT_ERROR": 0.405,
+    "CALL_NUMBER_ERROR": 0.005,
+    "FUNC_NAME_ERROR": 0.04,
+    "PARA_KEY_ERROR": 0.02,
+    "TYPE_ERROR": 0.38,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.07
+}

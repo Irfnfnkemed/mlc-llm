@@ -1,0 +1,477 @@
+{
+    "fail_format": [
+        9,
+        35,
+        106,
+        147,
+        170
+    ],
+    "fail_call": [
+        9,
+        10,
+        13,
+        19,
+        25,
+        26,
+        28,
+        29,
+        32,
+        33,
+        35,
+        38,
+        49,
+        54,
+        58,
+        59,
+        60,
+        62,
+        63,
+        67,
+        71,
+        77,
+        80,
+        81,
+        82,
+        88,
+        90,
+        95,
+        97,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        118,
+        120,
+        122,
+        128,
+        129,
+        130,
+        131,
+        132,
+        137,
+        138,
+        140,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        150,
+        151,
+        152,
+        155,
+        156,
+        158,
+        159,
+        161,
+        164,
+        169,
+        170,
+        180,
+        181,
+        182,
+        184,
+        186,
+        192,
+        196,
+        203,
+        204,
+        205,
+        208,
+        211,
+        218,
+        219,
+        221,
+        225,
+        230,
+        231,
+        233,
+        234,
+        238,
+        240,
+        241,
+        247,
+        248,
+        256,
+        257
+    ],
+    "fail_reason": {
+        "9": "wrong format",
+        "10": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Yosemite National Park, CA, ideal-opt: ['Mariposa, CA']"
+        },
+        "13": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: \u4e0a\u6d77, ideal-opt: ['Shanghai, China', '\\\\u4e0a\\\\u6d77,\\\\u4e2d\\\\u56fd']"
+        },
+        "19": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Cancun, Quintana Roo, Mexico, ideal-opt: ['Quintana Roo, Mexico']"
+        },
+        "25": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: PIZZA, ideal-opt: ['SALAD']"
+        },
+        "26": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 123 University Ave, Berkeley, CA 94704, ideal-opt: ['123 \u0110\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc, Berkeley, CA', '123 University Street, Berkeley, CA']"
+        },
+        "28": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['\u9ea6\u8fa3\u9e21\u817f\u5821', '\u53ef\u53e3\u53ef\u4e50']."
+        },
+        "29": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Big Mac', 'Fries', 'Coke']."
+        },
+        "32": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "33": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "35": "wrong format",
+        "38": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Yosemite National Park, Mariposa, CA, ideal-opt: ['Mariposa, CA']"
+        },
+        "49": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: bitter, ideal-opt: ['slightly bitter']"
+        },
+        "54": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "58": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 28th Feb, 2023, ideal-opt: ['', None]"
+        },
+        "59": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-03-25, ideal-opt: ['', None]"
+        },
+        "60": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "62": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "63": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: complete, ideal-opt: ['add']"
+        },
+        "67": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 9.6, ideal-opt: ['', 5.0]"
+        },
+        "71": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "77": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: UK, ideal-opt: ['GB']"
+        },
+        "80": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Our latest breakthroughs in machine learning algorithms are revolutionizing the AI landscape. With unprecedented advancements in neural networks, deep learning models, and natural language processing, we are now able to tackle more complex and diverse problems than ever before. From improving healthcare diagnostics to advancing autonomous driving technology, these breakthroughs mark a significant leap forward in the potential of machine learning to solve real-world challenges., ideal-opt: ['The recent breakthroughs in machine learning algorithms.']"
+        },
+        "81": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: This is a test article to see if Sitefinity can be used to add content for a news item., ideal-opt: ['', None]"
+        },
+        "82": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Julian, our beloved AI, is experimenting with new programming code today. It's fascinating to see the evolution of technology and its impact on daily life., ideal-opt: ['', None]"
+        },
+        "88": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: fluid ounces, ideal-opt: ['ounces']"
+        },
+        "90": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-12T14:00:00Z, ideal-opt: ['', None]"
+        },
+        "95": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: most_frequent, ideal-opt: ['', 'mean']"
+        },
+        "97": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: celsius, ideal-opt: ['', 'fahrenheit']"
+        },
+        "105": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['hello', 'hey there']."
+        },
+        "106": "wrong format",
+        "107": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7ff404139510>"
+        },
+        "108": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Can you show me all outgoing wire transfers?', 'Can you assist me in combining my personal and savings accounts?']."
+        },
+        "109": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Can I use bonuses or commissions as part of my income for a loan application?', 'Can I schedule automatic withdrawals for different dates?']."
+        },
+        "110": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: intent"
+        },
+        "111": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Please provide my current account balance', 'Show me my balance information.', 'What is the balance in my account at this moment?'].[ideal 1] wrong length of ['Please provide my current account balance', 'Show me my balance information.', 'What is the balance in my account at this moment?']."
+        },
+        "112": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "113": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 1.5, ideal-opt: ['', 1.0]"
+        },
+        "118": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "120": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "122": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: folder/subfolder/image.png, ideal-opt: ['image.png']"
+        },
+        "128": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: fabricName"
+        },
+        "129": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: fabricName"
+        },
+        "130": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: https://{ip}/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo, ideal-opt: ['https://192.120.45.67/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo']"
+        },
+        "131": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: https://{ip}/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo, ideal-opt: ['https://192.120.45.67/sedgeapi/v1/cisco-nir/api/api/telemetry/flowrules/interfaceInfo']"
+        },
+        "132": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: https://example.com/device-connector-versions.json?, ideal-opt: ['https://example.com/device-connector-versions.json']"
+        },
+        "137": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-11-01T220000Z, ideal-opt: ['2023-11-01T22:00:00']"
+        },
+        "138": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-11-01T18:00:00Z, ideal-opt: ['2023-11-01T18:00:00']"
+        },
+        "140": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: wife, ideal-opt: ['husband']"
+        },
+        "142": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
+        },
+        "143": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
+        },
+        "144": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: milliseconds, ideal-opt: ['', 'N/A']"
+        },
+        "145": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: echo List C directory contents and structure, ideal-opt: ['dir C:\\\\', 'dir C:\\\\\\\\']"
+        },
+        "146": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: start huggingface, ideal-opt: ['start https://hf-mirror.com']"
+        },
+        "147": "wrong format",
+        "148": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "150": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "151": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "152": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dir D:\\ && echo testing.txt, ideal-opt: ['dir D:\\\\\\\\ && echo testing.txt']"
+        },
+        "155": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: echo {}, ideal-opt: ['date /t', 'echo %date%']"
+        },
+        "156": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dir /s /b, ideal-opt: ['dir C:\\\\', 'dir C:\\\\\\\\']"
+        },
+        "158": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "159": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: seconds, ideal-opt: ['', 'N/A']"
+        },
+        "161": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7ff40413a4d0>"
+        },
+        "164": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: The image contains the Coca-Cola logo, ideal-opt: ['Coca-Cola logo']"
+        },
+        "169": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: d:/playground/pc_controller/test.py d:/playground/pc_controller/env/Scripts/python.exe, ideal-opt: ['d:/playground/pc_contoller/env/Scripts/python.exe d:/playground/pc_contoller/test.py']"
+        },
+        "170": "wrong format",
+        "180": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "181": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "182": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: [2]"
+        },
+        "184": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Bangkok, ideal-opt: ['', None]"
+        },
+        "186": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2024-12-03 16:00:00, ideal-opt: ['2024-03-12 16:00:00']"
+        },
+        "192": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Pacia, ideal-opt: ['Pacifica']"
+        },
+        "196": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-26, ideal-opt: ['2023-04-27']"
+        },
+        "203": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Washington, DC, ideal-opt: ['Washington']"
+        },
+        "204": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Rutherford, NJ, ideal-opt: ['Rutherford']"
+        },
+        "205": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2023-04-29, ideal-opt: ['2023-04-27']"
+        },
+        "208": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Drama, ideal-opt: ['', 'dontcare']"
+        },
+        "211": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comic, ideal-opt: ['Comedy']"
+        },
+        "218": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Comedy-drama, ideal-opt: ['', 'dontcare']"
+        },
+        "219": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: dontcare, ideal-opt: ['McKinley Belcher III']"
+        },
+        "221": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Drama, ideal-opt: ['', 'dontcare']"
+        },
+        "225": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "230": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "231": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-10-27T16:30:00Z, ideal-opt: ['2022-10-30T16:30:00Z']"
+        },
+        "233": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "234": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not string"
+        },
+        "238": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Dil Nu Maninder Buttar, ideal-opt: ['track:Dil Nu artist:Maninder Buttar']"
+        },
+        "240": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: user1, ideal-opt: ['', 'null']"
+        },
+        "241": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: track:Johnny Johnny Yes papa, ideal-opt: ['Johnny Johnny Yes Papa', 'Johnny Johnny Yes papa']"
+        },
+        "247": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: location"
+        },
+        "248": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: False, ideal-opt: [True]"
+        },
+        "256": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "257": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: What is the minimum package arrival time?, ideal-opt: ['Can you tell me what is the minimum package arrival time?']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9806201550387597,
+    "CALL_ACCURACY": 0.6356589147286822,
+    "FORMAT_ERROR": 0.01937984496124031,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.050387596899224806,
+    "PARA_KEY_ERROR": 0.015503875968992248,
+    "TYPE_ERROR": 0.023255813953488372,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.2558139534883721
+}

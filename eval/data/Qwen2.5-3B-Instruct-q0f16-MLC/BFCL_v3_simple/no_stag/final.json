@@ -1,0 +1,110 @@
+{
+    "fail_format": [
+        337
+    ],
+    "fail_call": [
+        35,
+        50,
+        71,
+        122,
+        178,
+        202,
+        235,
+        247,
+        267,
+        283,
+        291,
+        337,
+        352,
+        369,
+        375,
+        385,
+        386,
+        387,
+        388
+    ],
+    "fail_reason": {
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 11, ideal-opt: [23]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: water, ideal-opt: ['ice']"
+        },
+        "71": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['G', 'C', 'A', 'T'].[ideal 1] wrong length of ['G', 'C', 'A', 'T']."
+        },
+        "122": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [10, 20, 30, 40]."
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['plaintiffs', 'defendants', 'charges'].[ideal 1] wrong length of ['plaintiffs', 'defendants', 'charges']."
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: renewable_energy_source, ideal-opt: ['renewable']"
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Treaty of Lisbon signing, ideal-opt: ['Treaty of Lisbon', 'Signing of the Treaty of Lisbon', 'The signing of the Treaty of Lisbon']"
+        },
+        "247": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: upcoming, ideal-opt: ['']"
+        },
+        "283": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "291": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C major, ideal-opt: ['C']"
+        },
+        "337": "wrong format",
+        "352": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: platform"
+        },
+        "369": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['Organic', 'Fruits'].[ideal 1] wrong length of ['Organic', 'Fruits'].[ideal 2] wrong length of ['Organic', 'Fruits'].[ideal 3] wrong length of ['Organic', 'Fruits'].[ideal 4] wrong length of ['Organic', 'Fruits'].[ideal 5] wrong length of ['Organic', 'Fruits']."
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f9bdc0f9690>[ideal 1] <dataset.Error object at 0x7f9bdc0f9410>"
+        },
+        "385": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 1]"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: luxury room, ideal-opt: ['luxury', 'Luxury']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-06-03, ideal-opt: ['2022-06-04', '06/04/2022', 'Jun.4,2022']"
+        },
+        "388": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: US Dollar, ideal-opt: ['USD']"
+        }
+    },
+    "FORMAT_ACCURACY": 0.9975,
+    "CALL_ACCURACY": 0.9525,
+    "FORMAT_ERROR": 0.0025,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0025,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.0425
+}

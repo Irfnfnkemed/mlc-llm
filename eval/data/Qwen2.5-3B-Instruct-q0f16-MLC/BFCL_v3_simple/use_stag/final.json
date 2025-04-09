@@ -1,0 +1,131 @@
+{
+    "fail_format": [],
+    "fail_call": [
+        35,
+        50,
+        104,
+        130,
+        178,
+        202,
+        215,
+        217,
+        235,
+        247,
+        267,
+        279,
+        283,
+        291,
+        328,
+        340,
+        375,
+        380,
+        385,
+        386,
+        387,
+        388,
+        393
+    ],
+    "fail_reason": {
+        "35": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 11, ideal-opt: [23]"
+        },
+        "50": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: water, ideal-opt: ['ice']"
+        },
+        "104": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: square units, ideal-opt: ['', 'square meters']"
+        },
+        "130": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of [0, 1, 2, 3, 4, 5].[ideal 1] wrong length of [0, 1, 2, 3, 4, 5]."
+        },
+        "178": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] wrong length of ['plaintiffs', 'defendants', 'charges'].[ideal 1] wrong length of ['plaintiffs', 'defendants', 'charges']."
+        },
+        "202": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: solar, ideal-opt: ['renewable']"
+        },
+        "215": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: True, ideal-opt: ['', False]"
+        },
+        "217": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: /home/user/data/myfMRI.nii, ideal-opt: ['~/data/myfMRI.nii']"
+        },
+        "235": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Treaty of Lisbon signing, ideal-opt: ['Treaty of Lisbon', 'Signing of the Treaty of Lisbon', 'The signing of the Treaty of Lisbon']"
+        },
+        "247": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Physics, ideal-opt: ['', 'all']"
+        },
+        "267": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: upcoming, ideal-opt: ['']"
+        },
+        "279": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Rosewood Finish, ideal-opt: ['Rosewood']"
+        },
+        "283": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Les Paul, ideal-opt: ['Gibson Les Paul']"
+        },
+        "291": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: C major, ideal-opt: ['C']"
+        },
+        "328": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['', 'English']"
+        },
+        "340": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f54c4139590>"
+        },
+        "375": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "[ideal 0] <dataset.Error object at 0x7f54c4139610>[ideal 1] <dataset.Error object at 0x7f54c41395d0>"
+        },
+        "380": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: New York, Manhattan, ideal-opt: ['Manhattan, New York', 'Manhattan, NY', 'NYC', 'New York City']"
+        },
+        "385": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2, ideal-opt: ['', 1]"
+        },
+        "386": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: luxury room, ideal-opt: ['luxury', 'Luxury']"
+        },
+        "387": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 2022-06-03, ideal-opt: ['2022-06-04', '06/04/2022', 'Jun.4,2022']"
+        },
+        "388": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: US dollars, ideal-opt: ['USD']"
+        },
+        "393": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Japanese Yen, ideal-opt: ['JPY']"
+        }
+    },
+    "FORMAT_ACCURACY": 1.0,
+    "CALL_ACCURACY": 0.9425,
+    "FORMAT_ERROR": 0.0,
+    "CALL_NUMBER_ERROR": 0.0,
+    "FUNC_NAME_ERROR": 0.0,
+    "PARA_KEY_ERROR": 0.0,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.0575
+}

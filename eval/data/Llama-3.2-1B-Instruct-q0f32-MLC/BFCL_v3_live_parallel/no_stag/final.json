@@ -1,0 +1,81 @@
+{
+    "fail_format": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        14
+    ],
+    "fail_call": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: \u5317\u4eac, 100000, ideal-opt: ['Beijing, China']"
+        },
+        "1": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "2": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Boston, MA, ideal-opt: ['San Francisco, CA']"
+        },
+        "3": "wrong format",
+        "4": "wrong format",
+        "5": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "6": "wrong format",
+        "7": "wrong format",
+        "8": "wrong format",
+        "9": "wrong format",
+        "10": "wrong format",
+        "11": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "12": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "13": {
+            "type": "PARA_KEY_ERROR",
+            "message": "unknown arg: strict"
+        },
+        "14": "wrong format",
+        "15": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "not calling expected function"
+        }
+    },
+    "FORMAT_ACCURACY": 0.5,
+    "CALL_ACCURACY": 0.0,
+    "FORMAT_ERROR": 0.5,
+    "CALL_NUMBER_ERROR": 0.25,
+    "FUNC_NAME_ERROR": 0.0625,
+    "PARA_KEY_ERROR": 0.0625,
+    "TYPE_ERROR": 0.0,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.125
+}

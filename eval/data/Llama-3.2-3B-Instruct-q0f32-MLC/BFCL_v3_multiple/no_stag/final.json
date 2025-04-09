@@ -1,0 +1,764 @@
+{
+    "fail_format": [
+        119,
+        131,
+        135,
+        149
+    ],
+    "fail_call": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16,
+        19,
+        20,
+        21,
+        25,
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        59,
+        60,
+        61,
+        62,
+        63,
+        67,
+        70,
+        71,
+        72,
+        75,
+        78,
+        79,
+        80,
+        81,
+        82,
+        84,
+        85,
+        86,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        105,
+        106,
+        107,
+        108,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        158,
+        159,
+        160,
+        162,
+        163,
+        167,
+        171,
+        173,
+        176,
+        177,
+        179,
+        181,
+        182,
+        184,
+        185,
+        186,
+        187,
+        188,
+        190,
+        191,
+        192,
+        193,
+        195,
+        196,
+        198,
+        199
+    ],
+    "fail_reason": {
+        "0": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3, ideal-opt: [5]"
+        },
+        "3": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, 4]: not list."
+        },
+        "4": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 20: not int"
+        },
+        "5": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [46.603354, 1.888334]: not list."
+        },
+        "7": {
+            "type": "CALL_NUMBER_ERROR",
+            "message": "wrong calling numbers."
+        },
+        "8": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "10": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"email_address\", \"social_security_number\"]: not list."
+        },
+        "12": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2019: not int"
+        },
+        "13": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "14": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 200000: not int"
+        },
+        "15": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [43.653225, -79.383186]: not list."
+        },
+        "16": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 100: not int"
+        },
+        "19": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "20": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "21": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 440: not int"
+        },
+        "25": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: PlayStation Store, ideal-opt: ['PlayStation', 'PS']"
+        },
+        "28": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "30": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 12: not int"
+        },
+        "31": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "32": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "33": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: 3x\u00b2, ideal-opt: ['3x**2', 'lambda x: 3x**2']"
+        },
+        "34": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 18: not int"
+        },
+        "35": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 128: not int"
+        },
+        "36": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 20: not int"
+        },
+        "37": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 40: not int"
+        },
+        "38": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type None: not bool"
+        },
+        "39": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50: not int"
+        },
+        "40": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "41": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "42": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "43": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "44": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 70: not int"
+        },
+        "45": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type True: not bool"
+        },
+        "46": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Sam\", \"Alice\", \"Jack\"]: not list."
+        },
+        "47": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, 2, 1]: not list."
+        },
+        "48": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Pet-friendly\", \"Disabled Access\"]: not list."
+        },
+        "49": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1500: not int"
+        },
+        "50": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "51": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "52": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 100: not int"
+        },
+        "53": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"interest rate\", \"unemployment rate\"]: not list."
+        },
+        "54": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "55": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "56": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 60: not int"
+        },
+        "57": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "59": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"criminal law\"]: not list."
+        },
+        "60": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "61": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "62": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Camping\", \"Scenic View\"]: not list."
+        },
+        "63": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "67": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: en, ideal-opt: ['English']"
+        },
+        "70": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 18: not int"
+        },
+        "71": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1954: not int"
+        },
+        "72": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1970: not int"
+        },
+        "75": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Monthly, ideal-opt: ['', 'Daily']"
+        },
+        "78": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of timings, exhibitions, accessibility: not list."
+        },
+        "79": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "80": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Guitar Lessons\", \"Violin Lessons\"]: not list."
+        },
+        "81": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Backstage Pass\"]: not list."
+        },
+        "82": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 120: not int"
+        },
+        "84": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "85": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "86": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "88": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2020: not int"
+        },
+        "89": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: calories"
+        },
+        "90": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "91": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "92": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['vegetarian', 'gluten-free']: not list."
+        },
+        "93": {
+            "type": "FUNC_NAME_ERROR",
+            "message": "wrong function name."
+        },
+        "94": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "95": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 200: not int"
+        },
+        "96": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2: not int"
+        },
+        "97": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "98": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "99": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1: not int"
+        },
+        "100": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 36: not int"
+        },
+        "101": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 12: not int"
+        },
+        "102": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "103": {
+            "type": "PARA_KEY_ERROR",
+            "message": "missing arg: initial_velocity"
+        },
+        "105": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "106": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "107": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 45: not int"
+        },
+        "108": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 298: not int"
+        },
+        "111": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "112": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "113": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [0.8, 0.7]: not list."
+        },
+        "114": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50: not int"
+        },
+        "115": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"vegan\"]: not list."
+        },
+        "116": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 85: not int"
+        },
+        "117": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 70: not int"
+        },
+        "118": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2010: not int"
+        },
+        "119": "wrong format",
+        "120": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not int"
+        },
+        "121": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 6: not int"
+        },
+        "122": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['Age', 'Income', 'Education']: not list."
+        },
+        "123": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 52: not int"
+        },
+        "124": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 52: not int"
+        },
+        "125": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [3, 4, 5, 6, 4]: not list."
+        },
+        "126": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [12, 24, 36]: not list."
+        },
+        "127": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50000000: not int"
+        },
+        "129": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10000: not int"
+        },
+        "130": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2000: not int"
+        },
+        "131": "wrong format",
+        "132": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 20000: not int"
+        },
+        "133": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 50000: not int"
+        },
+        "134": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "135": "wrong format",
+        "136": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2020: not int"
+        },
+        "138": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "139": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2010: not int"
+        },
+        "140": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2020: not int"
+        },
+        "141": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1234: not int"
+        },
+        "142": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 7: not int"
+        },
+        "143": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [40.7128, -74.0060]: not list."
+        },
+        "145": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 12000: not int"
+        },
+        "146": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 10: not int"
+        },
+        "147": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"highways\", \"tolls\"]: not list."
+        },
+        "148": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: NYSE, ideal-opt: ['NASDAQ', '']"
+        },
+        "149": "wrong format",
+        "150": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "151": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of ['behaviour', 'group dynamics']: not list."
+        },
+        "152": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1871: not int"
+        },
+        "153": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: null, ideal-opt: ['', 'global', 'Lisbon', 'Lisbon, Portugal']"
+        },
+        "154": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 1861: not int"
+        },
+        "155": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "158": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "159": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 400: not int"
+        },
+        "160": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "162": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [2, 3, 4]: not list."
+        },
+        "163": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        },
+        "167": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 16: not int"
+        },
+        "171": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Lakers\", \"Clippers\"]: not list."
+        },
+        "173": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2020-21: not int"
+        },
+        "176": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 6: not int"
+        },
+        "177": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 2300: not int"
+        },
+        "179": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 52: not int"
+        },
+        "181": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "182": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4.5: not number"
+        },
+        "184": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"pasta\", \"cheese\", \"tomato sauce\"]: not list."
+        },
+        "185": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"Patio\"]: not list."
+        },
+        "186": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 30: not int"
+        },
+        "187": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type of [\"tomatoes\", \"lettuce\"]: not list."
+        },
+        "188": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 4: not number"
+        },
+        "190": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: single room, ideal-opt: ['single', 'Single']"
+        },
+        "191": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 3: not int"
+        },
+        "192": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 150: not int"
+        },
+        "193": {
+            "type": "PARA_VALUE_ERROR",
+            "message": "value not match: Eiffel Tower, Paris, ideal-opt: ['Eiffel Tower']"
+        },
+        "195": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 298: not int"
+        },
+        "196": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type true: not bool"
+        },
+        "198": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 0: not number"
+        },
+        "199": {
+            "type": "TYPE_ERROR",
+            "message": "wrong type 5: not int"
+        }
+    },
+    "FORMAT_ACCURACY": 0.98,
+    "CALL_ACCURACY": 0.245,
+    "FORMAT_ERROR": 0.02,
+    "CALL_NUMBER_ERROR": 0.005,
+    "FUNC_NAME_ERROR": 0.01,
+    "PARA_KEY_ERROR": 0.01,
+    "TYPE_ERROR": 0.665,
+    "ENUM_ERROR": 0.0,
+    "PARA_VALUE_ERROR": 0.045
+}

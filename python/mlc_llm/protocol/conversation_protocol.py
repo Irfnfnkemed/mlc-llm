@@ -226,6 +226,7 @@ class Conversation(BaseModel):
                 "- Function calls MUST follow the specified format"
                 "- Required parameters MUST be specified"
                 "- You should not repeat or miss the call"
+                "- You should response with at least one function calling"
             )
             self.system_message += tool_call_instruct
         elif self.tool_call_format == "python":

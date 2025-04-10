@@ -16,6 +16,7 @@ def summary(args: argparse.ArgumentParser) -> Dict:
     for model in models:
         summary[model] = {}
         for dataset in datasets:
+            total = []
             with open(f"{file_path}/{model}/{dataset}/use_stag/final.json", 'r', encoding='utf-8') as file:
                 stag = json.load(file)
             with open(f"{file_path}/{model}/{dataset}/no_stag/final.json", 'r', encoding='utf-8') as file:
@@ -26,6 +27,21 @@ def summary(args: argparse.ArgumentParser) -> Dict:
                 no_stag_result = json.load(file)
             with open(f"{file_path}/dataset/{dataset}.json", mode="r", encoding="utf-8") as file:
                 gorilla_data = json.load(file)
+            for i in range(len(stag_result)):
+                assert i == stag_result[i]["id"]
+                assert i == no_stag_result[i]["id"]
+                assert i == gorilla_data[i]["id"]
+                total.append({
+                    "id": i,
+                    "no_stag_output": no_stag_result[i]["output"],
+                    "use_stag_output": stag_result[i]["output"],
+                    "no_stag_call": no_stag_result[i]["call"] if ("call" in no_stag_result[i]) else [],
+                    "use_stag_call": stag_result[i]["call"] if ("call" in stag_result[i]) else [],
+                    "expected": gorilla_data[i]["ideal_call"]
+                })
+            with open(f"{file_path}/{model}/{dataset}/summary.json", "w", encoding="utf-8") as file:
+                json.dump(total, file, indent=4)
+
             summary[model][dataset] = {"use_stag": {}, "no_stag": {}}
             summary[model][dataset]["correct_schema/output_trigger"] = {}
             summary[model][dataset]["use_stag"]["format_error"] = stag["FORMAT_ERROR"]
@@ -46,7 +62,6 @@ def summary(args: argparse.ArgumentParser) -> Dict:
             for entry in stag_result:
                 if "output" in entry and "{\"name\":" in entry["output"]:
                     output_trigger += 1
-                    t = correct_schema
                     if str(entry["id"]) in stag["fail_reason"]:
                         if "type" in stag["fail_reason"][str(entry["id"])]:
                             err_type = stag["fail_reason"][str(entry["id"])]["type"]
@@ -61,8 +76,6 @@ def summary(args: argparse.ArgumentParser) -> Dict:
                                     correct_schema += 1
                     else:
                         correct_schema += 1
-                    if t == correct_schema:
-                        print(model, dataset, entry["id"], flush=True)
             summary[model][dataset]["correct_schema/output_trigger"]["use_stag"] = correct_schema / output_trigger
 
             summary[model][dataset]["no_stag"]["format_error"] = no_stag["FORMAT_ERROR"]

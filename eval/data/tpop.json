@@ -1,0 +1,22 @@
+{
+  "Hermes-3-Llama-3.2-3B-q0f16-MLC": {
+    "no_stag": 2.437916758741485,
+    "use_stag": 77.66911755091424
+  },
+  "Qwen2.5-3B-Instruct-q0f16-MLC": {
+    "no_stag": 13.635148502561497,
+    "use_stag": 94.89322035266756
+  },
+  "Qwen2.5-0.5B-Instruct-q0f32-MLC": {
+    "no_stag": 8.98383247435704,
+    "use_stag": 90.49826283385832
+  },
+  "Llama-3-8B-Instruct-q0f16-MLC": {
+    "no_stag": 16.635283360328756,
+    "use_stag": 88.14758549347054
+  },
+  "Llama-3.2-1B-Instruct-q0f32-MLC": {
+    "no_stag": 12.447996721667296,
+    "use_stag": 78.11153896926291
+  }
+}

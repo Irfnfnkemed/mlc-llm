@@ -1,30 +1,40 @@
 [
     {
         "id": 0,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"\u5317\u4eac\", \"unit\": \"celsius\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"\u5317\u4eac,\u5317\u4eac\u5e02\",\"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "\u5317\u4eac",
-                        "unit": "celsius"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"\u5317\u4eac \u4e0a\u6d77\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "\u5317\u4eac \u4e0a\u6d77",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "\u5317\u4eac,\u5317\u4eac\u5e02",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"\u5317\u4eac,\u4e2d\u56fd\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "\u5317\u4eac,\u4e2d\u56fd",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -54,30 +64,40 @@
     },
     {
         "id": 1,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -107,30 +127,40 @@
     },
     {
         "id": 2,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -160,30 +190,30 @@
     },
     {
         "id": 3,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Canc\u00fan, QR, Playa del Carmen, QR y Tulum, QR\", \"unit\": \"celsius\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Cancun,QR,Playa del Carmen,QR,Tulum,QR\", \"unit\": \"fahrenheit\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Canc\u00fan, QR, Playa del Carmen, QR y Tulum, QR",
-                        "unit": "celsius"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Canc\\u00upon, Qd, Playa del Carmen, Qd y Tulum, Qd\"}}[engine info] Got an invalid function call output from model",
+            "call": [],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "missing calling."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Cancun, QR\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Cancun, QR",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Cancun,QR,Playa del Carmen,QR,Tulum,QR",
-                        "unit": "fahrenheit"
-                    }
-                }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -226,30 +256,40 @@
     },
     {
         "id": 4,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, USA\", \"url\": \"https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, USA\", \"url\": \"https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, USA",
-                        "url": "https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, USA\", \"url\": \"https://api.open-meteo.com/v1/forecast?latitude=42.3602&longitude=-71.0589\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, USA",
+                            "url": "https://api.open-meteo.com/v1/forecast?latitude=42.3602&longitude=-71.0589"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, USA",
-                        "url": "https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\":\"Boston, USA\", \"url\":\"https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, USA",
+                            "url": "https://api.open-meteo.com/v1/forecast?latitude=42.3601&longitude=-71.0589"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -279,30 +319,40 @@
     },
     {
         "id": 5,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -340,30 +390,40 @@
     },
     {
         "id": 6,
-        "no_stag_output": "{\"name\": \"get_snow_report\", \"parameters\": {\"location\": \"Paris, France\", \"unit\": \"celsius\"}}",
-        "use_stag_output": "{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Paris, France\", \"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_snow_report",
-                    "arguments": {
-                        "location": "Paris, France",
-                        "unit": "celsius"
+        "no_stag": {
+            "output": "{\"name\": \"get_snow_report\", \"parameters\": {\"location\": \"Paris, France\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_snow_report",
+                        "arguments": {
+                            "location": "Paris, France",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_snow_report",
-                    "arguments": {
-                        "location": "Paris, France",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_snow_report\", \"parameters\":{\"location\": \"Paris, France\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_snow_report",
+                        "arguments": {
+                            "location": "Paris, France",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_snow_report",
@@ -393,30 +453,40 @@
     },
     {
         "id": 7,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "fahrenheit"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -446,30 +516,40 @@
     },
     {
         "id": 8,
-        "no_stag_output": "{\"name\": \"todo\", \"parameters\": {\"type\": \"update\", \"content\": \"Machine Learning Study Session\"}}",
-        "use_stag_output": "{\"name\": \"todo\", \"parameters\":{\"type\": \"delete\", \"content\": \"todo random\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "todo",
-                    "arguments": {
-                        "type": "update",
-                        "content": "Machine Learning Study Session"
+        "no_stag": {
+            "output": "{\"name\": \"todo\", \"parameters\": {\"type\": \"update\", \"content\": \"Machine Learning Study Session is complete.\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "todo",
+                        "arguments": {
+                            "type": "update",
+                            "content": "Machine Learning Study Session is complete."
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "todo",
-                    "arguments": {
-                        "type": "delete",
-                        "content": "todo random"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"todo\", \"parameters\":{\"type\": \"update\", \"content\": \"'todo random' completed.\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "todo",
+                        "arguments": {
+                            "type": "update",
+                            "content": "'todo random' completed."
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "todo",
@@ -497,33 +577,44 @@
     },
     {
         "id": 9,
-        "no_stag_output": "{\"name\": \"get_aws_pricing\", \"parameters\": {\"memory\": \"4\", \"cpu\": \"single\", \"region\": \"us-east-1\", \"operating_system\": \"Linux\"}}",
-        "use_stag_output": "{\"name\": \"get_aws_pricing\", \"parameters\":{\"memory\": 2, \"cpu\": \"single\", \"operating_system\": \"Linux\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_aws_pricing",
-                    "arguments": {
-                        "memory": "4",
-                        "cpu": "single",
-                        "region": "us-east-1",
-                        "operating_system": "Linux"
+        "no_stag": {
+            "output": "{\"name\": \"get_aws_pricing\", \"parameters\": {\"memory\": 4096, \"cpu\": \"single\", \"region\": \"us-east-1\", \"operating_system\": \"Linux\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_aws_pricing",
+                        "arguments": {
+                            "memory": 4096,
+                            "cpu": "single",
+                            "region": "us-east-1",
+                            "operating_system": "Linux"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_aws_pricing",
-                    "arguments": {
-                        "memory": 2,
-                        "cpu": "single",
-                        "operating_system": "Linux"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_aws_pricing\", \"parameters\":{\"memory\": 2048, \"cpu\": \"single\", \"region\": \"us-east-1\", \"operating_system\": \"Linux\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_aws_pricing",
+                        "arguments": {
+                            "memory": 2048,
+                            "cpu": "single",
+                            "region": "us-east-1",
+                            "operating_system": "Linux"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_aws_pricing",
@@ -567,38 +658,48 @@
     },
     {
         "id": 10,
-        "no_stag_output": "{\"name\": \"hotel_booking_book\", \"parameters\": {\"hotel_name\": \"Sheraton Hotel\", \"location\": \"New York, NY\", \"check_in\": \"2022-05-01\", \"check_out\": \"2022-05-05\", \"adults\": 2, \"children\": 1}}",
-        "use_stag_output": "{\"name\": \"hotel_booking_book\", \"parameters\":{\"hotel_name\": \"Sheraton Hotel\", \"location\": \"New York, NY\", \"check_in\": \"2022-05-01\", \"check_out\": \"2022-05-05\", \"adults\": 2, \"children\": 1}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "hotel_booking_book",
-                    "arguments": {
-                        "hotel_name": "Sheraton Hotel",
-                        "location": "New York, NY",
-                        "check_in": "2022-05-01",
-                        "check_out": "2022-05-05",
-                        "adults": 2,
-                        "children": 1
+        "no_stag": {
+            "output": "{\"name\": \"hotel_booking_book\", \"parameters\": {\"hotel_name\": \"Sheraton Hotel\", \"location\": \"New York, NY\", \"check_in\": \"2022-05-01\", \"check_out\": \"2022-05-05\", \"adults\": 2, \"children\": 1}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "hotel_booking_book",
+                        "arguments": {
+                            "hotel_name": "Sheraton Hotel",
+                            "location": "New York, NY",
+                            "check_in": "2022-05-01",
+                            "check_out": "2022-05-05",
+                            "adults": 2,
+                            "children": 1
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "hotel_booking_book",
-                    "arguments": {
-                        "hotel_name": "Sheraton Hotel",
-                        "location": "New York, NY",
-                        "check_in": "2022-05-01",
-                        "check_out": "2022-05-05",
-                        "adults": 2,
-                        "children": 1
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"hotel_booking_book\", \"parameters\":{\"hotel_name\": \"Sheraton Hotel\", \"location\": \"New York, NY\", \"check_in\": \"2022-05-01\", \"check_out\": \"2022-05-05\", \"adults\": 2, \"children\": 1}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "hotel_booking_book",
+                        "arguments": {
+                            "hotel_name": "Sheraton Hotel",
+                            "location": "New York, NY",
+                            "check_in": "2022-05-01",
+                            "check_out": "2022-05-05",
+                            "adults": 2,
+                            "children": 1
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "hotel_booking_book",
@@ -652,72 +753,82 @@
     },
     {
         "id": 11,
-        "no_stag_output": "Here are the logs for your recent meals:\n\n{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"frozen mango\", \"portion_amount\": 8, \"portion_unit\": \"piece\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-05T15:00:00Z\"}}\n\n{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"chai tea\", \"portion Amount\": 1, \"portion_unit\": \"cup\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-05T15:00:00Z\"}}\n\n{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"pepperoni pizza\", \"portion_amount\": 2, \"portion_unit\": \"slice\", \"meal_type\": \"dinner\", \"log_date\": \"2023-04-05T20:00:00Z\"}}\n\n{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"coffee\", \"portion_amount\": 1, \"portion_unit\": \"cup\", \"meal_type\": \"dinner\", \"log_date\": \"2023-04-05T20:00:00Z\"}}",
-        "use_stag_output": "{\"name\": \"log_food\", \"parameters\":{\"food_name\": \"frozen mango\", \"portion_amount\": 8, \"portion_unit\": \"piece\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-18T12:00:00Z\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "frozen mango",
-                        "portion_amount": 8,
-                        "portion_unit": "piece",
-                        "meal_type": "snack",
-                        "log_date": "2023-04-05T15:00:00Z"
+        "no_stag": {
+            "output": "{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"frozen mango\", \"portion_amount\": 8, \"portion_unit\": \"pieces\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-10T15:30:00Z\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "frozen mango",
+                            "portion_amount": 8,
+                            "portion_unit": "pieces",
+                            "meal_type": "snack",
+                            "log_date": "2023-04-10T15:30:00Z"
+                        }
                     }
                 }
-            },
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "chai tea",
-                        "portion Amount": 1,
-                        "portion_unit": "cup",
-                        "meal_type": "snack",
-                        "log_date": "2023-04-05T15:00:00Z"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"log_food\", \"parameters\":{\"food_name\": \"frozen mango\", \"portion_amount\": 8, \"portion_unit\": \"piece\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-05T12:00:00Z\"}}\n{\"name\": \"log_food\", \"parameters\":{ \"food_name\": \"chai tea\", \"portion_amount\": 1, \"portion_unit\": \"cup\", \"meal_type\": \"lunch\", \"log_date\": \"2023-04-05T12:00:00Z\"}}\n{\"name\": \"log_food\", \"parameters\":{ \"food_name\": \"pepperoni pizza\", \"portion_amount\": 2, \"portion_unit\": \"slice\", \"meal_type\": \"lunch\", \"log_date\": \"2023-04-05T12:00:00Z\"}}\n{\"name\": \"log_food\", \"parameters\":{ \"food_name\": \"coffee\", \"portion_amount\": 1, \"portion_unit\": \"cup\", \"meal_type\": \"snack\", \"log_date\": \"2023-04-05T12:00:00Z\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "frozen mango",
+                            "portion_amount": 8,
+                            "portion_unit": "piece",
+                            "meal_type": "snack",
+                            "log_date": "2023-04-05T12:00:00Z"
+                        }
+                    }
+                },
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "chai tea",
+                            "portion_amount": 1,
+                            "portion_unit": "cup",
+                            "meal_type": "lunch",
+                            "log_date": "2023-04-05T12:00:00Z"
+                        }
+                    }
+                },
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "pepperoni pizza",
+                            "portion_amount": 2,
+                            "portion_unit": "slice",
+                            "meal_type": "lunch",
+                            "log_date": "2023-04-05T12:00:00Z"
+                        }
+                    }
+                },
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "coffee",
+                            "portion_amount": 1,
+                            "portion_unit": "cup",
+                            "meal_type": "snack",
+                            "log_date": "2023-04-05T12:00:00Z"
+                        }
                     }
                 }
-            },
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "pepperoni pizza",
-                        "portion_amount": 2,
-                        "portion_unit": "slice",
-                        "meal_type": "dinner",
-                        "log_date": "2023-04-05T20:00:00Z"
-                    }
-                }
-            },
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "coffee",
-                        "portion_amount": 1,
-                        "portion_unit": "cup",
-                        "meal_type": "dinner",
-                        "log_date": "2023-04-05T20:00:00Z"
-                    }
-                }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "frozen mango",
-                        "portion_amount": 8,
-                        "portion_unit": "piece",
-                        "meal_type": "snack",
-                        "log_date": "2023-04-18T12:00:00Z"
-                    }
-                }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "log_food",
@@ -795,34 +906,44 @@
     },
     {
         "id": 12,
-        "no_stag_output": "{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"iced coffee\", \"portion_amount\": 12, \"portion_unit\": \"ounces\", \"meal_name\": \"breakfast\"}}",
-        "use_stag_output": "{\"name\": \"log_food\", \"parameters\":{\"food_name\": \"iced coffee\", \"portion_amount\": 12, \"portion_unit\": \"ounces\", \"meal_name\": \"breakfast\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "iced coffee",
-                        "portion_amount": 12,
-                        "portion_unit": "ounces",
-                        "meal_name": "breakfast"
+        "no_stag": {
+            "output": "{\"name\": \"log_food\", \"parameters\": {\"food_name\": \"12 ounce iced coffee\", \"portion_amount\": 12, \"portion_unit\": \"ounces\", \"meal_name\": \"breakfast\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "12 ounce iced coffee",
+                            "portion_amount": 12,
+                            "portion_unit": "ounces",
+                            "meal_name": "breakfast"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "log_food",
-                    "arguments": {
-                        "food_name": "iced coffee",
-                        "portion_amount": 12,
-                        "portion_unit": "ounces",
-                        "meal_name": "breakfast"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"log_food\", \"parameters\":{\"food_name\": \"iced coffee\", \"portion_amount\": 12, \"portion_unit\": \"ounces\", \"meal_name\": \"breakfast\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "log_food",
+                        "arguments": {
+                            "food_name": "iced coffee",
+                            "portion_amount": 12,
+                            "portion_unit": "ounces",
+                            "meal_name": "breakfast"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "log_food",
@@ -930,30 +1051,40 @@
     },
     {
         "id": 13,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA, San Francisco, CA\", \"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "celsius"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA, San Francisco, CA",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -983,30 +1114,40 @@
     },
     {
         "id": 14,
-        "no_stag_output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
-        "use_stag_output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "celsius"
+        "no_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\": {\"location\": \"Boston, MA\", \"unit\": \"celsius\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MA",
+                            "unit": "celsius"
+                        }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "get_current_weather",
-                    "arguments": {
-                        "location": "Boston, MA",
-                        "unit": "celsius"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"get_current_weather\", \"parameters\":{\"location\": \"Boston, MASan Francisco, CA\", \"unit\": \"fahrenheit\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "get_current_weather",
+                        "arguments": {
+                            "location": "Boston, MASan Francisco, CA",
+                            "unit": "fahrenheit"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "get_current_weather",
@@ -1036,34 +1177,40 @@
     },
     {
         "id": 15,
-        "no_stag_output": "{\"name\": \"os.system\", \"parameters\": {\"location\": \"os.system\", \"arguments\": { \"command\": \"dir c:/ > testing.txt\", \"unit\": \"N/A\", \"delay_seconds\": 1}}}",
-        "use_stag_output": "{\"name\": \"cmd_controller.execute\", \"parameters\":{\"command\": \"dir c:\\\\\",\"unit\": \"seconds\"}}",
-        "no_stag_call": [
-            {
-                "function": {
-                    "name": "os.system",
-                    "arguments": {
-                        "location": "os.system",
+        "no_stag": {
+            "output": "{\"name\": \"cmd_controller.execute\", \"parameters\": {\"command\": \"dir c:\\\\\", \"unit\": \"N/A\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "cmd_controller.execute",
                         "arguments": {
-                            "command": "dir c:/ > testing.txt",
-                            "unit": "N/A",
-                            "delay_seconds": 1
+                            "command": "dir c:\\",
+                            "unit": "N/A"
                         }
                     }
                 }
-            }
-        ],
-        "use_stag_call": [
-            {
-                "function": {
-                    "name": "cmd_controller.execute",
-                    "arguments": {
-                        "command": "dir c:\\",
-                        "unit": "seconds"
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
+        "use_stag": {
+            "output": "{\"name\": \"cmd_controller.execute\", \"parameters\":{\"command\": \"dir c:\\\\\", \"unit\": \"seconds\"}}",
+            "call": [
+                {
+                    "function": {
+                        "name": "cmd_controller.execute",
+                        "arguments": {
+                            "command": "dir c:\\",
+                            "unit": "seconds"
+                        }
                     }
                 }
-            }
-        ],
+            ],
+            "success": false,
+            "err_type": "CALL_NUMBER_ERROR",
+            "err_msg": "wrong calling numbers."
+        },
         "expected": [
             {
                 "name": "cmd_controller.execute",

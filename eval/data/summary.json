@@ -2,948 +2,948 @@
     "Llama-3.2-1B-Instruct-q0f32-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.11,
-                "call_num_error": 0.005,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.2425,
-                "correct_call": 0.6425
+                "CALL_NUMBER_ERROR": 0.14728682170542637,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.26356589147286824,
+                "CORRECT_CALL": 0.5891472868217054
             },
             "no_stag": {
-                "format_error": 0.1175,
-                "call_num_error": 0.0075,
-                "func_name_error": 0.025,
-                "para_key_error": 0.02,
-                "type_error": 0.6075,
-                "enum_error": 0.0,
-                "para_value_error": 0.0825,
-                "correct_call": 0.14
+                "CALL_NUMBER_ERROR": 0.11627906976744186,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.03488372093023256,
+                "PARA_KEY_ERROR": 0.04263565891472868,
+                "TYPE_ERROR": 0.6356589147286822,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.05813953488372093,
+                "CORRECT_CALL": 0.11240310077519389
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.2549019607843137
+            "correct_schema_rate": {
+                "no_stag": 0.2868217054263566,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.425,
-                "call_num_error": 0.01,
-                "func_name_error": 0.04,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.155,
-                "correct_call": 0.37
+                "CALL_NUMBER_ERROR": 0.405,
+                "FUNC_SELECT_ERROR": 0.04,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.14,
+                "CORRECT_CALL": 0.4149999999999999
             },
             "no_stag": {
-                "format_error": 0.395,
-                "call_num_error": 0.01,
-                "func_name_error": 0.04,
-                "para_key_error": 0.02,
-                "type_error": 0.38,
-                "enum_error": 0.0,
-                "para_value_error": 0.07,
-                "correct_call": 0.085
+                "CALL_NUMBER_ERROR": 0.465,
+                "FUNC_SELECT_ERROR": 0.025,
+                "FUNC_NAME_ERROR": 0.03,
+                "PARA_KEY_ERROR": 0.015,
+                "TYPE_ERROR": 0.355,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.04,
+                "CORRECT_CALL": 0.06999999999999987
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.2926829268292683
+            "correct_schema_rate": {
+                "no_stag": 0.595,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.385,
-                "call_num_error": 0.31,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.3,
-                "correct_call": 0.005
+                "CALL_NUMBER_ERROR": 0.68,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1,
+                "CORRECT_CALL": 0.21999999999999995
             },
             "no_stag": {
-                "format_error": 0.44,
-                "call_num_error": 0.3,
-                "func_name_error": 0.025,
-                "para_key_error": 0.01,
-                "type_error": 0.18,
-                "enum_error": 0.0,
-                "para_value_error": 0.045,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.74,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.005,
+                "TYPE_ERROR": 0.145,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.09,
+                "CORRECT_CALL": 0.020000000000000018
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.5517241379310345
+            "correct_schema_rate": {
+                "no_stag": 0.805,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.08139534883720931,
-                "call_num_error": 0.003875968992248062,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.25193798449612403,
-                "correct_call": 0.6589147286821705
+                "CALL_NUMBER_ERROR": 0.5038759689922481,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.22093023255813954,
+                "CORRECT_CALL": 0.2751937984496124
             },
             "no_stag": {
-                "format_error": 0.4728682170542636,
-                "call_num_error": 0.046511627906976744,
-                "func_name_error": 0.07751937984496124,
-                "para_key_error": 0.03488372093023256,
-                "type_error": 0.12015503875968993,
-                "enum_error": 0.0,
-                "para_value_error": 0.12790697674418605,
-                "correct_call": 0.12015503875968993
+                "CALL_NUMBER_ERROR": 0.5387596899224806,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.09689922480620156,
+                "PARA_KEY_ERROR": 0.007751937984496124,
+                "TYPE_ERROR": 0.10465116279069768,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.13178294573643412,
+                "CORRECT_CALL": 0.12015503875968991
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.49640287769784175
+            "correct_schema_rate": {
+                "no_stag": 0.7751937984496124,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.7433460076045627,
-                "call_num_error": 0.049429657794676805,
-                "func_name_error": 0.016159695817490494,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.094106463878327,
-                "correct_call": 0.09695817490494296
+                "CALL_NUMBER_ERROR": 0.7889733840304183,
+                "FUNC_SELECT_ERROR": 0.026615969581749048,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.10361216730038023,
+                "CORRECT_CALL": 0.08079847908745244
             },
             "no_stag": {
-                "format_error": 0.7566539923954373,
-                "call_num_error": 0.04467680608365019,
-                "func_name_error": 0.043726235741444866,
-                "para_key_error": 0.011406844106463879,
-                "type_error": 0.026615969581749048,
-                "enum_error": 0.0,
-                "para_value_error": 0.07129277566539924,
-                "correct_call": 0.045627376425855515
+                "CALL_NUMBER_ERROR": 0.7918250950570342,
+                "FUNC_SELECT_ERROR": 0.015209125475285171,
+                "FUNC_NAME_ERROR": 0.043726235741444866,
+                "PARA_KEY_ERROR": 0.014258555133079848,
+                "TYPE_ERROR": 0.028517110266159697,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.04752851711026616,
+                "CORRECT_CALL": 0.05893536121673001
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9854014598540146,
-                "no_stag": 0.5719424460431655
+            "correct_schema_rate": {
+                "no_stag": 0.8925855513307985,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.5,
-                "call_num_error": 0.3125,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.1875,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.625,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.3125,
+                "CORRECT_CALL": 0.0625
             },
             "no_stag": {
-                "format_error": 0.5,
-                "call_num_error": 0.25,
-                "func_name_error": 0.0625,
-                "para_key_error": 0.0625,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.125,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.75,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0625,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0625,
+                "CORRECT_CALL": 0.125
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.75
+            "correct_schema_rate": {
+                "no_stag": 0.8125,
+                "use_stag": 1.0
             }
         }
     },
     "Llama-3.2-3B-Instruct-q0f32-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.01,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.1025,
-                "correct_call": 0.8875
+                "CALL_NUMBER_ERROR": 0.005,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1,
+                "CORRECT_CALL": 0.895
             },
             "no_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.0025,
-                "func_name_error": 0.005,
-                "para_key_error": 0.0,
-                "type_error": 0.6875,
-                "enum_error": 0.0,
-                "para_value_error": 0.05,
-                "correct_call": 0.25
+                "CALL_NUMBER_ERROR": 0.01,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.005,
+                "PARA_KEY_ERROR": 0.0075,
+                "TYPE_ERROR": 0.69,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0425,
+                "CORRECT_CALL": 0.24500000000000008
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9974811083123426,
-                "no_stag": 0.3025
+            "correct_schema_rate": {
+                "no_stag": 0.2975,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.005,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.085,
-                "correct_call": 0.905
+                "CALL_NUMBER_ERROR": 0.01,
+                "FUNC_SELECT_ERROR": 0.005,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1,
+                "CORRECT_CALL": 0.885
             },
             "no_stag": {
-                "format_error": 0.02,
-                "call_num_error": 0.005,
-                "func_name_error": 0.01,
-                "para_key_error": 0.01,
-                "type_error": 0.665,
-                "enum_error": 0.0,
-                "para_value_error": 0.045,
-                "correct_call": 0.245
+                "CALL_NUMBER_ERROR": 0.02,
+                "FUNC_SELECT_ERROR": 0.01,
+                "FUNC_NAME_ERROR": 0.01,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.665,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.035,
+                "CORRECT_CALL": 0.2599999999999999
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.995,
-                "no_stag": 0.2964824120603015
+            "correct_schema_rate": {
+                "no_stag": 0.325,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.51,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.48,
-                "correct_call": 0.01
+                "CALL_NUMBER_ERROR": 0.49,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.08,
+                "CORRECT_CALL": 0.43
             },
             "no_stag": {
-                "format_error": 0.01,
-                "call_num_error": 0.47,
-                "func_name_error": 0.0,
-                "para_key_error": 0.01,
-                "type_error": 0.38,
-                "enum_error": 0.0,
-                "para_value_error": 0.125,
-                "correct_call": 0.005
+                "CALL_NUMBER_ERROR": 0.49,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.005,
+                "PARA_KEY_ERROR": 0.005,
+                "TYPE_ERROR": 0.215,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.175,
+                "CORRECT_CALL": 0.11000000000000004
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.5979899497487438
+            "correct_schema_rate": {
+                "no_stag": 0.775,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.03875968992248062,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.28294573643410853,
-                "correct_call": 0.6782945736434108
+                "CALL_NUMBER_ERROR": 0.011627906976744186,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.27906976744186046,
+                "CORRECT_CALL": 0.7093023255813953
             },
             "no_stag": {
-                "format_error": 0.027131782945736434,
-                "call_num_error": 0.0,
-                "func_name_error": 0.007751937984496124,
-                "para_key_error": 0.011627906976744186,
-                "type_error": 0.2868217054263566,
-                "enum_error": 0.0,
-                "para_value_error": 0.2131782945736434,
-                "correct_call": 0.45348837209302323
+                "CALL_NUMBER_ERROR": 0.023255813953488372,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.007751937984496124,
+                "PARA_KEY_ERROR": 0.015503875968992248,
+                "TYPE_ERROR": 0.28294573643410853,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.23255813953488372,
+                "CORRECT_CALL": 0.4379844961240309
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9802371541501976,
-                "no_stag": 0.671875
+            "correct_schema_rate": {
+                "no_stag": 0.6937984496124031,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.03802281368821293,
-                "call_num_error": 0.009505703422053232,
-                "func_name_error": 0.03802281368821293,
-                "para_key_error": 0.0,
-                "type_error": 0.0009505703422053232,
-                "enum_error": 0.0,
-                "para_value_error": 0.2946768060836502,
-                "correct_call": 0.6188212927756654
+                "CALL_NUMBER_ERROR": 0.04657794676806084,
+                "FUNC_SELECT_ERROR": 0.04752851711026616,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.29277566539923955,
+                "CORRECT_CALL": 0.6131178707224334
             },
             "no_stag": {
-                "format_error": 0.034220532319391636,
-                "call_num_error": 0.0028517110266159697,
-                "func_name_error": 0.055133079847908745,
-                "para_key_error": 0.017110266159695818,
-                "type_error": 0.24524714828897337,
-                "enum_error": 0.0009505703422053232,
-                "para_value_error": 0.24714828897338403,
-                "correct_call": 0.3973384030418251
+                "CALL_NUMBER_ERROR": 0.04752851711026616,
+                "FUNC_SELECT_ERROR": 0.0408745247148289,
+                "FUNC_NAME_ERROR": 0.011406844106463879,
+                "PARA_KEY_ERROR": 0.021863117870722433,
+                "TYPE_ERROR": 0.2623574144486692,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2262357414448669,
+                "CORRECT_CALL": 0.38973384030418246
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9960591133004926,
-                "no_stag": 0.7131630648330058
+            "correct_schema_rate": {
+                "no_stag": 0.7043726235741445,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.0625,
-                "call_num_error": 0.1875,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.75,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.25,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.5,
+                "CORRECT_CALL": 0.25
             },
             "no_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.3125,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0625,
-                "enum_error": 0.0,
-                "para_value_error": 0.625,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.25,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0625,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.5,
+                "CORRECT_CALL": 0.1875
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9375
+            "correct_schema_rate": {
+                "no_stag": 0.9375,
+                "use_stag": 1.0
             }
         }
     },
     "Llama-3-8B-Instruct-q0f16-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.0025,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.1025,
-                "correct_call": 0.895
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.09,
+                "CORRECT_CALL": 0.91
             },
             "no_stag": {
-                "format_error": 0.0075,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0025,
-                "para_key_error": 0.0,
-                "type_error": 0.0125,
-                "enum_error": 0.0,
-                "para_value_error": 0.0825,
-                "correct_call": 0.895
+                "CALL_NUMBER_ERROR": 0.015,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0225,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0825,
+                "CORRECT_CALL": 0.88
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9799498746867168
+            "correct_schema_rate": {
+                "no_stag": 0.9775,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.005,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.105,
-                "correct_call": 0.89
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.005,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.095,
+                "CORRECT_CALL": 0.9
             },
             "no_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.005,
-                "func_name_error": 0.02,
-                "para_key_error": 0.0,
-                "type_error": 0.025,
-                "enum_error": 0.0,
-                "para_value_error": 0.1,
-                "correct_call": 0.845
+                "CALL_NUMBER_ERROR": 0.02,
+                "FUNC_SELECT_ERROR": 0.005,
+                "FUNC_NAME_ERROR": 0.01,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.03,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.115,
+                "CORRECT_CALL": 0.82
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9597989949748744
+            "correct_schema_rate": {
+                "no_stag": 0.96,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.02,
-                "call_num_error": 0.735,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.24,
-                "correct_call": 0.005
+                "CALL_NUMBER_ERROR": 0.73,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.025,
+                "CORRECT_CALL": 0.24500000000000002
             },
             "no_stag": {
-                "format_error": 0.04,
-                "call_num_error": 0.69,
-                "func_name_error": 0.005,
-                "para_key_error": 0.0,
-                "type_error": 0.005,
-                "enum_error": 0.0,
-                "para_value_error": 0.26,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.755,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.035,
+                "CORRECT_CALL": 0.21
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9545454545454546
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.011627906976744186,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.24031007751937986,
-                "correct_call": 0.7441860465116279
+                "CALL_NUMBER_ERROR": 0.011627906976744186,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.25193798449612403,
+                "CORRECT_CALL": 0.7364341085271318
             },
             "no_stag": {
-                "format_error": 0.031007751937984496,
-                "call_num_error": 0.0,
-                "func_name_error": 0.007751937984496124,
-                "para_key_error": 0.003875968992248062,
-                "type_error": 0.027131782945736434,
-                "enum_error": 0.0,
-                "para_value_error": 0.22093023255813954,
-                "correct_call": 0.7093023255813954
+                "CALL_NUMBER_ERROR": 0.023255813953488372,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.007751937984496124,
+                "PARA_KEY_ERROR": 0.015503875968992248,
+                "TYPE_ERROR": 0.04263565891472868,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2364341085271318,
+                "CORRECT_CALL": 0.6744186046511628
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.99609375,
-                "no_stag": 0.9375
+            "correct_schema_rate": {
+                "no_stag": 0.9341085271317829,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.021863117870722433,
-                "call_num_error": 0.016159695817490494,
-                "func_name_error": 0.045627376425855515,
-                "para_key_error": 0.0,
-                "type_error": 0.0009505703422053232,
-                "enum_error": 0.0,
-                "para_value_error": 0.2804182509505703,
-                "correct_call": 0.6349809885931559
+                "CALL_NUMBER_ERROR": 0.03612167300380228,
+                "FUNC_SELECT_ERROR": 0.034220532319391636,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2984790874524715,
+                "CORRECT_CALL": 0.6311787072243347
             },
             "no_stag": {
-                "format_error": 0.03517110266159696,
-                "call_num_error": 0.013307984790874524,
-                "func_name_error": 0.060836501901140684,
-                "para_key_error": 0.019011406844106463,
-                "type_error": 0.0408745247148289,
-                "enum_error": 0.0,
-                "para_value_error": 0.24524714828897337,
-                "correct_call": 0.5855513307984791
+                "CALL_NUMBER_ERROR": 0.045627376425855515,
+                "FUNC_SELECT_ERROR": 0.03897338403041825,
+                "FUNC_NAME_ERROR": 0.019961977186311788,
+                "PARA_KEY_ERROR": 0.030418250950570342,
+                "TYPE_ERROR": 0.03517110266159696,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2300380228136882,
+                "CORRECT_CALL": 0.5998098859315589
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.997090203685742,
-                "no_stag": 0.8983543078412392
+            "correct_schema_rate": {
+                "no_stag": 0.9144486692015209,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.375,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.625,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.375,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1875,
+                "CORRECT_CALL": 0.4375
             },
             "no_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.5,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.5,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.4375,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.125,
+                "CORRECT_CALL": 0.4375
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 1.0
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         }
     },
     "Qwen2.5-0.5B-Instruct-q0f32-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.05,
-                "call_num_error": 0.015,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.2025,
-                "correct_call": 0.7325
+                "CALL_NUMBER_ERROR": 0.085,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1775,
+                "CORRECT_CALL": 0.7375
             },
             "no_stag": {
-                "format_error": 0.115,
-                "call_num_error": 0.0025,
-                "func_name_error": 0.0075,
-                "para_key_error": 0.0,
-                "type_error": 0.01,
-                "enum_error": 0.0,
-                "para_value_error": 0.1475,
-                "correct_call": 0.7175
+                "CALL_NUMBER_ERROR": 0.1125,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.005,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.21,
+                "CORRECT_CALL": 0.6725
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.940379403794038
+            "correct_schema_rate": {
+                "no_stag": 0.9925,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.055,
-                "call_num_error": 0.015,
-                "func_name_error": 0.025,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.21,
-                "correct_call": 0.695
+                "CALL_NUMBER_ERROR": 0.07,
+                "FUNC_SELECT_ERROR": 0.03,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.21,
+                "CORRECT_CALL": 0.69
             },
             "no_stag": {
-                "format_error": 0.09,
-                "call_num_error": 0.0,
-                "func_name_error": 0.035,
-                "para_key_error": 0.02,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.2,
-                "correct_call": 0.655
+                "CALL_NUMBER_ERROR": 0.105,
+                "FUNC_SELECT_ERROR": 0.01,
+                "FUNC_NAME_ERROR": 0.015,
+                "PARA_KEY_ERROR": 0.02,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.225,
+                "CORRECT_CALL": 0.625
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9565217391304348
+            "correct_schema_rate": {
+                "no_stag": 0.965,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.235,
-                "call_num_error": 0.53,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.235,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.845,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.075,
+                "CORRECT_CALL": 0.08000000000000003
             },
             "no_stag": {
-                "format_error": 0.23,
-                "call_num_error": 0.605,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.165,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.885,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.05,
+                "CORRECT_CALL": 0.06499999999999999
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9807692307692307
+            "correct_schema_rate": {
+                "no_stag": 0.99,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.13178294573643412,
-                "call_num_error": 0.023255813953488372,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.3643410852713178,
-                "correct_call": 0.47674418604651164
+                "CALL_NUMBER_ERROR": 0.11627906976744186,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.3682170542635659,
+                "CORRECT_CALL": 0.5155038759689923
             },
             "no_stag": {
-                "format_error": 0.17054263565891473,
-                "call_num_error": 0.011627906976744186,
-                "func_name_error": 0.03875968992248062,
-                "para_key_error": 0.01937984496124031,
-                "type_error": 0.01937984496124031,
-                "enum_error": 0.0,
-                "para_value_error": 0.29844961240310075,
-                "correct_call": 0.4418604651162791
+                "CALL_NUMBER_ERROR": 0.17829457364341086,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.03875968992248062,
+                "PARA_KEY_ERROR": 0.011627906976744186,
+                "TYPE_ERROR": 0.011627906976744186,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.31007751937984496,
+                "CORRECT_CALL": 0.4496124031007752
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.8508771929824561
+            "correct_schema_rate": {
+                "no_stag": 0.9341085271317829,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.09705042816365367,
-                "call_num_error": 0.019980970504281638,
-                "func_name_error": 0.15889628924833493,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.39200761179828736,
-                "correct_call": 0.33206470028544244
+                "CALL_NUMBER_ERROR": 0.11026615969581749,
+                "FUNC_SELECT_ERROR": 0.15494296577946767,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.39923954372623577,
+                "CORRECT_CALL": 0.33555133079847915
             },
             "no_stag": {
-                "format_error": 0.12178877259752617,
-                "call_num_error": 0.0019029495718363464,
-                "func_name_error": 0.1779257849666984,
-                "para_key_error": 0.02759276879162702,
-                "type_error": 0.02093244529019981,
-                "enum_error": 0.0,
-                "para_value_error": 0.3491912464319695,
-                "correct_call": 0.3006660323501427
+                "CALL_NUMBER_ERROR": 0.13688212927756654,
+                "FUNC_SELECT_ERROR": 0.15114068441064638,
+                "FUNC_NAME_ERROR": 0.028517110266159697,
+                "PARA_KEY_ERROR": 0.019961977186311788,
+                "TYPE_ERROR": 0.019961977186311788,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.3688212927756654,
+                "CORRECT_CALL": 0.2747148288973384
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9978969505783386,
-                "no_stag": 0.887722980062959
+            "correct_schema_rate": {
+                "no_stag": 0.9296577946768061,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.375,
-                "call_num_error": 0.25,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.375,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.6875,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.25,
+                "CORRECT_CALL": 0.0625
             },
             "no_stag": {
-                "format_error": 0.25,
-                "call_num_error": 0.375,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.375,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.875,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0625,
+                "CORRECT_CALL": 0.0625
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 1.0
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         }
     },
     "Qwen2.5-3B-Instruct-q0f16-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.0575,
-                "correct_call": 0.9425
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0475,
+                "CORRECT_CALL": 0.9525
             },
             "no_stag": {
-                "format_error": 0.0025,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0025,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.0425,
-                "correct_call": 0.9525
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0375,
+                "CORRECT_CALL": 0.9625
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.995
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.01,
-                "func_name_error": 0.01,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.05,
-                "correct_call": 0.93
+                "CALL_NUMBER_ERROR": 0.005,
+                "FUNC_SELECT_ERROR": 0.005,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.03,
+                "CORRECT_CALL": 0.96
             },
             "no_stag": {
-                "format_error": 0.01,
-                "call_num_error": 0.005,
-                "func_name_error": 0.01,
-                "para_key_error": 0.005,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.035,
-                "correct_call": 0.935
+                "CALL_NUMBER_ERROR": 0.01,
+                "FUNC_SELECT_ERROR": 0.01,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.005,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.045,
+                "CORRECT_CALL": 0.9299999999999999
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.98
+            "correct_schema_rate": {
+                "no_stag": 0.995,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.47,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.525,
-                "correct_call": 0.005
+                "CALL_NUMBER_ERROR": 0.49,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.04,
+                "CORRECT_CALL": 0.47000000000000003
             },
             "no_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.51,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.48,
-                "correct_call": 0.005
+                "CALL_NUMBER_ERROR": 0.485,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.05,
+                "CORRECT_CALL": 0.465
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.98
+            "correct_schema_rate": {
+                "no_stag": 0.98,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.011627906976744186,
-                "call_num_error": 0.003875968992248062,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.003875968992248062,
-                "enum_error": 0.0,
-                "para_value_error": 0.23255813953488372,
-                "correct_call": 0.7441860465116279
+                "CALL_NUMBER_ERROR": 0.007751937984496124,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2364341085271318,
+                "CORRECT_CALL": 0.7558139534883721
             },
             "no_stag": {
-                "format_error": 0.03488372093023256,
-                "call_num_error": 0.0,
-                "func_name_error": 0.003875968992248062,
-                "para_key_error": 0.015503875968992248,
-                "type_error": 0.011627906976744186,
-                "enum_error": 0.0,
-                "para_value_error": 0.22093023255813954,
-                "correct_call": 0.7131782945736435
+                "CALL_NUMBER_ERROR": 0.023255813953488372,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.003875968992248062,
+                "PARA_KEY_ERROR": 0.007751937984496124,
+                "TYPE_ERROR": 0.015503875968992248,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2441860465116279,
+                "CORRECT_CALL": 0.7054263565891472
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9844961240310077,
-                "no_stag": 0.9377431906614786
+            "correct_schema_rate": {
+                "no_stag": 0.9728682170542635,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.007611798287345386,
-                "call_num_error": 0.022835394862036156,
-                "func_name_error": 0.05042816365366318,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.20456707897240722,
-                "correct_call": 0.7145575642245481
+                "CALL_NUMBER_ERROR": 0.028517110266159697,
+                "FUNC_SELECT_ERROR": 0.049429657794676805,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.21007604562737642,
+                "CORRECT_CALL": 0.7119771863117872
             },
             "no_stag": {
-                "format_error": 0.008563273073263558,
-                "call_num_error": 0.014272121788772598,
-                "func_name_error": 0.05233111322549953,
-                "para_key_error": 0.015223596574690771,
-                "type_error": 0.008563273073263558,
-                "enum_error": 0.0,
-                "para_value_error": 0.18363463368220742,
-                "correct_call": 0.7174119885823026
+                "CALL_NUMBER_ERROR": 0.017110266159695818,
+                "FUNC_SELECT_ERROR": 0.049429657794676805,
+                "FUNC_NAME_ERROR": 0.0038022813688212928,
+                "PARA_KEY_ERROR": 0.016159695817490494,
+                "TYPE_ERROR": 0.009505703422053232,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.16920152091254753,
+                "CORRECT_CALL": 0.7347908745247147
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9933333333333333,
-                "no_stag": 0.9666666666666667
+            "correct_schema_rate": {
+                "no_stag": 0.970532319391635,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.25,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.75,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.25,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1875,
+                "CORRECT_CALL": 0.5625
             },
             "no_stag": {
-                "format_error": 0.0625,
-                "call_num_error": 0.3125,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.625,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.375,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.25,
+                "CORRECT_CALL": 0.375
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 1.0
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         }
     },
     "Hermes-3-Llama-3.2-3B-q0f16-MLC": {
         "BFCL_v3_simple": {
             "use_stag": {
-                "format_error": 0.0025,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.1375,
-                "correct_call": 0.86
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1525,
+                "CORRECT_CALL": 0.8475
             },
             "no_stag": {
-                "format_error": 0.01,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0125,
-                "enum_error": 0.0,
-                "para_value_error": 0.1375,
-                "correct_call": 0.84
+                "CALL_NUMBER_ERROR": 0.0175,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0025,
+                "PARA_KEY_ERROR": 0.0025,
+                "TYPE_ERROR": 0.005,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.1425,
+                "CORRECT_CALL": 0.8300000000000002
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9975,
-                "no_stag": 0.9775
+            "correct_schema_rate": {
+                "no_stag": 0.99,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_multiple": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.14,
-                "correct_call": 0.86
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.005,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.135,
+                "CORRECT_CALL": 0.86
             },
             "no_stag": {
-                "format_error": 0.005,
-                "call_num_error": 0.0,
-                "func_name_error": 0.005,
-                "para_key_error": 0.0,
-                "type_error": 0.035,
-                "enum_error": 0.0,
-                "para_value_error": 0.115,
-                "correct_call": 0.84
+                "CALL_NUMBER_ERROR": 0.0,
+                "FUNC_SELECT_ERROR": 0.01,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.025,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.13,
+                "CORRECT_CALL": 0.835
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.96
+            "correct_schema_rate": {
+                "no_stag": 0.975,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_parallel": {
             "use_stag": {
-                "format_error": 0.01,
-                "call_num_error": 0.965,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.025,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.96,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.01,
+                "CORRECT_CALL": 0.030000000000000034
             },
             "no_stag": {
-                "format_error": 0.015,
-                "call_num_error": 0.965,
-                "func_name_error": 0.0,
-                "para_key_error": 0.005,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.015,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 0.985,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.005,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0,
+                "CORRECT_CALL": 0.010000000000000012
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9798994974874372
+            "correct_schema_rate": {
+                "no_stag": 0.985,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_simple": {
             "use_stag": {
-                "format_error": 0.011627906976744186,
-                "call_num_error": 0.007751937984496124,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.313953488372093,
-                "correct_call": 0.6627906976744186
+                "CALL_NUMBER_ERROR": 0.007751937984496124,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.29844961240310075,
+                "CORRECT_CALL": 0.6937984496124031
             },
             "no_stag": {
-                "format_error": 0.01937984496124031,
-                "call_num_error": 0.0,
-                "func_name_error": 0.050387596899224806,
-                "para_key_error": 0.015503875968992248,
-                "type_error": 0.023255813953488372,
-                "enum_error": 0.0,
-                "para_value_error": 0.2558139534883721,
-                "correct_call": 0.6356589147286822
+                "CALL_NUMBER_ERROR": 0.023255813953488372,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.05813953488372093,
+                "PARA_KEY_ERROR": 0.015503875968992248,
+                "TYPE_ERROR": 0.01937984496124031,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.2441860465116279,
+                "CORRECT_CALL": 0.6395348837209301
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.99609375,
-                "no_stag": 0.8914728682170543
+            "correct_schema_rate": {
+                "no_stag": 0.9069767441860465,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_multiple": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 0.0028544243577545195,
-                "func_name_error": 0.04281636536631779,
-                "para_key_error": 0.0,
-                "type_error": 0.0009514747859181732,
-                "enum_error": 0.0,
-                "para_value_error": 0.3491912464319695,
-                "correct_call": 0.60418648905804
+                "CALL_NUMBER_ERROR": 0.0028517110266159697,
+                "FUNC_SELECT_ERROR": 0.05038022813688213,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.33174904942965777,
+                "CORRECT_CALL": 0.6150190114068441
             },
             "no_stag": {
-                "format_error": 0.0019029495718363464,
-                "call_num_error": 0.0009514747859181732,
-                "func_name_error": 0.05042816365366318,
-                "para_key_error": 0.017126546146527116,
-                "type_error": 0.038058991436726926,
-                "enum_error": 0.0,
-                "para_value_error": 0.3139866793529971,
-                "correct_call": 0.5775451950523312
+                "CALL_NUMBER_ERROR": 0.006653992395437262,
+                "FUNC_SELECT_ERROR": 0.03612167300380228,
+                "FUNC_NAME_ERROR": 0.011406844106463879,
+                "PARA_KEY_ERROR": 0.013307984790874524,
+                "TYPE_ERROR": 0.03231939163498099,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.3108365019011407,
+                "CORRECT_CALL": 0.5893536121673004
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 0.9990485252140818,
-                "no_stag": 0.9342857142857143
+            "correct_schema_rate": {
+                "no_stag": 0.9429657794676806,
+                "use_stag": 1.0
             }
         },
         "BFCL_v3_live_parallel": {
             "use_stag": {
-                "format_error": 0.0,
-                "call_num_error": 1.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.0,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 1.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0,
+                "CORRECT_CALL": 0.0
             },
             "no_stag": {
-                "format_error": 0.0,
-                "call_num_error": 1.0,
-                "func_name_error": 0.0,
-                "para_key_error": 0.0,
-                "type_error": 0.0,
-                "enum_error": 0.0,
-                "para_value_error": 0.0,
-                "correct_call": 0.0
+                "CALL_NUMBER_ERROR": 1.0,
+                "FUNC_SELECT_ERROR": 0.0,
+                "FUNC_NAME_ERROR": 0.0,
+                "PARA_KEY_ERROR": 0.0,
+                "TYPE_ERROR": 0.0,
+                "ENUM_ERROR": 0.0,
+                "PARA_VALUE_ERROR": 0.0,
+                "CORRECT_CALL": 0.0
             },
-            "correct_schema/output_trigger": {
-                "use_stag": 1.0,
-                "no_stag": 0.9375
+            "correct_schema_rate": {
+                "no_stag": 1.0,
+                "use_stag": 1.0
             }
         }
     }

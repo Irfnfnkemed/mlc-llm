@@ -445,11 +445,15 @@ class ModelImpl : public ModelObj {
 
     // args: embeddings, kv_cache, params
     ObjectRef ret;
-    if (seq_ids.size() == 1) {
-      ret = ft_.single_batch_decode_func_(embeddings_dref_or_nd, kv_cache_, params_)
-                .cast<ObjectRef>();
-    } else {
+    if (ft_.has_mega_lib) {
       ret = ft_.decode_func_(embeddings_dref_or_nd, kv_cache_, params_).cast<ObjectRef>();
+    } else {
+      if (seq_ids.size() == 1) {
+        ret = ft_.single_batch_decode_func_(embeddings_dref_or_nd, kv_cache_, params_)
+                  .cast<ObjectRef>();
+      } else {
+        ret = ft_.decode_func_(embeddings_dref_or_nd, kv_cache_, params_).cast<ObjectRef>();
+      }
     }
     NDArray logits;
     if (ft_.use_disco) {
@@ -876,6 +880,8 @@ class ModelImpl : public ModelObj {
   }
 
   /*********************** Utilities  ***********************/
+
+  void LoadMegaLib(const std::string& mega_lib) final { this->ft_.LoadMegaLib(mega_lib); }
 
   void LoadParams() final { this->params_ = ft_.LoadParams(model_, device_); }
 

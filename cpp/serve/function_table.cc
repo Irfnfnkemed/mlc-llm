@@ -148,6 +148,43 @@ void FunctionTable::Init(String reload_lib_path, Device device, picojson::object
   }
 }
 
+void FunctionTable::LoadMegaLib(const std::string& mega_lib_path) {
+  int num_shards = this->model_metadata_.tensor_parallel_shards;
+  CHECK_EQ(this->model_metadata_.pipeline_parallel_stages, 1)
+      << "Mega lib doesn't support pipeline parallel inference.";
+  int num_workers = num_shards;
+  this->has_mega_lib = true;
+  if (num_workers > 1) {
+    this->disco_mega_mod = sess->CallPacked(sess->GetGlobalFunc("runtime.disco.load_vm_module"),
+                                            mega_lib_path, Optional<Device>(std::nullopt));
+    this->mega_mod_get_func = [this, fmodule_get_function =
+                                         sess->GetGlobalFunc("runtime.ModuleGetFunction")](
+                                  const std::string& name) -> Function {
+      DRef func = sess->CallPacked(fmodule_get_function, this->disco_mega_mod, name, true);
+      bool exists = (func->DebugGetFromRemote(0).as<Function>()) != nullptr;
+      if (!exists) {
+        return Function(nullptr);
+      }
+      return SessionFuncAsPackedFunc(sess, func, name);
+    };
+  } else {
+    Module executable{nullptr};
+    Function fload_exec{nullptr};
+    executable = tvm::runtime::Module::LoadFromFile(mega_lib_path);
+    fload_exec = executable->GetFunction("vm_load_executable");
+    ICHECK(fload_exec.defined()) << "TVM runtime cannot find vm_load_executable";
+    this->local_mega_vm = fload_exec().cast<Module>();
+    this->local_mega_vm->GetFunction("vm_initialization")(
+        static_cast<int>(local_gpu_device.device_type), local_gpu_device.device_id,
+        static_cast<int>(tvm::runtime::memory::AllocatorType::kPooled), static_cast<int>(kDLCPU), 0,
+        static_cast<int>(tvm::runtime::memory::AllocatorType::kPooled));
+    this->mega_mod_get_func = [this](const std::string& name) -> Function {
+      return this->local_mega_vm->GetFunction(name, true);
+    };
+  }
+  this->_InitMegaModFunctions();
+}
+
 ObjectRef FunctionTable::LoadParams(const std::string& model_path, Device device) {
   if (this->use_disco) {
     DRef params{nullptr};
@@ -276,6 +313,11 @@ void FunctionTable::_InitFunctions() {
   this->scatter_probs_func_ = mod->GetFunction("scatter_probs", true);
   this->gather_hidden_states_func_ = mod_get_func("gather_hidden_states");
   this->scatter_hidden_states_func_ = mod_get_func("scatter_hidden_states");
+}
+
+void FunctionTable::_InitMegaModFunctions() {
+  this->decode_func_ = mega_mod_get_func("batch_decode");
+  // Todo: this->cos_sin_cache_func_ = mega_mod_get_func("cos_sin_cache_func");
 }
 
 ObjectRef FunctionTable::Empty(Shape shape, DataType dtype, Device device,

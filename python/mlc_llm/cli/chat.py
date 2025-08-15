@@ -27,6 +27,11 @@ def main(argv):
         help=HELP["model_lib"] + ' (default: "%(default)s")',
     )
     parser.add_argument(
+        "--mega-lib",
+        type=str,
+        default=None,
+    )
+    parser.add_argument(
         "--overrides",
         type=ModelConfigOverride.from_str,
         default="",
@@ -37,5 +42,6 @@ def main(argv):
         model=parsed.model,
         device=parsed.device,
         model_lib=parsed.model_lib,
+        mega_lib=parsed.mega_lib,
         overrides=parsed.overrides,
     )

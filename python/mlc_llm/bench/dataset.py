@@ -113,10 +113,10 @@ class ShareGPTDataset(Dataset):  # pylint: disable=too-few-public-methods
         input_len_std: float = 0.0,
         output_len_std: float = 0.0,
     ) -> List[RequestRecord]:
-        if self.apply_chat_template:
-            assert (
-                input_len is None
-            ), '"--apply-chat-template" is not supported when "--input-len" is specified.'
+        # if self.apply_chat_template:
+        #     assert (
+        #         input_len is None
+        #     ), '"--apply-chat-template" is not supported when "--input-len" is specified.'
 
         request_records = []
         for prompt, input_token_ids, output_length in self._tokenized_dataset:

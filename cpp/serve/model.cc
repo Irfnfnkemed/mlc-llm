@@ -988,10 +988,8 @@ class ModelImpl : public ModelObj {
     }
     CHECK(ft_.cos_sin_cache_func_.defined()) << "Cos sin cache function is not defined.";
     int head_dim = GetMetadata().kv_cache_metadata.head_dim;
-    this->cos_sin_cache_ =
-        ft_.Empty({max_single_sequence_length, head_dim}, DataType::Float(32), device_,
-                  /*worker0_only=*/false);
-    ft_.cos_sin_cache_func_(cos_sin_cache_);
+    Shape max_seq_len_shape = {max_single_sequence_length};
+    this->cos_sin_cache_ = ft_.cos_sin_cache_func_(max_seq_len_shape).cast<ObjectRef>();
   }
 
   void Reset() final {

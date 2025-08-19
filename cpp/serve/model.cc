@@ -424,7 +424,12 @@ class ModelImpl : public ModelObj {
     // Begin forward with the sequence ids and new lengths.
     IntTuple seq_ids_tuple(seq_ids);
     IntTuple lengths_tuple(std::vector<int64_t>(/*n=*/seq_ids.size(), /*v=*/1));
-    ft_.kv_cache_begin_forward_func_(kv_cache_, seq_ids_tuple, lengths_tuple);
+    if (!ft_.has_mega_lib) {
+      ft_.kv_cache_begin_forward_func_(kv_cache_, seq_ids_tuple, lengths_tuple);
+    } else {
+      ft_.kv_cache_begin_forward_func_(kv_cache_, seq_ids_tuple, lengths_tuple, nullptr,
+                                       /*use_megakernel=*/true);
+    }
 
     ObjectRef embeddings_dref_or_nd;
     if (!embeddings->IsInstance<DRefObj>()) {

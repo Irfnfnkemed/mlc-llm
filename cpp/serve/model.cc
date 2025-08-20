@@ -760,11 +760,14 @@ class ModelImpl : public ModelObj {
       IntTuple max_total_sequence_length_tuple{max_total_sequence_length};
       IntTuple prefill_chunk_size_tuple{prefill_chunk_size};
       IntTuple page_size_tuple{page_size};
-      IntTuple support_sliding_window{sliding_window_size_ != -1};
-      kv_cache_ = ft_.create_kv_cache_func_(max_num_sequence_tuple, max_total_sequence_length_tuple,
-                                            prefill_chunk_size_tuple, page_size_tuple,
-                                            support_sliding_window)
-                      .cast<ObjectRef>();
+      // NOTE: we use a hack here.
+      // cache_config[4] is meant for "support_sliding_window",
+      // but we use it for "may_use_megakernel" for now.
+      IntTuple may_use_megakernel{ft_.has_mega_lib};
+      kv_cache_ =
+          ft_.create_kv_cache_func_(max_num_sequence_tuple, max_total_sequence_length_tuple,
+                                    prefill_chunk_size_tuple, page_size_tuple, may_use_megakernel)
+              .cast<ObjectRef>();
       local_kv_cache_ = ft_.use_disco
                             ? Downcast<DRef>(kv_cache_)->DebugGetFromRemote(0).cast<ObjectRef>()
                             : kv_cache_;

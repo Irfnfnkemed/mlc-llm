@@ -454,6 +454,9 @@ class EngineImpl : public Engine {
     // - Load model weights, create KV cache and workspace.
     n->model_workspaces_.clear();
     for (const Model& model : n->models_) {
+      if (engine_config->mega_lib.defined()) {
+        model->LoadMegaLib(engine_config->mega_lib.value());
+      }
       model->LoadParams();
       model->SetMaxNumSequence(engine_config->max_num_sequence);
       model->SetPrefillChunkSize(engine_config->prefill_chunk_size);

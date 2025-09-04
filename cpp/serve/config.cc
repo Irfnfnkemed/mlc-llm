@@ -423,6 +423,11 @@ EngineConfig EngineConfig::FromJSONAndInferredConfig(
   // - Get models and model libs.
   n->model = json::Lookup<std::string>(json, "model");
   n->model_lib = json::Lookup<std::string>(json, "model_lib");
+  // - Get the mega model library.
+  std::string mega_lib = json::LookupOrDefault<std::string>(json, "mega_lib", "");
+  if (!mega_lib.empty()) {
+    n->mega_lib = mega_lib;
+  }
   std::vector<String> additional_models;
   std::vector<String> additional_model_libs;
   picojson::array additional_models_arr =

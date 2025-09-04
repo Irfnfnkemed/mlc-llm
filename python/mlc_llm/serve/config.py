@@ -136,6 +136,7 @@ class EngineConfig:  # pylint: disable=too-many-instance-attributes
 
     model: Optional[str] = None
     model_lib: Optional[str] = None
+    mega_lib: Optional[str] = None
     additional_models: List[Union[str, Tuple[str, str]]] = field(default_factory=list)
     mode: Optional[Literal["local", "interactive", "server"]] = None
     tensor_parallel_shards: Optional[int] = None

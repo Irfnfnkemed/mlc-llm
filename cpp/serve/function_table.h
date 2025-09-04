@@ -51,9 +51,13 @@ struct FunctionTable {
   void Init(String reload_lib_path, Device device, picojson::object model_config,
             Optional<Session> session, int num_shards, int num_stages);
 
+  void LoadMegaLib(const std::string& mega_lib_path);
+
   ObjectRef LoadParams(const std::string& model_path, Device device);
 
   void _InitFunctions();
+
+  void _InitMegaModFunctions();
 
   ObjectRef Empty(Shape shape, DataType dtype, Device device, bool worker0_only) const;
 
@@ -73,6 +77,7 @@ struct FunctionTable {
   void DebugCallFuncOnAllAllWorker(const String& func_name, Optional<String> func_args) const;
 
   bool use_disco = false;
+  bool has_mega_lib = false;
   Device local_gpu_device;
   Session sess{nullptr};
   Optional<DRef> disco_mod = std::nullopt;
@@ -82,6 +87,10 @@ struct FunctionTable {
 
   TypedFunction<Function(const std::string&)> mod_get_func;
   TypedFunction<Function(const std::string&)> get_global_func;
+
+  DRef disco_mega_mod{nullptr};
+  tvm::runtime::Module local_mega_vm{nullptr};
+  TypedFunction<Function(const std::string&)> mega_mod_get_func;
 
   ModelMetadata model_metadata_;
 
@@ -140,6 +149,8 @@ struct FunctionTable {
   Function scatter_probs_func_;
   Function gather_hidden_states_func_;
   Function scatter_hidden_states_func_;
+  // For megakernel.
+  Function cos_sin_cache_func_;
 };
 
 }  // namespace serve

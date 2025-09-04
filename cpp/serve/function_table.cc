@@ -330,7 +330,7 @@ void FunctionTable::_InitFunctions() {
 
 void FunctionTable::_InitMegaModFunctions() {
   this->decode_func_ = mega_mod_get_func("batch_decode");
-  // Todo: this->cos_sin_cache_func_ = mega_mod_get_func("cos_sin_cache_func");
+  this->cos_sin_cache_func_ = mega_mod_get_func("cos_sin_cache_func");
 }
 
 ObjectRef FunctionTable::Empty(Shape shape, DataType dtype, Device device,

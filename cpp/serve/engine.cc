@@ -465,6 +465,7 @@ class EngineImpl : public Engine {
                            engine_config->prefill_chunk_size, engine_config->max_history_size);
       n->model_workspaces_.push_back(
           ModelWorkspace{model->AllocEmbeddingTensor(), model->AllocHiddenStatesTensor()});
+      model->AllocCosSinCacheTensor(engine_config->max_single_sequence_length);
     }
     // - Initialize tokenizer and grammar
     n->tokenizer_ = Tokenizer::FromPath(engine_config->model, GetTokenizerInfo(model_configs[0]));

@@ -338,6 +338,9 @@ class ModelObj : public Object {
   /*! \brief Allocate an hidden_states tensor with the prefill chunk size. */
   virtual ObjectRef AllocHiddenStatesTensor() = 0;
 
+  /*! \brief Allocate a cos_sin_cache tensor with the max_single_sequence_length. */
+  virtual void AllocCosSinCacheTensor(int max_single_sequence_length) = 0;
+
   /*! \brief Reset the model KV cache and other metrics. */
   virtual void Reset() = 0;
 

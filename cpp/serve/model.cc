@@ -444,7 +444,9 @@ class ModelImpl : public ModelObj {
     // args: embeddings, kv_cache, params
     ObjectRef ret;
     if (ft_.has_mega_lib) {
-      ret = ft_.decode_func_(embeddings_dref_or_nd, kv_cache_, params_).cast<ObjectRef>();
+      ICHECK(cos_sin_cache_.defined());
+      ret = ft_.decode_func_(embeddings_dref_or_nd, kv_cache_, cos_sin_cache_, params_)
+                .cast<ObjectRef>();
     } else {
       if (seq_ids.size() == 1) {
         ret = ft_.single_batch_decode_func_(embeddings_dref_or_nd, kv_cache_, params_)
@@ -978,6 +980,18 @@ class ModelImpl : public ModelObj {
     return hidden_states;
   }
 
+  void AllocCosSinCacheTensor(int max_single_sequence_length) final {
+    if (!ft_.has_mega_lib) {
+      return;
+    }
+    CHECK(ft_.cos_sin_cache_func_.defined()) << "Cos sin cache function is not defined.";
+    int head_dim = GetMetadata().kv_cache_metadata.head_dim;
+    this->cos_sin_cache_ =
+        ft_.Empty({max_single_sequence_length, head_dim}, DataType::Float(32), device_,
+                  /*worker0_only=*/false);
+    ft_.cos_sin_cache_func_(cos_sin_cache_);
+  }
+
   void Reset() final {
     // Reset the KV cache.
     if (kv_cache_.defined()) {
@@ -1112,6 +1126,7 @@ class ModelImpl : public ModelObj {
   memory::Storage token_ids_storage_{nullptr};
   Tensor logit_pos_arr_{nullptr};
   ObjectRef disco_logits_arr_{nullptr};
+  ObjectRef cos_sin_cache_{nullptr};
   // A boolean indicating if tracing is enabled.
   bool trace_enabled_;
   // An enum indicating whether it's RNN-based.

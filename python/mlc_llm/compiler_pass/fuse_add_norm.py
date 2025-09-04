@@ -31,7 +31,7 @@ def _get_add_rms_norm_decode(hidden_size: int, eps: float, TX: int, in_dtype: st
         C = T.match_buffer(pC, (hidden_size,), in_dtype)
         O = T.match_buffer(pO, (batch_size, 1, hidden_size), in_dtype)
         add = T.match_buffer(pAdd, (batch_size, 1, hidden_size), in_dtype)
-        add_local = T.alloc_buffer((hidden_size // TX,), in_dtype, scope="local")
+        add_local = T.alloc_buffer((hidden_size // TX,), dtype="float32", scope="local")
         sum_shared = T.alloc_buffer((batch_size, 1), scope="shared")
         sum_local = T.alloc_buffer((TX, batch_size, 1), scope="local")
         for v_bx in T.thread_binding(batch_size, thread="blockIdx.x"):
@@ -44,19 +44,19 @@ def _get_add_rms_norm_decode(hidden_size: int, eps: float, TX: int, in_dtype: st
                     with T.block("T_add"):
                         bx = T.axis.spatial(batch_size, v_bx)
                         h = T.axis.spatial(hidden_size, i * TX + v_tx)
-                        add_local[h // TX] = A[bx, 0, h] + B[bx, 0, h]
+                        add_local[h // TX] = T.float32(A[bx, 0, h]) + T.float32(B[bx, 0, h])
                     with T.block("T_write_back"):
                         bx = T.axis.spatial(batch_size, v_bx)
                         v_ax1 = T.axis.spatial(1, 0)
                         h = T.axis.spatial(hidden_size, i * TX + v_tx)
-                        add[bx, v_ax1, h] = add_local[h // TX]
+                        add[bx, v_ax1, h] = T.cast(add_local[h // TX], in_dtype)
                 with T.block("T_multiply_red_rf_init"):
                     tx, bx = T.axis.remap("SS", [v_tx, v_bx])
                     sum_local[tx, bx, 0] = T.float32(0)
                 for v_i, _j in T.grid(add_local_size, 1):
                     with T.block("T_multiply_red_rf_update"):
                         tx, bx, i = T.axis.remap("SSR", [v_tx, v_bx, v_i])
-                        sum_local[tx, bx, 0] += T.float32(add_local[i]) * T.float32(add_local[i])
+                        sum_local[tx, bx, 0] += add_local[i] * add_local[i]
             for _j in range(1):
                 for v_tx_2 in T.thread_binding(TX, thread="threadIdx.x"):
                     with T.block("T_multiply_red"):

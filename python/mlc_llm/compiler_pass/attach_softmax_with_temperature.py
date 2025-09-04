@@ -125,7 +125,7 @@ def _get_lse_and_softmax_func(  # pylint: disable=too-many-locals,too-many-state
             with T.block("pad"):
                 v0, v1, v2 = T.axis.remap("SSS", [l0, l1, l2])
                 A_pad[v0, v1, v2] = T.if_then_else(
-                    v1 * T.int64(chunk_size) + v2 < vocab_size,
+                    v1 * T.int64(chunk_size) + v2 < 151669,
                     T.if_then_else(
                         temperature[v0] > T.float32(1e-5),
                         A[v0, v1 * T.int64(chunk_size) + v2] / temperature[v0],

@@ -404,7 +404,7 @@ class EngineImpl : public Engine {
                                   /*trace_enabled=*/trace_recorder.defined());
       n->models_.push_back(model);
     }
-    // - Initialize NVSHMEM
+    // - Initialize NVSHMEM for disaggregation
     n->estate_->disaggregation = n->models_[0]->GetMetadata().disaggregation;
     if (n->estate_->disaggregation) {
       LOG(INFO) << "Intiailizing NVSHMEM";
@@ -451,12 +451,44 @@ class EngineImpl : public Engine {
                "enabled and not implemented with hybrid prefill yet.";
       }
     }
+
+    if (engine_config->mega_lib.defined()) {
+      for (const Model& model : n->models_) {
+        model->LoadMegaLib(engine_config->mega_lib.value());
+      }
+    }
+    // - Initialize NVSHMEM for megakernel
+    ModelMetadata metadata = n->models_[0]->GetMetadata();
+    LOG(INFO) << "mega_lib: " << engine_config->mega_lib.value()
+              << ", tensor_parallel_shards: " << metadata.tensor_parallel_shards;
+    if (engine_config->mega_lib.defined() && metadata.tensor_parallel_shards > 1) {
+      LOG(INFO) << "Intiailizing NVSHMEM";
+      ffi::Shape nvshmem_uid =
+          ffi::Function::GetGlobalRequired("runtime.disco.nvshmem.init_nvshmem_uid")()
+              .cast<ffi::Shape>();
+      LOG(INFO) << "nvshmem_uid: " << nvshmem_uid;
+      std::string f_name = "runtime.disco.nvshmem.init_nvshmem_wrapper";
+      picojson::object nvshmem_init_config;
+      picojson::array uid_array;
+      for (int64_t uid : nvshmem_uid) {
+        uid_array.push_back(picojson::value(uid));
+      }
+      nvshmem_init_config["uid"] = picojson::value(uid_array);
+      nvshmem_init_config["npes"] = picojson::value(metadata.tensor_parallel_shards);
+      nvshmem_init_config["pe_start"] = picojson::value(static_cast<int64_t>(0));
+      std::string nvshmem_init_config_json_char = picojson::value(nvshmem_init_config).serialize();
+      if (session != nullptr) {
+        n->DebugCallFuncOnAllAllWorker(f_name, String(nvshmem_init_config_json_char));
+      } else {
+        static Function func = Function::GetGlobalRequired(f_name);
+        func(String(nvshmem_init_config_json_char));
+      }
+      LOG(INFO) << "NVSHMEM initialized successfully.";
+    }
+
     // - Load model weights, create KV cache and workspace.
     n->model_workspaces_.clear();
     for (const Model& model : n->models_) {
-      if (engine_config->mega_lib.defined()) {
-        model->LoadMegaLib(engine_config->mega_lib.value());
-      }
       model->LoadParams();
       model->SetMaxNumSequence(engine_config->max_num_sequence);
       model->SetPrefillChunkSize(engine_config->prefill_chunk_size);

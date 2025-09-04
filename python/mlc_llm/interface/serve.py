@@ -24,6 +24,7 @@ def serve(
     model: str,
     device: str,
     model_lib: Optional[str],
+    mega_lib: Optional[str],
     mode: Literal["local", "interactive", "server"],
     enable_debug: bool,
     additional_models: List[Union[str, Tuple[str, str]]],
@@ -60,6 +61,7 @@ def serve(
         model_lib=model_lib,
         mode=mode,
         engine_config=engine.EngineConfig(
+            mega_lib=mega_lib,
             additional_models=additional_models,
             tensor_parallel_shards=tensor_parallel_shards,
             pipeline_parallel_stages=pipeline_parallel_stages,

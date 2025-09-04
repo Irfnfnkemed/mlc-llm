@@ -280,6 +280,7 @@ def chat(
     model: str,
     device: str,
     model_lib: Optional[str],
+    mega_lib: Optional[str],
     overrides: ModelConfigOverride,
 ):
     """Chat cli entry"""
@@ -291,6 +292,7 @@ def chat(
             model_lib=model_lib,
             mode="interactive",
             engine_config=EngineConfig(
+                mega_lib=mega_lib,
                 max_single_sequence_length=overrides.context_window_size,
                 prefill_chunk_size=overrides.prefill_chunk_size,
                 sliding_window_size=overrides.sliding_window_size,

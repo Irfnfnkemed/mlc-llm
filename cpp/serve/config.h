@@ -231,6 +231,8 @@ class EngineConfigNode : public Object {
   String model;
   /*! \brief The path or identifier to the model library. */
   String model_lib;
+  /*! \brief The path or identifier to the mega model library. */
+  Optional<String> mega_lib;
   /*! \brief The path to the additional models' directories. */
   Array<String> additional_models;
   /*! \brief The path to the additional models' libraries. */

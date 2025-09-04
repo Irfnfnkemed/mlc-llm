@@ -291,6 +291,9 @@ class ModelObj : public Object {
 
   /*********************** Utilities  ***********************/
 
+  /*! \brief Load the mega model library. */
+  virtual void LoadMegaLib(const std::string& mega_lib) = 0;
+
   /*! \brief Load the model's weight parameters, which is not loaded at construction time. */
   virtual void LoadParams() = 0;
 

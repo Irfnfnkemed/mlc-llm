@@ -121,6 +121,11 @@ def main(argv):
         help=HELP["model_lib"] + ' (default: "%(default)s")',
     )
     parser.add_argument(
+        "--mega-lib",
+        type=str,
+        default=None,
+    )
+    parser.add_argument(
         "--mode",
         type=str,
         choices=["local", "interactive", "server"],
@@ -209,6 +214,7 @@ def main(argv):
         model=parsed.model,
         device=parsed.device,
         model_lib=parsed.model_lib,
+        mega_lib=parsed.mega_lib,
         mode=parsed.mode,
         enable_debug=parsed.enable_debug,
         additional_models=additional_models,

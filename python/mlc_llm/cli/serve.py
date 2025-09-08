@@ -9,6 +9,7 @@ from mlc_llm.interface.help import HELP
 from mlc_llm.interface.serve import serve
 from mlc_llm.support import argparse
 from mlc_llm.support.argparse import ArgumentParser
+from tvm.tirp.megakernel.common import ProfilerHandler
 
 
 @dataclasses.dataclass
@@ -199,6 +200,23 @@ def main(argv):
         default=["*"],
         help="allowed headers" + ' (default: "%(default)s")',
     )
+    parser.add_argument(
+        "--profiler-on",
+        action="store_true",
+        help="export the profiler trace",
+    )
+    parser.add_argument(
+        "--profiler-layer-id",
+        type=json.loads,
+        default=[],
+        help="profiler layer id" + ' (default: "%(default)s")',
+    )
+    parser.add_argument(
+        "--profiler-trigger-count",
+        type=int,
+        default=1,
+        help="profiler trigger count" + ' (default: "%(default)s")',
+    )
     parsed = parser.parse_args(argv)
 
     additional_models = []
@@ -209,6 +227,8 @@ def main(argv):
                 additional_models.append((splits[0], splits[1]))
             else:
                 additional_models.append(splits[0])
+                
+    ProfilerHandler(parsed.profiler_on, parsed.profiler_layer_id, parsed.profiler_trigger_count).initialize()
 
     serve(
         model=parsed.model,

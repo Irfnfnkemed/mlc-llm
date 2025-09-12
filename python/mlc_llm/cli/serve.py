@@ -9,8 +9,10 @@ from mlc_llm.interface.help import HELP
 from mlc_llm.interface.serve import serve
 from mlc_llm.support import argparse
 from mlc_llm.support.argparse import ArgumentParser
-from tvm.tirp.megakernel.common import ProfilerHandler
+from mlc_llm.support import logging
+import tvm.tirp.megakernel
 
+logger = logging.getLogger(__name__)
 
 @dataclasses.dataclass
 class EngineConfigOverride:  # pylint: disable=too-many-instance-attributes
@@ -217,6 +219,12 @@ def main(argv):
         default=1,
         help="profiler trigger count" + ' (default: "%(default)s")',
     )
+    parser.add_argument(
+        "--profiler-output-dir",
+        type=str,
+        default=None,
+        help="profiler output dir" + ' (default: "%(default)s")',
+    )
     parsed = parser.parse_args(argv)
 
     additional_models = []
@@ -228,7 +236,13 @@ def main(argv):
             else:
                 additional_models.append(splits[0])
                 
-    ProfilerHandler(parsed.profiler_on, parsed.profiler_layer_id, parsed.profiler_trigger_count).initialize()
+
+    def init_profiler():
+        profiler_init_func = tvm.get_global_func("megakernel.initialize_profiler")
+        profiler_init_func(parsed.profiler_on, parsed.profiler_trigger_count, tvm.runtime.ShapeTuple(parsed.profiler_layer_id), parsed.profiler_output_dir, -1)
+        logger.info("Initialized ProfilerHandler: profiler_on=%s, trigger_count=%s, profiler_layer_id=%s, dir_path=%s", parsed.profiler_on, parsed.profiler_trigger_count, parsed.profiler_layer_id, parsed.profiler_output_dir)
+    
+    init_profiler()
 
     serve(
         model=parsed.model,
@@ -263,3 +277,5 @@ def main(argv):
         allow_methods=parsed.allow_methods,
         allow_headers=parsed.allow_headers,
     )
+
+

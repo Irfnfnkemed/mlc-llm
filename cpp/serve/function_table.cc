@@ -162,7 +162,7 @@ void FunctionTable::LoadMegaLib(const std::string& mega_lib_path) {
     this->disco_mega_mod = sess->CallPacked(sess->GetGlobalFunc("runtime.disco.load_vm_module"),
                                             mega_lib_path, Optional<Device>(std::nullopt));
     this->mega_mod_get_func = [this, fmodule_get_function =
-                                         sess->GetGlobalFunc("runtime.ModuleGetFunction")](
+                                         sess->GetGlobalFunc("ffi.ModuleGetFunction")](
                                   const std::string& name) -> Function {
       DRef func = sess->CallPacked(fmodule_get_function, this->disco_mega_mod, name, true);
       bool exists = (func->DebugGetFromRemote(0).as<Function>()) != nullptr;

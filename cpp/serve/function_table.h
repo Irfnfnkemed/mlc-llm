@@ -88,8 +88,8 @@ struct FunctionTable {
   TypedFunction<Function(const std::string&)> mod_get_func;
   TypedFunction<Function(const std::string&)> get_global_func;
 
-  DRef disco_mega_mod{nullptr};
-  tvm::ffi::Module local_mega_vm{nullptr};
+  Optional<DRef> disco_mega_mod = std::nullopt;
+  Optional< tvm::ffi::Module> local_mega_vm = std::nullopt;
   TypedFunction<Function(const std::string&)> mega_mod_get_func;
 
   ModelMetadata model_metadata_;

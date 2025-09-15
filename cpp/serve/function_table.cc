@@ -172,18 +172,18 @@ void FunctionTable::LoadMegaLib(const std::string& mega_lib_path) {
       return SessionFuncAsPackedFunc(sess, func, name);
     };
   } else {
-    Module executable{nullptr};
+    Optional<Module> executable = std::nullopt;
     Optional<Function> fload_exec;
     executable = tvm::ffi::Module::LoadFromFile(mega_lib_path);
-    fload_exec = executable->GetFunction("vm_load_executable");
+    fload_exec = executable.value()->GetFunction("vm_load_executable");
     ICHECK(fload_exec.defined()) << "TVM runtime cannot find vm_load_executable";
     this->local_mega_vm = fload_exec.value()().cast<Module>();
-    this->local_mega_vm->GetFunction("vm_initialization").value()(
+    this->local_mega_vm.value()->GetFunction("vm_initialization").value()(
         static_cast<int>(local_gpu_device.device_type), local_gpu_device.device_id,
         static_cast<int>(tvm::runtime::memory::AllocatorType::kPooled), static_cast<int>(kDLCPU), 0,
         static_cast<int>(tvm::runtime::memory::AllocatorType::kPooled));
     this->mega_mod_get_func = [this](const std::string& name) -> Function {
-      return this->local_mega_vm->GetFunction(name, true).value_or(Function(nullptr));
+      return this->local_mega_vm.value()->GetFunction(name, true).value_or(Function(nullptr));
     };
   }
   this->_InitMegaModFunctions();

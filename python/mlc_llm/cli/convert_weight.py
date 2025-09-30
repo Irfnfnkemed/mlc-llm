@@ -71,6 +71,10 @@ def main(argv):
         help=HELP["source_format"] + ' (default: "%(default)s", choices: %(choices)s")',
     )
     parser.add_argument(
+        "--use-megakernel",
+        action="store_true",
+    )
+    parser.add_argument(
         "--output",
         "-o",
         type=_parse_output,
@@ -92,5 +96,6 @@ def main(argv):
         device=parsed.device,
         source=parsed.source,
         source_format=parsed.source_format,
+        use_megakernel=parsed.use_megakernel,
         output=parsed.output,
     )

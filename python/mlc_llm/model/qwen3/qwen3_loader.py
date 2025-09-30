@@ -42,7 +42,7 @@ def huggingface(model_config: Qwen3Config, quantization: Quantization) -> Extern
                 "The input Qwen3 model is not fp8 block quantized. "
                 "Thus BlockScaleQuantize is not supported."
             )
-
+    megakernel = model_config.kwargs.get("megakernel", False)     
     _, _named_params, _ = model.export_tvm(  # type: ignore[misc]
         spec=model.get_default_spec(),
         allow_extern=True,
@@ -112,6 +112,22 @@ def huggingface(model_config: Qwen3Config, quantization: Quantization) -> Extern
                 ),
             )
         # map mlp weight
+        def interleave_gate_up_weights(interleave=True, chunk_size=16):
+            def func(gate_weight, up_weight, dtype):
+                intermediate_size = gate_weight.shape[0]
+                combined_weight = np.concatenate([gate_weight, up_weight], axis=0)
+                if interleave:
+                    new_order_indices = np.stack(
+                        (
+                            np.arange(intermediate_size).reshape(-1, chunk_size),
+                            np.arange(intermediate_size, intermediate_size * 2).reshape(-1, chunk_size)
+                        ),
+                        axis=1
+                    ).reshape(-1)
+                    combined_weight = combined_weight[new_order_indices, :]
+                return combined_weight.astype(dtype)
+            return func
+        
         mlp = f"model.layers.{i}.mlp"
         add_weight_and_scale_mapping(
             f"{mlp}.gate_up_proj.weight",
@@ -119,7 +135,7 @@ def huggingface(model_config: Qwen3Config, quantization: Quantization) -> Extern
                 f"{mlp}.gate_proj.weight",
                 f"{mlp}.up_proj.weight",
             ],
-            lambda gate, up, dtype: np.concatenate([gate, up], axis=0).astype(dtype),
+            interleave_gate_up_weights(interleave=(megakernel and model_config.tensor_parallel_shards == 1)),
         )
 
     for mlc_name, mlc_param in named_parameters.items():

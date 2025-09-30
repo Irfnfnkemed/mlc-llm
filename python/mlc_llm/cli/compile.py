@@ -98,6 +98,10 @@ def main(argv):
         help=HELP["system_lib_prefix"] + ' (default: "%(default)s")',
     )
     parser.add_argument(
+        "--use-megakernel",
+        action="store_true",
+    )
+    parser.add_argument(
         "--output",
         "-o",
         type=_parse_output,
@@ -134,6 +138,7 @@ def main(argv):
         opt=parsed.opt,
         build_func=build_func,
         system_lib_prefix=parsed.system_lib_prefix,
+        use_megakernel=parsed.use_megakernel,
         output=parsed.output,
         overrides=parsed.overrides,
         debug_dump=parsed.debug_dump,

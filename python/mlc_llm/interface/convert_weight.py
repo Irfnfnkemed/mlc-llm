@@ -33,6 +33,7 @@ class ConversionArgs:  # pylint: disable=too-many-instance-attributes
     device: Device
     source: Path
     source_format: str
+    use_megakernel: bool
     output: Path
 
     def display(self) -> None:
@@ -49,6 +50,7 @@ class ConversionArgs:  # pylint: disable=too-many-instance-attributes
         print(f"  {bold('--device'):<25} {_device_to_str(self.device)}", file=out)
         print(f"  {bold('--source'):<25} {self.source}", file=out)
         print(f"  {bold('--source-format'):<25} {self.source_format}", file=out)
+        print(f"  {bold('--use-megakernel'):<25} {self.use_megakernel}", file=out)
         print(f"  {bold('--output'):<25} {self.output}", file=out)
         print(out.getvalue().rstrip())
 
@@ -57,6 +59,8 @@ def _convert_args(args: ConversionArgs) -> None:  # pylint: disable=too-many-loc
     pre_shards_num = os.getenv("MLC_INTERNAL_PRESHARD_NUM")
     # model config & quantization config
     model_config = args.model.config.from_file(args.config)
+    if args.use_megakernel:
+        model_config.kwargs["megakernel"] = True
     if (
         args.quantization.kind == "ft-quant"
         and hasattr(model_config, "tensor_parallel_shards")
@@ -173,9 +177,10 @@ def convert_weight(  # pylint: disable=too-many-arguments
     device: Device,
     source: Path,
     source_format: str,
+    use_megakernel: bool,
     output: Path,
 ):
     """MLC LLM's weight conversation and quantization flow."""
-    args = ConversionArgs(config, quantization, model, device, source, source_format, output)
+    args = ConversionArgs(config, quantization, model, device, source, source_format, use_megakernel, output)
     args.display()
     _convert_args(args)

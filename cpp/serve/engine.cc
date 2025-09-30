@@ -459,8 +459,10 @@ class EngineImpl : public Engine {
     }
     // - Initialize NVSHMEM for megakernel
     ModelMetadata metadata = n->models_[0]->GetMetadata();
-    LOG(INFO) << "mega_lib: " << engine_config->mega_lib.value()
-              << ", tensor_parallel_shards: " << metadata.tensor_parallel_shards;
+    if (engine_config->mega_lib.has_value()) {
+      LOG(INFO) << "mega_lib: " << engine_config->mega_lib.value()
+          << ", tensor_parallel_shards: " << metadata.tensor_parallel_shards;
+    }
     if (engine_config->mega_lib.has_value() && metadata.tensor_parallel_shards > 1) {
       LOG(INFO) << "Intiailizing NVSHMEM";
       ffi::Shape nvshmem_uid =

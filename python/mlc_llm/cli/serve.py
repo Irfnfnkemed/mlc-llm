@@ -237,13 +237,6 @@ def main(argv):
                 additional_models.append(splits[0])
                 
 
-    def init_profiler():
-        profiler_init_func = tvm.get_global_func("megakernel.initialize_profiler")
-        profiler_init_func(parsed.profiler_on, parsed.profiler_trigger_count, tvm.runtime.ShapeTuple(parsed.profiler_layer_id), parsed.profiler_output_dir, -1)
-        logger.info("Initialized ProfilerHandler: profiler_on=%s, trigger_count=%s, profiler_layer_id=%s, dir_path=%s", parsed.profiler_on, parsed.profiler_trigger_count, parsed.profiler_layer_id, parsed.profiler_output_dir)
-    
-    init_profiler()
-
     serve(
         model=parsed.model,
         device=parsed.device,

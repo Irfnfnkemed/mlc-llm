@@ -409,6 +409,7 @@ class ModelImpl : public ModelObj {
 
   Tensor BatchDecode(const ObjectRef& embeddings, const std::vector<int64_t>& seq_ids) final {
     NVTXScopedRange nvtx_scope("BatchDecode num_seqs=" + std::to_string(seq_ids.size()));
+      LOG(INFO) << "Running batch decode" << std::to_string(seq_ids.size());
     int num_sequence = seq_ids.size();
 
     CHECK(ft_.decode_func_.defined())
